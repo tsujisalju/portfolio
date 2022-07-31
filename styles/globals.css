@@ -14,5 +14,8 @@ html {
 }
 body {
   color: white;
-  background: black;
+  background: #1c1917;
+}
+img {
+  transition: 0.4s;
 }

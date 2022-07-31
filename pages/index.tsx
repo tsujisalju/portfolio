@@ -31,7 +31,7 @@ export default function Home({
   return (
     <Layout>
       <section className="p-4">
-        <div className="grid grid-flow-dense gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-flow-dense gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {allProjectsData.map(({ id, date, title, img, width, height }) => (
             <div
               key={id}
