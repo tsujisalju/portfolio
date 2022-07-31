@@ -51,6 +51,8 @@ export default function Home({
                 width={width}
                 height={height}
                 layout="responsive"
+                placeholder="blur"
+                blurDataURL={img.replace(".", "-placeholder.")}
               ></Image>
               <div className="absolute bg-black py-2 px-4 m-2 rounded">
                 <h1 className="font-serif md:text-3xl sm:text-2xl">{title}</h1>
