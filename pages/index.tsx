@@ -34,6 +34,7 @@ export default function Home({
         <div className="grid grid-flow-dense gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {allProjectsData.map(({ id, date, title, img, width, height }) => (
             <div
+              key={id}
               className={
                 "flex flex-1 flex-col relative " +
                 (width > height
@@ -44,6 +45,7 @@ export default function Home({
               }
             >
               <Image
+                alt="id"
                 className="rounded"
                 src={img}
                 width={width}
