@@ -15,7 +15,7 @@ export default function ProjectGallery({
 }) {
   return (
     <section className="p-4">
-      <div className="grid grid-flow-dense gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-flow-dense gap-4 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {allProjectsData.map(({ id, date, title, img, width, height }) => (
           <div
             key={id}
@@ -30,7 +30,7 @@ export default function ProjectGallery({
           >
             <Image
               alt="id"
-              className="rounded"
+              className="transition duration-400 ease-in-out rounded hover:scale-105"
               src={img}
               width={width}
               height={height}
@@ -39,7 +39,7 @@ export default function ProjectGallery({
               blurDataURL={img.replace(".", "-placeholder.")}
             ></Image>
             <div className="sm:static md:absolute sm:bg-none md:bg-black md:py-2 md:px-4 m-2 rounded">
-              <h1 className="font-serif md:text-3xl sm:text-2xl">{title}</h1>
+              <h1 className="font-serif md:text-2xl sm:text-xl">{title}</h1>
               <Date dateString={date}></Date>
             </div>
           </div>

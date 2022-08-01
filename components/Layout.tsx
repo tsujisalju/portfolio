@@ -28,7 +28,6 @@ export default function Layout({
         ></Image>
         <h1 className="text-4xl font-serif">smolpadok</h1>
       </header>
-      <hr></hr>
       <nav className="flex flex-row justify-center space-x-8 py-4">
         <Link href={"/"}>
           <a className="font-sans text-lg">Home</a>
