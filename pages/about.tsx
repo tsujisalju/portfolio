@@ -22,7 +22,11 @@ export default function About() {
           <h1 className="font-serif text-2xl">Socials</h1>
           <ul className="list-disc list-inside">
             <li>
-              <a href="https://twitter.com/smolpadok" target={"_blank"}>
+              <a
+                href="https://twitter.com/smolpadok"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Twitter
               </a>
             </li>
