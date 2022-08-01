@@ -9,9 +9,8 @@ export default function About() {
         <Image
           alt="a turkish van cat named Carina"
           src={"/img/profile.png"}
-          width={400}
-          height={500}
-          layout="fixed"
+          width={480}
+          height={600}
           placeholder={"blur"}
           blurDataURL={"/img/profile-placeholder.png"}
         ></Image>
