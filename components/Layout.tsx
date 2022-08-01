@@ -1,8 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { ReactNode } from "react";
 
-export default function Layout({ children }: { children: ReactNode }) {
+export default function Layout({
+  children,
+  home,
+}: {
+  children: ReactNode;
+  home?: boolean;
+}) {
   return (
     <>
       <Head>
@@ -17,10 +24,19 @@ export default function Layout({ children }: { children: ReactNode }) {
           src="/img/logo-white.png"
           width={50}
           height={50}
+          placeholder="empty"
         ></Image>
         <h1 className="text-4xl font-serif">smolpadok</h1>
       </header>
       <hr></hr>
+      <nav className="flex flex-row justify-center space-x-8 py-4">
+        <Link href={"/"}>
+          <a className="font-sans text-lg">Home</a>
+        </Link>
+        <Link href={"/about"}>
+          <a className="font-sans text-lg">About</a>
+        </Link>
+      </nav>
       <main className="">{children}</main>
 
       <footer className=""></footer>

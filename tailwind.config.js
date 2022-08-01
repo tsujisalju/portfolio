@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Karla", "sans-serif"],
-        serif: ["Bluu Next", "serif"],
+        serif: ["Bluu Next", "DM Serif Display", "serif"],
       },
     },
   },

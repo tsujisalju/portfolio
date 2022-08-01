@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 import Link from "next/link";
 import { getSortedProjectsData } from "../../lib/projects";
 import { GetStaticProps } from "next";
