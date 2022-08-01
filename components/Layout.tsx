@@ -30,10 +30,14 @@ export default function Layout({
       </header>
       <nav className="flex flex-row justify-center space-x-8 py-4">
         <Link href={"/"}>
-          <a className="font-sans text-lg">Home</a>
+          <a className="transition duration-200 font-sans text-lg text-stone-400 hover:text-stone-200">
+            Home
+          </a>
         </Link>
         <Link href={"/about"}>
-          <a className="font-sans text-lg">About</a>
+          <a className="transition duration-200 font-sans text-lg text-stone-400 hover:text-stone-200">
+            About
+          </a>
         </Link>
       </nav>
       <main className="">{children}</main>
