@@ -21,9 +21,9 @@ export default function About() {
           <div className="flex flex-col lg:w-1/2 p-8 space-y-4 text-lg">
             <h1 className="font-serif text-6xl">Hello, friend!</h1>
             <p className="font-sans">
-              I'm Qayyum, or you can call me smolpadok. I was born in Malaysia
-              and now continuing studies in Germany. I'm a hobbyist frontend
-              developer and designer for almost 9 years.
+              I&apos;m Qayyum, or you can call me smolpadok. I was born in
+              Malaysia and now continuing studies in Germany. I&apos;m a
+              hobbyist frontend developer and designer for almost 9 years.
             </p>
             <p>
               I made this website from scratch with{" "}
