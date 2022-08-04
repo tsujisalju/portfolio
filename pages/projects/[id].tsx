@@ -31,14 +31,16 @@ export default function Project({
     img: string;
     width: number;
     height: number;
+    class: string;
     contentHtml: string;
   };
 }) {
   return (
     <Layout>
-      <div className="flex flex-col md:flex-row md:space-x-4 justify-center">
+      <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center">
         <div>
           <Image
+            className="transition duration-500 ease-in-out"
             alt={projectData.title}
             src={projectData.img}
             width={projectData.width}
@@ -48,18 +50,18 @@ export default function Project({
           />
         </div>
         <div>
-          <div className="flex flex-col p-8 space-y-4 bg-black md:w-[500px]">
+          <div className="flex flex-col p-8 space-y-4 bg-black lg:w-[500px]">
             <Link href="/">
               <a className="font-sans">Back to home</a>
             </Link>
-            <div className="flex flex-col space-y-2">
-              <h1 className="font-serif text-5xl md:text-6xl">
+            <div className="flex flex-col space-y-2 mb-4 text-stone-200">
+              <h1 className="font-serif text-5xl lg:text-6xl ">
                 {projectData.title}
               </h1>
               <Date dateString={projectData.date} />
             </div>
             <div
-              className="flex flex-col space-y-4 text-lg"
+              className="flex flex-col space-y-4 text-lg text-stone-200"
               dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
             />
           </div>

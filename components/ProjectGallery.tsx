@@ -22,7 +22,9 @@ export default function ProjectGallery({
             key={id}
             className={
               "flex flex-1 flex-col relative " +
-              (width > height
+              (id === "lumen"
+                ? "md:col-span-2 md:row-span-2"
+                : width > height
                 ? "md:col-span-2"
                 : width < height
                 ? "md:row-span-2"
@@ -44,7 +46,7 @@ export default function ProjectGallery({
                 ></Image>
               </a>
             </Link>
-            <div className="sm:static md:absolute sm:bg-none md:bg-black md:py-2 md:px-4 m-2 rounded">
+            <div className="sm:static md:absolute sm:bg-none md:bg-black md:py-2 md:px-4 m-2 rounded text-stone-200">
               <h1 className="font-serif md:text-2xl sm:text-xl">{title}</h1>
               <Date dateString={date}></Date>
             </div>
