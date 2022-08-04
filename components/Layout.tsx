@@ -26,9 +26,9 @@ export default function Layout({
           height={50}
           placeholder="empty"
         ></Image>
-        <h1 className="text-4xl font-serif">smolpadok</h1>
+        <h1 className="text-4xl font-serif hidden xs:inline">smolpadok</h1>
       </header>
-      <nav className="flex flex-row justify-center space-x-8 py-4">
+      <nav className="flex flex-row justify-center space-x-8 pb-4">
         <Link href={"/"}>
           <a className="transition duration-200 font-sans text-lg text-stone-400 hover:text-stone-200">
             Home
