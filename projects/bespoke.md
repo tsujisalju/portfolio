@@ -2,6 +2,8 @@
 title: "Bespoke"
 date: "2021-10-29"
 img: "/img/projects/bespoke.png"
-width: 1200
-height: 1500
+width: 2400
+height: 3000
 ---
+
+2 out of 4 of the Prequel collection, featuring the textile merchant. This one sells scarves made only of the finest Colovian fur!

@@ -2,6 +2,8 @@
 title: "Canary"
 date: "2022-05-22"
 img: "/img/projects/canary.png"
-width: 1000
-height: 1000
+width: 3000
+height: 3000
 ---
+
+A new study with my new rendering methods. Kind of a [Frontier](/projects/frontier) II.
