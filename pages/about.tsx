@@ -1,4 +1,3 @@
-import { layout } from "@chakra-ui/react";
 import Image from "next/image";
 import Layout from "../components/Layout";
 
@@ -24,12 +23,12 @@ export default function About() {
           </div>
           <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg">
             <h1 className="font-serif text-5xl">Hello, friend!</h1>
-            <p className="font-sans text-stone-200">
+            <p className="font-sans dark:text-stone-200">
               I&apos;m Qayyum, or you can call me smolpadok. I was born in
               Malaysia and now continuing my studies in Germany. I&apos;m a
               hobbyist frontend developer and designer for almost 9 years.
             </p>
-            <p className="font-sans text-stone-200">
+            <p className="font-sans dark:text-stone-200">
               I made this website from scratch with{" "}
               <span className="font-serif">Nextjs</span> and{" "}
               <span className="font-serif">Tailwindcss</span>. I hope you enjoy
@@ -38,7 +37,7 @@ export default function About() {
             <br className="my-4" />
             <br className="my-4" />
             <h1 className="font-serif text-2xl">Socials</h1>
-            <ul className="list-disc list-inside font-sans text-stone-200">
+            <ul className="list-disc list-inside font-sans dark:text-stone-200">
               <li>
                 <a
                   href="https://twitter.com/smolpadok"
@@ -61,11 +60,11 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="container my-8 mx-auto md:px-4 sm:px-2 py-2 bg-stone-800">
+      <div className="container my-8 mx-auto md:px-4 sm:px-2 py-2 dark:bg-stone-800">
         <div className="flex flex-col lg:flex-row justify-center items-center">
           <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg">
             <h1 className="font-serif text-5xl">My experience</h1>
-            <p className="font-sans text-justify text-stone-200">
+            <p className="font-sans text-justify dark:text-stone-200">
               At a young age, I display a passion for programming. My mother
               introduced me to a game making platform called Sploder (now shut
               down). It was fascinating to me at the time that I could make my
@@ -73,7 +72,7 @@ export default function About() {
               Scratch. The ability of creating whatever I put my mind to feels
               like a superpower, and that feeling remained strong since.
             </p>
-            <p className="font-sans text-justify text-stone-200">
+            <p className="font-sans text-justify dark:text-stone-200">
               This passion brings forth to me opportunities to participate in
               game dev and robotics competitions. During middle school, my batch
               pioneered the Robotics Club. Our school was just beginning to
@@ -100,13 +99,13 @@ export default function About() {
       <div className="container mx-auto md:px-4 sm:px-2">
         <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg">
           <h1 className="font-serif text-5xl">So much cat?</h1>
-          <p className="font-sans text-justify text-stone-200">
+          <p className="font-sans text-justify dark:text-stone-200">
             The illustrations I make, describe a world of places I&apos;m
             passionate about, the things I want to do and the kind of person I
             wish to become. They are not tied to a particular story, leaving
             enough room for self-interpretation.
           </p>
-          <p className="font-sans text-justify text-stone-200">
+          <p className="font-sans text-justify dark:text-stone-200">
             I take great lessons from cats, being a person who has pet cats in
             real life. Cats are resilient, loving, intelligent yet whimsical and
             they are more aware of the existence of higher beings, things of

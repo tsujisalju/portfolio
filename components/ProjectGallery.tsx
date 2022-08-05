@@ -31,21 +31,23 @@ export default function ProjectGallery({
                 : "")
             }
           >
-            <Link href={"/projects/" + id}>
-              <a>
-                <Image
-                  id={id}
-                  alt={id}
-                  className="transition duration-400 ease-in-out rounded hover:scale-105"
-                  src={img}
-                  width={width}
-                  height={height}
-                  layout="responsive"
-                  placeholder="blur"
-                  blurDataURL={img.replace(".", "-placeholder.")}
-                ></Image>
-              </a>
-            </Link>
+            <div className="transition duration-400 ease-in-out  hover:scale-[1.03] shadow-sm hover:shadow-lg">
+              <Link href={"/projects/" + id}>
+                <a>
+                  <Image
+                    id={id}
+                    alt={id}
+                    className="rounded"
+                    src={img}
+                    width={width}
+                    height={height}
+                    layout="responsive"
+                    placeholder="blur"
+                    blurDataURL={img.replace(".", "-placeholder.")}
+                  ></Image>
+                </a>
+              </Link>
+            </div>
             <div className="sm:static md:absolute sm:bg-none md:bg-black md:py-2 md:px-4 m-2 rounded text-stone-200">
               <h1 className="font-serif md:text-2xl sm:text-xl">{title}</h1>
               <Date dateString={date}></Date>
