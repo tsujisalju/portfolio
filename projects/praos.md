@@ -6,7 +6,7 @@ width: 3000
 height: 2400
 ---
 
-Proton II.
+_[Proton](/projects/proton)_ II.
 
 I am pushing the limits again. Trying a different perspective, depicting a scene at the peak of the action. Then again, Icarus may flew to close to the sun here.
 

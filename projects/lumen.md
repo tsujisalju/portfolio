@@ -12,4 +12,6 @@ It is the most definitive artwork of Van and her Turkish culture. I am inspired 
 
 At the time I had never felt so alone in my life, and I have been reflecting a lot about myself and what I care about. Van is the embodiment of this inner discovery, which is why she is very special to me. I want to her to feel like a mother at heart, with gentle and loving eyes.
 
+I listened to Angel Lung by Next To Blue and Last Christmas by Wham (San Holo Remix).
+
 _Once in a blue moon, a van cat appears in her caravan, a treasure trove of collectibles from her pilgrimage through the far edges of the Turkey horizon. Will you be on the lookout to find what's in store?_ 🌙
