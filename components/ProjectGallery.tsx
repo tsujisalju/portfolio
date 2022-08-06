@@ -37,7 +37,7 @@ export default function ProjectGallery({
                   <Image
                     id={id}
                     alt={id}
-                    className="rounded"
+                    className="transition duration-400 rounded"
                     src={img}
                     width={width}
                     height={height}
