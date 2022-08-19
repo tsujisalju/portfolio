@@ -5,6 +5,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import Date from "../../components/Date";
 import Image from "next/image";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const projectData = await getProjectData(params?.id as string);
@@ -38,6 +39,7 @@ export default function Project({
 }) {
   const paragraphs = projectData.contentHtml.split("</p>");
   const excerpt = paragraphs[0] + "</p>";
+  const host = useRouter().pathname;
   return (
     <>
       <Head>
@@ -45,8 +47,12 @@ export default function Project({
         <meta name="twitter:site" content="@smolpadok" />
         <meta name="twitter:title" content={projectData.title} />
         <meta name="twitter:description" content={excerpt} />
-        <meta name="twitter:image" content={projectData.img} />
+        <meta
+          name="twitter:image"
+          content={"https://portfolio-smolpadok.vercel.app/" + projectData.img}
+        />
       </Head>
+      {console.log(host)}
       <Layout>
         <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center">
           <div>
