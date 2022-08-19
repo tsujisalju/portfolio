@@ -49,10 +49,9 @@ export default function Project({
         <meta name="twitter:description" content={excerpt} />
         <meta
           name="twitter:image"
-          content={"https://portfolio-smolpadok.vercel.app/" + projectData.img}
+          content={"https://portfolio-smolpadok.vercel.app" + projectData.img}
         />
       </Head>
-      {console.log(host)}
       <Layout>
         <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center">
           <div>
