@@ -27,9 +27,6 @@ export default function Projects({
 }) {
   return (
     <Layout>
-      <div className="flex flex-col items-center space-y-4 py-2">
-        <h1 className="font-serif text-4xl">Each is a story to telle</h1>
-      </div>
       <ProjectGallery allProjectsData={allProjectsData} />
     </Layout>
   );

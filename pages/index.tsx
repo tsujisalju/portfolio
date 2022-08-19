@@ -7,6 +7,7 @@ import Link from "next/link";
 import { getSortedProjectsData } from "../lib/projects";
 import Date from "../components/Date";
 import ProjectGallery from "../components/ProjectGallery";
+import Hero from "../components/Hero";
 
 export const getStaticProps: GetStaticProps = async () => {
   const allProjectsData = getSortedProjectsData();
@@ -31,6 +32,7 @@ export default function Home({
 }) {
   return (
     <Layout>
+      <Hero />
       <ProjectGallery allProjectsData={allProjectsData} />
     </Layout>
   );
