@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 import Layout from "../components/Layout";
 import SkillBar from "../components/SkillBar";
 
@@ -9,11 +10,17 @@ const styles = {
 } as const;
 
 export default function About() {
+  const [nameToggle, setNameToggle] = React.useState<Boolean>(false);
+
+  function HandleNameToggle(value: Boolean) {
+    setNameToggle(value);
+  }
+
   return (
     <Layout>
       <div className="container mx-auto md:px-4 sm:px-2">
         <div className="flex flex-col lg:flex-row justify-center">
-          <div className="inline-block text-center space-y-4 p-4">
+          <div className="inline-block text-center space-y-4 pb-4">
             <Image
               className="transition duration-400"
               alt="a turkish van cat named Carina"
@@ -59,6 +66,37 @@ export default function About() {
         className="flex flex-1 bg-cover bg-center bg-fixed saturate-50 h-[400px] my-8"
         style={styles.nurtureImage}
       ></div>
+      <div className="flex flex-col justify-center items-center py-8">
+        <div className="flex flex-row justify-center pb-6">
+          <p
+            className={
+              "font-serif text-6xl md:text-8xl " +
+              (!nameToggle ? "dark:text-stone-200" : "dark:text-stone-700")
+            }
+            onMouseEnter={() => HandleNameToggle(false)}
+          >
+            smol
+          </p>
+          <p
+            className={
+              "font-serif text-6xl md:text-8xl " +
+              (nameToggle ? "dark:text-stone-200" : "dark:text-stone-700")
+            }
+            onMouseEnter={() => HandleNameToggle(true)}
+          >
+            padok
+          </p>
+        </div>
+        <div className="container mx-auto text-center">
+          <p className={"font-sans text-lg " + (nameToggle && "hidden")}>
+            When I was a kid I had always been a little smaller in size than my
+            peers. Even today, but only a minor difference.
+          </p>
+          <p className={"font-sans text-lg " + (!nameToggle && "hidden")}>
+            Padok is a Malay slang for padu, which means powerful.
+          </p>
+        </div>
+      </div>
       <div className="container mx-auto md:px-4 sm:px-2">
         <div className="flex flex-col lg:flex-row justify-center items-center p-8">
           <div className="flex flex-col lg:w-3/4 p-8 space-y-5 text-lg">

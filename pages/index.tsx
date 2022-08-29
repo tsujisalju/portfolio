@@ -1,9 +1,5 @@
 import type { GetStaticProps, NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
 import Layout from "../components/Layout";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
 import { getSortedProjectsData } from "../lib/projects";
 import Date from "../components/Date";
 import ProjectGallery from "../components/ProjectGallery";
