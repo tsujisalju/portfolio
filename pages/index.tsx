@@ -4,6 +4,7 @@ import { getSortedProjectsData } from "../lib/projects";
 import Date from "../components/Date";
 import ProjectGallery from "../components/ProjectGallery";
 import Hero from "../components/Hero";
+import React from "react";
 
 export const getStaticProps: GetStaticProps = async () => {
   const allProjectsData = getSortedProjectsData();
@@ -26,6 +27,9 @@ export default function Home({
     height: number;
   }[];
 }) {
+  React.useEffect(() => {
+    document.body.style.backgroundImage = "";
+  }, []);
   return (
     <Layout>
       <Hero />

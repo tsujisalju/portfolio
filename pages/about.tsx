@@ -16,6 +16,9 @@ export default function About() {
     setNameToggle(value);
   }
 
+  React.useEffect(() => {
+    document.body.style.backgroundImage = "";
+  }, []);
   return (
     <Layout>
       <div className="md:container md:mx-auto px-4">

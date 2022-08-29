@@ -6,6 +6,7 @@ import Date from "../../components/Date";
 import Image from "next/image";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import React from "react";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const projectData = await getProjectData(params?.id as string);
@@ -40,6 +41,11 @@ export default function Project({
   const paragraphs = projectData.contentHtml.split("</p>");
   const excerpt = paragraphs[0] + "</p>";
   const host = useRouter().pathname;
+  React.useEffect(() => {
+    document.body.style.backgroundImage = `url(${projectData.img})`;
+    document.body.className =
+      "bg-fixed bg-center bg-cover backdrop-blur-lg bg-blend-overlay";
+  }, [projectData.img]);
   return (
     <>
       <Head>
@@ -73,7 +79,7 @@ export default function Project({
             />
           </div>
           <div>
-            <div className="flex flex-col p-8 space-y-4 bg-black lg:w-[500px]">
+            <div className="flex flex-col p-8 space-y-4 lg:w-[500px]">
               <Link href="/">
                 <a className="font-sans">Back to home</a>
               </Link>
