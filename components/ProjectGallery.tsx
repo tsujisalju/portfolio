@@ -49,7 +49,7 @@ export default function ProjectGallery({
               </Link>
             </div>
             <div className="sm:static md:absolute sm:bg-none md:bg-black md:py-2 md:px-4 m-2 rounded text-stone-200">
-              <h1 className="font-serif md:text-2xl sm:text-xl">{title}</h1>
+              <h1 className="font-serif md:text-2xl text-xl">{title}</h1>
               <Date dateString={date}></Date>
             </div>
           </div>

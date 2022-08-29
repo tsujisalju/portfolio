@@ -18,7 +18,7 @@ export default function About() {
 
   return (
     <Layout>
-      <div className="container mx-auto md:px-4 sm:px-2">
+      <div className="md:container md:mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-center">
           <div className="inline-block text-center space-y-4 pb-4">
             <Image
@@ -87,7 +87,7 @@ export default function About() {
             padok
           </p>
         </div>
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto text-center h-12">
           <p className={"font-sans text-lg " + (nameToggle && "hidden")}>
             When I was a kid I had always been a little smaller in size than my
             peers. Even today, but only a minor difference.
@@ -97,8 +97,8 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="container mx-auto md:px-4 sm:px-2">
-        <div className="flex flex-col lg:flex-row justify-center items-center p-8">
+      <div className="md:container md:mx-auto md:px-4 sm:px-2">
+        <div className="flex flex-col lg:flex-row justify-center items-center p-4 md:p-8">
           <div className="flex flex-col lg:w-3/4 p-8 space-y-5 text-lg">
             <h1 className="font-serif text-5xl">Tools of the Trade</h1>
             <br></br>
@@ -113,7 +113,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto md:px-4 sm:px-2 dark:bg-stone-800">
+      <div className="md:container md:mx-auto my-auto md:px-4 sm:px-2 dark:bg-stone-800">
         <div className="flex flex-col lg:flex-row justify-center items-center p-8">
           <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg">
             <h1 className="font-serif text-6xl">Cats?</h1>
