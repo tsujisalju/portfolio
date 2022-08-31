@@ -33,7 +33,7 @@ export default function About() {
               placeholder={"empty"}
               blurDataURL={"/img/about/profile-placeholder.png"}
             ></Image>
-            <h1 className="text-stone-400">
+            <h1 className="">
               <span className="font-serif">Van Carina</span>, a turkish van
               merchant/civil engineer.
             </h1>
@@ -74,7 +74,9 @@ export default function About() {
           <p
             className={
               "font-serif text-6xl md:text-8xl " +
-              (!nameToggle ? "dark:text-stone-200" : "dark:text-stone-700")
+              (!nameToggle
+                ? "text-stone-800 dark:text-stone-200"
+                : "text-stone-400 dark:text-stone-700")
             }
             onMouseEnter={() => HandleNameToggle(false)}
           >
@@ -83,7 +85,9 @@ export default function About() {
           <p
             className={
               "font-serif text-6xl md:text-8xl " +
-              (nameToggle ? "dark:text-stone-200" : "dark:text-stone-700")
+              (nameToggle
+                ? "text-stone-800 dark:text-stone-200"
+                : "text-stone-400 dark:text-stone-700")
             }
             onMouseEnter={() => HandleNameToggle(true)}
           >
@@ -116,17 +120,17 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="md:container md:mx-auto my-auto md:px-4 sm:px-2 dark:bg-stone-800">
+      <div className="md:container md:mx-auto my-auto md:px-4 sm:px-2 bg-stone-300 dark:bg-stone-800">
         <div className="flex flex-col lg:flex-row justify-center items-center p-8">
           <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg">
             <h1 className="font-serif text-6xl">Cats?</h1>
-            <p className="font-sans text-justify dark:text-stone-200">
+            <p className="font-sans text-justify">
               The illustrations I make, describe a world of places I&apos;m
               passionate about, the things I want to do and the kind of person I
               wish to become. They are not tied to a particular story, leaving
               enough room for self-interpretation.
             </p>
-            <p className="font-sans text-justify dark:text-stone-200">
+            <p className="font-sans text-justif">
               I take great lessons from cats, being a person who has pet cats in
               real life. Cats are resilient, loving, intelligent yet whimsical
               and they are more aware of the existence of higher beings, things
@@ -146,7 +150,7 @@ export default function About() {
               height={550}
               placeholder={"empty"}
             ></Image>
-            <h1 className="text-stone-400">
+            <h1 className="">
               Khajiit today makes <span className="font-serif">soft wares</span>
               .
             </h1>

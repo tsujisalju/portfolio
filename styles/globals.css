@@ -24,8 +24,11 @@
     color-scheme: dark;
   }
   body {
-    transition-duration: 400ms;
     color: #e7e5e4;
     background: #1c1917;
   }
+}
+
+body {
+  transition-duration: 400ms;
 }

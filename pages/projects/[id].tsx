@@ -83,14 +83,14 @@ export default function Project({
               <Link href="/">
                 <a className="font-sans">Back to home</a>
               </Link>
-              <div className="flex flex-col space-y-2 mb-4 text-stone-200">
+              <div className="flex flex-col space-y-2 mb-4">
                 <h1 className="font-serif text-5xl lg:text-6xl ">
                   {projectData.title}
                 </h1>
                 <Date dateString={projectData.date} />
               </div>
               <div
-                className="flex flex-col space-y-4 text-lg text-stone-200"
+                className="flex flex-col space-y-4 text-lg"
                 dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
               />
             </div>
