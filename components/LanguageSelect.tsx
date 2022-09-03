@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { Listbox } from "@headlessui/react";
+import { Menu, Transition } from "@headlessui/react";
+import { SUPPORTED_LOCALES, LOCALE_LABEL } from "../constants/locales";
+import { useLocale } from "../src/useLocale";
+import { useRouter } from "next/router";
 
 interface language {
   id: number;
@@ -13,37 +16,45 @@ const languages: language[] = [
   { id: 3, name: "MY", unavailable: false },
 ];
 
+function getShortName(locale: string): string {
+  return locale.split("-")[0] as string;
+}
+
 export default function LanguageSelect() {
-  const [selectedLang, setSelectedLang] = useState(languages[0]);
+  const { locale } = useLocale();
+  const router = useRouter();
+
+  async function HandleSelectLanguage(newLocale: string) {
+    if (newLocale === locale) {
+      return;
+    }
+    await router.replace(router.asPath, router.asPath, { locale: newLocale });
+  }
+
   return (
-    <Listbox as={"div"} value={selectedLang} onChange={setSelectedLang}>
-      <Listbox.Button className="text-left w-24 font-sans bg-stone-800 text-lg py-1 px-4 rounded-lg">
-        {selectedLang.name}
-      </Listbox.Button>
-      <Listbox.Options
+    <Menu as="div" className={"relative w-20"}>
+      <Menu.Button
+        as="button"
+        className="inline-flex w-full justify-center rounded-lg bg-stone-800 px-2 py-1 text-lg font-sans hover:bg-opacity-50"
+      >
+        {getShortName(locale)}
+      </Menu.Button>
+      <Menu.Items
         className={
-          "absolute w-24 right-6 text-lg bg-stone-700 p-2 mt-2 rounded-md space-y-1"
+          "absolute right-0 mt-2 p-2 w-[200px] space-y-1 bg-stone-800 rounded-lg text-left"
         }
       >
-        {languages.map((lang) => (
-          <Listbox.Option
-            key={lang.id}
-            value={lang}
-            disabled={lang.unavailable}
-          >
-            {({ active, selected }) => (
-              <li
-                className={
-                  "py-1 px-4 rounded-md " +
-                  `${active ? "bg-stone-600" : "bg-transparent"}`
-                }
-              >
-                {lang.name}
-              </li>
-            )}
-          </Listbox.Option>
+        {SUPPORTED_LOCALES.map((lang) => (
+          <Menu.Item key={lang}>
+            <div
+              className="font-sans text-lg py-1 px-2 hover:bg-stone-700 rounded-md"
+              onClick={() => HandleSelectLanguage(lang)}
+            >
+              {LOCALE_LABEL[lang]}
+            </div>
+          </Menu.Item>
         ))}
-      </Listbox.Options>
-    </Listbox>
+      </Menu.Items>
+    </Menu>
   );
 }

@@ -7,13 +7,13 @@ import "../styles/globals.css";
 import nookies from "nookies";
 import EN_US_LOCALE_MODULE from "../lang/en-US.json";
 
-type LocalModule = Record<string, any>;
+type LocaleModule = Record<string, any>;
 
 function MyApp({ Component, pageProps }: AppProps) {
   //set language
   const { locale, defaultLocale } = useLocale();
   const [localeModule, setLocaleModule] =
-    React.useState<LocalModule>(EN_US_LOCALE_MODULE);
+    React.useState<LocaleModule>(EN_US_LOCALE_MODULE);
   const currentLocale = locale ?? "en-US";
 
   React.useEffect(() => {
@@ -29,7 +29,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       setLocaleModule(dynamicLocaleModule["default"]);
     });
   }, [currentLocale]);
-  console.log(currentLocale);
   return (
     <IntlProvider
       defaultLocale={defaultLocale}

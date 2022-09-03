@@ -70,7 +70,7 @@ export default function Layout({
             </nav>
           </div>
           <div className="hidden md:flex flex-1 justify-end items-center p-6 pb-8">
-            {/*<LanguageSelect />*/}
+            <LanguageSelect />
           </div>
         </div>
       </header>
