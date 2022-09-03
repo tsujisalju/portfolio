@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { ReactNode } from "react";
+import LanguageSelect from "./LanguageSelect";
 
 export default function Layout({
   children,
@@ -18,50 +19,62 @@ export default function Layout({
         <link rel="icon" href="/img/logo-favicon.png" />
       </Head>
 
-      <header className="flex flex-row justify-center items-center">
-        <Link href={"/"}>
-          <a className="flex flex-row justify-center items-center p-4 space-x-4">
-            <div className="hidden dark:block">
-              <Image
-                alt="smolpadok logo"
-                src="/img/logo-light.png"
-                width={50}
-                height={50}
-                placeholder="empty"
-              ></Image>
-            </div>
-            <div className="block dark:hidden">
-              <Image
-                alt="smolpadok logo"
-                src="/img/logo-dark.png"
-                width={50}
-                height={50}
-                placeholder="empty"
-              ></Image>
-            </div>
-            <h1 className="text-4xl font-serif hidden xs:inline dark:text-stone-200">
-              smolpadok
-            </h1>
-          </a>
-        </Link>
+      <header>
+        <div className="flex flex-row">
+          <div className="flex flex-col flex-1 md:flex-row p-6 pb-8 md:space-x-12">
+            <Link href={"/"}>
+              <a>
+                <div className="flex flex-row justify-center md:justify-start items-center space-x-4">
+                  <div className="md:self-center hidden dark:flex pb-2 md:pb-0">
+                    <Image
+                      alt="smolpadok logo"
+                      src="/img/logo-light.png"
+                      width={40}
+                      height={40}
+                      placeholder="empty"
+                      layout="fixed"
+                    ></Image>
+                  </div>
+                  <div className="flex md:self-center dark:hidden pb-2 md:pb-0">
+                    <Image
+                      alt="smolpadok logo"
+                      src="/img/logo-dark.png"
+                      width={40}
+                      height={40}
+                      placeholder="empty"
+                      layout="fixed"
+                    ></Image>
+                  </div>
+                  <h1 className="text-4xl font-serif hidden md:inline">
+                    smolpadok
+                  </h1>
+                </div>
+              </a>
+            </Link>
+            <nav className="flex flex-row self-center space-x-8">
+              <Link href={"/"}>
+                <a className="transition duration-200 font-sans text-lg text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-200 ">
+                  Home
+                </a>
+              </Link>
+              <Link href={""}>
+                <a className="transition duration-200 font-sans text-lg text-stone-400 dark:text-stone-600">
+                  Almanac
+                </a>
+              </Link>
+              <Link href={"/about"}>
+                <a className="transition duration-200 font-sans text-lg text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-200">
+                  About
+                </a>
+              </Link>
+            </nav>
+          </div>
+          <div className="hidden md:flex flex-1 justify-end items-center p-6 pb-8">
+            {/*<LanguageSelect />*/}
+          </div>
+        </div>
       </header>
-      <nav className="flex flex-row justify-center space-x-8 pb-8">
-        <Link href={"/"}>
-          <a className="transition duration-200 font-sans text-lg text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-200 ">
-            Home
-          </a>
-        </Link>
-        <Link href={""}>
-          <a className="transition duration-200 font-sans text-lg text-stone-400 dark:text-stone-600">
-            Almanac
-          </a>
-        </Link>
-        <Link href={"/about"}>
-          <a className="transition duration-200 font-sans text-lg text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-200">
-            About
-          </a>
-        </Link>
-      </nav>
+
       <main className="">{children}</main>
 
       <footer className=""></footer>
