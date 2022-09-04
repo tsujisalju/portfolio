@@ -2,10 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { ReactNode } from "react";
-import SelectLanguage from "./SelectLanguage";
+import LanguageSelect from "./LanguageSelect";
 import { useIntl } from "react-intl";
 import { intlFormat } from "date-fns";
-import SelectTheme from "./SelectTheme";
 
 export default function Layout({
   children,
@@ -73,9 +72,8 @@ export default function Layout({
               </Link>
             </nav>
           </div>
-          <div className="hidden md:flex flex-row flex-1 justify-end items-center p-6 pb-8 space-x-2">
-            <SelectLanguage />
-            <SelectTheme />
+          <div className="hidden md:flex flex-1 justify-end items-center p-6 pb-8">
+            <LanguageSelect />
           </div>
         </div>
       </header>
