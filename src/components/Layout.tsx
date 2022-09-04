@@ -5,6 +5,7 @@ import React, { ReactNode } from "react";
 import SelectLanguage from "./SelectLanguage";
 import { useIntl } from "react-intl";
 import { intlFormat } from "date-fns";
+import SelectTheme from "./SelectTheme";
 
 export default function Layout({
   children,
@@ -72,8 +73,9 @@ export default function Layout({
               </Link>
             </nav>
           </div>
-          <div className="hidden md:flex flex-1 justify-end items-center p-6 pb-8">
+          <div className="hidden md:flex flex-row space-x-2 flex-1 justify-end items-center p-6 pb-8">
             <SelectLanguage />
+            <SelectTheme />
           </div>
         </div>
       </header>

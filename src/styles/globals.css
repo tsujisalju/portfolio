@@ -9,26 +9,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: light;
-  }
-  body {
-    color: #1c1917;
-    background: #e7e5e4;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: #e7e5e4;
-    background: #1c1917;
-  }
-}
-
 :root {
   --background: #e7e5e4;
   --foreground: #1c1917;
