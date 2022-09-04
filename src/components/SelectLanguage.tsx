@@ -4,17 +4,11 @@ import { SUPPORTED_LOCALES, LOCALE_LABEL } from "../constants/locales";
 import { useLocale } from "../hooks/useLocale";
 import { useRouter } from "next/router";
 
-interface language {
-  id: number;
-  name: string;
-  unavailable: boolean;
-}
-
 function getShortName(locale: string): string {
   return locale.split("-")[0].toUpperCase() as string;
 }
 
-export default function LanguageSelect() {
+export default function SelectLanguage() {
   const { locale } = useLocale();
   const router = useRouter();
 
@@ -35,7 +29,7 @@ export default function LanguageSelect() {
       </Menu.Button>
       <Menu.Items
         className={
-          "absolute right-0 mt-2 p-2 w-[200px] space-y-1 bg-stone-100 dark:bg-stone-800 rounded-lg text-left"
+          "absolute right-0 mt-2 p-2 w-[200px] space-y-1 bg-stone-200 dark:bg-stone-800 rounded-lg text-left"
         }
       >
         {SUPPORTED_LOCALES.map((lang) => (

@@ -29,6 +29,16 @@
   }
 }
 
+:root {
+  --background: #e7e5e4;
+  --foreground: #1c1917;
+}
+
+[data-theme] {
+  --background: #1c1917;
+  --foreground: #e7e5e4;
+}
+
 body {
   transition-duration: 400ms;
 }
