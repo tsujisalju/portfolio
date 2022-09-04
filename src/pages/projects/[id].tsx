@@ -78,7 +78,7 @@ export default function Project({
               width={projectData.width}
               height={projectData.height}
               placeholder="blur"
-              blurDataURL={projectData.img.replace(".", "-placeholder.")}
+              blurDataURL={projectData.img.replace(".jpg", "-placeholder.png")}
             />
           </div>
           <div>

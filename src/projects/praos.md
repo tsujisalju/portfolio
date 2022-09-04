@@ -1,7 +1,7 @@
 ---
 title: "Praos"
 date: "2021-12-19"
-img: "/img/projects/praos.png"
+img: "/img/projects/praos.jpg"
 width: 3000
 height: 2400
 ---

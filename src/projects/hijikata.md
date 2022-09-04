@@ -1,7 +1,7 @@
 ---
 title: "Hijikata"
 date: "2022-04-14"
-img: "/img/projects/chocolate-fanart.png"
+img: "/img/projects/chocolate-fanart.jpg"
 width: 2000
 height: 2000
 ---

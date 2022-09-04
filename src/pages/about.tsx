@@ -6,7 +6,7 @@ import { useIntl } from "react-intl";
 
 const styles = {
   nurtureImage: {
-    backgroundImage: "url(/img/about/nurture-2.png)",
+    backgroundImage: "url(/img/about/nurture-2.jpg)",
   },
 } as const;
 
@@ -95,18 +95,23 @@ export default function About() {
         </div>
         <div className="container mx-auto text-center h-12">
           <p className={"font-sans text-lg " + (nameToggle && "hidden")}>
-            When I was a kid I had always been a little smaller in size than my
-            peers. Even today, but only a minor difference.
+            {intl.formatMessage({
+              id: "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference.",
+            })}
           </p>
           <p className={"font-sans text-lg " + (!nameToggle && "hidden")}>
-            Padok is a Malay slang for padu, which means powerful.
+            {intl.formatMessage({
+              id: "Padok is a Malay slang for padu, which means powerful.",
+            })}
           </p>
         </div>
       </div>
       <div className="md:container md:mx-auto md:px-4 sm:px-2">
         <div className="flex flex-col lg:flex-row justify-center items-center p-4 md:p-8">
           <div className="flex flex-col lg:w-3/4 p-8 space-y-5 text-lg">
-            <h1 className="font-serif text-5xl">Tools of the Trade</h1>
+            <h1 className="font-serif text-5xl">
+              {intl.formatMessage({ id: "Tools of the Trade" })}
+            </h1>
             <br></br>
             <SkillBar title="Visual Studio Code" width={"70%"} />
             <SkillBar title="Next.js" width={"45%"} />
@@ -122,7 +127,9 @@ export default function About() {
       <div className="md:container md:mx-auto my-auto md:px-4 sm:px-2 bg-stone-300 dark:bg-stone-800">
         <div className="flex flex-col lg:flex-row justify-center items-center p-8">
           <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg">
-            <h1 className="font-serif text-6xl">Cats?</h1>
+            <h1 className="font-serif text-6xl">
+              {intl.formatMessage({ id: "Cats?" })}
+            </h1>
             <p className="font-sans text-justify">
               The illustrations I make, describe a world of places I&apos;m
               passionate about, the things I want to do and the kind of person I

@@ -1,7 +1,7 @@
 ---
 title: "Enterprise"
 date: "2022-08-28"
-img: "/img/projects/enterprise.png"
+img: "/img/projects/enterprise.jpg"
 width: 3840
 height: 2160
 ---

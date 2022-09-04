@@ -1,7 +1,7 @@
 ---
 title: "Mithril"
 date: "2021-05-16"
-img: "/img/projects/mithril.png"
+img: "/img/projects/mithril.jpg"
 width: 2400
 height: 3000
 ---

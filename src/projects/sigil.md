@@ -1,7 +1,7 @@
 ---
 title: "Sigil"
 date: "2022-01-01"
-img: "/img/projects/sigil.png"
+img: "/img/projects/sigil.jpg"
 width: 1200
 height: 1500
 ---

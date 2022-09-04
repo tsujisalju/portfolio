@@ -1,7 +1,7 @@
 ---
 title: "Lumen"
 date: "2021-04-23"
-img: "/img/projects/lumen.png"
+img: "/img/projects/lumen.jpg"
 width: 2400
 height: 3000
 ---

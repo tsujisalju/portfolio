@@ -1,7 +1,7 @@
 ---
 title: "Runic"
 date: "2022-05-15"
-img: "/img/projects/runic.png"
+img: "/img/projects/runic.jpg"
 width: 2400
 height: 3000
 ---

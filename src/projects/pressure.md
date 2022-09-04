@@ -1,7 +1,7 @@
 ---
 title: "Pressure"
 date: "2022-04-10"
-img: "/img/projects/pressure.png"
+img: "/img/projects/pressure.jpg"
 width: 2400
 height: 3000
 ---

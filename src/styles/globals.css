@@ -15,10 +15,10 @@
 }
 
 [data-theme] {
-  --background: #1c1917;
+  --background: #292524;
   --foreground: #e7e5e4;
 }
 
 body {
-  transition-duration: 400ms;
+  transition-duration: 200ms;
 }

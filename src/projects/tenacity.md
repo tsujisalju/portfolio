@@ -1,7 +1,7 @@
 ---
 title: "Tenacity"
 date: "2022-07-29"
-img: "/img/projects/tenacity.png"
+img: "/img/projects/tenacity.jpg"
 width: 2400
 height: 3000
 ---

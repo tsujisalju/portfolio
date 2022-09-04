@@ -1,7 +1,7 @@
 ---
 title: "Tether"
 date: "2021-05-14"
-img: "/img/projects/tether.png"
+img: "/img/projects/tether.jpg"
 width: 3000
 height: 2400
 ---

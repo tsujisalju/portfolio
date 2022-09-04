@@ -1,7 +1,7 @@
 ---
 title: "Bespoke"
 date: "2021-10-29"
-img: "/img/projects/bespoke.png"
+img: "/img/projects/bespoke.jpg"
 width: 2400
 height: 3000
 ---

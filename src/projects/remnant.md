@@ -1,7 +1,7 @@
 ---
 title: "Remnant"
 date: "2022-07-24"
-img: "/img/projects/remnant.png"
+img: "/img/projects/remnant.jpg"
 width: 3000
 height: 4308
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Canary"
 date: "2022-05-22"
-img: "/img/projects/canary.png"
+img: "/img/projects/canary.jpg"
 width: 3000
 height: 3000
 ---

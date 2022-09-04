@@ -1,7 +1,7 @@
 ---
 title: "Bittersweet"
 date: "2021-09-02"
-img: "/img/projects/bittersweet.png"
+img: "/img/projects/bittersweet.jpg"
 width: 2400
 height: 3000
 ---

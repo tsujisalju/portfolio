@@ -1,7 +1,7 @@
 ---
 title: "Kryos"
 date: "2022-07-16"
-img: "/img/projects/kryos.png"
+img: "/img/projects/kryos.jpg"
 width: 2400
 height: 3000
 ---

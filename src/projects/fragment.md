@@ -1,7 +1,7 @@
 ---
 title: "Fragment"
 date: "2022-08-27"
-img: "/img/projects/fragment.png"
+img: "/img/projects/fragment.jpg"
 width: 3000
 height: 2000
 ---

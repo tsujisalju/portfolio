@@ -1,7 +1,7 @@
 ---
 title: "Conclave"
 date: "2021-10-25"
-img: "/img/projects/conclave.png"
+img: "/img/projects/conclave.jpg"
 width: 4000
 height: 2000
 ---

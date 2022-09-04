@@ -1,7 +1,7 @@
 ---
 title: "Frontier"
 date: "2021-06-15"
-img: "/img/projects/frontier.png"
+img: "/img/projects/frontier.jpg"
 width: 2000
 height: 2000
 ---

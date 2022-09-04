@@ -1,7 +1,7 @@
 ---
 title: "Vapor"
 date: "2021-07-10"
-img: "/img/projects/vapor.png"
+img: "/img/projects/vapor.jpg"
 width: 2400
 height: 3000
 ---

@@ -43,7 +43,7 @@ export default function ProjectGallery({
                     height={height}
                     layout="responsive"
                     placeholder="blur"
-                    blurDataURL={img.replace(".", "-placeholder.")}
+                    blurDataURL={img.replace(".jpg", "-placeholder.png")}
                   ></Image>
                 </a>
               </Link>

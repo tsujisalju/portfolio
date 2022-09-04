@@ -1,7 +1,7 @@
 ---
 title: "Nightingale"
 date: "2021-07-23"
-img: "/img/projects/nightingale.png"
+img: "/img/projects/nightingale.jpg"
 width: 2400
 height: 3000
 ---

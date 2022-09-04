@@ -1,7 +1,7 @@
 ---
 title: "Ultimatum"
 date: "2022-06-26"
-img: "/img/projects/ultimatum.png"
+img: "/img/projects/ultimatum.jpg"
 width: 3000
 height: 1000
 ---

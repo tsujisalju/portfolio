@@ -1,7 +1,7 @@
 ---
 title: "Geiger"
 date: "2020-10-27"
-img: "/img/projects/geiger.png"
+img: "/img/projects/geiger.jpg"
 width: 2400
 height: 3000
 ---

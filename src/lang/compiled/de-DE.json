@@ -17,6 +17,18 @@
       "value": "Schon in jungen Jahren habe ich an allem herumgebastelt, was mir in den Sinn kam. Ich war fasziniert von der Idee, mit der Kraft der Programmierung etwas zu erschaffen, und diese Leidenschaft ist bis heute ungebrochen. Ich habe mich in verschiedenen Hobbyprojekten in den Bereichen Spieleentwicklung, Webdesign und Inhaltserstellung versucht. Derzeit arbeite ich als Frontend-Entwickler und Designer für Minswap DEX auf der Cardano-Blockchain. In meiner Freizeit zeichne ich gerne und spiele Rhythmusspiele."
     }
   ],
+  "Cats?": [
+    {
+      "type": 0,
+      "value": "Katzen?"
+    }
+  ],
+  "Dark": [
+    {
+      "type": 0,
+      "value": "Dunkel"
+    }
+  ],
   "Each one is a story to tell. Discover one and find out what's in store!": [
     {
       "type": 0,
@@ -51,6 +63,30 @@
     {
       "type": 0,
       "value": "Ich heiße Qayyum, aber Sie können mich smolpadok nennen. Ich wurde in Malaysia geboren und studiere jetzt in Deutschland. Ich bin ein Hobby-Frontend-Entwickler und Designer für fast 9 Jahre."
+    }
+  ],
+  "Light": [
+    {
+      "type": 0,
+      "value": "Hell"
+    }
+  ],
+  "Padok is a Malay slang for padu, which means powerful.": [
+    {
+      "type": 0,
+      "value": "Padok ist ein malaiischer Slang für Padu, was so viel wie mächtig bedeutet."
+    }
+  ],
+  "Tools of the Trade": [
+    {
+      "type": 0,
+      "value": "Werkzeuge des Handels"
+    }
+  ],
+  "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference.": [
+    {
+      "type": 0,
+      "value": "Als Kind war ich immer ein wenig kleiner als meine Altersgenossen. Auch heute noch, aber nur ein kleiner Unterschied."
     }
   ],
   "a turkish van merchant/civil engineer.": [

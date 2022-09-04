@@ -1,7 +1,7 @@
 ---
 title: "Defiant"
 date: "2021-11-30"
-img: "/img/projects/defiant.png"
+img: "/img/projects/defiant.jpg"
 width: 1920
 height: 1080
 ---

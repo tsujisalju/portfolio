@@ -1,7 +1,7 @@
 ---
 title: "Solace"
 date: "2022-03-27"
-img: "/img/projects/solace.png"
+img: "/img/projects/solace.jpg"
 width: 2400
 height: 3000
 ---

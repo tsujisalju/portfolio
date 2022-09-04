@@ -1,7 +1,7 @@
 ---
 title: "Atlas"
 date: "2022-01-22"
-img: "/img/projects/atlas.png"
+img: "/img/projects/atlas.jpg"
 width: 1920
 height: 1080
 ---

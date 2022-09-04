@@ -1,7 +1,7 @@
 ---
 title: "Farad"
 date: "2020-11-11"
-img: "/img/projects/farad.png"
+img: "/img/projects/farad.jpg"
 width: 2400
 height: 3000
 ---

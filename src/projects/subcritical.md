@@ -1,7 +1,7 @@
 ---
 title: "Subcritical"
 date: "2021-07-25"
-img: "/img/projects/subcritical.png"
+img: "/img/projects/subcritical.jpg"
 width: 3000
 height: 3000
 ---
