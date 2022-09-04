@@ -10,12 +10,6 @@ interface language {
   unavailable: boolean;
 }
 
-const languages: language[] = [
-  { id: 1, name: "ENG", unavailable: false },
-  { id: 2, name: "DE", unavailable: false },
-  { id: 3, name: "MY", unavailable: false },
-];
-
 function getShortName(locale: string): string {
   return locale.split("-")[0].toUpperCase() as string;
 }
