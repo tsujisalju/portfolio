@@ -28,7 +28,7 @@ export default function Layout({
           <div className="flex flex-col flex-1 md:flex-row p-6 pb-8 md:space-x-12">
             <Link href={"/"}>
               <a>
-                <div className="flex flex-row justify-center md:justify-start items-center space-x-4">
+                <div className="flex flex-row justify-center md:justify-start items-center space-x-4 -ml-4 dark:ml-0">
                   <div className="md:self-center hidden dark:flex pb-2 md:pb-0">
                     <Image
                       alt="smolpadok logo"
