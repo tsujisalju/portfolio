@@ -19,6 +19,7 @@ export default function About() {
 
   React.useEffect(() => {
     document.body.style.backgroundImage = "";
+    document.body.className = "";
   }, []);
   return (
     <Layout>

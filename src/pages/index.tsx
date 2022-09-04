@@ -29,6 +29,7 @@ export default function Home({
 }) {
   React.useEffect(() => {
     document.body.style.backgroundImage = "";
+    document.body.className = "";
   }, []);
   return (
     <Layout>

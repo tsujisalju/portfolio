@@ -7,7 +7,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
-import { SUPPORTED_LOCALES } from "../../constants/locales";
+import { useTheme } from "next-themes";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const projectData = await getProjectData(params?.id as string);
@@ -41,12 +41,14 @@ export default function Project({
 }) {
   const paragraphs = projectData.contentHtml.split("</p>");
   const excerpt = paragraphs[0] + "</p>";
-  const host = useRouter().pathname;
+  const { theme } = useTheme();
+
   React.useEffect(() => {
     document.body.style.backgroundImage = `url(${projectData.img})`;
     document.body.className =
+      (theme === "light" ? "bg-stone-100 " : "bg-stone-800 ") +
       "bg-fixed bg-center bg-cover backdrop-blur-lg bg-blend-overlay";
-  }, [projectData.img]);
+  }, [projectData.img, theme]);
   return (
     <>
       <Head>
