@@ -29,19 +29,19 @@ export default function LanguageSelect() {
     <Menu as="div" className={"relative w-20"}>
       <Menu.Button
         as="button"
-        className="inline-flex w-full justify-center rounded-lg bg-stone-800 px-2 py-1 text-lg font-sans hover:bg-opacity-50"
+        className="inline-flex w-full justify-center rounded-lg bg-stone-100 dark:bg-stone-800 px-2 py-1 text-lg font-sans hover:bg-opacity-50"
       >
         {getShortName(locale)}
       </Menu.Button>
       <Menu.Items
         className={
-          "absolute right-0 mt-2 p-2 w-[200px] space-y-1 bg-stone-800 rounded-lg text-left"
+          "absolute right-0 mt-2 p-2 w-[200px] space-y-1 bg-stone-100 dark:bg-stone-800 rounded-lg text-left"
         }
       >
         {SUPPORTED_LOCALES.map((lang) => (
           <Menu.Item key={lang}>
             <div
-              className="font-sans text-lg py-1 px-2 hover:bg-stone-700 rounded-md"
+              className="font-sans text-lg py-1 px-2 hover:bg-stone-200 hover:dark:bg-stone-700 rounded-md"
               onClick={() => HandleSelectLanguage(lang)}
             >
               {LOCALE_LABEL[lang]}
