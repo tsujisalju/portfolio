@@ -57,12 +57,17 @@ export default function SelectLanguage() {
         >
           {SUPPORTED_LOCALES.map((lang) => (
             <Menu.Item key={lang}>
-              <div
-                className="font-sans transition transition-75 text-lg py-1 px-2 text-left hover:bg-stone-200 hover:dark:bg-stone-700 rounded-md"
-                onClick={() => HandleSelectLanguage(lang)}
-              >
-                {LOCALE_LABEL[lang]}
-              </div>
+              {({ active }) => (
+                <div
+                  className={
+                    "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
+                    (active && " bg-stone-200 dark:bg-stone-700")
+                  }
+                  onClick={() => HandleSelectLanguage(lang)}
+                >
+                  {LOCALE_LABEL[lang]}
+                </div>
+              )}
             </Menu.Item>
           ))}
         </Menu.Items>

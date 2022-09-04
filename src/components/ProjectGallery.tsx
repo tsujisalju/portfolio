@@ -39,8 +39,8 @@ export default function ProjectGallery({
                     alt={id}
                     className="transition duration-400 rounded-md"
                     src={img}
-                    width={width}
-                    height={height}
+                    width={width / 2}
+                    height={height / 2}
                     layout="responsive"
                     placeholder="blur"
                     blurDataURL={img.replace(".jpg", "-placeholder.png")}
