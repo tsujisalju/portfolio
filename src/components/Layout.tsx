@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { ReactNode } from "react";
 import LanguageSelect from "./LanguageSelect";
+import { useIntl } from "react-intl";
+import { intlFormat } from "date-fns";
 
 export default function Layout({
   children,
@@ -11,6 +13,7 @@ export default function Layout({
   children: ReactNode;
   home?: boolean;
 }) {
+  const intl = useIntl();
   return (
     <>
       <Head>
@@ -54,23 +57,23 @@ export default function Layout({
             <nav className="flex flex-row self-center space-x-8">
               <Link href={"/"}>
                 <a className="transition duration-200 font-sans text-lg text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-200 ">
-                  Home
+                  {intl.formatMessage({ id: "Home" })}
                 </a>
               </Link>
               <Link href={""}>
                 <a className="transition duration-200 font-sans text-lg text-stone-400 dark:text-stone-600">
-                  Almanac
+                  {intl.formatMessage({ id: "Almanac" })}
                 </a>
               </Link>
               <Link href={"/about"}>
                 <a className="transition duration-200 font-sans text-lg text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-200">
-                  About
+                  {intl.formatMessage({ id: "About" })}
                 </a>
               </Link>
             </nav>
           </div>
           <div className="hidden md:flex flex-1 justify-end items-center p-6 pb-8">
-            {/*<LanguageSelect />*/}
+            <LanguageSelect />
           </div>
         </div>
       </header>

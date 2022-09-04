@@ -3,8 +3,10 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import { SUPPORTED_LOCALES } from "../constants/locales";
+import { ParsedUrlQuery } from "querystring";
 
-const projectsDirectory = path.join(process.cwd(), "projects");
+const projectsDirectory = path.join(process.cwd(), "src/projects");
 
 export function getSortedProjectsData() {
   const fileNames = fs.readdirSync(projectsDirectory);
@@ -39,13 +41,16 @@ export function getSortedProjectsData() {
 
 export function getAllProjectIds() {
   const fileNames = fs.readdirSync(projectsDirectory);
-  return fileNames.map((filename) => {
-    return {
-      params: {
-        id: filename.replace(/\.md$/, ""),
-      },
-    };
+  const enFiles = fileNames.map((filename) => {
+    return { params: { id: filename.replace(/\.md$/, "") }, locale: "en-US" };
   });
+  const deFiles = fileNames.map((filename) => {
+    return { params: { id: filename.replace(/\.md$/, "") }, locale: "de-DE" };
+  });
+  const msFiles = fileNames.map((filename) => {
+    return { params: { id: filename.replace(/\.md$/, "") }, locale: "ms-MY" };
+  });
+  return [...enFiles, ...deFiles, ...msFiles];
 }
 
 export async function getProjectData(id: string) {

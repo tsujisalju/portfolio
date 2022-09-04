@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Layout from "../components/Layout";
 import SkillBar from "../components/SkillBar";
+import { useIntl } from "react-intl";
 
 const styles = {
   nurtureImage: {
@@ -11,7 +12,7 @@ const styles = {
 
 export default function About() {
   const [nameToggle, setNameToggle] = React.useState<Boolean>(false);
-
+  const intl = useIntl();
   function HandleNameToggle(value: Boolean) {
     setNameToggle(value);
   }
@@ -34,33 +35,30 @@ export default function About() {
               blurDataURL={"/img/about/profile-placeholder.png"}
             ></Image>
             <h1 className="">
-              <span className="font-serif">Van Carina</span>, a turkish van
-              merchant/civil engineer.
+              <span className="font-serif">Van Carina</span>,{" "}
+              {intl.formatMessage({
+                id: "a turkish van merchant/civil engineer.",
+              })}
             </h1>
           </div>
           <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg text-justify">
-            <h1 className="font-serif text-6xl">Hello, friend!</h1>
+            <h1 className="font-serif text-6xl">
+              {intl.formatMessage({ id: "Hello, friend!" })}
+            </h1>
             <p className="font-sans dark:text-stone-200">
-              I&apos;m Qayyum, or you can call me smolpadok. I was born in
-              Malaysia and now continuing my studies in Germany. I&apos;m a
-              hobbyist frontend developer and designer for almost 9 years.
+              {intl.formatMessage({
+                id: "I'm Qayyum, or you can call me smolpadok. I was born in Malaysia and now continuing my studies in Germany. I'm a hobbyist frontend developer and designer for almost 9 years.",
+              })}
             </p>
             <p className="font-sans dark:text-stone-200">
-              At a young age, I can be seen tinkering with whatever I put my
-              mind to. I was so fascinated at the idea of creating anything with
-              the power of programming, and the passion burns strong since. I
-              have dabbled in various hobby projects relating to game
-              development, web design and content creation. Currently, I work
-              remotely as a frontend dev and designer for Minswap DEX on the
-              Cardano blockchain. In my spare time, I like to draw and play
-              rhythm games.
+              {intl.formatMessage({
+                id: "At a young age, I can be seen tinkering with whatever I put my mind to. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation. Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. In my spare time, I like to draw and play rhythm games.",
+              })}
             </p>
             <p className="font-sans dark:text-stone-200">
-              I aspire to tell my own little story through my illustrations and
-              creations. I am always passionate about creative story-telling and
-              elegant use of technology. I prioritize on efficiency and making
-              experiences effortless for anyone. In the end, I wish my creations
-              bring benefit to all walks of life.
+              {intl.formatMessage({
+                id: "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life.",
+              })}
             </p>
           </div>
         </div>

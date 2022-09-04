@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Layout from "../../components/Layout";
-import { getAllProjectIds, getProjectData } from "../../lib/projects";
+import { getAllProjectIds, getProjectData } from "../../libs/projects";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Date from "../../components/Date";
 import Image from "next/image";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
+import { SUPPORTED_LOCALES } from "../../constants/locales";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const projectData = await getProjectData(params?.id as string);

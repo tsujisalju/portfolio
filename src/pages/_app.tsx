@@ -2,18 +2,18 @@ import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import React from "react";
 import { IntlProvider } from "react-intl";
-import { useLocale } from "../src/useLocale";
+import { useLocale } from "../hooks/useLocale";
 import "../styles/globals.css";
 import nookies from "nookies";
-import EN_US_LOCALE_MODULE from "../lang/en-US.json";
+import EN_US_LOCALE_MODULE from "../lang/compiled/en-US.json";
 
-type LocalModule = Record<string, any>;
+type LocaleModule = Record<string, any>;
 
 function MyApp({ Component, pageProps }: AppProps) {
   //set language
   const { locale, defaultLocale } = useLocale();
   const [localeModule, setLocaleModule] =
-    React.useState<LocalModule>(EN_US_LOCALE_MODULE);
+    React.useState<LocaleModule>(EN_US_LOCALE_MODULE);
   const currentLocale = locale ?? "en-US";
 
   React.useEffect(() => {
@@ -25,11 +25,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         sameSite: "strict",
         secure: process.env.NODE_ENV !== "development",
       });
-      const dynamicLocaleModule = await import(`/lang/${currentLocale}.json`);
+      const dynamicLocaleModule = await import(
+        `/src/lang/compiled/${currentLocale}.json`
+      );
       setLocaleModule(dynamicLocaleModule["default"]);
-    });
+    })();
   }, [currentLocale]);
-  console.log(currentLocale);
   return (
     <IntlProvider
       defaultLocale={defaultLocale}
