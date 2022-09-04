@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Layout from "../../components/Layout";
-import { getAllProjectIds, getProjectData } from "../../lib/projects";
+import { getAllProjectIds, getProjectData } from "../../libs/projects";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Date from "../../components/Date";
 import Image from "next/image";

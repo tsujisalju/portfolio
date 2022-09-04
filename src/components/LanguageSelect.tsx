@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { SUPPORTED_LOCALES, LOCALE_LABEL } from "../constants/locales";
-import { useLocale } from "../src/useLocale";
+import { useLocale } from "../hooks/useLocale";
 import { useRouter } from "next/router";
 
 interface language {
@@ -17,7 +17,7 @@ const languages: language[] = [
 ];
 
 function getShortName(locale: string): string {
-  return locale.split("-")[0] as string;
+  return locale.split("-")[0].toUpperCase() as string;
 }
 
 export default function LanguageSelect() {

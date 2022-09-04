@@ -1,5 +1,5 @@
 import Layout from "../../components/Layout";
-import { getSortedProjectsData } from "../../lib/projects";
+import { getSortedProjectsData } from "../../libs/projects";
 import { GetStaticProps } from "next";
 import ProjectGallery from "../../components/ProjectGallery";
 
