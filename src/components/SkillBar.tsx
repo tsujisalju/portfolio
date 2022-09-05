@@ -10,7 +10,7 @@ export default function SkillBar({
       <div className="md:w-1/5">
         <p>{title}</p>
       </div>
-      <div className="h-6 w-4/5 rounded-full bg-stone-300 dark:bg-stone-800">
+      <div className="h-6 w-4/5 rounded-full bg-stone-300 dark:bg-stone-700">
         <div
           className={"h-6 rounded-full bg-stone-700 dark:bg-stone-400"}
           style={{ width: `${width}` } as const}

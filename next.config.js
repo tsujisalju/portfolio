@@ -6,6 +6,15 @@ const nextConfig = {
     defaultLocale: "en-US",
     locales: ["en-US", "de-DE", "ms-MY"],
   },
+  async redirects() {
+    return [
+      {
+        source: "/projects",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

@@ -1,12 +1,22 @@
-import fs from "fs";
+import * as fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
-import { SUPPORTED_LOCALES } from "../constants/locales";
-import { ParsedUrlQuery } from "querystring";
 
 const projectsDirectory = path.join(process.cwd(), "src/projects");
+
+export type Project = {
+  date: string;
+  title: string;
+  img: string;
+  width: number;
+  height: number;
+  id: string;
+};
+export type ProjectData = Project & {
+  contentHtml: string;
+};
 
 export function getSortedProjectsData() {
   const fileNames = fs.readdirSync(projectsDirectory);

@@ -1,16 +1,19 @@
 import Link from "next/link";
 import Layout from "../../components/Layout";
-import { getAllProjectIds, getProjectData } from "../../libs/projects";
+import {
+  getAllProjectIds,
+  getProjectData,
+  ProjectData,
+} from "../../lib/projects";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Date from "../../components/Date";
 import Image from "next/image";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import React from "react";
 import { useTheme } from "next-themes";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const projectData = await getProjectData(params?.id as string);
+  const projectData: ProjectData = await getProjectData(params?.id as string);
   return {
     props: {
       projectData,
@@ -26,19 +29,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export default function Project({
-  projectData,
-}: {
-  projectData: {
-    title: string;
-    date: string;
-    img: string;
-    width: number;
-    height: number;
-    class: string;
-    contentHtml: string;
-  };
-}) {
+export default function Project({ projectData }: { projectData: ProjectData }) {
   const paragraphs = projectData.contentHtml.split("</p>");
   const excerpt = paragraphs[0] + "</p>";
   const { theme } = useTheme();

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla&family=Chivo&family=Inter&display=swap");
 
 @font-face {
   font-family: "Bluu Next";
@@ -10,11 +10,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #e7e5e4;
+  --background: #d6d3d1;
   --foreground: #1c1917;
 }
 
-[data-theme] {
+[data-theme="dark"] {
   --background: #292524;
   --foreground: #e7e5e4;
 }

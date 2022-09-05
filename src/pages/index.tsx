@@ -1,13 +1,13 @@
-import type { GetStaticProps, NextPage } from "next";
 import Layout from "../components/Layout";
-import { getSortedProjectsData } from "../libs/projects";
-import Date from "../components/Date";
 import ProjectGallery from "../components/ProjectGallery";
 import Hero from "../components/Hero";
 import React from "react";
 
+import type { GetStaticProps, InferGetStaticPropsType } from "next";
+import { getSortedProjectsData, Project } from "../lib/projects";
+
 export const getStaticProps: GetStaticProps = async () => {
-  const allProjectsData = getSortedProjectsData();
+  const allProjectsData: Project[] = getSortedProjectsData();
   return {
     props: {
       allProjectsData,
@@ -17,16 +17,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 export default function Home({
   allProjectsData,
-}: {
-  allProjectsData: {
-    date: string;
-    title: string;
-    id: string;
-    img: string;
-    width: number;
-    height: number;
-  }[];
-}) {
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   React.useEffect(() => {
     document.body.style.backgroundImage = "";
     document.body.className = "";
@@ -34,7 +25,7 @@ export default function Home({
   return (
     <Layout>
       <Hero />
-      <ProjectGallery allProjectsData={allProjectsData} />
+      <ProjectGallery projects={allProjectsData} />
     </Layout>
   );
 }
