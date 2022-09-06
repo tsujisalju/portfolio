@@ -2,16 +2,17 @@ import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import React from "react";
 import { IntlProvider } from "react-intl";
-import { useLocale } from "../hooks/useLocale";
 import "../styles/globals.css";
 import nookies from "nookies";
 import EN_US_LOCALE_MODULE from "../lang/compiled/en-US.json";
+import { useRouter } from "next/router";
 
 type LocaleModule = Record<string, any>;
 
 function MyApp({ Component, pageProps }: AppProps) {
   //set language
-  const { locale, defaultLocale } = useLocale();
+  const router = useRouter();
+  const { locale, defaultLocale } = router;
   const [localeModule, setLocaleModule] =
     React.useState<LocaleModule>(EN_US_LOCALE_MODULE);
   const currentLocale = locale ?? "en-US";

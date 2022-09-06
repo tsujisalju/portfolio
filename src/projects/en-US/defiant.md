@@ -10,4 +10,4 @@ I made this project to celebrate my move towards working entirely on Linux, with
 
 For some time this has been my background for my custom Plymouth. It would appear every time I turn on the computer.
 
-My workflow now consists of mostly open-source software. I only keep a small Windows partition just for the remaining Adobe stuff. When Linux, Adobe??? :(
+My workflow now consists of mostly open-source software. I only keep a small Windows partition just for the remaining Adobe stuff. _When Linux, Adobe???_ :(

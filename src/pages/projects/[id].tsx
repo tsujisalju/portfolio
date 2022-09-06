@@ -1,19 +1,22 @@
 import Link from "next/link";
 import Layout from "../../components/Layout";
-import {
-  getAllProjectIds,
-  getProjectData,
-  ProjectData,
-} from "../../lib/projects";
+import { getProjectData, ProjectData } from "../../lib/projects";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Date from "../../components/Date";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
 import { useTheme } from "next-themes";
+import path from "path";
+import fs from "fs";
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const projectData: ProjectData = await getProjectData(params?.id as string);
+const projectsDirectory = path.join(process.cwd(), "src/projects");
+
+export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
+  const projectData: ProjectData = await getProjectData(
+    params?.id as string,
+    locale as string
+  );
   return {
     props: {
       projectData,
@@ -21,11 +24,23 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllProjectIds();
+export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
+  const fileNames = fs.readdirSync(projectsDirectory);
+  const paths: {
+    params: {
+      id: string;
+    };
+    locale: string;
+  }[] = [];
+
+  fileNames.map((filename) => {
+    locales?.map((locale) => {
+      paths.push({ params: { id: filename.replace(/\.md$/, "") }, locale });
+    });
+  });
   return {
     paths,
-    fallback: false,
+    fallback: "blocking",
   };
 };
 

@@ -1,7 +1,6 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { SUPPORTED_LOCALES, LOCALE_LABEL } from "../constants/locales";
-import { useLocale } from "../hooks/useLocale";
 import { useRouter } from "next/router";
 
 function getShortName(locale: string): string {
@@ -9,8 +8,8 @@ function getShortName(locale: string): string {
 }
 
 export default function SelectLanguage() {
-  const { locale } = useLocale();
   const router = useRouter();
+  const locale = router.locale as string;
 
   async function HandleSelectLanguage(newLocale: string) {
     if (newLocale === locale) {

@@ -18,12 +18,12 @@ export type ProjectData = Project & {
   contentHtml: string;
 };
 
-export function getSortedProjectsData() {
-  const fileNames = fs.readdirSync(projectsDirectory);
+export function getSortedProjectsData(locale: string) {
+  const fileNames = fs.readdirSync(projectsDirectory + "/" + locale);
   const allProjectsData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, "");
 
-    const fullPath = path.join(projectsDirectory, fileName);
+    const fullPath = path.join(projectsDirectory, locale, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
 
     const matterResult = matter(fileContents);
@@ -49,22 +49,8 @@ export function getSortedProjectsData() {
   });
 }
 
-export function getAllProjectIds() {
-  const fileNames = fs.readdirSync(projectsDirectory);
-  const enFiles = fileNames.map((filename) => {
-    return { params: { id: filename.replace(/\.md$/, "") }, locale: "en-US" };
-  });
-  const deFiles = fileNames.map((filename) => {
-    return { params: { id: filename.replace(/\.md$/, "") }, locale: "de-DE" };
-  });
-  const msFiles = fileNames.map((filename) => {
-    return { params: { id: filename.replace(/\.md$/, "") }, locale: "ms-MY" };
-  });
-  return [...enFiles, ...deFiles, ...msFiles];
-}
-
-export async function getProjectData(id: string) {
-  const fullPath = path.join(projectsDirectory, `${id}.md`);
+export async function getProjectData(id: string, locale: string) {
+  const fullPath = path.join(projectsDirectory, locale, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   const matterResult = matter(fileContents);

@@ -3,9 +3,12 @@ import Image from "next/image";
 import { useIntl } from "react-intl";
 import SelectLanguage from "./SelectLanguage";
 import SelectTheme from "./SelectTheme";
+import { useRouter } from "next/router";
+import NavLink from "./NavLink";
 
 export default function Header() {
   const intl = useIntl();
+  const router = useRouter();
   return (
     <div className="flex flex-row">
       <div className="flex flex-col flex-1 md:flex-row p-6 pb-8 md:space-x-12">
@@ -39,21 +42,8 @@ export default function Header() {
           </a>
         </Link>
         <nav className="flex flex-row self-center space-x-8">
-          <Link href={"/"}>
-            <a className="transition duration-100 truncate font-sans text-lg text-stone-700 hover:text-stone-600 dark:text-stone-300 dark:hover:text-stone-400 ">
-              {intl.formatMessage({ id: "Home" })}
-            </a>
-          </Link>
-          {/*<Link href={""}>
-            <a className="transition duration-100 truncate font-sans text-lg text-stone-400 dark:text-stone-600">
-              {intl.formatMessage({ id: "Almanac" })}
-            </a>
-  </Link>*/}
-          <Link href={"/about"}>
-            <a className="transition duration-100 truncate font-sans text-lg text-stone-700 hover:text-stone-600 dark:text-stone-300 dark:hover:text-stone-400">
-              {intl.formatMessage({ id: "About" })}
-            </a>
-          </Link>
+          <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
+          <NavLink href="/about">{intl.formatMessage({ id: "About" })}</NavLink>
         </nav>
       </div>
       <div className="hidden md:flex flex-row space-x-2 flex-1 justify-end items-center p-6 pb-8">

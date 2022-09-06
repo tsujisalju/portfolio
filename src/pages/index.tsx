@@ -6,8 +6,8 @@ import React from "react";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { getSortedProjectsData, Project } from "../lib/projects";
 
-export const getStaticProps: GetStaticProps = async () => {
-  const allProjectsData: Project[] = getSortedProjectsData();
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const allProjectsData: Project[] = getSortedProjectsData(locale as string);
   return {
     props: {
       allProjectsData,
