@@ -26,6 +26,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
 
 export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
   const fileNames = fs.readdirSync(projectsDirectory);
+  console.log(fileNames);
   const paths: {
     params: {
       id: string;
@@ -34,15 +35,9 @@ export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
   }[] = [];
 
   fileNames.map((filename) => {
-    if (
-      filename !== path.join(projectsDirectory, "en-US") &&
-      filename !== path.join(projectsDirectory, "de-DE") &&
-      filename !== path.join(projectsDirectory, "ms-MY")
-    ) {
-      locales?.map((locale) => {
-        paths.push({ params: { id: filename.replace(/\.md$/, "") }, locale });
-      });
-    }
+    locales?.map((locale) => {
+      paths.push({ params: { id: filename.replace(/\.md$/, "") }, locale });
+    });
   });
   return {
     paths,
