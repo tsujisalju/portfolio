@@ -25,11 +25,13 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
-  const fileNames: string[] = [];
-  for (const locale in locales) {
-    fileNames.concat(fs.readdirSync(path.join(projectsDirectory, locale)));
-  }
-  console.log(fileNames);
+  let collectPath: string[] = [];
+  locales?.map((locale) => {
+    collectPath = collectPath.concat(
+      fs.readdirSync(projectsDirectory + "/" + locale)
+    );
+  });
+  const fileNames = collectPath;
   const paths: {
     params: {
       id: string;
