@@ -34,9 +34,15 @@ export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
   }[] = [];
 
   fileNames.map((filename) => {
-    locales?.map((locale) => {
-      paths.push({ params: { id: filename.replace(/\.md$/, "") }, locale });
-    });
+    if (
+      filename !== path.join(projectsDirectory, "en-US") &&
+      filename !== path.join(projectsDirectory, "de-DE") &&
+      filename !== path.join(projectsDirectory, "ms-MY")
+    ) {
+      locales?.map((locale) => {
+        paths.push({ params: { id: filename.replace(/\.md$/, "") }, locale });
+      });
+    }
   });
   return {
     paths,
