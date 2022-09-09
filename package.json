@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "extract-lang": "formatjs extract \"src/**/*.mdx\" --ignore=\"**/*.d.ts\" --throws --flatten --format formatter.js --out-file src/lang/extracted/en-US.json && node scripts/update-lang.js",
+    "extract-lang": "formatjs extract \"src/**/*.ts*\" --ignore=\"**/*.d.ts\" --throws --flatten --format formatter.js --out-file src/lang/extracted/en-US.json && node scripts/update-lang.js",
     "compile-lang": "formatjs compile-folder --format simple --ast src/lang/extracted src/lang/compiled"
   },
   "dependencies": {
