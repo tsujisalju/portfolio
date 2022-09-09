@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla&family=Chivo&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla&display=swap");
 
 @font-face {
   font-family: "Bluu Next";
-  src: "/fonts/BluuNext/BluuNext-Bold.otf";
+  src: url("/fonts/BluuNext/BluuNext-BoldTitling.otf");
 }
 
 @tailwind base;
