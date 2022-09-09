@@ -7,6 +7,7 @@ import { useIntl } from "react-intl";
 import { intlFormat } from "date-fns";
 import SelectTheme from "./SelectTheme";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Layout({
   children,
@@ -45,9 +46,11 @@ export default function Layout({
         <Header />
       </header>
 
-      <main className="">{children}</main>
+      <main>{children}</main>
 
-      <footer className=""></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
