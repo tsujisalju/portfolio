@@ -6,6 +6,6 @@ width: 1920
 height: 1080
 ---
 
-Mynx enjoys a nice view of the sunset by the beach! I want this to look to look like a camera photo, a snapshot of being with your significant other.
+Mynx genießt einen schönen Blick auf den Sonnenuntergang am Strand! Ich möchte, dass es wie ein Foto aussieht, ein Schnappschuss vom Zusammensein mit Ihrem Partner.
 
-I listened to **_In Touch by DAUL_** while drawing this. It captures the vibe of this piece!
+Ich hörte **_In Touch by DAUL_**, während ich dies zeichnete. Es fängt die Stimmung dieses Kunstwerkes ein!

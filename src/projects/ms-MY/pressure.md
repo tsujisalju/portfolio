@@ -6,8 +6,8 @@ width: 2400
 height: 3000
 ---
 
-A quick black and white study of Cooper to learn about colour values. A sepia tint was added later.
+Kajian hitam putih menampilkan Cooper untuk belajar tentang nilai-nilai warna. Tint sepia ditambah kemudian.
 
-I particularly love the combination of different materials together. Each material has its own light properties, from shiny to diffuse. It's fun to render them.
+Saya suka menggambungkan bahan-bahan berbeza bersama. Setiap bahan mempunyai sifat cahaya yang tersendiri, dari berkilat ke meresap. Saya berasa seronok ketika merender.
 
-I shouldn't bother him too much from his work at the time factory. He just stopped by to say hi.
+Sebaiknya saya tidak mengacau Cooper daripada kerjanya di kilang masa. Dia hanya berhenti untuk bertanya khabar.

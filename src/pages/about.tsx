@@ -131,20 +131,14 @@ export default function About() {
               {intl.formatMessage({ id: "Cats?" })}
             </h1>
             <p className="font-sans text-justify">
-              The illustrations I make, describe a world of places I&apos;m
-              passionate about, the things I want to do and the kind of person I
-              wish to become. They are not tied to a particular story, leaving
-              enough room for self-interpretation.
+              {intl.formatMessage({
+                id: "The illustrations I make, describe a world of places I'm passionate about, the things I want to do and the kind of person I wish to become. They are not tied to a particular story, leaving enough room for self-interpretation.",
+              })}
             </p>
-            <p className="font-sans text-justif">
-              I take great lessons from cats, being a person who has pet cats in
-              real life. Cats are resilient, loving, intelligent yet whimsical
-              and they are more aware of the existence of higher beings, things
-              of greater good. If granted sentience, I believe they can create
-              better worlds than we do. That is a narrative I&apos;d like to
-              bring in my illustrations, as a motivation for myself, and
-              hopefully for others to explore and learn for the betterment of
-              society.
+            <p className="font-sans text-justify">
+              {intl.formatMessage({
+                id: "I take great lessons from cats, being a person who has pet cats in real life. Cats are resilient, loving, intelligent yet whimsical and they are more aware of the existence of higher beings, things of greater good. If granted sentience, I believe they can create better worlds than we do. That is a narrative I'd like to bring in my illustrations, as a motivation for myself, and hopefully for others to explore and learn for the betterment of society.",
+              })}
             </p>
           </div>
           <div className="inline-block text-center space-y-4 p-4">
@@ -157,8 +151,7 @@ export default function About() {
               placeholder={"empty"}
             ></Image>
             <h1 className="">
-              Khajiit today makes <span className="font-serif">soft wares</span>
-              .
+              {intl.formatMessage({ id: "Khajiit today makes 'soft wares'." })}
             </h1>
           </div>
         </div>

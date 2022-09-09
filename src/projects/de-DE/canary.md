@@ -6,4 +6,4 @@ width: 3000
 height: 3000
 ---
 
-A new study with my new rendering methods. Kind of a [Frontier](/projects/frontier) II.
+Eine neue Kunststudie mit meinen neuen Rendering-Methoden. Eine Art von [Grenze](/projects/frontier) II.
