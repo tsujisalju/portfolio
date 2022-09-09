@@ -31,7 +31,7 @@ export default function ProjectGallery({ projects }: { projects: Project[] }) {
             key={project.id}
             className={
               "flex flex-1 flex-col relative " +
-              (project.id === "lumen"
+              (project.id === "lumen" || project.id === "peer"
                 ? "md:col-span-2 md:row-span-2"
                 : project.width > project.height
                 ? "md:col-span-2"
