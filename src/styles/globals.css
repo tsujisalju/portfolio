@@ -9,16 +9,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #d6d3d1;
-  --foreground: #1c1917;
+.light {
+  --bg: #f5f5f4;
+  --fg: #1c1917;
 }
 
-[data-theme="dark"] {
-  --background: #292524;
-  --foreground: #e7e5e4;
+.dark {
+  --bg: #1c1917;
+  --fg: #f5f5f4;
 }
 
 body {
+  background: var(--bg);
   transition-duration: 200ms;
 }

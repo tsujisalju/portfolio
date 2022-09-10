@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       locale={currentLocale}
       messages={localeModule}
     >
-      <ThemeProvider attribute="class">
+      <ThemeProvider attribute="class" disableTransitionOnChange>
         <Component {...pageProps} />
       </ThemeProvider>
     </IntlProvider>
