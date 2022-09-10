@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import ProjectGallery from "../components/ProjectGallery";
+import ProjectGallery from "../components/project-gallery/ProjectGallery";
 import Hero from "../components/Hero";
 import React from "react";
 

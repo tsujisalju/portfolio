@@ -9,6 +9,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .parentParallax {
+    transform-style: preserve-3d;
+  }
+  .childParallax {
+    transform: translateZ(50px);
+  }
+}
+
 .light {
   --bg: #f5f5f4;
   --fg: #1c1917;
