@@ -2,13 +2,14 @@ import Link from "next/link";
 import Layout from "../../components/Layout";
 import { getProjectData, ProjectData } from "../../lib/projects";
 import { GetStaticProps, GetStaticPaths } from "next";
-import Date from "../../components/Date";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
 import { useTheme } from "next-themes";
 import path from "path";
 import fs from "fs";
+import { FormattedDate } from "react-intl";
+import { Transition } from "@headlessui/react";
 
 const projectsDirectory = path.join(process.cwd(), "src/projects");
 
@@ -94,21 +95,34 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
             />
           </div>
           <div>
-            <div className="flex flex-col p-8 space-y-4 lg:w-[500px]">
-              <Link href="/">
-                <a className="font-sans">Back to home</a>
-              </Link>
-              <div className="flex flex-col space-y-2 mb-4">
-                <h1 className="font-serif text-5xl lg:text-6xl ">
-                  {projectData.title}
-                </h1>
-                <Date dateString={projectData.date} />
+            <Transition
+              appear
+              show={true}
+              enter="transition duration-400"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+            >
+              <div className="flex flex-col p-8 pt-4 space-y-4 lg:w-[500px]">
+                <div className="flex flex-col space-y-2 mb-4">
+                  <h1 className="font-serif text-5xl lg:text-6xl ">
+                    {projectData.title}
+                  </h1>
+                  <div className="opacity-80">
+                    <FormattedDate
+                      value={projectData.date}
+                      day={"numeric"}
+                      month={"long"}
+                      year={"numeric"}
+                    />
+                  </div>
+                </div>
+                <hr className="opacity-20" />
+                <div
+                  className="flex flex-col space-y-4 text-lg"
+                  dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
+                />
               </div>
-              <div
-                className="flex flex-col space-y-4 text-lg"
-                dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
-              />
-            </div>
+            </Transition>
           </div>
         </div>
       </Layout>

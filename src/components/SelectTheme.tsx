@@ -29,7 +29,7 @@ export default function SelectTheme() {
     <Menu as="div" className={"relative w-12"}>
       <Menu.Button
         as="button"
-        className="h-8 flex w-full justify-center items-center rounded-lg transition transition-75 bg-stone-200 dark:bg-stone-800 px-2 py-1 text-lg font-sans hover:bg-opacity-50 hover:dark:bg-opacity-50"
+        className="h-8 flex w-full justify-center items-center rounded-lg transition transition-75 bg-stone-50 dark:bg-stone-800 px-2 py-1 text-lg font-sans hover:bg-opacity-50 hover:dark:bg-opacity-50"
       >
         {theme === "light" ? (
           <svg

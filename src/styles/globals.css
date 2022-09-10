@@ -29,6 +29,7 @@
 }
 
 body {
+  color: var(--fg);
   background: var(--bg);
   transition-duration: 200ms;
 }

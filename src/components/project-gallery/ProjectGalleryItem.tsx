@@ -2,8 +2,8 @@ import { Project } from "../../lib/projects";
 import Link from "next/link";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
-import Date from "../Date";
 import React from "react";
+import { FormattedDate } from "react-intl";
 
 const shimmer = (w: number, h: number) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -26,7 +26,7 @@ const toBase64 = (str: string) =>
 
 export default function ProjectGalleryItem({ project }: { project: Project }) {
   const [isShowing, setIsShowing] = React.useState<boolean>(true);
-  function HandleClicked() {
+  function HandleOnClick() {
     setIsShowing(false);
   }
   return (
@@ -36,7 +36,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
       tiltReverse
       scale={1.04}
       className={
-        "parentParallax flex flex-1 flex-col relative " +
+        "parentParallax flex flex-auto flex-col relative " +
         (project.id === "lumen" || project.id === "peer"
           ? "md:col-span-2 md:row-span-2"
           : project.width > project.height
@@ -48,12 +48,12 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
     >
       <div
         className={
-          "transition shadow-sm duration-400 hover:shadow-lg " +
+          "transition shadow-sm duration-400 hover:shadow-xl " +
           (!isShowing ? "transform scale-95 ease-out" : " ease-in-out")
         }
       >
         <Link href={"/projects/" + project.id}>
-          <a onClick={HandleClicked}>
+          <a onClick={HandleOnClick}>
             <Image
               id={project.id}
               alt={project.id}
@@ -74,11 +74,19 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
       </div>
       <div
         className={
-          "md:childParallax sm:block md:absolute sm:bg-none md:backdrop-blur-md md:dark:bg-black/50 md:bg-white/50 md:py-3 md:px-5 md:m-5 m-1 rounded"
+          "md:childParallax sm:block md:absolute sm:bg-none md:backdrop-blur-md md:dark:bg-black/50 md:bg-white/50 md:py-3 md:px-5 md:m-4 m-1 rounded shadow-lg transition duration-400 transform "
         }
       >
         <h1 className="font-serif md:text-2xl text-xl">{project.title}</h1>
-        <Date dateString={project.date}></Date>
+
+        <div>
+          <FormattedDate
+            value={project.date}
+            day={"numeric"}
+            month={"long"}
+            year={"numeric"}
+          />
+        </div>
       </div>
     </Tilt>
   );

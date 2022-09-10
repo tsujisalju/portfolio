@@ -22,7 +22,7 @@ export default function SelectLanguage() {
     <Menu as="div" className={"relative w-20"}>
       <Menu.Button
         as="button"
-        className="h-8 flex flex-row w-full justify-center items-center transition transition-75 rounded-lg bg-stone-200 dark:bg-stone-800 px-2 py-1 space-x-2 text-lg font-sans hover:bg-opacity-50 hover:dark:bg-opacity-50"
+        className="h-8 flex flex-row w-full justify-center items-center transition transition-75 rounded-lg bg-stone-50 dark:bg-stone-800 px-2 py-1 space-x-2 text-lg font-sans hover:bg-opacity-50 hover:dark:bg-opacity-50"
       >
         <p>{getShortName(locale)}</p>
         <svg
