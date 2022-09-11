@@ -25,7 +25,7 @@ export default function About() {
     <Layout>
       <div className="md:container md:mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-center">
-          <div className="inline-block text-center space-y-4 pb-4">
+          <div className="inline-block text-center space-y-4 py-4">
             <Image
               className="transition duration-400"
               alt="a turkish van cat named Carina"
@@ -65,7 +65,7 @@ export default function About() {
         </div>
       </div>
       <div
-        className="flex flex-1 bg-cover bg-center bg-fixed saturate-50 h-[400px] my-8"
+        className="flex flex-1 bg-cover bg-center bg-fixed saturate-50 h-[600px] my-8"
         style={styles.nurtureImage}
       ></div>
       <div className="flex flex-col justify-center items-center py-8">
@@ -124,7 +124,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="md:container md:mx-auto my-auto md:px-4 sm:px-2 bg-stone-300 dark:bg-stone-800">
+      <div className="md:container md:mx-auto my-auto md:px-4 sm:px-2 bg-stone-200 dark:bg-stone-800">
         <div className="flex flex-col lg:flex-row justify-center items-center p-8">
           <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg">
             <h1 className="font-serif text-6xl">

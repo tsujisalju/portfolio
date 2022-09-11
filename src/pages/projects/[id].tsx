@@ -82,7 +82,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
         <meta property="og:description" content={excerpt} />
       </Head>
       <Layout>
-        <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center">
+        <div className="container mx-auto flex flex-col lg:flex-row lg:space-x-4 justify-center">
           <div>
             <Image
               className="transition duration-500 ease-in-out"
