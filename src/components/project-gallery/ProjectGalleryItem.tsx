@@ -4,25 +4,7 @@ import Image from "next/image";
 import Tilt from "react-parallax-tilt";
 import React from "react";
 import { FormattedDate } from "react-intl";
-
-const shimmer = (w: number, h: number) => `
-<svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <linearGradient id="g">
-      <stop stop-color="#555" offset="20%" />
-      <stop stop-color="#444" offset="50%" />
-      <stop stop-color="#555" offset="70%" />
-    </linearGradient>
-  </defs>
-  <rect width="${w}" height="${h}" fill="#444" />
-  <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
-  <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
-</svg>`;
-
-const toBase64 = (str: string) =>
-  typeof window === "undefined"
-    ? Buffer.from(str).toString("base64")
-    : window.btoa(str);
+import { shimmer, toBase64 } from "../ImageSkeleton";
 
 export default function ProjectGalleryItem({ project }: { project: Project }) {
   const [isShowing, setIsShowing] = React.useState<boolean>(true);

@@ -9,6 +9,7 @@ import path from "path";
 import fs from "fs";
 import { FormattedDate } from "react-intl";
 import { FadeIn } from "../../utilities/FadeIn";
+import { shimmer, toBase64 } from "../../components/ImageSkeleton";
 
 const projectsDirectory = path.join(process.cwd(), "src/projects");
 
@@ -97,7 +98,11 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
               width={projectData.width}
               height={projectData.height}
               placeholder="blur"
-              blurDataURL={projectData.img.replace(".jpg", "-placeholder.png")}
+              blurDataURL={
+                `data:image/svg+xml;base64,${toBase64(
+                  shimmer(projectData.width, projectData.height)
+                )}` /*img.replace(".jpg", "-placeholder.png")*/
+              }
             />
           </div>
           <div>
