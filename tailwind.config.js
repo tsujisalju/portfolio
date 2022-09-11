@@ -14,7 +14,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Karla", "sans-serif"],
-        serif: ["Bluu Next", "DM Serif Display", "serif"],
+        serif: ["Source Serif Pro", "DM Serif Display", "serif"],
+        display: ["Bluu Next", "DM Serif Display", "serif"],
       },
     },
   },

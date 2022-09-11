@@ -6,6 +6,7 @@ import "../styles/globals.css";
 import nookies from "nookies";
 import EN_US_LOCALE_MODULE from "../lang/compiled/en-US.json";
 import { useRouter } from "next/router";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 type LocaleModule = Record<string, any>;
 
@@ -39,7 +40,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       messages={localeModule}
     >
       <ThemeProvider attribute="class" disableTransitionOnChange>
-        <Component {...pageProps} />
+        <ParallaxProvider>
+          <Component {...pageProps} />
+        </ParallaxProvider>
       </ThemeProvider>
     </IntlProvider>
   );

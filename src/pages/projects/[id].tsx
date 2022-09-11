@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Layout from "../../components/Layout";
 import { getProjectData, ProjectData } from "../../lib/projects";
 import { GetStaticProps, GetStaticPaths } from "next";
@@ -9,7 +8,7 @@ import { useTheme } from "next-themes";
 import path from "path";
 import fs from "fs";
 import { FormattedDate } from "react-intl";
-import { Transition } from "@headlessui/react";
+import { FadeIn } from "../../utilities/FadeIn";
 
 const projectsDirectory = path.join(process.cwd(), "src/projects");
 
@@ -82,7 +81,14 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
         <meta property="og:description" content={excerpt} />
       </Head>
       <Layout>
-        <section className="container mx-auto flex flex-col lg:flex-row lg:space-x-4 justify-center">
+        <section
+          className={
+            "container mx-auto flex flex-col justify-center " +
+            (projectData.width < projectData.height
+              ? "lg:flex-row lg:space-x-4"
+              : "lg:flex-col")
+          }
+        >
           <div>
             <Image
               className="transition duration-500 ease-in-out shadow-lg"
@@ -95,19 +101,18 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
             />
           </div>
           <div>
-            <Transition
-              appear
-              show={true}
-              enter="transition duration-400"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-            >
-              <div className="flex flex-col p-8 space-y-4 lg:w-[500px]">
+            <FadeIn>
+              <div
+                className={
+                  "flex flex-col p-8 space-y-4 " +
+                  (projectData.width < projectData.height && "lg:w-[500px]")
+                }
+              >
                 <div className="flex flex-col space-y-2 mb-4">
-                  <h1 className="font-serif text-5xl lg:text-6xl ">
+                  <h1 className="font-display text-5xl lg:text-6xl ">
                     {projectData.title}
                   </h1>
-                  <div className="opacity-80">
+                  <div className="font-sans font-light font-lg">
                     <FormattedDate
                       value={projectData.date}
                       day={"numeric"}
@@ -118,11 +123,11 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
                 </div>
                 <hr className="opacity-20" />
                 <div
-                  className="flex flex-col space-y-4 text-lg"
+                  className="flex flex-col space-y-4 font-serif font-normal text-lg"
                   dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
                 />
               </div>
-            </Transition>
+            </FadeIn>
           </div>
         </section>
       </Layout>

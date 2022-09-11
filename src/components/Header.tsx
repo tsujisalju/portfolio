@@ -6,7 +6,12 @@ import SelectTheme from "./SelectTheme";
 import NavLink from "./NavLink";
 import React from "react";
 
-export default function Header() {
+interface HeaderProp {
+  disableOnTop?: boolean;
+}
+
+export default function Header(Props: HeaderProp) {
+  const { disableOnTop = false } = Props;
   const [onTop, setOnTop] = React.useState(true);
   const intl = useIntl();
 
@@ -24,7 +29,11 @@ export default function Header() {
     <header
       className={
         "sticky container mx-auto rounded-lg top-2 z-10 bg-opacity-60 mb-4 dark:bg-opacity-60 backdrop-blur-md transition transition-100 " +
-        (!onTop ? "bg-stone-100 dark:bg-stone-900" : "bg-transparent")
+        (!disableOnTop
+          ? !onTop
+            ? "bg-stone-100 dark:bg-stone-900"
+            : "bg-transparent"
+          : "bg-stone-100 dark:bg-stone-900")
       }
     >
       <div className="flex flex-row">
@@ -52,7 +61,7 @@ export default function Header() {
                     layout="fixed"
                   ></Image>
                 </div>
-                <h1 className="text-4xl font-serif hidden md:inline">
+                <h1 className="text-4xl font-display hidden md:inline">
                   smolpadok
                 </h1>
               </div>

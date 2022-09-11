@@ -3,6 +3,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import SkillBar from "../components/SkillBar";
 import { useIntl } from "react-intl";
+import { FadeIn } from "../utilities/FadeIn";
 
 const styles = {
   nurtureImage: {
@@ -32,7 +33,7 @@ export default function About() {
               src={"/img/about/profile.png"}
               width={500}
               height={500}
-              placeholder={"empty"}
+              placeholder={"blur"}
               blurDataURL={"/img/about/profile-placeholder.png"}
             ></Image>
             <h1 className="">
@@ -42,37 +43,41 @@ export default function About() {
               })}
             </h1>
           </div>
-          <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg text-justify">
-            <h1 className="font-serif text-6xl">
-              {intl.formatMessage({ id: "Hello, friend!" })}
-            </h1>
-            <p className="font-sans dark:text-stone-200">
-              {intl.formatMessage({
-                id: "I'm Qayyum, or you can call me smolpadok. I was born in Malaysia and now continuing my studies in Germany. I'm a hobbyist frontend developer and designer for almost 9 years.",
-              })}
-            </p>
-            <p className="font-sans dark:text-stone-200">
-              {intl.formatMessage({
-                id: "At a young age, I can be seen tinkering with whatever I put my mind to. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation. Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. In my spare time, I like to draw and play rhythm games.",
-              })}
-            </p>
-            <p className="font-sans dark:text-stone-200">
-              {intl.formatMessage({
-                id: "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life.",
-              })}
-            </p>
-          </div>
+
+          <FadeIn>
+            <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg text-justify">
+              <h1 className="font-display text-6xl">
+                {intl.formatMessage({ id: "Hello, friend!" })}
+              </h1>
+              <p className="font-sans dark:text-stone-200">
+                {intl.formatMessage({
+                  id: "I'm Qayyum, or you can call me smolpadok. I was born in Malaysia and now continuing my studies in Germany. I'm a hobbyist frontend developer and designer for almost 9 years.",
+                })}
+              </p>
+              <p className="font-sans dark:text-stone-200">
+                {intl.formatMessage({
+                  id: "At a young age, I can be seen tinkering with whatever I put my mind to. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation. Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. In my spare time, I like to draw and play rhythm games.",
+                })}
+              </p>
+              <p className="font-sans dark:text-stone-200">
+                {intl.formatMessage({
+                  id: "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life.",
+                })}
+              </p>
+            </div>
+          </FadeIn>
         </div>
       </div>
+
       <div
-        className="flex flex-1 bg-cover bg-center bg-fixed saturate-50 h-[600px] my-8"
+        className="container mx-auto flex flex-1 bg-center bg-fixed saturate-50 h-[600px] my-8"
         style={styles.nurtureImage}
       ></div>
       <div className="flex flex-col justify-center items-center py-8">
         <div className="flex flex-row justify-center pb-6">
           <p
             className={
-              "font-serif text-6xl md:text-8xl " +
+              "font-display text-6xl md:text-8xl " +
               (!nameToggle
                 ? "text-stone-800 dark:text-stone-200"
                 : "text-stone-400 dark:text-stone-700")
@@ -83,7 +88,7 @@ export default function About() {
           </p>
           <p
             className={
-              "font-serif text-6xl md:text-8xl " +
+              "font-display text-6xl md:text-8xl " +
               (nameToggle
                 ? "text-stone-800 dark:text-stone-200"
                 : "text-stone-400 dark:text-stone-700")
@@ -109,7 +114,7 @@ export default function About() {
       <div className="md:container md:mx-auto md:px-4 sm:px-2">
         <div className="flex flex-col lg:flex-row justify-center items-center p-4 md:p-8">
           <div className="flex flex-col lg:w-3/4 p-8 space-y-5 text-lg">
-            <h1 className="font-serif text-5xl">
+            <h1 className="font-display text-5xl">
               {intl.formatMessage({ id: "Tools of the Trade" })}
             </h1>
             <br></br>
@@ -127,7 +132,7 @@ export default function About() {
       <div className="md:container md:mx-auto my-auto md:px-4 sm:px-2 bg-stone-200 dark:bg-stone-800">
         <div className="flex flex-col lg:flex-row justify-center items-center p-8">
           <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg">
-            <h1 className="font-serif text-6xl">
+            <h1 className="font-display text-6xl">
               {intl.formatMessage({ id: "Cats?" })}
             </h1>
             <p className="font-sans text-justify">

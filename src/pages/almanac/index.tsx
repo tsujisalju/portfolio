@@ -6,7 +6,7 @@ export default function Home() {
     <Layout>
       <div className="container mx-auto">
         <div className="flex flex-col items-center space-y-4">
-          <h1 className="font-serif text-5xl">Almanac</h1>
+          <h1 className="font-display text-5xl">Almanac</h1>
           <p className="font-sans text-lg">
             Get to know the members of the consortium.
           </p>

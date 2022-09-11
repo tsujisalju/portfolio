@@ -79,9 +79,9 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
             "md:childParallax sm:block md:absolute sm:bg-none md:backdrop-blur-md md:dark:bg-black/50 md:bg-white/50 md:py-3 md:px-5 md:m-4 m-1 rounded md:shadow-lg transition duration-400 transform "
           }
         >
-          <h1 className="font-serif md:text-2xl text-xl">{project.title}</h1>
+          <h1 className="font-display md:text-2xl text-xl">{project.title}</h1>
 
-          <div>
+          <div className="font-sans font-lg font-light">
             <FormattedDate
               value={project.date}
               day={"numeric"}
