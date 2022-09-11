@@ -82,10 +82,10 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
         <meta property="og:description" content={excerpt} />
       </Head>
       <Layout>
-        <div className="container mx-auto flex flex-col lg:flex-row lg:space-x-4 justify-center">
+        <section className="container mx-auto flex flex-col lg:flex-row lg:space-x-4 justify-center">
           <div>
             <Image
-              className="transition duration-500 ease-in-out"
+              className="transition duration-500 ease-in-out shadow-lg"
               alt={projectData.title}
               src={projectData.img}
               width={projectData.width}
@@ -102,7 +102,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
               enterFrom="opacity-0"
               enterTo="opacity-100"
             >
-              <div className="flex flex-col p-8 pt-4 space-y-4 lg:w-[500px]">
+              <div className="flex flex-col p-8 space-y-4 lg:w-[500px]">
                 <div className="flex flex-col space-y-2 mb-4">
                   <h1 className="font-serif text-5xl lg:text-6xl ">
                     {projectData.title}
@@ -124,7 +124,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
               </div>
             </Transition>
           </div>
-        </div>
+        </section>
       </Layout>
     </>
   );

@@ -11,7 +11,7 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Head>
         <title>smolpadok | Developer & Designer</title>
         <meta name="description" content="smolpadok's portfolio" />
@@ -20,11 +20,11 @@ export default function Layout({
 
       <Header />
 
-      <main>{children}</main>
+      <main className="flex-1">{children}</main>
 
       <footer>
         <Footer />
       </footer>
-    </>
+    </div>
   );
 }
