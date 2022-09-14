@@ -8,10 +8,10 @@ height: 5000
 
 ca. 2022
 
-The worldbuilding of this alternate world takes place in a futuristic ancient world. A post-apocalyptic rebirth if you will. It makes my mind wander over the possibilities of fusing together different eras of technology.
+Das Weltengebäude dieser alternativen Welt findet in einer futuristischen, antiken Welt statt. Eine post-apokalyptische Wiedergeburt, wenn man so will. Es lässt mich über die Möglichkeiten der Verschmelzung verschiedener Technologieepochen nachdenken.
 
-Beside Van is a very obscure character of mine named Emmie the Scottish Fold. She appears during moments of crisis in my life. She is not necessarily a bad person herself, but rather a comforting friend during hard times.
+Neben Van ist eine sehr obskure Figur von mir namens Emmie, die schottische Faltohrkatze.Sie taucht in Krisenmomenten in meinem Leben auf. Sie ist nicht unbedingt ein schlechter Mensch, sondern eher eine tröstende Freundin in schweren Zeiten.
 
-A key concept that I often associate with my characters are the 7 capital virtues and the 7 deadly sins, in which each character represents a virtue and a sin. For example, you may never see Emmie as often because she represents illness and insomnia. On the other hand, Cooper and Van represents dilligence and hope.
+Ein Schlüsselkonzept, das ich oft mit meinen Figuren verbinde, sind die 7 Haupttugenden und die 7 Todsünden, wobei jede Figur eine Tugend und eine Sünde repräsentiert. Emmie zum Beispiel sieht man vielleicht nicht so oft, weil sie für Krankheit und Schlaflosigkeit steht. Andererseits stehen Cooper und Van für Fleiß und Hoffnung.
 
-I hope to explore this concept further. As I build up my website, a new page will be dedicated to formally introduce all my 7 characters.
+Ich hoffe, dass ich dieses Konzept weiter ausbauen kann. Während ich meine Website aufbaue, wird es eine neue Seite geben, auf der alle meine 7 Charaktere offiziell vorgestellt werden.

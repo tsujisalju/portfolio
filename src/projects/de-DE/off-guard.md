@@ -8,8 +8,8 @@ height: 3000
 
 Ouughhhh
 
-I am undecided whether I want to add this in my portfolio or not. I guess it would be good to showcase my style range.
+Ich bin unschlüssig, ob ich das in mein Portfolio aufnehemn soll oder nicht. Ich denke, es wäre gut, um meine Stilvielfalt zu präsentieren.
 
-The premise is a female version of a friend's Blinx fan sweeper OC with outlandish anime hair saying nya. I went above and beyond.
+Die Prämisse ist eine weibliche Version eines Frendes Blinx Fan Sweeper OC mit ausgefallenen Anime-Haar, die _nya_ sagen. Ich ging über und darüber hinaus.
 
-Occasionally I would draw other people's cool looking OCs out of good will. I'm sure many could relate, that there is an apparent difference between drawing because you want to and drawing because someone asked you to. As someone whose drawings are heavily driven by emotion, I find it hard to feel the same passion and deliver the same quality under different circumstances.
+Gelegentlich habe ich die cool aussehenden OCs anderer Leute aus gutem Willen gezeichnet. Ich bin mir sicher, dass viele nachvollziehen können, dass es einen offensichtlichen Unterschied gibt zwischen dem Zeichnen, weil man es will, und dem Zeichnen, weil jemand darum gebeten hat. Als jemand, dessen Zeichenungen stark von Emotionen getrieben sind, fällt es mir schwer, unter anderen Umständen die gleiche Leidenschaft zu empfinden und die gleiche Qualität zu liefern.

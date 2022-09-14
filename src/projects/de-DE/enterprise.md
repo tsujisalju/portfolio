@@ -6,10 +6,10 @@ width: 3840
 height: 2160
 ---
 
-[Lumen](/projects/lumen) II in spirit.
+[Lumen](/projects/lumen) II im Geiste.
 
-Van's journey in her caravan continues onward. I plan to fuse traditional and futuristic elements together.
+Die Reise von Van in ihrem Wohnwagen geht weiter. Ich plane, traditionelle und futuristiche Elemente miteinander zu verschmelzen.
 
-Van tells the feeling at the corner of my heart. I never want to bring this up, but I always thought my artworks would reach a larger audience. I appreciate all you individuals who would spend time to write emails to me and watch my small art streams, But I'm feeling there is no clear path to turning this into a real thing.
+Van erzählt von dem Gefühl, das ich in meinem Herzen habe. Ich wollte das nie erwähnen, aber ich dachte immer, meine Kunstwerke würden ein größeres Publikum erreichen. Ich schätze es sehr, dass ihr euch die Zeit nehmt, mir EßMails zu schreiben und meine kleinen Kunst-Streams anzuschauen, aber ich habe das Gefühl, dass es keinen klaren Weg gibt, das in eine echte Sache zu verwandeln.
 
-I am fortunately hedging my bets, and I'm not in a position where art has to become a serious career. I kept going because I believe, that my artworks matter to some very few people left in this world, and I'm _not_ giving up on them.
+Zum Glück bin ich auf der sicheren Seite, und ich bin nicht in einer Position, in der die Kunst zu einer ernsthaften Karriere werden muss. Ich habe weitergemacht, weil ich glaube, dass meine Kunstwerke für einige Menschen auf dieser Welt wichtig sind, und ich werde sie _nicht_ aufgeben.

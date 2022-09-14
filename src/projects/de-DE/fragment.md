@@ -6,6 +6,6 @@ width: 3000
 height: 2000
 ---
 
-I want to revisit a style similar to a cinematic camera shot. I will be moving to a new place soon, and Cooper here tells the pain of leaving.
+Ich möchte einen Stil wieder aufgreifen, der einer filmischen Kameraeinstellung ähnelt. Ich werde bald an einen neuen Ort ziehen, und Cooper erzählt hier vom Schmerz des Abschieds.
 
-_I may not always be around, but when I do, I'll make it worthwhile._
+_Ich werde vielleicht nicht immer in der Nähe sein, aber wenn ich es bin, wird es sich lohnen._

@@ -6,4 +6,4 @@ width: 2000
 height: 3000
 ---
 
-Venting. I'll talk about it later.
+Ich lasse meinen Gefühlen freien Lauf. Ich werde später darüber sprechen.
