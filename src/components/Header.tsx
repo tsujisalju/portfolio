@@ -72,6 +72,7 @@ export default function Header(Props: HeaderProp) {
             <NavLink href="/about">
               {intl.formatMessage({ id: "About" })}
             </NavLink>
+            <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
           </nav>
         </div>
         <div className="hidden md:flex flex-row space-x-2 flex-1 justify-end items-center p-6 pb-8">

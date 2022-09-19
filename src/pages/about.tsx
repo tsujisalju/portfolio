@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import Layout from "../components/Layout";
-import SkillBar from "../components/SkillBar";
 import { useIntl } from "react-intl";
 import { FadeIn } from "../utilities/FadeIn";
 
@@ -31,8 +30,8 @@ export default function About() {
               className="transition duration-400"
               alt="a turkish van cat named Carina"
               src={"/img/about/profile.png"}
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               placeholder={"blur"}
               blurDataURL={"/img/about/profile-placeholder.png"}
             ></Image>
@@ -45,21 +44,21 @@ export default function About() {
           </div>
 
           <FadeIn>
-            <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg text-justify">
-              <h1 className="font-display text-6xl">
-                {intl.formatMessage({ id: "Hello, friend!" })}
+            <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg">
+              <h1 className="font-display text-5xl">
+                {intl.formatMessage({ id: "Hello, friend! I'm Qayyum." })}
               </h1>
-              <p className="font-sans dark:text-stone-200">
+              <p className="font-sans">
                 {intl.formatMessage({
-                  id: "I'm Qayyum, or you can call me smolpadok. I was born in Malaysia and now continuing my studies in Germany. I'm a hobbyist frontend developer and designer for almost 9 years.",
+                  id: "I was born in Malaysia and now continuing my studies in Germany. I'm a hobbyist frontend developer and designer for almost 9 years.",
                 })}
               </p>
-              <p className="font-sans dark:text-stone-200">
+              <p className="font-sans">
                 {intl.formatMessage({
                   id: "At a young age, I can be seen tinkering with whatever I put my mind to. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation. Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. In my spare time, I like to draw and play rhythm games.",
                 })}
               </p>
-              <p className="font-sans dark:text-stone-200">
+              <p className="font-sans">
                 {intl.formatMessage({
                   id: "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life.",
                 })}
@@ -112,22 +111,7 @@ export default function About() {
         </div>
       </div>
       <div className="md:container md:mx-auto md:px-4 sm:px-2">
-        <div className="flex flex-col lg:flex-row justify-center items-center p-4 md:p-8">
-          <div className="flex flex-col lg:w-3/4 p-8 space-y-5 text-lg">
-            <h1 className="font-display text-5xl">
-              {intl.formatMessage({ id: "Tools of the Trade" })}
-            </h1>
-            <br></br>
-            <SkillBar title="Visual Studio Code" width={"70%"} />
-            <SkillBar title="Next.js" width={"45%"} />
-            <SkillBar title="Tailwind CSS" width={"50%"} />
-            <SkillBar title="Figma" width={"60%"} />
-            <SkillBar title="Unity3D" width={"65%"} />
-            <SkillBar title="Krita" width={"80%"} />
-            <SkillBar title="Inkscape" width={"70%"} />
-            <SkillBar title="After Effects" width={"75%"} />
-          </div>
-        </div>
+        <div className="flex flex-col lg:flex-row justify-center items-center p-4 md:p-8"></div>
       </div>
       <div className="md:container md:mx-auto my-auto md:px-4 sm:px-2 bg-stone-200 dark:bg-stone-800">
         <div className="flex flex-col lg:flex-row justify-center items-center p-8">

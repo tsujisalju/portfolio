@@ -1,4 +1,22 @@
 {
+  "\"The power of any weapon comes from [the heart], but only when tempered by [the discipline] ..": [
+    {
+      "type": 0,
+      "value": "\"Der Kraft jede Waffe kommt aus [dem Herzen], aber nur, wenn sie durch [die Disziplin] gemildert wird .."
+    }
+  ],
+  ".. the self-control of the one who wields it.\"": [
+    {
+      "type": 0,
+      "value": ".. die Selbstbeherrschung desjenigen, der sie ausübt.\""
+    }
+  ],
+  "7 cats by alternate world.": [
+    {
+      "type": 0,
+      "value": "7 Katzen bei alternative Welt."
+    }
+  ],
   "About": [
     {
       "type": 0,
@@ -9,6 +27,12 @@
     {
       "type": 0,
       "value": "Almanach"
+    }
+  ],
+  "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent.": [
+    {
+      "type": 0,
+      "value": "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent."
     }
   ],
   "At a young age, I can be seen tinkering with whatever I put my mind to. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation. Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. In my spare time, I like to draw and play rhythm games.": [
@@ -29,10 +53,28 @@
       "value": "Dunkel"
     }
   ],
+  "Design": [
+    {
+      "type": 0,
+      "value": "Design"
+    }
+  ],
+  "Development": [
+    {
+      "type": 0,
+      "value": "Entwicklung"
+    }
+  ],
   "Each one is a story to tell. Discover one and find out what's in store!": [
     {
       "type": 0,
       "value": "Jedes Kunstwerk hat eine Geschichte zu erzählen. Entdecken Sie eine, um zu erfahren, was es zu erzählen gibt!"
+    }
+  ],
+  "Figma": [
+    {
+      "type": 0,
+      "value": "Figma"
     }
   ],
   "Greetings traveler.": [
@@ -47,10 +89,22 @@
       "value": "Hallo, Freund!"
     }
   ],
+  "Hello, friend! I'm Qayyum.": [
+    {
+      "type": 0,
+      "value": "Hallo, Freund! Ich bin Qayyum."
+    }
+  ],
   "Home": [
     {
       "type": 0,
       "value": "Hauptseite"
+    }
+  ],
+  "Huion Inspiroy Q11K V2": [
+    {
+      "type": 0,
+      "value": "Huion Inspiroy Q11K V2"
     }
   ],
   "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life.": [
@@ -59,22 +113,64 @@
       "value": "Mein Ziel ist es, mit meinen Illustrationen und Kreationen meine eigene kleine Geschichte zu erzählen. Meine Leidenschaft gilt dem kreativen Erzählen von Geschichten und dem eleganten Einsatz von Technologie. Ich lege großen Wert aur Effizienz und mühelose Erlebnisse für alle. Letztendlich wünsche ich mir, dass meine Kreationen allen Lebensbereichen zugute kommen."
     }
   ],
+  "I specifically bought this tablet for its wireless feature. As a bonus, it also has a native Linux driver. The port on my previous tablet has gotten loose and frequently disconnects, plus I had to use workarounds to configure the buttons. This new one just works out of the box.": [
+    {
+      "type": 0,
+      "value": "I specifically bought this tablet for its wireless feature. As a bonus, it also has a native Linux driver. The port on my previous tablet has gotten loose and frequently disconnects, plus I had to use workarounds to configure the buttons. This new one just works out of the box."
+    }
+  ],
   "I take great lessons from cats, being a person who has pet cats in real life. Cats are resilient, loving, intelligent yet whimsical and they are more aware of the existence of higher beings, things of greater good. If granted sentience, I believe they can create better worlds than we do. That is a narrative I'd like to bring in my illustrations, as a motivation for myself, and hopefully for others to explore and learn for the betterment of society.": [
     {
       "type": 0,
       "value": "Als jemand, der im wirklichen Leben Katzen als Haustiere hat, kann ich viel von Katzen lernen. Katzen sind unverwüstlich, liebevoll, intelligent und doch launisch, und sie sind sich der Existenz höherer Wesen, der Dinge des größeren Guten, bewusster. Ich glaube, dass sie, wenn ihnen ein Gefühl gegeben wird, bessere Welten schaffen können als wir es tun. Das ist eine Geschichte, die ich in meine Illustrationen einbringen möchte, als Motivation für mich selbst, und hoffentlich auch für andere, zu erforschen und zu lernen, um die Gesellschaft zu verbessern."
     }
   ],
-  "I'm Qayyum, or you can call me smolpadok. I was born in Malaysia and now continuing my studies in Germany. I'm a hobbyist frontend developer and designer for almost 9 years.": [
+  "I was born in Malaysia and now continuing my studies in Germany. I'm a hobbyist frontend developer and designer for almost 9 years.": [
     {
       "type": 0,
-      "value": "Ich heiße Qayyum, aber Sie können mich smolpadok nennen. Ich wurde in Malaysia geboren und studiere jetzt in Deutschland. Ich bin ein Hobby-Frontend-Entwickler und Designer für fast 9 Jahre."
+      "value": "Ich wurde in Malaysia geboren und studiere jetzt in Deutschland. Ich bin ein Hobby-Frontend-Entwickler und Designer für fast 9 Jahre."
+    }
+  ],
+  "I'm Qayyum, a computer science student based in Leipzig, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tale of neo Khajiits in a different timeline.": [
+    {
+      "type": 0,
+      "value": "Ich bin Qayyum, ein Informatik-Student in Leipzig, Deutschland. Ich bin Entwickler und Designer für Minswap DEX bei Cardano. Ansonsten erzähle ich die Geschichte von Neo-Khajiits aus einer Zeitlinie."
+    }
+  ],
+  "I'm still surprised that this art program is free. It is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation!": [
+    {
+      "type": 0,
+      "value": "I'm still surprised that this art program is free. It is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation!"
+    }
+  ],
+  "Inkscape": [
+    {
+      "type": 0,
+      "value": "Inkscape"
+    }
+  ],
+  "It has been a while since I've revisited some old game projects of mine. My feelings for Unity has been a little tainted lately, after all the shenanigans of the upper management. I may consider checking out other engines too.": [
+    {
+      "type": 0,
+      "value": "It has been a while since I've revisited some old game projects of mine. My feelings for Unity has been a little tainted lately, after all the shenanigans of the upper management. I may consider checking out other engines too."
     }
   ],
   "Khajiit today makes 'soft wares'.": [
     {
       "type": 0,
       "value": "Heutzitage herstellen Khajiit 'soft wares'."
+    }
+  ],
+  "Krita": [
+    {
+      "type": 0,
+      "value": "Krita"
+    }
+  ],
+  "Lenovo Legion 5 15ARH05": [
+    {
+      "type": 0,
+      "value": "Lenovo Legion 5 15ARH05"
     }
   ],
   "Light": [
@@ -89,10 +185,28 @@
       "value": "Mit 😻 gemacht mit Next.js und Tailwind"
     }
   ],
+  "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD. I also installed Debian 11 as the main OS.": [
+    {
+      "type": 0,
+      "value": "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD. I also installed Debian 11 as the main OS."
+    }
+  ],
+  "No doubt everyone uses this. I use it for all my game and web dev work. It's so nice to have all sorts of support and extensions for any programming work imaginable.": [
+    {
+      "type": 0,
+      "value": "No doubt everyone uses this. I use it for all my game and web dev work. It's so nice to have all sorts of support and extensions for any programming work imaginable."
+    }
+  ],
   "Padok is a Malay slang for padu, which means powerful.": [
     {
       "type": 0,
       "value": "Padok ist ein malaiischer Slang für Padu, was so viel wie mächtig bedeutet."
+    }
+  ],
+  "Student, dev and design by day,": [
+    {
+      "type": 0,
+      "value": "Student, Entwickler und Designer am Tag,"
     }
   ],
   "The illustrations I make, describe a world of places I'm passionate about, the things I want to do and the kind of person I wish to become. They are not tied to a particular story, leaving enough room for self-interpretation.": [
@@ -107,10 +221,40 @@
       "value": "Werkzeuge des Handels"
     }
   ],
+  "Unity3D": [
+    {
+      "type": 0,
+      "value": "Unity3D"
+    }
+  ],
+  "Uses": [
+    {
+      "type": 0,
+      "value": "Nutzt"
+    }
+  ],
+  "Visual Studio Code": [
+    {
+      "type": 0,
+      "value": "Visual Studio Code"
+    }
+  ],
+  "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs. Just found out they're being bought out by Adobe, so I only expect the worst.": [
+    {
+      "type": 0,
+      "value": "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs. Just found out they're being bought out by Adobe, so I only expect the worst."
+    }
+  ],
   "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference.": [
     {
       "type": 0,
       "value": "Als Kind war ich immer ein wenig kleiner als meine Altersgenossen. Auch heute noch, aber nur ein kleiner Unterschied."
+    }
+  ],
+  "Workstation": [
+    {
+      "type": 0,
+      "value": "Arbeitsplatz"
     }
   ],
   "a turkish van merchant/civil engineer.": [
