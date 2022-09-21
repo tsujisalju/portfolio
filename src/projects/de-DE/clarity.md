@@ -6,4 +6,4 @@ width: 2400
 height: 3000
 ---
 
-3 out of 4 of the Prequel collection, featuring S'thengir the bartender. I depict him as a secret gambler by night. Always two steps ahead, he is banned from entering many gambling dens in Oblivion.
+3 von 4 der Prequel-Kollektion, die S'thengir der Barkeeper zeigt. Ich stelle ihn als heimlichen Glücksspieler bei Nacht dar. Da er immer zwei Schritte voraus ist, ist ihm der Zutritt zu vielen Glücksspielhöllen in Oblivion untersagt.

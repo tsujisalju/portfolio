@@ -6,6 +6,6 @@ width: 4000
 height: 2000
 ---
 
-This one of my most definitive projects to date. I take inspiration from Rebirth, the Quixel Megascans real-time demo. The nordic post-apocalyptic setting truly got me going. Van's caravan is unlike any caravan, it is a wandering node.
+Das ist eines meiner bisher definitivsten Projekte. Ich habe mich von Rebirth der Echzeit-Demo von Quixel Megascans, inspirieren lassen. Das nordische postapokalyptische Stimmung hat mich wirklich in den Bann gezogen. Vans Karawane ist nicht wie jede andere Karawane, sondern ein wandernder Knotenpunkt.
 
-This project pushes the limits in making everything look realistic and yet stylized.
+Dieses Projekt geht bis an die Grenzen, indem es alles realistisch und dennoch stilisiert aussehen lässt.
