@@ -16,15 +16,16 @@ export default function NavLink({
     <Link href={href}>
       <a
         className={
-          "transition duration-100 truncate font-sans text-lg " +
-          (router.asPath === href &&
-            "underline underline-offset-4 decoration-2 ") +
+          "relative transition duration-100 truncate font-sans text-lg " +
           (disabled
             ? "text-stone-400 dark:text-stone-600 "
             : "text-stone-700 hover:text-stone-600 dark:text-stone-300 dark:hover:text-stone-400 ")
         }
       >
         {children}
+        {router.asPath === href && (
+          <span className="absolute inset-x-1 bottom-0 h-px bg-gradient-to-r from-transparent via-stone-700 dark:via-stone-300 to-transparent"></span>
+        )}
       </a>
     </Link>
   );

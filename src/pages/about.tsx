@@ -24,27 +24,9 @@ export default function About() {
   return (
     <Layout>
       <div className="md:container md:mx-auto px-4">
-        <div className="flex flex-col lg:flex-row justify-center">
-          <div className="inline-block text-center space-y-4 py-4">
-            <Image
-              className="transition duration-400"
-              alt="a turkish van cat named Carina"
-              src={"/img/about/profile.png"}
-              width={400}
-              height={400}
-              placeholder={"blur"}
-              blurDataURL={"/img/about/profile-placeholder.png"}
-            ></Image>
-            <h1 className="">
-              <span className="font-serif">Van Carina</span>,{" "}
-              {intl.formatMessage({
-                id: "a turkish van merchant/civil engineer.",
-              })}
-            </h1>
-          </div>
-
+        <div className="flex flex-col-reverse lg:flex-row justify-center space-x-4">
           <FadeIn>
-            <div className="flex flex-col lg:w-1/2 p-8 space-y-6 text-lg">
+            <div className="flex flex-col lg:max-w-xl p-8 space-y-6 text-lg">
               <h1 className="font-display text-5xl">
                 {intl.formatMessage({ id: "Hello, friend! I'm Qayyum." })}
               </h1>
@@ -55,7 +37,12 @@ export default function About() {
               </p>
               <p className="font-sans">
                 {intl.formatMessage({
-                  id: "At a young age, I can be seen tinkering with whatever I put my mind to. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation. Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. In my spare time, I like to draw and play rhythm games.",
+                  id: "At a young age, my mother introduced me to programming and game making. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation.",
+                })}
+              </p>
+              <p className="font-sans">
+                {intl.formatMessage({
+                  id: "Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. I am always on the lookout for new opportunities, and I found a place where my style and ideas can contribute to bleeding edge technology.",
                 })}
               </p>
               <p className="font-sans">
@@ -65,11 +52,23 @@ export default function About() {
               </p>
             </div>
           </FadeIn>
+
+          <div className="inline-block text-center space-y-4 py-4">
+            <Image
+              className="transition duration-400"
+              alt="a turkish van cat named Carina"
+              src={"/img/about/profile.png"}
+              width={450}
+              height={450}
+              placeholder={"blur"}
+              blurDataURL={"/img/about/profile-placeholder.png"}
+            ></Image>
+          </div>
         </div>
       </div>
 
       <div
-        className="container mx-auto flex flex-1 bg-center bg-fixed saturate-50 h-[600px] my-8"
+        className="flex flex-1 bg-center bg-fixed saturate-50 h-[500px] my-8"
         style={styles.nurtureImage}
       ></div>
       <div className="flex flex-col justify-center items-center py-8">

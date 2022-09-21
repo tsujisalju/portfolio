@@ -2,7 +2,7 @@
   "\"The power of any weapon comes from [the heart], but only when tempered by [the discipline] ..": [
     {
       "type": 0,
-      "value": "\"Kuasa satu senjata terletak di [hati], tetapi hanya apabila dikukuhkan oleh [disiplin] .."
+      "value": "\"Kekuatan satu senjata datang dari [hati], tetapi hanya apabila dikukuhkan oleh [disiplin] .."
     }
   ],
   ".. the self-control of the one who wields it.\"": [
@@ -32,7 +32,7 @@
   "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent.": [
     {
       "type": 0,
-      "value": "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent."
+      "value": "Dalam usaha membebaskan diri dari Adobe, saya menyesuaikan diri dengan aplikasi FOSS alternatif. Saya telah menggunakan Inkscape untuk beberapa rekaan merch. Apabila anda mengetahui bagaimana program ini berfungsi, ia sememangnya berkebolehan."
     }
   ],
   "At a young age, I can be seen tinkering with whatever I put my mind to. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation. Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. In my spare time, I like to draw and play rhythm games.": [
@@ -41,10 +41,22 @@
       "value": "Sejak usia muda, saya boleh dilihat meneroka apa-apa yang terterbit dalam minda. Saya begitu terpersona dengan satu idea, bahawa saya boleh mereka apa sahaja menggunakan kuasa pengaturcaraan, dan semangat itu terus membara sehingga kini. Saya telah mentelaah pelbagai projek persendirian merangkumi pengaturcaraan permainan video, design laman web dan penghasilan media. Kini, saya bekerja sebagai pembangun frontend dan pereka untuk Minswap DEX di blockchain Cardano. Pada waktu lapang, saya suka melukis dan bermain permainan irama."
     }
   ],
+  "At a young age, my mother introduced me to programming and game making. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation.": [
+    {
+      "type": 0,
+      "value": "Ketika usia muda, ibu saya memperkenalkan saya kepada pengaturcaraan dan penghasilan permainan video. Saya begitu terpersona dengan satu idea, bahawa saya boleh mereka apa sahaja menggunakan kuasa pengaturcaraan, dan semangat itu terus membara sehingga kini. Saya telah mentelaah pelbagai projek persendirian merangkumi pengaturcaraan permainan video, design laman web dan penghasilan media."
+    }
+  ],
   "Cats?": [
     {
       "type": 0,
       "value": "Kucing?"
+    }
+  ],
+  "Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. I am always on the lookout for new opportunities, and I found a place where my style and ideas can contribute to bleeding edge technology.": [
+    {
+      "type": 0,
+      "value": "Kini, saya berkerja secara jauh sebagai pembangun frontend dan pereka untuk Minswap DEX di blockchain Cardano. Saya sentiasa mencari peluang, dan saya telah jumpa tempat di mana gaya dan ideaku mampu menyumbang kepada pembangunan teknologi terkini."
     }
   ],
   "Dark": [

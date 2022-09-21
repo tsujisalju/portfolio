@@ -8,7 +8,7 @@ export default function Hero({ children }: { children: ReactNode }) {
   const intl = useIntl();
   return (
     <FadeIn>
-      <div className="container m-auto max-w-4xl flex flex-1 flex-col p-16 xl:px-0 space-y-4">
+      <div className="container m-auto max-w-5xl flex flex-1 flex-col p-16 xl:px-0 space-y-4">
         {children}
       </div>
     </FadeIn>
