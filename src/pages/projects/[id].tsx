@@ -84,7 +84,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
       <Layout>
         <section
           className={
-            "container mx-auto flex flex-col justify-center " +
+            "sm:container mx-auto flex flex-col justify-center " +
             (projectData.width < projectData.height
               ? "lg:flex-row lg:space-x-4"
               : "lg:flex-col")
@@ -98,11 +98,9 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
               width={projectData.width}
               height={projectData.height}
               placeholder="blur"
-              blurDataURL={
-                `data:image/svg+xml;base64,${toBase64(
-                  shimmer(projectData.width, projectData.height)
-                )}` /*img.replace(".jpg", "-placeholder.png")*/
-              }
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(projectData.width, projectData.height)
+              )}`}
             />
           </div>
           <div>

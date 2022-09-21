@@ -5,6 +5,7 @@ import SelectLanguage from "./SelectLanguage";
 import SelectTheme from "./SelectTheme";
 import NavLink from "./NavLink";
 import React from "react";
+import MobileNav from "./MobileNav";
 
 interface HeaderProp {
   disableOnTop?: boolean;
@@ -28,19 +29,19 @@ export default function Header(Props: HeaderProp) {
   return (
     <header
       className={
-        "sticky container mx-auto rounded-lg top-2 z-10 bg-opacity-60 mb-4 dark:bg-opacity-60 backdrop-blur-md transition transition-100 " +
+        "sticky md:container md:mx-auto md:rounded-lg top-0 md:top-2 z-10 md:mb-4 backdrop-blur-md transition transition-100 " +
         (!disableOnTop
           ? !onTop
-            ? "bg-stone-100 dark:bg-stone-900"
+            ? "bg-stone-100/60 dark:bg-stone-900/60"
             : "bg-transparent"
-          : "bg-stone-100 dark:bg-stone-900")
+          : "bg-stone-100/60 dark:bg-stone-900/60")
       }
     >
       <div className="flex flex-row">
-        <div className="flex flex-col flex-1 md:flex-row p-6 md:space-x-12">
+        <div className="flex flex-row flex-1 p-5 md:p-6 md:space-x-12">
           <Link href={"/"}>
             <a>
-              <div className="flex flex-row justify-center md:justify-start items-center space-x-4 -ml-4 dark:ml-0">
+              <div className="flex flex-row justify-start items-center space-x-4 -ml-4 dark:ml-0">
                 <div className="md:self-center hidden dark:flex pb-2 md:pb-0">
                   <Image
                     alt="smolpadok logo"
@@ -67,7 +68,7 @@ export default function Header(Props: HeaderProp) {
               </div>
             </a>
           </Link>
-          <nav className="flex flex-row self-center space-x-8">
+          <nav className="hidden md:flex flex-row self-center space-x-8">
             <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
             <NavLink href="/about">
               {intl.formatMessage({ id: "About" })}
@@ -78,6 +79,10 @@ export default function Header(Props: HeaderProp) {
         <div className="hidden md:flex flex-row space-x-2 flex-1 justify-end items-center p-6 pb-8">
           <SelectLanguage />
           <SelectTheme />
+          <MobileNav />
+        </div>
+        <div className="md:hidden flex flex-row flex-1 justify-end items-center p-6 pb-8">
+          <MobileNav />
         </div>
       </div>
     </header>

@@ -71,7 +71,7 @@ export default function About() {
         className="flex flex-1 bg-center bg-fixed saturate-50 h-[500px] my-8"
         style={styles.nurtureImage}
       ></div>
-      <div className="flex flex-col justify-center items-center py-8">
+      <div className="flex flex-col justify-center items-center py-20">
         <div className="flex flex-row justify-center pb-6">
           <p
             className={
