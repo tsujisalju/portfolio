@@ -24,7 +24,7 @@ export default function NavLink({
       >
         {children}
         {router.asPath === href && (
-          <span className="absolute inset-x-1 bottom-0 h-px bg-gradient-to-r from-stone-700 dark:via-stone-300 to-transparent"></span>
+          <span className="absolute inset-x-1 bottom-0 h-px bg-gradient-to-r from-stone-700 dark:from-stone-300 to-transparent"></span>
         )}
       </a>
     </Link>

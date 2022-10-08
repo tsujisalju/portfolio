@@ -6,8 +6,8 @@ width: 3000
 height: 1000
 ---
 
-_"Someway, somehow, you survived everything that has ever happened."_
+_"Irgendwie hast du alles überlebt, was je passiert ist."_
 
-Ultimatum is the mental image of living life in a new horizons. The actions and decisions you made has led up to this very moment.
+Ultimatum ist das geistige Bild eines Lebens in neuen Dimensionen. Die Handlungen und ENtscheidungen, die man getroffen hat, haben zu diesem Moment geführt.
 
-To this day, I still can't believe I have set foot in Germany. A few years ago it felt like a dream so far-fetched, and yet, here we are.
+Bis heute kann ich nicht glauben, dass ich Deutschland betreten habe. Vor ein paar Jahren kam es mire wie ein Traum vor, so weit hergeholt, und doch sind wir hier.
