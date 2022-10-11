@@ -62,7 +62,7 @@ export default function Header(Props: HeaderProp) {
                     layout="fixed"
                   ></Image>
                 </div>
-                <h1 className="text-4xl font-display hidden md:inline">
+                <h1 className="text-3xl font-display hidden md:inline">
                   smolpadok
                 </h1>
               </div>

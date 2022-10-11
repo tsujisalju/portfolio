@@ -23,7 +23,7 @@ export default function About() {
   }, []);
   return (
     <Layout>
-      <div className="md:container md:mx-auto px-4">
+      <div className="md:container md:mx-auto px-4 mt-8">
         <div className="flex flex-col-reverse lg:flex-row justify-center space-x-4">
           <FadeIn>
             <div className="flex flex-col lg:max-w-xl p-8 space-y-6 text-lg">

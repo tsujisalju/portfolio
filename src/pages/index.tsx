@@ -30,12 +30,12 @@ export default function Home({
     <Layout>
       <Hero>
         <div>
-          <h1 className="font-display text-4xl md:text-5xl">
+          <h1 className="font-display text-4xl">
             {intl.formatMessage({
               id: "Student, dev and design by day,",
             })}
           </h1>
-          <h1 className="font-display text-4xl md:text-5xl">
+          <h1 className="font-display text-4xl">
             {intl.formatMessage({
               id: "7 cats by alternate world.",
             })}
@@ -43,7 +43,7 @@ export default function Home({
         </div>
         <p className="font-sans text-lg">
           {intl.formatMessage({
-            id: "I'm Qayyum, a computer science student based in Leipzig, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tale of neo Khajiits in a different timeline.",
+            id: "I'm Qayyum, a computer science student based in Deggendorf, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tales of hope amidst terrible choices.",
           })}
         </p>
         <div className="flex flex-row pt-4 space-x-3">

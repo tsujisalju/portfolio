@@ -113,16 +113,22 @@
       "value": "I was born in Malaysia and now continuing my studies in Germany. I'm a hobbyist frontend developer and designer for almost 9 years."
     }
   ],
-  "I'm Qayyum, a computer science student based in Leipzig, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tale of neo Khajiits in a different timeline.": [
+  "I'm Qayyum, a computer science student based in Deggendorf, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tales of hope amidst terrible choices.": [
     {
       "type": 0,
-      "value": "I'm Qayyum, a computer science student based in Leipzig, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tale of neo Khajiits in a different timeline."
+      "value": "I'm Qayyum, a computer science student based in Deggendorf, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tales of hope amidst terrible choices."
     }
   ],
   "I'm still surprised that this art program is free. It is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation!": [
     {
       "type": 0,
       "value": "I'm still surprised that this art program is free. It is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation!"
+    }
+  ],
+  "If you need awesome, grotesque, avant-garde looking typefonts, this is the place for you! All fonts here are libre and open sourced.": [
+    {
+      "type": 0,
+      "value": "If you need awesome, grotesque, avant-garde looking typefonts, this is the place for you! All fonts here are libre and open sourced."
     }
   ],
   "Inkscape": [
@@ -207,6 +213,12 @@
     {
       "type": 0,
       "value": "Uses"
+    }
+  ],
+  "Velvetyne": [
+    {
+      "type": 0,
+      "value": "Velvetyne"
     }
   ],
   "Visual Studio Code": [

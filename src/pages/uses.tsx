@@ -120,6 +120,16 @@ export default function Uses() {
                     })}
                   </p>
                 </li>
+                <li>
+                  <h3 className="font-sans font-bold text-lg">
+                    {intl.formatMessage({ id: "Velvetyne" })}
+                  </h3>
+                  <p className="font-serif text-lg">
+                    {intl.formatMessage({
+                      id: "If you need awesome, grotesque, avant-garde looking typefonts, this is the place for you! All fonts here are libre and open sourced.",
+                    })}
+                  </p>
+                </li>
               </ul>
             </div>
           </div>

@@ -143,6 +143,12 @@
       "value": "Ich wurde in Malaysia geboren und studiere jetzt in Deutschland. Ich bin ein Hobby-Frontend-Entwickler und Designer für fast 9 Jahre."
     }
   ],
+  "I'm Qayyum, a computer science student based in Deggendorf, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tales of hope amidst terrible choices.": [
+    {
+      "type": 0,
+      "value": "Ich bin Qayyum, ein Informatik-Student in Leipzig, Deutschland. Ich bin Entwickler und Designer für Minswap DEX bei Cardano. Ansonsten erzähle ich die Geschichte von Hoffnung inmitten schrecklicher Entscheidungen."
+    }
+  ],
   "I'm Qayyum, a computer science student based in Leipzig, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tale of neo Khajiits in a different timeline.": [
     {
       "type": 0,
@@ -153,6 +159,12 @@
     {
       "type": 0,
       "value": "Ich bin immer noch überrascht, dass dieses Kunstprogramm kostenlos ist. Für eine Open-Source-Software ist das sehr respektable. Kommt mit vielen Pinseln, kann Timelapses aufnehmen und auch Animationen machen!"
+    }
+  ],
+  "If you need awesome, grotesque, avant-garde looking typefonts, this is the place for you! All fonts here are libre and open sourced.": [
+    {
+      "type": 0,
+      "value": "Wenn Sie auf der Suche nach großartigen, grotesken, avantgardistischen Schriftarten sind, sind Sie hier genau richtig! Alle Schriftarten sind libre und Open-Source."
     }
   ],
   "Inkscape": [
@@ -243,6 +255,12 @@
     {
       "type": 0,
       "value": "Nutzt"
+    }
+  ],
+  "Velvetyne": [
+    {
+      "type": 0,
+      "value": "Velvetyne"
     }
   ],
   "Visual Studio Code": [

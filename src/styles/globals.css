@@ -5,6 +5,10 @@
   src: url("/fonts/BluuNext/BluuNext-Bold.otf");
 }
 @font-face {
+  font-family: "Basteleur";
+  src: url("/fonts/Basteleur/Basteleur-Moonlight.otf");
+}
+@font-face {
   font-family: "Taagra";
   src: url("/fonts/Taagra/TaagraCalligraphy.otf");
 }
@@ -41,4 +45,9 @@ body {
 
 p {
   color: var(--p);
+}
+
+::selection {
+  color: var(--bg);
+  background: var(--fg);
 }
