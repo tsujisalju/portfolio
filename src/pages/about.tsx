@@ -21,6 +21,7 @@ export default function About() {
     document.body.style.backgroundImage = "";
     document.body.className = "";
   }, []);
+
   return (
     <Layout>
       <div className="md:container md:mx-auto px-4 mt-8">
