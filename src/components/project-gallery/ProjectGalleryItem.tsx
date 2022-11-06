@@ -14,7 +14,9 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
   return (
     <div
       className={
-        project.id === "lumen" || project.id === "antiquity"
+        project.id === "lumen" ||
+        project.id === "resurrection" ||
+        project.id === "monolith"
           ? "md:col-span-2 md:row-span-2"
           : project.id === "ultimatum"
           ? "md:col-span-4 md:row-span-2"
