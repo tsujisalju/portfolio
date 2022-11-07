@@ -1,3 +1,15 @@
+## smolpadok's portfolio source code
+
+Welcome! This is the source code for my portfolio website. It serves as a showcase for my artworks and projects, as well as an ongoing exercise to learn how to use Nextjs, Tailwindcss and write Typescript. I intentionally make it open source so I could share my cool findings with you.
+
+This website is based on the Nextjs personal website tutorial, but now expanded with responsive design, light/dark mode toggle, language support for posts, and more!
+
+You can take a look at the code to help mix and match stuff with your own portfolio website, but my artworks are my intellectual property.
+
+A long-term development plan for this website would be to make an all-in-one self-hosted artist commissioning and distribution system doohicky, but that is long-term. Keep an eye out as I piece it together.
+
+## Nextjs related thing
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
