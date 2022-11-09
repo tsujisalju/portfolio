@@ -15,11 +15,11 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
     <div
       className={
         project.id === "lumen" ||
-        project.id === "resurrection" ||
-        project.id === "monolith"
+        project.id === "monolith" ||
+        project.id === "antiquity"
           ? "md:col-span-2 md:row-span-2"
           : project.id === "ultimatum"
-          ? "md:col-span-4 md:row-span-2"
+          ? "md:col-span-2 lg:col-span-3 xl:col-span-4  md:row-span-2"
           : project.width > project.height
           ? "md:col-span-2"
           : project.width < project.height
@@ -62,7 +62,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
         </div>
         <div
           className={
-            "md:childParallax sm:block md:absolute sm:bg-none md:backdrop-blur-md md:dark:bg-black/50 md:bg-white/50 md:py-3 md:px-5 md:m-4 m-1 rounded md:shadow-lg transition duration-400 transform "
+            "md:childParallax block md:absolute bg-none md:backdrop-blur-md md:dark:bg-black/50 md:bg-white/50 md:py-3 md:px-5 md:m-4 m-1 rounded md:shadow-lg transition duration-400 transform "
           }
         >
           <h1 className="font-display md:text-2xl text-xl">{project.title}</h1>
