@@ -128,7 +128,7 @@
   "I specifically bought this tablet for its wireless feature. As a bonus, it also has a native Linux driver. The port on my previous tablet has gotten loose and frequently disconnects, plus I had to use workarounds to configure the buttons. This new one just works out of the box.": [
     {
       "type": 0,
-      "value": "I specifically bought this tablet for its wireless feature. As a bonus, it also has a native Linux driver. The port on my previous tablet has gotten loose and frequently disconnects, plus I had to use workarounds to configure the buttons. This new one just works out of the box."
+      "value": "Saya beli tablet ini hanya sebab ciri wirelessnya. Sebagai bonus, ia juga mempunyai pemandu Linux yang asli. Port USB tablet lama saya telah menjadi longgar dan sering tertanggal. Dalam pada itu, saya perlu membuat beberapa ubahsuaian supaya ia dapat berfungsi dengan Linux. Tablet baru ini berfungsi sejurus selepas membukanya."
     }
   ],
   "I take great lessons from cats, being a person who has pet cats in real life. Cats are resilient, loving, intelligent yet whimsical and they are more aware of the existence of higher beings, things of greater good. If granted sentience, I believe they can create better worlds than we do. That is a narrative I'd like to bring in my illustrations, as a motivation for myself, and hopefully for others to explore and learn for the betterment of society.": [
@@ -143,6 +143,12 @@
       "value": "Saya lahir di Malaysia dan kini menyambung pelajaran di Jerman. Saya seorang pembangun frontend dan pelukis hobi selama hampir 9 tahun."
     }
   ],
+  "I was born in Malaysia, previously based in Germany and now starting fresh back in home country. I'm a hobbyist frontend developer and designer for almost 10 years.": [
+    {
+      "type": 0,
+      "value": "Saya lahir di Malaysia. Dahulu saya bertempat di Jerman, dan kini saya memula semula di tanah air. Saya seorang pembangun frontend dan pelukis hobi selama hampir 10 tahun."
+    }
+  ],
   "I'm Qayyum, a computer science student based in Deggendorf, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tales of hope amidst terrible choices.": [
     {
       "type": 0,
@@ -153,6 +159,12 @@
     {
       "type": 0,
       "value": "Saya Qayyum, seorang siswa sains komputer berpangkal di Leipzig, Jerman. Saya seorang pembangun dan pereka untuk Minswap DEX di Cardano. Selain itu, saya menceritakan kisah Khajiit neo pada garis masa yang lain."
+    }
+  ],
+  "I'm Qayyum, a software engineering student based in Johore, Malaysia. I am a frontend developer and designer at Minswap DEX on Cardano. Other than that, I tell the tales of hope amidst terrible choices.": [
+    {
+      "type": 0,
+      "value": "I'm Qayyum, a software engineering student based in Johore, Malaysia. I am a frontend developer and designer at Minswap DEX on Cardano. Other than that, I tell the tales of hope amidst terrible choices."
     }
   ],
   "I'm still surprised that this art program is free. It is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation!": [

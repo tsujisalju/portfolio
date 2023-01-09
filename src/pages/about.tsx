@@ -33,7 +33,7 @@ export default function About() {
               </h1>
               <p className="font-sans">
                 {intl.formatMessage({
-                  id: "I was born in Malaysia and now continuing my studies in Germany. I'm a hobbyist frontend developer and designer for almost 9 years.",
+                  id: "I was born in Malaysia, previously based in Germany and now starting fresh back in home country. I'm a hobbyist frontend developer and designer for almost 10 years.",
                 })}
               </p>
               <p className="font-sans">

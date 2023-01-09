@@ -43,7 +43,7 @@ export default function Home({
         </div>
         <p className="font-sans text-lg">
           {intl.formatMessage({
-            id: "I'm Qayyum, a computer science student based in Deggendorf, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tales of hope amidst terrible choices.",
+            id: "I'm Qayyum, a software engineering student based in Johore, Malaysia. I am a frontend developer and designer at Minswap DEX on Cardano. Other than that, I tell the tales of hope amidst terrible choices.",
           })}
         </p>
         <div className="flex flex-row pt-4 space-x-3">
