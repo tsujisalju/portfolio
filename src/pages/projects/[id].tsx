@@ -8,7 +8,6 @@ import { useTheme } from "next-themes";
 import path from "path";
 import fs from "fs";
 import { FormattedDate } from "react-intl";
-import { FadeIn } from "../../utilities/FadeIn";
 import { shimmer, toBase64 } from "../../components/ImageSkeleton";
 
 const projectsDirectory = path.join(process.cwd(), "src/projects");
@@ -104,35 +103,33 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
             />
           </div>
           <div>
-            <FadeIn>
-              <div
-                className={
-                  "flex flex-col p-8 space-y-4 " +
-                  (projectData.width < projectData.height
-                    ? "lg:w-[500px]"
-                    : "mx-auto lg:max-w-5xl")
-                }
-              >
-                <div className="flex flex-col space-y-2 mb-4">
-                  <h1 className="font-display text-5xl lg:text-6xl ">
-                    {projectData.title}
-                  </h1>
-                  <div className="font-sans font-light font-lg">
-                    <FormattedDate
-                      value={projectData.date}
-                      day={"numeric"}
-                      month={"long"}
-                      year={"numeric"}
-                    />
-                  </div>
+            <div
+              className={
+                "flex flex-col p-8 space-y-4 " +
+                (projectData.width < projectData.height
+                  ? "lg:w-[500px]"
+                  : "mx-auto lg:max-w-5xl")
+              }
+            >
+              <div className="flex flex-col space-y-2 mb-4">
+                <h1 className="font-display text-5xl lg:text-6xl ">
+                  {projectData.title}
+                </h1>
+                <div className="font-sans font-light font-lg">
+                  <FormattedDate
+                    value={projectData.date}
+                    day={"numeric"}
+                    month={"long"}
+                    year={"numeric"}
+                  />
                 </div>
-                <hr className="opacity-20" />
-                <div
-                  className="flex flex-col space-y-4 font-serif font-normal text-lg"
-                  dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
-                />
               </div>
-            </FadeIn>
+              <hr className="opacity-20" />
+              <div
+                className="flex flex-col space-y-4 font-serif font-normal text-lg"
+                dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
+              />
+            </div>
           </div>
         </section>
       </Layout>
