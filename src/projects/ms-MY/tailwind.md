@@ -1,5 +1,5 @@
 ---
-title: "Tailwind"
+title: "Angin Ekor"
 date: "2022-12-15"
 img: "/img/projects/tailwind.jpg"
 width: 3000

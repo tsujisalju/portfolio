@@ -1,5 +1,5 @@
 ---
-title: "Retribution"
+title: "Vergeltung"
 date: "2022-11-27"
 img: "/img/projects/retribution.jpg"
 width: 3000
