@@ -15,6 +15,11 @@ export default function Achernar() {
         <h2 className="font-display text-3xl">
           {intl.formatMessage({ id: "Minswap DEX" })}
         </h2>
+        <p className="font-sans text-lg">
+          {intl.formatMessage({
+            id: "Minswap DEX is a decentralized multi-pool exchange on the Cardano blockchain. I work alongside the marketing and UI/UX department to provide promotional content, merchandise and interface designs.",
+          })}
+        </p>
       </div>
       <div className="max-w-full overflow-x-hidden whitespace-nowrap py-8">
         <div
