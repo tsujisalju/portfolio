@@ -40,22 +40,22 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
             (!isShowing ? "transform scale-95 ease-out" : " ease-in-out")
           }
         >
-          <Link href={"/projects/" + project.id}>
-            <a onClick={HandleOnClick}>
-              <Image
-                id={project.id}
-                alt={project.id}
-                className="transition duration-400 rounded-md"
-                src={project.img}
-                width={project.width / 2}
-                height={project.height / 2}
-                layout="responsive"
-                placeholder="blur"
-                blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                  shimmer(project.width, project.height)
-                )}`}
-              ></Image>
-            </a>
+          <Link href={"/projects/" + project.id} onClick={HandleOnClick}>
+
+            <Image
+              id={project.id}
+              alt={project.id}
+              className="transition duration-400 rounded-md"
+              src={project.img}
+              width={project.width / 2}
+              height={project.height / 2}
+              layout="responsive"
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(project.width, project.height)
+              )}`}
+            ></Image>
+
           </Link>
         </div>
         <div
