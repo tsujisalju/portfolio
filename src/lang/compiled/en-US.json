@@ -1,26 +1,20 @@
 {
-  "\"The power of any weapon comes from [the heart], but only when tempered by [the discipline] ..": [
-    {
-      "type": 0,
-      "value": "\"The power of any weapon comes from [the heart], but only when tempered by [the discipline] .."
-    }
-  ],
-  ".. the self-control of the one who wields it.\"": [
-    {
-      "type": 0,
-      "value": ".. the self-control of the one who wields it.\""
-    }
-  ],
-  "7 cats by alternate world.": [
-    {
-      "type": 0,
-      "value": "7 cats by alternate world."
-    }
-  ],
   "About": [
     {
       "type": 0,
       "value": "About"
+    }
+  ],
+  "Achenar": [
+    {
+      "type": 0,
+      "value": "Achenar"
+    }
+  ],
+  "Achernar": [
+    {
+      "type": 0,
+      "value": "Achernar"
     }
   ],
   "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent.": [
@@ -29,22 +23,10 @@
       "value": "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent."
     }
   ],
-  "At a young age, my mother introduced me to programming and game making. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation.": [
+  "Biography": [
     {
       "type": 0,
-      "value": "At a young age, my mother introduced me to programming and game making. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation."
-    }
-  ],
-  "Cats?": [
-    {
-      "type": 0,
-      "value": "Cats?"
-    }
-  ],
-  "Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. I am always on the lookout for new opportunities, and I found a place where my style and ideas can contribute to bleeding edge technology.": [
-    {
-      "type": 0,
-      "value": "Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. I am always on the lookout for new opportunities, and I found a place where my style and ideas can contribute to bleeding edge technology."
+      "value": "Biography"
     }
   ],
   "Dark": [
@@ -71,12 +53,6 @@
       "value": "Figma"
     }
   ],
-  "Hello, friend! I'm Qayyum.": [
-    {
-      "type": 0,
-      "value": "Hello, friend! I'm Qayyum."
-    }
-  ],
   "Home": [
     {
       "type": 0,
@@ -95,28 +71,28 @@
       "value": "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life."
     }
   ],
+  "I remember writing journals when I was in middle school. Starting Form 1, I had a notebook in which I wrote just about anything that happened one particular day, and I would also scribble drawings on the side. There was a total of about 8 books and 3 sketchbooks before I took the SPM exam. Some of them got caught in the rain while some went missing and was later found with boob vandalism on my more feminine characters. They are largely embarassing now, but they remain fragments of memories worth documenting here perpetually.": [
+    {
+      "type": 0,
+      "value": "I remember writing journals when I was in middle school. Starting Form 1, I had a notebook in which I wrote just about anything that happened one particular day, and I would also scribble drawings on the side. There was a total of about 8 books and 3 sketchbooks before I took the SPM exam. Some of them got caught in the rain while some went missing and was later found with boob vandalism on my more feminine characters. They are largely embarassing now, but they remain fragments of memories worth documenting here perpetually."
+    }
+  ],
   "I specifically bought this tablet for its wireless feature. As a bonus, it also has a native Linux driver. The port on my previous tablet has gotten loose and frequently disconnects, plus I had to use workarounds to configure the buttons. This new one just works out of the box.": [
     {
       "type": 0,
       "value": "I specifically bought this tablet for its wireless feature. As a bonus, it also has a native Linux driver. The port on my previous tablet has gotten loose and frequently disconnects, plus I had to use workarounds to configure the buttons. This new one just works out of the box."
     }
   ],
-  "I take great lessons from cats, being a person who has pet cats in real life. Cats are resilient, loving, intelligent yet whimsical and they are more aware of the existence of higher beings, things of greater good. If granted sentience, I believe they can create better worlds than we do. That is a narrative I'd like to bring in my illustrations, as a motivation for myself, and hopefully for others to explore and learn for the betterment of society.": [
+  "I was born in a small town in the northern region of Kedah. When I was 6 years old, my family moved all the way down to southern Johore. There used to be a small kindergarten in the neighbourhood, and there was only 3 to 4 children there. I remember eating scrambled eggs for breakfast, reading storybooks with grandma and going to the park nearby every saturday. It's a whole little family in there and I felt like I was part of it too. Today I looked back at the now defunct corner lot terrace where the kindergarten used to be, oh how I wish I could do it all over again.": [
     {
       "type": 0,
-      "value": "I take great lessons from cats, being a person who has pet cats in real life. Cats are resilient, loving, intelligent yet whimsical and they are more aware of the existence of higher beings, things of greater good. If granted sentience, I believe they can create better worlds than we do. That is a narrative I'd like to bring in my illustrations, as a motivation for myself, and hopefully for others to explore and learn for the betterment of society."
+      "value": "I was born in a small town in the northern region of Kedah. When I was 6 years old, my family moved all the way down to southern Johore. There used to be a small kindergarten in the neighbourhood, and there was only 3 to 4 children there. I remember eating scrambled eggs for breakfast, reading storybooks with grandma and going to the park nearby every saturday. It's a whole little family in there and I felt like I was part of it too. Today I looked back at the now defunct corner lot terrace where the kindergarten used to be, oh how I wish I could do it all over again."
     }
   ],
-  "I was born in Malaysia, previously based in Germany and now starting fresh back in home country. I'm a hobbyist frontend developer and designer for almost 10 years.": [
+  "I'm Qayyum, a frontend developer and designer based in Johore, Malaysia.": [
     {
       "type": 0,
-      "value": "I was born in Malaysia, previously based in Germany and now starting fresh back in home country. I'm a hobbyist frontend developer and designer for almost 10 years."
-    }
-  ],
-  "I'm Qayyum, a software engineering student based in Johore, Malaysia. I am a frontend developer and designer at Minswap DEX on Cardano. Other than that, I tell the tales of hope amidst terrible choices.": [
-    {
-      "type": 0,
-      "value": "I'm Qayyum, a software engineering student based in Johore, Malaysia. I am a frontend developer and designer at Minswap DEX on Cardano. Other than that, I tell the tales of hope amidst terrible choices."
+      "value": "I'm Qayyum, a frontend developer and designer based in Johore, Malaysia."
     }
   ],
   "I'm still surprised that this art program is free. It is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation!": [
@@ -131,6 +107,12 @@
       "value": "If you need awesome, grotesque, avant-garde looking typefonts, this is the place for you! All fonts here are libre and open sourced."
     }
   ],
+  "In a sea of conflict and convolution, I seek solace in the few things I have left.": [
+    {
+      "type": 0,
+      "value": "In a sea of conflict and convolution, I seek solace in the few things I have left."
+    }
+  ],
   "Inkscape": [
     {
       "type": 0,
@@ -141,12 +123,6 @@
     {
       "type": 0,
       "value": "It has been a while since I've revisited some old game projects of mine. My feelings for Unity has been a little tainted lately, after all the shenanigans of the upper management. I may consider checking out other engines too."
-    }
-  ],
-  "Khajiit today makes 'soft wares'.": [
-    {
-      "type": 0,
-      "value": "Khajiit today makes 'soft wares'."
     }
   ],
   "Krita": [
@@ -179,6 +155,18 @@
       "value": "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD. I also installed Debian 11 as the main OS."
     }
   ],
+  "My mother introduced me to programming and game making since I was 9 years old, because I was always on the computer and I ought to put my hobby to good use rather than just mindless flash gaming. And you know what I was pretty hooked by the idea. The fact that I could create something awesome with my own touch of flare is amazing, and the passion burns strong since. The time was convenient enough that my middle school was getting around into participating robotics and game jam competitions. My friends and I pioneered the Robotics Club and I handled the programming side of things. One of the best memories I had was creating a Lego EV3 Mindstorms claw robot for an intrastate competition, and making the design decision to control it with another EV3 brick via Bluetooth instead of a phone over Wifi, which worked in our favor during the run. Before I left the school, they were already setting up courses for game dev with Unity3D, which is so super cool to see.": [
+    {
+      "type": 0,
+      "value": "My mother introduced me to programming and game making since I was 9 years old, because I was always on the computer and I ought to put my hobby to good use rather than just mindless flash gaming. And you know what I was pretty hooked by the idea. The fact that I could create something awesome with my own touch of flare is amazing, and the passion burns strong since. The time was convenient enough that my middle school was getting around into participating robotics and game jam competitions. My friends and I pioneered the Robotics Club and I handled the programming side of things. One of the best memories I had was creating a Lego EV3 Mindstorms claw robot for an intrastate competition, and making the design decision to control it with another EV3 brick via Bluetooth instead of a phone over Wifi, which worked in our favor during the run. Before I left the school, they were already setting up courses for game dev with Unity3D, which is so super cool to see."
+    }
+  ],
+  "My new personal project, page under construction :)": [
+    {
+      "type": 0,
+      "value": "My new personal project, page under construction :)"
+    }
+  ],
   "No doubt everyone uses this. I use it for all my game and web dev work. It's so nice to have all sorts of support and extensions for any programming work imaginable.": [
     {
       "type": 0,
@@ -191,16 +179,10 @@
       "value": "Padok is a Malay slang for padu, which means powerful."
     }
   ],
-  "Student, dev and design by day,": [
+  "Tales of hope amidst terrible choices.": [
     {
       "type": 0,
-      "value": "Student, dev and design by day,"
-    }
-  ],
-  "The illustrations I make, describe a world of places I'm passionate about, the things I want to do and the kind of person I wish to become. They are not tied to a particular story, leaving enough room for self-interpretation.": [
-    {
-      "type": 0,
-      "value": "The illustrations I make, describe a world of places I'm passionate about, the things I want to do and the kind of person I wish to become. They are not tied to a particular story, leaving enough room for self-interpretation."
+      "value": "Tales of hope amidst terrible choices."
     }
   ],
   "Unity3D": [
@@ -233,10 +215,22 @@
       "value": "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs. Just found out they're being bought out by Adobe, so I only expect the worst."
     }
   ],
+  "What's in a name?": [
+    {
+      "type": 0,
+      "value": "What's in a name?"
+    }
+  ],
   "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference.": [
     {
       "type": 0,
       "value": "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference."
+    }
+  ],
+  "Work": [
+    {
+      "type": 0,
+      "value": "Work"
     }
   ],
   "Workstation": [
