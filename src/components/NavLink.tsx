@@ -16,7 +16,7 @@ export default function NavLink({
     <Link href={href}>
       <a
         className={
-          "relative transition duration-100 truncate font-sans text-lg h-4" +
+          "relative transition duration-100 truncate font-sans text-lg " +
           (disabled
             ? "text-stone-400 dark:text-stone-600 pointer-events-none"
             : "text-stone-700 hover:text-stone-600 dark:text-stone-300 dark:hover:text-stone-400 ")

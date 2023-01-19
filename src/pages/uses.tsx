@@ -1,9 +1,15 @@
-import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import { useIntl } from "react-intl";
+import { useEffect } from "react";
 
 export default function Uses() {
   const intl = useIntl();
+
+  useEffect(() => {
+    document.body.style.backgroundImage = "";
+    document.body.className = "";
+  }, []);
+
   return (
     <Layout>
       <div className=" max-w-3xl mx-auto space-y-20 mt-16">

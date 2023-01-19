@@ -35,16 +35,18 @@ export default function Home({
             })}
           </h1>
         </div>
-        <p className="font-sans text-lg">
-          {intl.formatMessage({
-            id: "I'm Qayyum, a frontend developer and designer based in Johore, Malaysia.",
-          })}
-        </p>
-        <p className="font-sans text-lg">
-          {intl.formatMessage({
-            id: "In a sea of conflict and convolution, I seek solace in the few things I have left.",
-          })}
-        </p>
+        <div>
+          <p className="font-sans text-lg">
+            {intl.formatMessage({
+              id: "I'm Qayyum, a frontend developer and designer based in Johore, Malaysia.",
+            })}
+          </p>
+          <p className="font-sans text-lg">
+            {intl.formatMessage({
+              id: "In a sea of conflict and convolution, I seek solace in the few things I have left.",
+            })}
+          </p>
+        </div>
         <div className="flex flex-row pt-4 space-x-3">
           <Link href={"https://twitter.com/smolpadok"}>
             <a

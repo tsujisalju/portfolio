@@ -1,5 +1,3 @@
-import { GetServerSideProps } from "next";
-
 export type FFXIVData = {
   Character: {
     ActiveClassJob: {

@@ -25,10 +25,7 @@ export default function Footer() {
           layout="fixed"
         ></Image>
       </div>
-      <p>
-        {intl.formatMessage({ id: "Made with 😻 using Next.js and Tailwind" })}
-      </p>
-      <small>© 2022 smolpadok</small>
+      <small>© 2023 smolpadok</small>
     </div>
   );
 }
