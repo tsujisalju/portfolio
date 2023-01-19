@@ -27,7 +27,6 @@ export default function About() {
                 height={300}
                 src={"/img/about/van-sunflower.png"}
                 placeholder="empty"
-                layout="fixed"
               />
             </div>
             <p className="font-serif">

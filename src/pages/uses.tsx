@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
-import { useIntl } from "react-intl";
 import { useEffect } from "react";
+import { useIntl } from "react-intl";
 
 export default function Uses() {
   const intl = useIntl();

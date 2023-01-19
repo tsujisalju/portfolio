@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout";
-import { getProjectData, ProjectData } from "../../lib/projects";
-import { GetStaticProps, GetStaticPaths } from "next";
+import { ProjectData, getProjectData } from "../../lib/projects";
+import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";

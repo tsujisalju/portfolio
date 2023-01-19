@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
-import { SUPPORTED_LOCALES, LOCALE_LABEL } from "../constants/locales";
+import { LOCALE_LABEL, SUPPORTED_LOCALES } from "../constants/locales";
 import { useRouter } from "next/router";
 
 function getShortName(locale: string): string {

@@ -1,5 +1,5 @@
-import { Project } from "../../lib/projects";
 import ProjectGalleryItem from "./ProjectGalleryItem";
+import { Project } from "../../lib/projects";
 import React from "react";
 
 export default function ProjectGallery({ projects }: { projects: Project[] }) {

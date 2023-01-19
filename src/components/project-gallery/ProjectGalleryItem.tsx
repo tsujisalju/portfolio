@@ -1,10 +1,10 @@
-import { Project } from "../../lib/projects";
-import Link from "next/link";
-import Image from "next/image";
-import Tilt from "react-parallax-tilt";
-import React from "react";
-import { FormattedDate } from "react-intl";
 import { shimmer, toBase64 } from "../ImageSkeleton";
+import { FormattedDate } from "react-intl";
+import Image from "next/image";
+import Link from "next/link";
+import { Project } from "../../lib/projects";
+import React from "react";
+import Tilt from "react-parallax-tilt";
 
 export default function ProjectGalleryItem({ project }: { project: Project }) {
   const [isShowing, setIsShowing] = React.useState<boolean>(true);
@@ -14,11 +14,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
   return (
     <div
       className={
-        project.id === "lumen" ||
-        project.id === "monolith" ||
-        project.id === "antiquity"
-          ? "md:col-span-2 md:row-span-2"
-          : project.id === "ultimatum" || project.id === "tailwind"
+        project.id === "ultimatum" || project.id === "tailwind"
           ? "md:col-span-2 lg:col-span-3 xl:col-span-4  md:row-span-2"
           : project.width > project.height
           ? "md:col-span-2"
@@ -41,7 +37,6 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
           }
         >
           <Link href={"/projects/" + project.id} onClick={HandleOnClick}>
-
             <Image
               id={project.id}
               alt={project.id}
@@ -49,13 +44,11 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
               src={project.img}
               width={project.width / 2}
               height={project.height / 2}
-              layout="responsive"
               placeholder="blur"
               blurDataURL={`data:image/svg+xml;base64,${toBase64(
                 shimmer(project.width, project.height)
               )}`}
             ></Image>
-
           </Link>
         </div>
         <div

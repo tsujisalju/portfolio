@@ -12,7 +12,6 @@ export default function Footer() {
           width={30}
           height={30}
           placeholder="empty"
-          layout="fixed"
         ></Image>
       </div>
       <div className="flex md:self-center dark:hidden pb-2 md:pb-0">
@@ -22,7 +21,6 @@ export default function Footer() {
           width={30}
           height={30}
           placeholder="empty"
-          layout="fixed"
         ></Image>
       </div>
       <small>© 2023 smolpadok</small>
