@@ -108,7 +108,9 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
               <div
                 className={
                   "flex flex-col p-8 space-y-4 " +
-                  (projectData.width < projectData.height && "lg:w-[500px]")
+                  (projectData.width < projectData.height
+                    ? "lg:w-[500px]"
+                    : "mx-auto lg:max-w-5xl")
                 }
               >
                 <div className="flex flex-col space-y-2 mb-4">

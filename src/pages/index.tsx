@@ -3,7 +3,6 @@ import ProjectGallery from "../components/project-gallery/ProjectGallery";
 import Hero from "../components/Hero";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useIntl } from "react-intl";
 
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
@@ -32,18 +31,18 @@ export default function Home({
         <div>
           <h1 className="font-display text-4xl">
             {intl.formatMessage({
-              id: "Student, dev and design by day,",
-            })}
-          </h1>
-          <h1 className="font-display text-4xl">
-            {intl.formatMessage({
-              id: "7 cats by alternate world.",
+              id: "Tales of hope amidst terrible choices.",
             })}
           </h1>
         </div>
         <p className="font-sans text-lg">
           {intl.formatMessage({
-            id: "I'm Qayyum, a software engineering student based in Johore, Malaysia. I am a frontend developer and designer at Minswap DEX on Cardano. Other than that, I tell the tales of hope amidst terrible choices.",
+            id: "I'm Qayyum, a frontend developer and designer based in Johore, Malaysia.",
+          })}
+        </p>
+        <p className="font-sans text-lg">
+          {intl.formatMessage({
+            id: "In a sea of conflict and convolution, I seek solace in the few things I have left.",
           })}
         </p>
         <div className="flex flex-row pt-4 space-x-3">

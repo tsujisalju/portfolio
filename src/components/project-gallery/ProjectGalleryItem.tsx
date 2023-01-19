@@ -51,11 +51,9 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
                 height={project.height / 2}
                 layout="responsive"
                 placeholder="blur"
-                blurDataURL={
-                  `data:image/svg+xml;base64,${toBase64(
-                    shimmer(project.width, project.height)
-                  )}` /*img.replace(".jpg", "-placeholder.png")*/
-                }
+                blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                  shimmer(project.width, project.height)
+                )}`}
               ></Image>
             </a>
           </Link>

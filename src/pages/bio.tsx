@@ -1,0 +1,95 @@
+import Image from "next/image";
+import React from "react";
+import Layout from "../components/Layout";
+import { useIntl } from "react-intl";
+import { FadeIn } from "../utilities/FadeIn";
+import { GetServerSideProps, InferGetServerSidePropsType } from "next";
+
+export default function About() {
+  const [nameToggle, setNameToggle] = React.useState<Boolean>(false);
+  const intl = useIntl();
+  function HandleNameToggle(value: Boolean) {
+    setNameToggle(value);
+  }
+
+  React.useEffect(() => {
+    document.body.style.backgroundImage = "";
+    document.body.className = "";
+  }, []);
+
+  return (
+    <Layout>
+      <div className="md:container md:mx-auto lg:max-w-4xl px-4 mt-16">
+        <div className="flex flex-col-reverse lg:flex-row justify-center space-x-4">
+          <FadeIn>
+            <div className="flex flex-col space-y-6 text-lg text-justify">
+              <p className="font-sans">
+                {intl.formatMessage({
+                  id: "I was born in a small town in the northern region of Kedah. When I was 6 years old, my family moved all the way down to southern Johore. There used to be a small kindergarten in the neighbourhood, and there was only 3 to 4 children there. I remember eating scrambled eggs for breakfast, reading storybooks with grandma and going to the park nearby every saturday. It's a whole little family in there and I felt like I was part of it too. Today I looked back at the now defunct corner lot terrace where the kindergarten used to be, oh how I wish I could do it all over again.",
+                })}
+              </p>
+              <p className="font-sans">
+                {intl.formatMessage({
+                  id: "I remember writing journals when I was in middle school. Starting Form 1, I had a notebook in which I wrote just about anything that happened one particular day, and I would also scribble drawings on the side. There was a total of about 8 books and 3 sketchbooks before I took the SPM exam. Some of them got caught in the rain while some went missing and was later found with boob vandalism on my more feminine characters. They are largely embarassing now, but they remain fragments of memories worth documenting here perpetually.",
+                })}
+              </p>
+              <p className="font-sans">
+                {intl.formatMessage({
+                  id: "My mother introduced me to programming and game making since I was 9 years old, because I was always on the computer and I ought to put my hobby to good use rather than just mindless flash gaming. And you know what I was pretty hooked by the idea. The fact that I could create something awesome with my own touch of flare is amazing, and the passion burns strong since. The time was convenient enough that my middle school was getting around into participating robotics and game jam competitions. My friends and I pioneered the Robotics Club and I handled the programming side of things. One of the best memories I had was creating a Lego EV3 Mindstorms claw robot for an intrastate competition, and making the design decision to control it with another EV3 brick via Bluetooth instead of a phone over Wifi, which worked in our favor during the run. Before I left the school, they were already setting up courses for game dev with Unity3D, which is so super cool to see.",
+                })}
+              </p>
+              <p className="font-sans">
+                {intl.formatMessage({
+                  id: "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life.",
+                })}
+              </p>
+            </div>
+          </FadeIn>
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center py-20 gap-6">
+        <h1 className="font-display text-xl">
+          {intl.formatMessage({ id: "What's in a name?" })}
+        </h1>
+        <div className="flex flex-row justify-center pb-6">
+          <p
+            className={
+              "font-display text-4xl md:text-7xl " +
+              (!nameToggle
+                ? "text-stone-800 dark:text-stone-200"
+                : "text-stone-400 dark:text-stone-700")
+            }
+            onMouseEnter={() => HandleNameToggle(false)}
+          >
+            smol
+          </p>
+          <p
+            className={
+              "font-display text-4xl md:text-7xl " +
+              (nameToggle
+                ? "text-stone-800 dark:text-stone-200"
+                : "text-stone-400 dark:text-stone-700")
+            }
+            onMouseEnter={() => HandleNameToggle(true)}
+          >
+            padok
+          </p>
+        </div>
+        <div className="container mx-auto lg:max-w-4xl text-center h-12">
+          <p className={"font-sans text-lg " + (nameToggle && "hidden")}>
+            {intl.formatMessage({
+              id: "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference.",
+            })}
+          </p>
+          <p className={"font-sans text-lg " + (!nameToggle && "hidden")}>
+            {intl.formatMessage({
+              id: "Padok is a Malay slang for padu, which means powerful.",
+            })}
+          </p>
+        </div>
+      </div>
+      <div className="h-64"></div>
+    </Layout>
+  );
+}

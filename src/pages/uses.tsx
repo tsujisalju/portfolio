@@ -6,20 +6,7 @@ export default function Uses() {
   const intl = useIntl();
   return (
     <Layout>
-      <Hero>
-        <h1 className="font-display text-3xl md:text-4xl">
-          {intl.formatMessage({
-            id: '"The power of any weapon comes from [the heart], but only when tempered by [the discipline] ..',
-          })}
-        </h1>
-        <p className="font-sans text-lg">
-          {intl.formatMessage({
-            id: '.. the self-control of the one who wields it."',
-          })}
-        </p>
-      </Hero>
-
-      <div className=" max-w-3xl mx-auto space-y-20">
+      <div className=" max-w-3xl mx-auto space-y-20 mt-16">
         <section className="md:border-l md:border-stone-400 dark:md:border-stone-700 md:pl-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8 px-16 lg:px-0">
             <h2 className="font-display text-lg">
