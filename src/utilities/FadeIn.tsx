@@ -1,10 +1,10 @@
 import { Transition } from "@headlessui/react";
-import { Fragment, ReactNode } from "react";
+import { ReactNode } from "react";
 
 export function FadeIn({ children }: { children: ReactNode }) {
   return (
     <Transition
-      as={Fragment}
+      as={"div"}
       appear
       show={true}
       enter="transition duration-400"

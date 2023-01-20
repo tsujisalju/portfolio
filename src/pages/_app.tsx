@@ -7,6 +7,29 @@ import nookies from "nookies";
 import EN_US_LOCALE_MODULE from "../lang/compiled/en-US.json";
 import { useRouter } from "next/router";
 import { ParallaxProvider } from "react-scroll-parallax";
+import {
+  DM_Serif_Display,
+  Karla,
+  Source_Serif_4,
+  Source_Serif_Pro,
+} from "@next/font/google";
+
+const karla = Karla({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-karla",
+});
+const source_serif = Source_Serif_4({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-source-serif-pro",
+});
+const dm_serif_display = DM_Serif_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal"],
+  variable: "--font-dm-serif-display",
+});
 
 type LocaleModule = Record<string, any>;
 
@@ -41,7 +64,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     >
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ParallaxProvider>
-          <Component {...pageProps} />
+          <main
+            className={`${karla.variable} ${source_serif.variable} ${dm_serif_display.variable}`}
+          >
+            <Component {...pageProps} />
+          </main>
         </ParallaxProvider>
       </ThemeProvider>
     </IntlProvider>
