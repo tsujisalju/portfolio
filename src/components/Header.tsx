@@ -29,7 +29,7 @@ export default function Header(Props: HeaderProp) {
   return (
     <header
       className={
-        "sticky md:container md:mx-auto md:rounded-lg top-0 md:top-2 z-10 md:mb-4 backdrop-blur-md transition transition-100 " +
+        "sticky lg:rounded-lg top-0 lg:top-2 lg:mx-2 z-10 lg:mb-4 backdrop-blur-md transition transition-100 " +
         (!disableOnTop
           ? !onTop
             ? "bg-stone-100/60 dark:bg-stone-900/60"
@@ -38,32 +38,31 @@ export default function Header(Props: HeaderProp) {
       }
     >
       <div className="flex flex-row">
-        <div className="flex flex-row flex-1 p-5 md:p-6 md:space-x-12">
+        <div className="flex flex-row flex-auto p-4 lg:p-6 lg:space-x-12">
           <Link href={"/"}>
             <div className="flex flex-row justify-start items-center space-x-4 -ml-4 dark:ml-0">
-              <div className="md:self-center h-[40px] w-[40px] hidden dark:flex pb-2 md:pb-0">
-                <Image
-                  alt="smolpadok logo"
-                  src="/img/logo-light.png"
-                  width={40}
-                  height={40}
-                  placeholder="empty"
-                ></Image>
-              </div>
               <Image
-                className="flex h-[40px] w-[40px] md:self-center dark:hidden pb-2 md:pb-0"
+                className="lg:self-center hidden dark:flex pb-2 lg:pb-0"
+                alt="smolpadok logo"
+                src="/img/logo-light.png"
+                width={40}
+                height={40}
+                placeholder="empty"
+              ></Image>
+              <Image
+                className="flex lg:self-center dark:hidden pb-2 lg:pb-0"
                 alt="smolpadok logo"
                 src="/img/logo-dark.png"
                 width={40}
                 height={40}
                 placeholder="empty"
               ></Image>
-              <h1 className="text-3xl font-display hidden md:inline">
+              <h1 className="text-3xl font-display hidden lg:inline">
                 smolpadok
               </h1>
             </div>
           </Link>
-          <nav className="hidden md:flex flex-row self-center space-x-8">
+          <nav className="hidden lg:flex flex-row self-center space-x-8">
             <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
             <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
             <NavLink href="#" disabled>
@@ -75,12 +74,11 @@ export default function Header(Props: HeaderProp) {
             <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
           </nav>
         </div>
-        <div className="hidden md:flex flex-row space-x-2 flex-1 justify-end items-center p-6 pb-8">
+        <div className="hidden lg:flex flex-row space-x-2 flex-1 justify-end items-center p-4">
           <SelectLanguage />
           <SelectTheme />
-          <MobileNav />
         </div>
-        <div className="md:hidden flex flex-row flex-1 justify-end items-center p-6 pb-8">
+        <div className="lg:hidden flex flex-row flex-1 justify-end items-center p-4">
           <MobileNav />
         </div>
       </div>

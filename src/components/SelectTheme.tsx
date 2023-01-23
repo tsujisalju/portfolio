@@ -66,7 +66,7 @@ export default function SelectTheme() {
       >
         <Menu.Items
           className={
-            "absolute right-0 mt-2 p-2 w-[150px] space-y-1 shadow-lg bg-stone-100 dark:bg-stone-800 rounded-lg text-left"
+            "absolute right-0 mt-2 p-3 w-max space-y-1 shadow-lg bg-stone-100 dark:bg-stone-800 rounded-lg text-left"
           }
         >
           <Menu.Item key={"light"}>

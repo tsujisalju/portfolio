@@ -84,7 +84,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
       <Layout>
         <section
           className={
-            "sm:container mx-auto flex flex-col justify-center " +
+            "sm:container mx-auto flex flex-1 flex-col justify-center " +
             (projectData.width < projectData.height
               ? "lg:flex-row lg:space-x-4"
               : "lg:flex-col")
@@ -94,20 +94,23 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
             className="transition duration-500 ease-in-out shadow-lg"
             alt={projectData.title}
             src={projectData.img}
-            width={projectData.width}
-            height={projectData.height}
+            width={
+              projectData.width > 1000
+                ? projectData.width / 2
+                : projectData.width
+            }
+            height={
+              projectData.width > 1000
+                ? projectData.height / 2
+                : projectData.height
+            }
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64,${toBase64(
               shimmer(projectData.width, projectData.height)
             )}`}
           />
           <div>
-            <div
-              className={
-                "flex flex-col p-8 space-y-4 " +
-                (projectData.width < projectData.height && "lg:w-[500px]")
-              }
-            >
+            <div className={"flex flex-col p-8 space-y-4 "}>
               <div className="flex flex-col space-y-2 mb-4">
                 <h1 className="font-display text-5xl lg:text-6xl ">
                   {projectData.title}

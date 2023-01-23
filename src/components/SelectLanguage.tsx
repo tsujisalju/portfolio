@@ -51,7 +51,7 @@ export default function SelectLanguage() {
       >
         <Menu.Items
           className={
-            "absolute right-0 mt-2 p-2 w-[200px] space-y-1 bg-stone-100 dark:bg-stone-800 rounded-lg text-left shadow-lg"
+            "absolute right-0 mt-2 p-3 w-max space-y-1 bg-stone-100 dark:bg-stone-800 rounded-lg text-left shadow-lg"
           }
         >
           {SUPPORTED_LOCALES.map((lang) => (

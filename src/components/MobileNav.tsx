@@ -9,7 +9,7 @@ import SelectTheme from "./SelectTheme";
 export default function MobileNav() {
   const intl = useIntl();
   return (
-    <Menu as="div" className={"md:hidden relative"}>
+    <Menu as="div" className={"lg:hidden relative"}>
       <Menu.Button
         as="button"
         className="h-8 flex flex-row w-full justify-center items-center transition transition-75 px-2 py-1 space-x-2 text-lg font-sans"
@@ -44,15 +44,60 @@ export default function MobileNav() {
           }
         >
           <Menu.Item key={"home"}>
-            <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
+            {({ active }) => (
+              <div
+                className={
+                  "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
+                  (active && " bg-stone-200 dark:bg-stone-700")
+                }
+              >
+                <NavLink mobile href="/">
+                  {intl.formatMessage({ id: "Home" })}
+                </NavLink>
+              </div>
+            )}
           </Menu.Item>
-          <Menu.Item key={"about"}>
-            <NavLink href="/about">
-              {intl.formatMessage({ id: "About" })}
-            </NavLink>
+          <Menu.Item key={"work"}>
+            {({ active }) => (
+              <div
+                className={
+                  "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
+                  (active && " bg-stone-200 dark:bg-stone-700")
+                }
+              >
+                <NavLink mobile href="/work">
+                  {intl.formatMessage({ id: "Work" })}
+                </NavLink>
+              </div>
+            )}
+          </Menu.Item>
+          <Menu.Item key={"bio"}>
+            {({ active }) => (
+              <div
+                className={
+                  "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
+                  (active && " bg-stone-200 dark:bg-stone-700")
+                }
+              >
+                <NavLink mobile href="/bio">
+                  {intl.formatMessage({ id: "Biography" })}
+                </NavLink>
+              </div>
+            )}
           </Menu.Item>
           <Menu.Item key={"uses"}>
-            <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
+            {({ active }) => (
+              <div
+                className={
+                  "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
+                  (active && " bg-stone-200 dark:bg-stone-700")
+                }
+              >
+                <NavLink mobile href="/uses">
+                  {intl.formatMessage({ id: "Uses" })}
+                </NavLink>
+              </div>
+            )}
           </Menu.Item>
           <hr className="opacity-20" />
           <div className="flex flex-row space-x-2 flex-1">

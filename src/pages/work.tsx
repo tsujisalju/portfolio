@@ -2,6 +2,8 @@ import Layout from "../components/Layout";
 import React from "react";
 import { useIntl } from "react-intl";
 import Image from "next/image";
+import Hero from "../components/Hero";
+import Button from "../components/Button";
 
 export default function Achernar() {
   const intl = useIntl();
@@ -11,16 +13,17 @@ export default function Achernar() {
   }, []);
   return (
     <Layout>
-      <div className="container mx-auto max-w-5xl mt-8">
+      <Hero>
         <h2 className="font-display text-3xl">
           {intl.formatMessage({ id: "Minswap DEX" })}
         </h2>
-        <p className="font-sans text-lg">
+        <p className="font-sans text-lg pb-8">
           {intl.formatMessage({
             id: "Minswap DEX is a decentralized multi-pool exchange on the Cardano blockchain. I work alongside the marketing and UI/UX department to provide promotional content, merchandise and interface designs.",
           })}
         </p>
-      </div>
+        <Button title="Visit website" href="https://minswap.org" />
+      </Hero>
       <div className="max-w-full overflow-x-hidden whitespace-nowrap py-8">
         <div
           id="minswap-gallery"
