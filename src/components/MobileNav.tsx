@@ -71,6 +71,20 @@ export default function MobileNav() {
               </div>
             )}
           </Menu.Item>
+          <Menu.Item key={"achernar"}>
+            {({ active }) => (
+              <div
+                className={
+                  "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
+                  (active && " bg-stone-200 dark:bg-stone-700")
+                }
+              >
+                <NavLink mobile href="/achernar">
+                  {intl.formatMessage({ id: "Achernar" })}
+                </NavLink>
+              </div>
+            )}
+          </Menu.Item>
           <Menu.Item key={"bio"}>
             {({ active }) => (
               <div
