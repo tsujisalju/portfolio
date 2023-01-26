@@ -73,7 +73,7 @@ export default function SelectTheme() {
             {({ active }) => (
               <div
                 className={
-                  "font-sans flex flex-row transition transition-75 justify-start items-center text-left space-x-3 text-lg py-1 px-2 rounded-md " +
+                  "font-sans flex flex-row transition transition-75 justify-start items-center text-left space-x-3 text-lg py-1 pl-2 pr-4 rounded-md " +
                   (active && "bg-stone-200 dark:bg-stone-700")
                 }
                 onClick={() => HandleToggleChange("light")}
@@ -94,7 +94,7 @@ export default function SelectTheme() {
             {({ active }) => (
               <div
                 className={
-                  "font-sans flex flex-row transition transition-75 justify-start items-center text-left space-x-3 text-lg py-1 px-2 rounded-md " +
+                  "font-sans flex flex-row transition transition-75 justify-start items-center text-left space-x-3 text-lg py-1 pl-2 pr-4 rounded-md " +
                   (active && "bg-stone-200 dark:bg-stone-700")
                 }
                 onClick={() => HandleToggleChange("dark")}

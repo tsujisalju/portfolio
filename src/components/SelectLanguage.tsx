@@ -59,7 +59,7 @@ export default function SelectLanguage() {
               {({ active }) => (
                 <div
                   className={
-                    "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
+                    "font-sans transition transition-75 text-lg py-1 pl-2 pr-4 text-left rounded-md" +
                     (active && " bg-stone-200 dark:bg-stone-700")
                   }
                   onClick={() => HandleSelectLanguage(lang)}
