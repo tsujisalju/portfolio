@@ -12,7 +12,7 @@ import {
   Karla,
   Source_Serif_4,
   Source_Serif_Pro,
-} from "@next/font/google";
+} from "next/font/google";
 
 const karla = Karla({
   subsets: ["latin"],
