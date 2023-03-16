@@ -347,6 +347,12 @@
       "value": "Velvetyne"
     }
   ],
+  "Visit Website": [
+    {
+      "type": 0,
+      "value": "Website besuchen"
+    }
+  ],
   "Visual Studio Code": [
     {
       "type": 0,

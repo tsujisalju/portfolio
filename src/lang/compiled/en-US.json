@@ -1,10 +1,4 @@
 {
-  "About": [
-    {
-      "type": 0,
-      "value": "About"
-    }
-  ],
   "Achenar": [
     {
       "type": 0,
@@ -207,6 +201,12 @@
     {
       "type": 0,
       "value": "Velvetyne"
+    }
+  ],
+  "Visit Website": [
+    {
+      "type": 0,
+      "value": "Visit Website"
     }
   ],
   "Visual Studio Code": [

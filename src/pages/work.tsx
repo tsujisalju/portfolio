@@ -4,6 +4,7 @@ import { useIntl } from "react-intl";
 import Image from "next/image";
 import Hero from "../components/Hero";
 import Button from "../components/Button";
+import { intlFormat } from "date-fns";
 
 export default function Achernar() {
   const intl = useIntl();
@@ -22,7 +23,7 @@ export default function Achernar() {
             id: "Minswap DEX is a decentralized multi-pool exchange on the Cardano blockchain. I work alongside the marketing and UI/UX department to provide promotional content, merchandise and interface designs.",
           })}
         </p>
-        <Button title="Visit website" href="https://minswap.org" />
+        <Button href="https://minswap.org">{intl.formatMessage({ id: "Visit Website" })}</Button>
       </Hero>
       <div className="max-w-full overflow-x-hidden whitespace-nowrap py-8">
         <div
