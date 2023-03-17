@@ -11,7 +11,7 @@ import {
   DM_Serif_Display,
   Karla,
   Source_Serif_4,
-  Source_Serif_Pro,
+  Gruppo,
 } from "next/font/google";
 
 const karla = Karla({
@@ -29,6 +29,12 @@ const dm_serif_display = DM_Serif_Display({
   weight: ["400"],
   style: ["normal"],
   variable: "--font-dm-serif-display",
+});
+const gruppo = Gruppo({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal"],
+  variable: "--font-gruppo",
 });
 
 type LocaleModule = Record<string, any>;
@@ -65,7 +71,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ParallaxProvider>
           <main
-            className={`${karla.variable} ${source_serif.variable} ${dm_serif_display.variable}`}
+            className={`${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${gruppo.variable}`}
           >
             <Component {...pageProps} />
           </main>

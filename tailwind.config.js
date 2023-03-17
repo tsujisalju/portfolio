@@ -15,12 +15,8 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-karla)", "sans-serif"],
         serif: ["var(--font-source-serif-pro)", "serif"],
-        display: [
-          "Basteleur",
-          "Bluu Next",
-          "var(--font-dm-serif-display)",
-          "serif",
-        ],
+        display: ["Basteleur", "var(--font-source-serif-pro)", "serif"],
+        xivmeter: ["Eurostar Extended", "var(--font-gruppo)"],
       },
     },
   },

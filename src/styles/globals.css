@@ -11,6 +11,11 @@
   src: url("/fonts/Taagra/TaagraCalligraphy.otf");
 }
 
+@font-face {
+  font-family: "Eurostar Extended";
+  src: url("/fonts/Eurostar/Eurostar-Extended.ttf");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
