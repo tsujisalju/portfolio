@@ -9,7 +9,6 @@ import path from "path";
 import fs from "fs";
 import { FormattedDate } from "react-intl";
 import { shimmer, toBase64 } from "../../components/ImageSkeleton";
-import { FadeIn } from "../../utilities/FadeIn";
 
 const projectsDirectory = path.join(process.cwd(), "src/projects");
 
@@ -83,23 +82,23 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
       </Head>
       <Layout>
         <section
-          className={"sm:container mx-auto grid grid-cols-1 " + (projectData.width < projectData.height && "lg:grid-cols-3")}
+          className={
+            "sm:container mx-auto grid grid-cols-1 " +
+            (projectData.width <= projectData.height && "lg:grid-cols-3")
+          }
         >
           <div className="lg:col-span-2">
-
-          <Image
-            className="transition duration-500 ease-in-out shadow-lg"
-            alt={projectData.title}
-            src={projectData.img}
-            width={projectData.width
-            }
-            height={projectData.height
-            }
-            placeholder="blur"
-            blurDataURL={`data:image/svg+xml;base64,${toBase64(
-              shimmer(projectData.width, projectData.height)
-            )}`}
-          />
+            <Image
+              className="transition duration-500 ease-in-out shadow-lg"
+              alt={projectData.title}
+              src={projectData.img}
+              width={projectData.width}
+              height={projectData.height}
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(projectData.width, projectData.height)
+              )}`}
+            />
           </div>
           <div>
             <div className={"flex flex-col p-8 space-y-4 "}>
