@@ -101,6 +101,12 @@
       "value": "Jedes Kunstwerk hat eine Geschichte zu erzählen. Entdecken Sie eine, um zu erfahren, was es zu erzählen gibt!"
     }
   ],
+  "FFXIV": [
+    {
+      "type": 0,
+      "value": "FFXIV"
+    }
+  ],
   "Figma": [
     {
       "type": 0,

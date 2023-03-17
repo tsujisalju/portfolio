@@ -41,6 +41,12 @@
       "value": "Development"
     }
   ],
+  "FFXIV": [
+    {
+      "type": 0,
+      "value": "FFXIV"
+    }
+  ],
   "Figma": [
     {
       "type": 0,
