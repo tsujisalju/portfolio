@@ -191,6 +191,12 @@
       "value": "Tales of hope amidst terrible choices."
     }
   ],
+  "There is no dream too big to be realized, and I for one could attest to that. ": [
+    {
+      "type": 0,
+      "value": "There is no dream too big to be realized, and I for one could attest to that. "
+    }
+  ],
   "Unity3D": [
     {
       "type": 0,
@@ -207,6 +213,12 @@
     {
       "type": 0,
       "value": "Velvetyne"
+    }
+  ],
+  "View on Lodestone": [
+    {
+      "type": 0,
+      "value": "View on Lodestone"
     }
   ],
   "Visit Website": [

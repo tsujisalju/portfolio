@@ -48,6 +48,7 @@ export default function Header(Props: HeaderProp) {
                 width={40}
                 height={40}
                 placeholder="empty"
+                priority={true}
               ></Image>
               <Image
                 className="flex lg:self-center dark:hidden pb-2 lg:pb-0"
@@ -56,6 +57,7 @@ export default function Header(Props: HeaderProp) {
                 width={40}
                 height={40}
                 placeholder="empty"
+                priority={true}
               ></Image>
               <h1 className="text-3xl font-display hidden lg:inline">
                 smolpadok

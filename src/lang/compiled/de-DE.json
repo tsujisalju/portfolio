@@ -329,6 +329,12 @@
       "value": "Die Illustrationen, die ich anfertige, beschreiben eine Welt der Orte, für die ich mich begeistere, die DInge, die ich tun möchte, und die Art von Menschen, die ich werden möchte. Sie sind nicht an eine bestimmte Geschichte gebunden und lassen genügend Raum für einige Interpretationen. "
     }
   ],
+  "There is no dream too big to be realized, and I for one could attest to that. ": [
+    {
+      "type": 0,
+      "value": "There is no dream too big to be realized, and I for one could attest to that. "
+    }
+  ],
   "Tools of the Trade": [
     {
       "type": 0,
@@ -351,6 +357,12 @@
     {
       "type": 0,
       "value": "Velvetyne"
+    }
+  ],
+  "View on Lodestone": [
+    {
+      "type": 0,
+      "value": "View on Lodestone"
     }
   ],
   "Visit Website": [

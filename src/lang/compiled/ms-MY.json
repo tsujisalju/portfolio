@@ -323,6 +323,12 @@
       "value": "Karya yang saya lukis, menceritakan dunia yang ingin saya diami, perkara yang ingin saya lakui dan seorang yang ingin saya menjadi. Ia tidak terikat kepada sebuah cerita, jadi ia memberi ruang untuk interpretasi kendiri."
     }
   ],
+  "There is no dream too big to be realized, and I for one could attest to that. ": [
+    {
+      "type": 0,
+      "value": "There is no dream too big to be realized, and I for one could attest to that. "
+    }
+  ],
   "Tools of the Trade": [
     {
       "type": 0,
@@ -345,6 +351,12 @@
     {
       "type": 0,
       "value": "Velvetyne"
+    }
+  ],
+  "View on Lodestone": [
+    {
+      "type": 0,
+      "value": "View on Lodestone"
     }
   ],
   "Visit Website": [
