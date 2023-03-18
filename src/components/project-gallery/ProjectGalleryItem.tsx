@@ -29,7 +29,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
         tiltMaxAngleX={3}
         tiltMaxAngleY={3}
         tiltReverse
-        scale={1.04}
+        scale={1.03}
         className={"parentParallax flex flex-auto flex-col relative "}
       >
         <Link href={"/projects/" + project.id} onClick={HandleOnClick}>
