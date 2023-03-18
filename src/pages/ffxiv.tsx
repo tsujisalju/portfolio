@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useIntl } from "react-intl";
 import { InferGetStaticPropsType } from "next";
 import Image from "next/image";
@@ -45,6 +45,7 @@ type xivData = {
 export default function FFXIV({
   xivapi,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const [isShowing, setIsShowing] = useState(false);
   const intl = useIntl();
   const xivLevelPercentage =
     (xivapi.Character.ActiveClassJob.ExpLevel /
@@ -54,6 +55,7 @@ export default function FFXIV({
   useEffect(() => {
     document.body.style.backgroundImage = "";
     document.body.className = "";
+    setIsShowing(true);
   }, []);
 
   return (
@@ -62,10 +64,10 @@ export default function FFXIV({
         <div className="p-8 mx-auto lg:mx-0 lg:ml-auto">
           <Transition
             appear={true}
-            show={true}
+            show={isShowing}
             enter="transition duration-700"
-            enterFrom="-translate-y-[1000px] rotate-[30deg]"
-            enterTo="translate-y-0 -rotate-2"
+            enterFrom="rotate-[30deg] -translate-y-[1000px]"
+            enterTo="-rotate-2 translate-y-0"
           >
             <Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} tiltReverse scale={1.03}>
               <Image
@@ -73,7 +75,7 @@ export default function FFXIV({
                 alt="Player Avatar"
                 width={640 / 1.5}
                 height={873 / 1.5}
-                className="transition rounded-lg shadow-md hover:shadow-xl"
+                className="transition rounded-lg shadow-md hover:shadow-xl "
               />
             </Tilt>
           </Transition>
@@ -90,11 +92,21 @@ export default function FFXIV({
               <h2 className="font-xivmeter text-xl">
                 LEVEL {xivapi.Character.ActiveClassJob.Level}
               </h2>
-              <div className="h-1 w-min-max bg-stone-300 dark:bg-stone-700">
+              <div className="h-1 min-w-max bg-stone-300 dark:bg-stone-700">
                 <div
-                  className="h-1 bg-stone-600 dark:bg-stone-300"
+                  className="h-1"
                   style={{ width: `${xivLevelPercentage}%` }}
-                ></div>
+                >
+                  <Transition
+                    appear={true}
+                    show={isShowing}
+                    enter="origin-left transition duration-[700ms]"
+                    enterFrom="scale-x-0"
+                    enterTo="scale-x-100"
+                  >
+                    <div className="h-1 min-w-min bg-stone-600 dark:bg-stone-300"></div>
+                  </Transition>
+                </div>
               </div>
               <p className="font-sans text-md">
                 {xivapi.Character.ActiveClassJob.Level === 90
