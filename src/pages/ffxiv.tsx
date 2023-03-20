@@ -13,6 +13,7 @@ import {
 } from "../lib/ffxiv";
 import { Transition } from "@headlessui/react";
 import Button from "../components/Button";
+import { shimmer, toBase64 } from "../components/ImageSkeleton";
 
 type xivData = {
   Character: {
@@ -63,7 +64,6 @@ export default function FFXIV({
       <div className="sm:container mx-auto grid grid-cols-1 lg:grid-cols-2 space-y-4 lg:space-y-0 pb-16">
         <div className="p-8 mx-auto lg:mx-0 lg:ml-auto">
           <Transition
-            appear={true}
             show={isShowing}
             enter="transition duration-700"
             enterFrom="rotate-[30deg] -translate-y-[1000px]"
@@ -76,6 +76,10 @@ export default function FFXIV({
                 width={640 / 1.5}
                 height={873 / 1.5}
                 className="transition rounded-lg shadow-md hover:shadow-xl "
+                placeholder="blur"
+                blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                  shimmer(640 / 1.5, 873 / 1.5)
+                )}`}
               />
             </Tilt>
           </Transition>
@@ -186,6 +190,15 @@ export default function FFXIV({
             height={1079}
             className="shadow-md rounded-sm"
           ></Image>
+          <div className="md:col-span-2">
+            <Image
+              src={"/img/van-scrapbook/3-a.jpg"}
+              alt="Carra and Driga presenting Van during Binding Coil of Bahamut raid"
+              width={3440}
+              height={1440}
+              className="shadow-md rounded-sm"
+            ></Image>
+          </div>
           <div className="md:row-span-2">
             <Image
               src={"/img/van-scrapbook/4.jpg"}
@@ -214,6 +227,13 @@ export default function FFXIV({
             alt="Van and friends chatting before the diplomatic marriage begins"
             width={1920}
             height={1080}
+            className="shadow-md rounded-sm"
+          ></Image>
+          <Image
+            src={"/img/van-scrapbook/7-a.jpg"}
+            alt="Van forces a smile"
+            width={200}
+            height={280}
             className="shadow-md rounded-sm"
           ></Image>
           <Image
