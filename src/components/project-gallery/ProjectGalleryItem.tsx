@@ -16,9 +16,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
       className={
         project.id === "ultimatum" || project.id === "tailwind"
           ? "md:col-span-2 lg:col-span-3 xl:col-span-4  md:row-span-2"
-          : project.width > project.height ||
-            project.id === "garnet" ||
-            project.id === "morgana"
+          : project.width > project.height || project.id === "khatvanga"
           ? "md:col-span-2"
           : project.width < project.height
           ? "md:row-span-2"
