@@ -27,6 +27,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "img2.finalfantasyxiv.com",
       },
+      {
+        protocol: "https",
+        hostname: "img.finalfantasyxiv.com",
+      },
     ],
   },
 };

@@ -23,7 +23,7 @@ export default function Footer() {
           placeholder="empty"
         ></Image>
       </div>
-      <small>© 2023 smolpadok</small>
+      <small className="font-sans">© 2023 smolpadok</small>
     </div>
   );
 }
