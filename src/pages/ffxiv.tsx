@@ -103,6 +103,7 @@ export default function FFXIV({
                 blurDataURL={`data:image/svg+xml;base64,${toBase64(
                   shimmer(640, 873)
                 )}`}
+                priority
               />
             </Tilt>
           </Transition>
@@ -119,7 +120,7 @@ export default function FFXIV({
             )}
           </div>
           <div>
-            <div className="flex flex-1 flex-row space-x-2 items-center pb-2">
+            <div className="flex flex-row space-x-2 items-center pb-2">
               <Image
                 src={jobIcons[xivapi.Character.ActiveClassJob.UnlockedState.ID]}
                 alt={xivapi.Character.ActiveClassJob.UnlockedState.Name}
@@ -192,11 +193,11 @@ export default function FFXIV({
               <p className="font-sans text-lg">{xivapi.Character.Server}</p>
             </div>
           </div>
-          <div className="grid grid-cols-8 gap-2 py-4">
+          <div className="grid grid-flow-col grid-rows-2 gap-2 py-2">
             {xivapi.Character.ClassJobs.map((classJob) => (
               <div
                 key={classJob.UnlockedState.Name}
-                className="flex flex-col text-center"
+                className="flex flex-col text-center pb-2"
               >
                 <Image
                   className="mx-auto"
