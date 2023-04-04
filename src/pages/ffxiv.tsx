@@ -8,6 +8,7 @@ import { ffxivGender, jobIcons } from "../lib/ffxiv";
 import { Transition } from "@headlessui/react";
 import Button from "../components/Button";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
+import ScrapbookPhoto from "../components/ffxiv-scrapbook/ScrapbookPhoto";
 
 const characterID = "46130616";
 
@@ -225,189 +226,168 @@ export default function FFXIV({
       </div>
 
       <section className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-flow-dense gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-          <Image
+        <div className="grid grid-flow-dense gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/1.jpg"}
             alt="A newly created Van Carina in Uldah"
             width={1096}
             height={778}
-            className="shadow-md rounded-sm"
-          ></Image>
-          <Image
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/2.jpg"}
             alt="Van and Driga surrounding Carra who is afk in Thamaturges' Guild"
             width={1747}
             height={960}
-            className="shadow-md rounded-sm"
-          ></Image>
-          <Image
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/2-a.jpg"}
             alt="Van sitting with her fellow brethren in Thamaturges' Guild"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm md:col-span-2 rotate-1"
-          ></Image>
-          <Image
+            className="md:col-span-2 rotate-1"
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/3.jpg"}
             alt="Van, Aki, Driga and Carra preparing for battle against Garuda"
             width={1919}
             height={1079}
-            className="shadow-md rounded-sm"
-          ></Image>
+          />
           <div className="md:col-span-2">
-            <Image
+            <ScrapbookPhoto
               src={"/img/van-scrapbook/3-a.jpg"}
               alt="Carra and Driga presenting Van during Binding Coil of Bahamut raid"
               width={3440}
               height={1440}
-              className="shadow-md rounded-sm"
-            ></Image>
+            />
           </div>
           <div className="md:row-span-2">
-            <Image
+            <ScrapbookPhoto
               src={"/img/van-scrapbook/4.jpg"}
               alt="Aki welcoming Van at Foundation"
               width={767}
               height={873}
-              className="shadow-md rounded-sm"
-            ></Image>
+            />
           </div>
-          <Image
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/5.jpg"}
             alt="Van posing in Coerthas"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm"
-          ></Image>
-          <Image
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/6.jpg"}
             alt="Van waving in her decorated living room"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm"
-          ></Image>
-          <Image
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/7.jpg"}
             alt="Van and friends chatting before the diplomatic marriage begins"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm"
-          ></Image>
-          <Image
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/7-a.jpg"}
             alt="Van forces a smile"
             width={200}
             height={280}
-            className="shadow-md rounded-sm"
-          ></Image>
-          <Image
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/8.jpg"}
             alt="Van and friends in the diplomatic marriage"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm"
-          ></Image>
+          />
           <div className="md:col-span-2">
-            <Image
+            <ScrapbookPhoto
               src={"/img/van-scrapbook/9.jpg"}
               alt="Van and friends in the diplomatic marriage"
               width={1920}
               height={1080}
-              className="shadow-md rounded-sm"
-            ></Image>
+            />
           </div>
 
           <div className="md:col-span-2">
-            <Image
+            <ScrapbookPhoto
               src={"/img/van-scrapbook/10.jpg"}
               alt="Van preparing for battle against Nidhogg"
               width={1920}
               height={1080}
-              className="shadow-md rounded-sm"
-            ></Image>
+            />
           </div>
-          <Image
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/11.jpg"}
             alt="Van and Rhae'li interrogating a sentient Ravhen chocolate fondue"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm"
-          ></Image>
-          <Image
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/12.jpg"}
             alt="Van and Rhae'li interrogating a sentient Ravhen chocolate fondue"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm rotate-2"
-          ></Image>
-          <Image
+            className="rotate-2"
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/13.jpg"}
             alt="Van in the Royal Menagerie garden"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm"
-          ></Image>
-          <Image
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/14.jpg"}
             alt="Van in the Royal Menagerie garden"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm"
-          ></Image>
+          />
           <div className="md:col-span-2">
-            <Image
+            <ScrapbookPhoto
               src={"/img/van-scrapbook/15.jpg"}
               alt="Van in the Royal Menagerie garden"
               width={1920}
               height={1080}
-              className="shadow-md rounded-sm"
-            ></Image>
+            />
           </div>
-          <Image
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/16.jpg"}
             alt="Van in the Rak'tika Greatwood"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm"
-          ></Image>
-          <Image
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/17.jpg"}
             alt="A black mage's worst nightmare"
             width={457}
             height={321}
-            className="shadow-md rounded-sm -rotate-2"
-          ></Image>
+            className="-rotate-2"
+          />
           <div className="md:col-span-2 lg:col-span-3 xl:col-span-3">
-            <Image
+            <ScrapbookPhoto
               src={"/img/van-scrapbook/18.jpg"}
               alt="Carra gposing as Van performance LB3"
               width={3440}
               height={1440}
-              className="shadow-md rounded-sm"
-            ></Image>
+            />
           </div>
-          <Image
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/19.jpg"}
             alt="Van preparing for battle in Hades' Elegy"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm"
-          ></Image>
-          <Image
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/20.jpg"}
             alt="Van teaching a Miqote child in the Crystarium"
             width={1920}
             height={1080}
-            className="shadow-md rounded-sm"
-          ></Image>
+          />
           <div className="md:col-span-2">
-            <Image
+            <ScrapbookPhoto
               src={"/img/van-scrapbook/21.jpg"}
               alt="Van in Sharlayan"
               width={1920}
               height={1080}
-              className="shadow-md rounded-sm"
-            ></Image>
+            />
           </div>
         </div>
       </section>
