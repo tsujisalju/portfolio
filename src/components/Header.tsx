@@ -38,7 +38,7 @@ export default function Header(Props: HeaderProp) {
       }
     >
       <div className="flex flex-row">
-        <div className="flex flex-row flex-auto p-4 lg:p-6 lg:space-x-12">
+        <div className="flex flex-row flex-auto p-3 lg:p-6 lg:space-x-12">
           <Link href={"/"}>
             <div className="flex flex-row justify-start items-center space-x-4 -ml-4 dark:ml-0">
               <Image

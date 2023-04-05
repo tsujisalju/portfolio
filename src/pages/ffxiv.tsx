@@ -86,7 +86,7 @@ export default function FFXIV({
   return (
     <Layout>
       <div className="sm:container mx-auto grid grid-cols-1 lg:grid-cols-2 space-y-4 lg:space-y-0 pb-16">
-        <div className="p-8">
+        <div className="p-2 sm:p-8">
           <Transition
             show={isShowing}
             enter="transition duration-700"
@@ -194,11 +194,11 @@ export default function FFXIV({
               <p className="font-sans text-lg">{xivapi.Character.Server}</p>
             </div>
           </div>
-          <div className="grid grid-flow-col grid-rows-2 gap-2 py-2">
+          <div className="grid grid-flow-row-dense grid-cols-8 gap-2 py-2">
             {xivapi.Character.ClassJobs.map((classJob) => (
               <div
                 key={classJob.UnlockedState.Name}
-                className="flex flex-col text-center pb-2"
+                className="flex flex-col text-center pb-1"
               >
                 <Image
                   className="mx-auto"
