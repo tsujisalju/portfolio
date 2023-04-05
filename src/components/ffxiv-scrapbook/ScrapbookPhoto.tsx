@@ -104,7 +104,7 @@ export default function ScrapbookPhoto({
         <AnimatePresence>
           <motion.div
             variants={dialogBoxVariant}
-            className="absolute backdrop-blur-sm dark:bg-black/30 bg-white/30 py-2 px-3 xl:py-4 xl:px-6 m-2 xl:m-4 rounded-lg shadow-lg transition duration-400 transform space-y-2"
+            className="z-10 absolute backdrop-blur-sm dark:bg-black/30 bg-white/30 py-2 px-3 xl:py-4 xl:px-6 m-2 xl:m-4 rounded-lg shadow-lg transition duration-400 transform space-y-2"
           >
             {Dialogs[dialogKey].map((dialog) => (
               <motion.div
