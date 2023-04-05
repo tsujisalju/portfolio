@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Dialogs } from "./scrapbook";
 import { friendsAvatar } from "../../lib/ffxiv";
 import { AnimatePresence, motion, Variants } from "framer-motion";
+import { useState } from "react";
 
 export default function ScrapbookPhoto({
   alt,
@@ -21,6 +22,8 @@ export default function ScrapbookPhoto({
   imgClassName?: string;
   dialogKey?: keyof typeof Dialogs;
 }) {
+  const [isShowing, setIsShowing] = useState(false);
+  const [isHover, setIsHover] = useState(false);
   const dialogBoxVariant: Variants = {
     hideDialog: {
       opacity: 0,
@@ -67,8 +70,17 @@ export default function ScrapbookPhoto({
     <motion.div
       className={className + " m-auto flex flex-col flex-auto"}
       initial="hideDialog"
-      animate="hideDialog"
+      animate={isShowing ? "showDialog" : "hideDialog"}
       whileHover="showDialog"
+      onHoverStart={() => {
+        setIsHover(true);
+      }}
+      onHoverEnd={() => {
+        setIsHover(false);
+      }}
+      onTap={() => {
+        !isHover && setIsShowing(!isShowing);
+      }}
     >
       <Tilt
         tiltMaxAngleX={2}
@@ -92,7 +104,7 @@ export default function ScrapbookPhoto({
         <AnimatePresence>
           <motion.div
             variants={dialogBoxVariant}
-            className="absolute backdrop-blur-sm dark:bg-black/30 bg-white/30 py-4 px-6 m-4 rounded-lg shadow-lg transition duration-400 transform space-y-2"
+            className="absolute backdrop-blur-sm dark:bg-black/30 bg-white/30 py-4 px-6 m-2 sm:m-4 rounded-lg shadow-lg transition duration-400 transform space-y-2"
           >
             {Dialogs[dialogKey].map((dialog) => (
               <motion.div
