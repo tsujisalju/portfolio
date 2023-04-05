@@ -12,6 +12,7 @@ import {
   Karla,
   Source_Serif_4,
   Gruppo,
+  Zeyada,
 } from "next/font/google";
 
 const karla = Karla({
@@ -35,6 +36,12 @@ const gruppo = Gruppo({
   weight: ["400"],
   style: ["normal"],
   variable: "--font-gruppo",
+});
+const zeyada = Zeyada({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal"],
+  variable: "--font-zeyada",
 });
 
 type LocaleModule = Record<string, any>;
@@ -71,7 +78,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ParallaxProvider>
           <main
-            className={`${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${gruppo.variable}`}
+            className={`${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${gruppo.variable} ${zeyada.variable}`}
           >
             <Component {...pageProps} />
           </main>

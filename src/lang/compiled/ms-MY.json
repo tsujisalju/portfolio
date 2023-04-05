@@ -137,6 +137,12 @@
       "value": "Laman Utama"
     }
   ],
+  "Hover over a photo to echo a (silly) conversation of the past.": [
+    {
+      "type": 0,
+      "value": "Tuding ke atas satu gambar untuk memainkan satu perbualan (lucu) pada masa lalu."
+    }
+  ],
   "Huion Inspiroy Q11K V2": [
     {
       "type": 0,
@@ -317,10 +323,22 @@
       "value": "Kisah-kisah harapan dikala waktu tegang."
     }
   ],
+  "The Unending Journey": [
+    {
+      "type": 0,
+      "value": "Pengembaraan Tiada Penghujung"
+    }
+  ],
   "The illustrations I make, describe a world of places I'm passionate about, the things I want to do and the kind of person I wish to become. They are not tied to a particular story, leaving enough room for self-interpretation.": [
     {
       "type": 0,
       "value": "Karya yang saya lukis, menceritakan dunia yang ingin saya diami, perkara yang ingin saya lakui dan seorang yang ingin saya menjadi. Ia tidak terikat kepada sebuah cerita, jadi ia memberi ruang untuk interpretasi kendiri."
+    }
+  ],
+  "The journey continues..": [
+    {
+      "type": 0,
+      "value": "Pengembaraan diteruskan.."
     }
   ],
   "There is no dream too big to be realized, and I for one could attest to that. ": [
@@ -356,7 +374,7 @@
   "View on Lodestone": [
     {
       "type": 0,
-      "value": "View on Lodestone"
+      "value": "Lihat di Lodestone"
     }
   ],
   "Visit Website": [

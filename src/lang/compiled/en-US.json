@@ -59,6 +59,12 @@
       "value": "Home"
     }
   ],
+  "Hover over a photo to echo a (silly) conversation of the past.": [
+    {
+      "type": 0,
+      "value": "Hover over a photo to echo a (silly) conversation of the past."
+    }
+  ],
   "Huion Inspiroy Q11K V2": [
     {
       "type": 0,
@@ -189,6 +195,18 @@
     {
       "type": 0,
       "value": "Tales of hope amidst terrible choices."
+    }
+  ],
+  "The Unending Journey": [
+    {
+      "type": 0,
+      "value": "The Unending Journey"
+    }
+  ],
+  "The journey continues..": [
+    {
+      "type": 0,
+      "value": "The journey continues.."
     }
   ],
   "There is no dream too big to be realized, and I for one could attest to that. ": [

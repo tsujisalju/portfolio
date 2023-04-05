@@ -3,6 +3,21 @@ export const ffxivGender: { [key: number]: string } = {
   2: "♀",
 };
 
+export const friendsAvatar: { [key: string]: string } = {
+  van: "https://img2.finalfantasyxiv.com/f/54746e0f4c756e563b442594ad6c3e5e_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1680618778",
+  driga:
+    "https://img2.finalfantasyxiv.com/f/e4b52e43d2e015dd73a5d2eb7fcc3402_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1680622422",
+  aki: "https://img2.finalfantasyxiv.com/f/ec00a596ae4d723ec3571de2b4dd31e6_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1680619963",
+  carra:
+    "https://img2.finalfantasyxiv.com/f/8e431b496cf5b44d29cef956998d3bf3_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1680622389",
+  noir: "https://img2.finalfantasyxiv.com/f/f0ed91fb8a519f7a3d5548395c070568_40d57ba713628f3f1ef5ef204b6d76d2fc0_96x96.jpg?1680621798",
+  tuya: "https://img2.finalfantasyxiv.com/f/6ddfdfa0a75c224558ba373bf3a34446_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1680629398",
+  ravhen:
+    "https://img2.finalfantasyxiv.com/f/4ae95d3b5a30aab9dde937a0a4fc408f_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1680632233",
+  aslan:
+    "https://img2.finalfantasyxiv.com/f/9cab4b170d08b0ff5579e8e4d9e64504_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1680643131",
+};
+
 export const jobIcons: { [key: number]: string } = {
   1: "https://img.finalfantasyxiv.com/lds/h/U/F5JzG9RPIKFSogtaKNBk455aYA.png",
   2: "https://img.finalfantasyxiv.com/lds/h/V/iW7IBKQ7oglB9jmbn6LwdZXkWw.png",

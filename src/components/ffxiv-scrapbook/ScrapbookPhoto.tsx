@@ -1,5 +1,8 @@
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
+import { Dialogs } from "./scrapbook";
+import { friendsAvatar } from "../../lib/ffxiv";
+import { AnimatePresence, motion, Variants } from "framer-motion";
 
 export default function ScrapbookPhoto({
   alt,
@@ -7,30 +10,115 @@ export default function ScrapbookPhoto({
   height,
   width,
   className,
+  imgClassName,
+  dialogKey,
 }: {
   alt: string;
   src: string;
   height: number;
   width: number;
   className?: string;
+  imgClassName?: string;
+  dialogKey?: keyof typeof Dialogs;
 }) {
+  const dialogBoxVariant: Variants = {
+    hideDialog: {
+      opacity: 0,
+      y: -5,
+      transition: {
+        duration: 0.1,
+        ease: "easeIn",
+      },
+    },
+    showDialog: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 1,
+        duration: 0.1,
+        ease: "easeOut",
+        staggerChildren: 2,
+        when: "beforeChildren",
+      },
+    },
+  };
+  const dialogVariant: Variants = {
+    hideDialog: {
+      opacity: 0,
+      y: -10,
+      transition: {
+        duration: 0.1,
+        ease: "easeIn",
+      },
+    },
+    showDialog: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.1,
+        type: "spring",
+        stiffness: 300,
+        damping: 16,
+      },
+    },
+  };
+
   return (
-    <div className={className}>
+    <motion.div
+      className={className + " m-auto flex flex-col flex-auto"}
+      initial="hideDialog"
+      animate="hideDialog"
+      whileHover="showDialog"
+    >
       <Tilt
-        tiltMaxAngleX={3}
-        tiltMaxAngleY={3}
+        tiltMaxAngleX={2}
+        tiltMaxAngleY={2}
         tiltReverse
-        scale={1.03}
-        className="flex flex-auto"
+        scale={1.02}
+        className="mx-auto"
       >
         <Image
           alt={alt}
           src={src}
           height={height}
           width={width}
-          className="border-4 border-solid border-white shadow-md hover:shadow-xl transition duration-400"
+          className={
+            "border-8 border-solid border-white shadow-md hover:shadow-xl transition duration-400 " +
+            imgClassName
+          }
         ></Image>
       </Tilt>
-    </div>
+      {dialogKey && (
+        <AnimatePresence>
+          <motion.div
+            variants={dialogBoxVariant}
+            className="absolute backdrop-blur-sm dark:bg-black/30 bg-white/30 py-4 px-6 m-4 rounded-lg shadow-lg transition duration-400 transform space-y-2"
+          >
+            {Dialogs[dialogKey].map((dialog) => (
+              <motion.div
+                variants={dialogVariant}
+                key={dialogKey}
+                className="flex flex-row flex-auto space-x-4 items-center"
+              >
+                <Image
+                  src={friendsAvatar[dialog.Char]}
+                  alt={dialog.Char + "'s avatar"}
+                  height={64}
+                  width={64}
+                  className="rounded-full shadow-md"
+                ></Image>
+                <div>
+                  <div className="bg-stone-50 dark:bg-stone-800 px-4 py-2 rounded-lg shadow-md">
+                    <p className={"font-sans text-md " + dialog.Classname}>
+                      {dialog.Text}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </AnimatePresence>
+      )}
+    </motion.div>
   );
 }

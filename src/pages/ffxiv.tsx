@@ -225,32 +225,47 @@ export default function FFXIV({
         </div>
       </div>
 
-      <section className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-flow-dense gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+      <section className="sm:container mx-auto px-6 sm:px-0">
+        <div className="grid place-content-center text-center py-24 gap-2">
+          <h1 className="font-handwritten text-5xl">
+            {intl.formatMessage({ id: "The Unending Journey" })}
+          </h1>
+          <p className="font-sans text-lg">
+            {intl.formatMessage({
+              id: "Hover over a photo to echo a (silly) conversation of the past.",
+            })}
+          </p>
+        </div>
+        <div className="grid grid-flow-dense gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <ScrapbookPhoto
             src={"/img/van-scrapbook/1.jpg"}
             alt="A newly created Van Carina in Uldah"
             width={1096}
             height={778}
+            dialogKey="1"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/2.jpg"}
             alt="Van and Driga surrounding Carra who is afk in Thamaturges' Guild"
             width={1747}
             height={960}
+            dialogKey="2"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/2-a.jpg"}
             alt="Van sitting with her fellow brethren in Thamaturges' Guild"
             width={1920}
             height={1080}
-            className="md:col-span-2 rotate-1"
+            className="md:col-span-2"
+            imgClassName="rotate-1"
+            dialogKey="2-a"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/3.jpg"}
             alt="Van, Aki, Driga and Carra preparing for battle against Garuda"
             width={1919}
             height={1079}
+            dialogKey="3"
           />
           <div className="md:col-span-2">
             <ScrapbookPhoto
@@ -258,6 +273,7 @@ export default function FFXIV({
               alt="Carra and Driga presenting Van during Binding Coil of Bahamut raid"
               width={3440}
               height={1440}
+              dialogKey="3-a"
             />
           </div>
           <div className="md:row-span-2">
@@ -266,6 +282,7 @@ export default function FFXIV({
               alt="Aki welcoming Van at Foundation"
               width={767}
               height={873}
+              dialogKey="4"
             />
           </div>
           <ScrapbookPhoto
@@ -273,30 +290,36 @@ export default function FFXIV({
             alt="Van posing in Coerthas"
             width={1920}
             height={1080}
+            dialogKey="5"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/6.jpg"}
             alt="Van waving in her decorated living room"
             width={1920}
             height={1080}
+            className="md:col-span-2"
+            dialogKey="6"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/7.jpg"}
             alt="Van and friends chatting before the diplomatic marriage begins"
             width={1920}
             height={1080}
+            dialogKey="7"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/7-a.jpg"}
             alt="Van forces a smile"
-            width={200}
-            height={280}
+            width={300}
+            height={420}
+            dialogKey="7-a"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/8.jpg"}
             alt="Van and friends in the diplomatic marriage"
             width={1920}
             height={1080}
+            dialogKey="8"
           />
           <div className="md:col-span-2">
             <ScrapbookPhoto
@@ -304,6 +327,7 @@ export default function FFXIV({
               alt="Van and friends in the diplomatic marriage"
               width={1920}
               height={1080}
+              dialogKey="9"
             />
           </div>
 
@@ -313,6 +337,7 @@ export default function FFXIV({
               alt="Van preparing for battle against Nidhogg"
               width={1920}
               height={1080}
+              dialogKey="10"
             />
           </div>
           <ScrapbookPhoto
@@ -320,25 +345,29 @@ export default function FFXIV({
             alt="Van and Rhae'li interrogating a sentient Ravhen chocolate fondue"
             width={1920}
             height={1080}
+            dialogKey="11"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/12.jpg"}
-            alt="Van and Rhae'li interrogating a sentient Ravhen chocolate fondue"
+            alt="Van and Carra looking at a sentient Ravhen chocolate fondue"
             width={1920}
             height={1080}
-            className="rotate-2"
+            imgClassName="rotate-2"
+            dialogKey="12"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/13.jpg"}
             alt="Van in the Royal Menagerie garden"
             width={1920}
             height={1080}
+            dialogKey="13"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/14.jpg"}
             alt="Van in the Royal Menagerie garden"
             width={1920}
             height={1080}
+            dialogKey="14"
           />
           <div className="md:col-span-2">
             <ScrapbookPhoto
@@ -346,6 +375,7 @@ export default function FFXIV({
               alt="Van in the Royal Menagerie garden"
               width={1920}
               height={1080}
+              dialogKey="15"
             />
           </div>
           <ScrapbookPhoto
@@ -353,13 +383,15 @@ export default function FFXIV({
             alt="Van in the Rak'tika Greatwood"
             width={1920}
             height={1080}
+            dialogKey="16"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/17.jpg"}
             alt="A black mage's worst nightmare"
-            width={457}
-            height={321}
-            className="-rotate-2"
+            width={686}
+            height={482}
+            imgClassName="-rotate-2"
+            dialogKey="17"
           />
           <div className="md:col-span-2 lg:col-span-3 xl:col-span-3">
             <ScrapbookPhoto
@@ -367,6 +399,7 @@ export default function FFXIV({
               alt="Carra gposing as Van performance LB3"
               width={3440}
               height={1440}
+              dialogKey="18"
             />
           </div>
           <ScrapbookPhoto
@@ -374,12 +407,15 @@ export default function FFXIV({
             alt="Van preparing for battle in Hades' Elegy"
             width={1920}
             height={1080}
+            dialogKey="19"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/20.jpg"}
             alt="Van teaching a Miqote child in the Crystarium"
             width={1920}
             height={1080}
+            className="md:col-span-2"
+            dialogKey="20"
           />
           <div className="md:col-span-2">
             <ScrapbookPhoto
@@ -387,8 +423,14 @@ export default function FFXIV({
               alt="Van in Sharlayan"
               width={1920}
               height={1080}
+              dialogKey="21"
             />
           </div>
+        </div>
+        <div className="grid place-content-center text-center py-24 gap-2">
+          <h1 className="font-handwritten text-5xl">
+            {intl.formatMessage({ id: "The journey continues.." })}
+          </h1>
         </div>
       </section>
     </Layout>

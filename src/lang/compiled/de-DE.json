@@ -137,6 +137,12 @@
       "value": "Hauptseite"
     }
   ],
+  "Hover over a photo to echo a (silly) conversation of the past.": [
+    {
+      "type": 0,
+      "value": "Bewegen Sie den Mauszeiger über ein Foto, um ein (dummes) Gespräch aus der Vergangenheit wiederzugeben."
+    }
+  ],
   "Huion Inspiroy Q11K V2": [
     {
       "type": 0,
@@ -323,10 +329,22 @@
       "value": "Geschichten der Hoffnung inmitten schrecklicher Entscheidungen."
     }
   ],
+  "The Unending Journey": [
+    {
+      "type": 0,
+      "value": "Die unendliche Reise"
+    }
+  ],
   "The illustrations I make, describe a world of places I'm passionate about, the things I want to do and the kind of person I wish to become. They are not tied to a particular story, leaving enough room for self-interpretation.": [
     {
       "type": 0,
       "value": "Die Illustrationen, die ich anfertige, beschreiben eine Welt der Orte, für die ich mich begeistere, die DInge, die ich tun möchte, und die Art von Menschen, die ich werden möchte. Sie sind nicht an eine bestimmte Geschichte gebunden und lassen genügend Raum für einige Interpretationen. "
+    }
+  ],
+  "The journey continues..": [
+    {
+      "type": 0,
+      "value": "Die Reise geht weiter..."
     }
   ],
   "There is no dream too big to be realized, and I for one could attest to that. ": [
@@ -362,7 +380,7 @@
   "View on Lodestone": [
     {
       "type": 0,
-      "value": "View on Lodestone"
+      "value": "Blick auf Lodestone"
     }
   ],
   "Visit Website": [
