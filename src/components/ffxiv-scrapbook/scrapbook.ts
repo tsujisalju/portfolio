@@ -73,7 +73,7 @@ export const Dialogs = {
   "8": [
     {
       Char: "van",
-      Text: "My gpose game isn't up to snuff okie bare with me",
+      Text: "My gpose game isn't up to snuff",
       Classname: "",
     },
   ],
