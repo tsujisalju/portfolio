@@ -104,20 +104,20 @@ export default function ScrapbookPhoto({
         <AnimatePresence>
           <motion.div
             variants={dialogBoxVariant}
-            className="absolute backdrop-blur-sm dark:bg-black/30 bg-white/30 py-4 px-6 m-2 sm:m-4 rounded-lg shadow-lg transition duration-400 transform space-y-2"
+            className="absolute backdrop-blur-sm dark:bg-black/30 bg-white/30 py-2 px-3 xl:py-4 xl:px-6 m-2 xl:m-4 rounded-lg shadow-lg transition duration-400 transform space-y-2"
           >
             {Dialogs[dialogKey].map((dialog) => (
               <motion.div
                 variants={dialogVariant}
                 key={dialogKey}
-                className="flex flex-row flex-auto space-x-4 items-center"
+                className="flex flex-row flex-auto space-x-2 xl:space-x-4 items-center"
               >
                 <Image
                   src={friendsAvatar[dialog.Char]}
                   alt={dialog.Char + "'s avatar"}
                   height={64}
                   width={64}
-                  className="rounded-full shadow-md"
+                  className="rounded-full shadow-md w-[48px] h-auto xl:w-auto"
                 ></Image>
                 <div>
                   <div className="bg-stone-50 dark:bg-stone-800 px-4 py-2 rounded-lg shadow-md">

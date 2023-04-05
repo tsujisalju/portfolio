@@ -305,6 +305,7 @@ export default function FFXIV({
             alt="Van and friends chatting before the diplomatic marriage begins"
             width={1920}
             height={1080}
+            className="md:col-span-2"
             dialogKey="7"
           />
           <ScrapbookPhoto
@@ -390,6 +391,7 @@ export default function FFXIV({
             alt="A black mage's worst nightmare"
             width={686}
             height={482}
+            className="md:col-span-2"
             imgClassName="-rotate-2"
             dialogKey="17"
           />
