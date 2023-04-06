@@ -3,9 +3,10 @@ import Image from "next/image";
 import { Dialogs } from "./scrapbook";
 import { friendsAvatar } from "../../lib/ffxiv";
 import { AnimatePresence, motion, Variants } from "framer-motion";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 
 export default function ScrapbookPhoto({
+  children,
   alt,
   src,
   height,
@@ -14,6 +15,7 @@ export default function ScrapbookPhoto({
   imgClassName,
   dialogKey,
 }: {
+  children?: ReactNode;
   alt: string;
   src: string;
   height: number;
@@ -100,6 +102,7 @@ export default function ScrapbookPhoto({
           }
         ></Image>
       </Tilt>
+      {children}
       {dialogKey && (
         <AnimatePresence>
           <motion.div
