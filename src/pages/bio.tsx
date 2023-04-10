@@ -47,11 +47,6 @@ export default function About() {
             </p>
             <p>
               {intl.formatMessage({
-                id: "There is no dream too big to be realized, and I for one could attest to that. ",
-              })}
-            </p>
-            <p>
-              {intl.formatMessage({
                 id: "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life.",
               })}
             </p>
@@ -60,7 +55,7 @@ export default function About() {
       </div>
 
       <div className="flex flex-col justify-center items-center py-20 gap-6">
-        <h1 className="font-display text-xl">
+        <h1 className="font-display text-lg">
           {intl.formatMessage({ id: "What's in a name?" })}
         </h1>
         <div className="flex flex-row justify-center pb-6">
@@ -88,12 +83,12 @@ export default function About() {
           </p>
         </div>
         <div className="container mx-auto lg:max-w-4xl text-center h-12">
-          <p className={"font-serif text-lg " + (nameToggle && "hidden")}>
+          <p className={"font-serif text-md " + (nameToggle && "hidden")}>
             {intl.formatMessage({
               id: "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference.",
             })}
           </p>
-          <p className={"font-serif text-lg " + (!nameToggle && "hidden")}>
+          <p className={"font-serif text-md " + (!nameToggle && "hidden")}>
             {intl.formatMessage({
               id: "Padok is a Malay slang for padu, which means powerful.",
             })}

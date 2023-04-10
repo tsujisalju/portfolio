@@ -14,7 +14,10 @@ export default function Layout({
     <div className="flex flex-col min-h-screen">
       <Head>
         <title>smolpadok | Developer & Designer</title>
-        <meta name="description" content="smolpadok's portfolio" />
+        <meta
+          name="description"
+          content="smolpadok is a frontend developer and designer based in Malaysia."
+        />
         <link rel="icon" href="/img/logo-favicon.png" />
       </Head>
 

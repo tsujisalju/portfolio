@@ -62,16 +62,6 @@ export default function Uses() {
                     })}
                   </p>
                 </li>
-                <li>
-                  <h3 className="font-sans font-bold text-lg">
-                    {intl.formatMessage({ id: "Unity3D" })}
-                  </h3>
-                  <p className="font-serif text-lg">
-                    {intl.formatMessage({
-                      id: "It has been a while since I've revisited some old game projects of mine. My feelings for Unity has been a little tainted lately, after all the shenanigans of the upper management. I may consider checking out other engines too.",
-                    })}
-                  </p>
-                </li>
               </ul>
             </div>
           </div>
@@ -120,6 +110,11 @@ export default function Uses() {
                   <p className="font-serif text-lg">
                     {intl.formatMessage({
                       id: "If you need awesome, grotesque, avant-garde looking typefonts, this is the place for you! All fonts here are libre and open sourced.",
+                    })}
+                  </p>
+                  <p className="font-serif text-lg">
+                    {intl.formatMessage({
+                      id: "Update: They are currently on strike due to fight against increasing retirement age in France. Fonts are unavailable at this time, and I wish them well on their endeavours.",
                     })}
                   </p>
                 </li>
