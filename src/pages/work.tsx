@@ -16,13 +16,13 @@ export default function Achernar() {
     <Layout>
       <section className="relative">
         <Image
-          className="object-cover inline dark:hidden"
+          className="z-[-1] object-cover inline dark:hidden"
           src={"/img/minswap/background2_light.png"}
           alt="minswap "
           fill
         />
         <Image
-          className="object-cover hidden dark:inline"
+          className="z-[-1] object-cover hidden dark:inline"
           src={"/img/minswap/background2_dark.png"}
           alt="minswap "
           fill
