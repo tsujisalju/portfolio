@@ -54,7 +54,7 @@ export const Dialogs = {
   "7": [
     {
       Char: "van",
-      Text: "I wonder what dress will they be wearing",
+      Text: "My first time at an eternal bond celebration.. 🥺",
       Classname: "",
     },
     {
