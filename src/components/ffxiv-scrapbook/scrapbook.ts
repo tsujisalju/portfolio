@@ -233,4 +233,21 @@ export const Dialogs = {
       Classname: "",
     },
   ],
+  "22": [
+    {
+      Char: "van",
+      Text: "Laptop broke. I was forced to slow down.",
+      Classname: "",
+    },
+    {
+      Char: "carra",
+      Text: "vans very real issue with her visa being rejected and had to go back to limsa for a month",
+      Classname: "",
+    },
+    {
+      Char: "aki",
+      Text: "hope it gets fixed soon man",
+      Classname: "",
+    },
+  ],
 };

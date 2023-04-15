@@ -14,6 +14,7 @@ export default function ScrapbookPhoto({
   className,
   imgClassName,
   dialogKey,
+  noborder,
 }: {
   children?: ReactNode;
   alt: string;
@@ -23,6 +24,7 @@ export default function ScrapbookPhoto({
   className?: string;
   imgClassName?: string;
   dialogKey?: keyof typeof Dialogs;
+  noborder?: boolean;
 }) {
   const [isShowing, setIsShowing] = useState(false);
   const [isHover, setIsHover] = useState(false);
@@ -97,7 +99,9 @@ export default function ScrapbookPhoto({
           height={height}
           width={width}
           className={
-            "border-8 border-solid border-white shadow-md hover:shadow-xl transition duration-400 " +
+            "transition duration-400 " +
+            (!noborder &&
+              "border-8 border-solid border-white shadow-md hover:shadow-xl ") +
             imgClassName
           }
         ></Image>

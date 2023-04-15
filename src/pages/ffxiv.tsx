@@ -469,6 +469,14 @@ export default function FFXIV({
               dialogKey="21"
             />
           </div>
+          <ScrapbookPhoto
+            src={"/img/van-scrapbook/clipart/laptop-brokey.png"}
+            alt="Broken laptop"
+            width={1000}
+            height={1000}
+            dialogKey="22"
+            noborder
+          />
         </div>
         <div className="grid place-content-center text-center py-24 gap-2">
           <h1 className="font-handwritten text-5xl">
