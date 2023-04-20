@@ -411,6 +411,29 @@ export default function FFXIV({
             </ScrapbookPhoto>
           </div>
           <ScrapbookPhoto
+            src={"/img/van-scrapbook/16-a.jpg"}
+            alt="Van at the Crystarium"
+            width={1920}
+            height={1080}
+            dialogKey="16-a"
+          />
+          <ScrapbookPhoto
+            src={"/img/van-scrapbook/16-b.jpg"}
+            alt="Van contemplating by the crystal tower, a rim light casts onto her"
+            width={1920}
+            height={1080}
+            className="md:col-span-2"
+            dialogKey="16-b"
+          />
+          <ScrapbookPhoto
+            src={"/img/van-scrapbook/16-c.jpg"}
+            alt="Van riding a chocobo in Il Mheg"
+            width={1920}
+            height={1080}
+            className="md:col-span-3"
+            dialogKey="16-c"
+          />
+          <ScrapbookPhoto
             src={"/img/van-scrapbook/16.jpg"}
             alt="Van in the Rak'tika Greatwood"
             width={1920}
@@ -460,23 +483,22 @@ export default function FFXIV({
               ></Image>
             </Parallax>
           </ScrapbookPhoto>
+          <ScrapbookPhoto
+            src={"/img/van-scrapbook/21.jpg"}
+            alt="Van in Sharlayan"
+            width={1920}
+            height={1080}
+            dialogKey="21"
+          />
           <div className="md:col-span-2">
             <ScrapbookPhoto
-              src={"/img/van-scrapbook/21.jpg"}
-              alt="Van in Sharlayan"
+              src={"/img/van-scrapbook/22.jpg"}
+              alt="Van in Mare Lamentorum"
               width={1920}
               height={1080}
-              dialogKey="21"
+              dialogKey="22"
             />
           </div>
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/clipart/laptop-brokey.png"}
-            alt="Broken laptop"
-            width={1000}
-            height={1000}
-            dialogKey="22"
-            noborder
-          />
         </div>
         <div className="grid place-content-center text-center py-24 gap-2">
           <h1 className="font-handwritten text-5xl">

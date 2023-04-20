@@ -158,6 +158,27 @@ export const Dialogs = {
       Classname: "",
     },
   ],
+  "16-a": [
+    {
+      Char: "van",
+      Text: "Stand taaaaaaaall my friend..",
+      Classname: "",
+    },
+  ],
+  "16-b": [
+    {
+      Char: "van",
+      Text: "May all of the dark deep inside you find light again..",
+      Classname: "",
+    },
+  ],
+  "16-c": [
+    {
+      Char: "van",
+      Text: "This time, tumbling, turning we make amends..",
+      Classname: "",
+    },
+  ],
   "17": [
     {
       Char: "van",
@@ -236,17 +257,7 @@ export const Dialogs = {
   "22": [
     {
       Char: "van",
-      Text: "Laptop broke. I was forced to slow down.",
-      Classname: "",
-    },
-    {
-      Char: "carra",
-      Text: "vans very real issue with her visa being rejected and had to go back to limsa for a month",
-      Classname: "",
-    },
-    {
-      Char: "aki",
-      Text: "hope it gets fixed soon man",
+      Text: "Now, where were we? 🤍",
       Classname: "",
     },
   ],
