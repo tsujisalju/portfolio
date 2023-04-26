@@ -38,6 +38,13 @@ export default function Home({
           </video>
         </div>
         <Hero>
+          <div className="mb-4 p-4 bg-stone-100/50 backdrop-blur-sm dark:bg-stone-800/50 rounded-md max-w-fit">
+            <h1 className="font-sans text-lg">
+              ✦ <span className="font-display text-2xl"> smolpadok </span>{" "}
+              {intl.formatMessage({ id: "is now" })}
+              <span className="font-display text-2xl"> purrnama </span>
+            </h1>
+          </div>
           <div>
             <h1 className="font-display text-4xl">
               {intl.formatMessage({

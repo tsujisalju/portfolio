@@ -40,27 +40,27 @@ export default function Header(Props: HeaderProp) {
       <div className="flex flex-row">
         <div className="flex flex-row flex-auto p-3 lg:p-6 lg:space-x-12">
           <Link href={"/"}>
-            <div className="flex flex-row justify-start items-center space-x-4 -ml-4 dark:ml-0">
+            <div className="flex flex-row justify-start items-center space-x-2 -ml-2 dark:ml-0">
               <Image
                 className="lg:self-center hidden dark:flex pb-2 lg:pb-0"
                 alt="smolpadok logo"
-                src="/img/logo-light.png"
-                width={40}
-                height={40}
+                src="/img/logo-light-v2.png"
+                width={50}
+                height={50}
                 placeholder="empty"
                 priority={true}
               ></Image>
               <Image
                 className="flex lg:self-center dark:hidden pb-2 lg:pb-0"
                 alt="smolpadok logo"
-                src="/img/logo-dark.png"
-                width={40}
-                height={40}
+                src="/img/logo-dark-v2.png"
+                width={50}
+                height={50}
                 placeholder="empty"
                 priority={true}
               ></Image>
               <h1 className="text-3xl font-display hidden lg:inline">
-                smolpadok
+                purrnama
               </h1>
             </div>
           </Link>

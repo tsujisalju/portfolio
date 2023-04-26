@@ -5,11 +5,7 @@ import Image from "next/image";
 import { FadeIn } from "../utilities/FadeIn";
 
 export default function About() {
-  const [nameToggle, setNameToggle] = React.useState<Boolean>(false);
   const intl = useIntl();
-  function HandleNameToggle(value: Boolean) {
-    setNameToggle(value);
-  }
 
   React.useEffect(() => {
     document.body.style.backgroundImage = "";
@@ -53,49 +49,7 @@ export default function About() {
           </div>
         </div>
       </div>
-
-      <div className="flex flex-col justify-center items-center py-20 gap-6">
-        <h1 className="font-display text-lg">
-          {intl.formatMessage({ id: "What's in a name?" })}
-        </h1>
-        <div className="flex flex-row justify-center pb-6">
-          <p
-            className={
-              "font-display text-4xl md:text-7xl " +
-              (!nameToggle
-                ? "text-stone-800 dark:text-stone-200"
-                : "text-stone-400 dark:text-stone-700")
-            }
-            onMouseEnter={() => HandleNameToggle(false)}
-          >
-            smol
-          </p>
-          <p
-            className={
-              "font-display text-4xl md:text-7xl " +
-              (nameToggle
-                ? "text-stone-800 dark:text-stone-200"
-                : "text-stone-400 dark:text-stone-700")
-            }
-            onMouseEnter={() => HandleNameToggle(true)}
-          >
-            padok
-          </p>
-        </div>
-        <div className="container mx-auto lg:max-w-4xl text-center h-12">
-          <p className={"font-serif text-md " + (nameToggle && "hidden")}>
-            {intl.formatMessage({
-              id: "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference.",
-            })}
-          </p>
-          <p className={"font-serif text-md " + (!nameToggle && "hidden")}>
-            {intl.formatMessage({
-              id: "Padok is a Malay slang for padu, which means powerful.",
-            })}
-          </p>
-        </div>
-      </div>
-      <div className="container mx-auto grid place-items-center rotate-2">
+      <div className="container mx-auto grid place-items-center rotate-2 my-16">
         <Image
           className="shadow-md saturate-50"
           alt="Qayyum in a forest"

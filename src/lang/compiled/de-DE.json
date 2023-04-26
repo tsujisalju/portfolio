@@ -347,22 +347,16 @@
       "value": "Die Reise geht weiter..."
     }
   ],
-  "There is no dream too big to be realized, and I for one could attest to that. ": [
-    {
-      "type": 0,
-      "value": "There is no dream too big to be realized, and I for one could attest to that. "
-    }
-  ],
   "Tools of the Trade": [
     {
       "type": 0,
       "value": "Werkzeuge des Handels"
     }
   ],
-  "Unity3D": [
+  "Update: They are currently on strike due to fight against increasing retirement age in France. Fonts are unavailable at this time, and I wish them well on their endeavours.": [
     {
       "type": 0,
-      "value": "Unity3D"
+      "value": "Update: They are currently on strike due to fight against increasing retirement age in France. Fonts are unavailable at this time, and I wish them well on their endeavours."
     }
   ],
   "Uses": [
@@ -401,12 +395,6 @@
       "value": "Wir verwenden Figma für alle Mock-Interfaces und Marketingmedien.Ich finde die Sortierung und das Layout-Funktion besonders praktisch im Vergleixh zu anderen Designprogrammen. Ich habe gerade erfahren, dass sie von Adobe aufgekauft werden, also kann ich nur das Schlimmste erwarten."
     }
   ],
-  "What's in a name?": [
-    {
-      "type": 0,
-      "value": "What's in a name?"
-    }
-  ],
   "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference.": [
     {
       "type": 0,
@@ -429,6 +417,12 @@
     {
       "type": 0,
       "value": "eine türkische Van-Katze Händlerin/Bauingenieurin."
+    }
+  ],
+  "is now": [
+    {
+      "type": 0,
+      "value": "ist jetzt"
     }
   ]
 }

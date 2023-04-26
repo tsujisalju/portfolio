@@ -125,12 +125,6 @@
       "value": "Inkscape"
     }
   ],
-  "It has been a while since I've revisited some old game projects of mine. My feelings for Unity has been a little tainted lately, after all the shenanigans of the upper management. I may consider checking out other engines too.": [
-    {
-      "type": 0,
-      "value": "It has been a while since I've revisited some old game projects of mine. My feelings for Unity has been a little tainted lately, after all the shenanigans of the upper management. I may consider checking out other engines too."
-    }
-  ],
   "Krita": [
     {
       "type": 0,
@@ -185,12 +179,6 @@
       "value": "No doubt everyone uses this. I use it for all my game and web dev work. It's so nice to have all sorts of support and extensions for any programming work imaginable."
     }
   ],
-  "Padok is a Malay slang for padu, which means powerful.": [
-    {
-      "type": 0,
-      "value": "Padok is a Malay slang for padu, which means powerful."
-    }
-  ],
   "Tales of hope amidst terrible choices.": [
     {
       "type": 0,
@@ -209,16 +197,10 @@
       "value": "The journey continues.."
     }
   ],
-  "There is no dream too big to be realized, and I for one could attest to that. ": [
+  "Update: They are currently on strike due to fight against increasing retirement age in France. Fonts are unavailable at this time, and I wish them well on their endeavours.": [
     {
       "type": 0,
-      "value": "There is no dream too big to be realized, and I for one could attest to that. "
-    }
-  ],
-  "Unity3D": [
-    {
-      "type": 0,
-      "value": "Unity3D"
+      "value": "Update: They are currently on strike due to fight against increasing retirement age in France. Fonts are unavailable at this time, and I wish them well on their endeavours."
     }
   ],
   "Uses": [
@@ -257,18 +239,6 @@
       "value": "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs. Just found out they're being bought out by Adobe, so I only expect the worst."
     }
   ],
-  "What's in a name?": [
-    {
-      "type": 0,
-      "value": "What's in a name?"
-    }
-  ],
-  "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference.": [
-    {
-      "type": 0,
-      "value": "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference."
-    }
-  ],
   "Work": [
     {
       "type": 0,
@@ -279,6 +249,12 @@
     {
       "type": 0,
       "value": "Workstation"
+    }
+  ],
+  "is now": [
+    {
+      "type": 0,
+      "value": "is now"
     }
   ]
 }

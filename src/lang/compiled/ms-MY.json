@@ -233,12 +233,6 @@
       "value": "Inkscape"
     }
   ],
-  "It has been a while since I've revisited some old game projects of mine. My feelings for Unity has been a little tainted lately, after all the shenanigans of the upper management. I may consider checking out other engines too.": [
-    {
-      "type": 0,
-      "value": "It has been a while since I've revisited some old game projects of mine. My feelings for Unity has been a little tainted lately, after all the shenanigans of the upper management. I may consider checking out other engines too."
-    }
-  ],
   "Khajiit today makes 'soft wares'.": [
     {
       "type": 0,
@@ -341,22 +335,16 @@
       "value": "Pengembaraan diteruskan.."
     }
   ],
-  "There is no dream too big to be realized, and I for one could attest to that. ": [
-    {
-      "type": 0,
-      "value": "There is no dream too big to be realized, and I for one could attest to that. "
-    }
-  ],
   "Tools of the Trade": [
     {
       "type": 0,
       "value": "Alatan"
     }
   ],
-  "Unity3D": [
+  "Update: They are currently on strike due to fight against increasing retirement age in France. Fonts are unavailable at this time, and I wish them well on their endeavours.": [
     {
       "type": 0,
-      "value": "Unity3D"
+      "value": "Update: They are currently on strike due to fight against increasing retirement age in France. Fonts are unavailable at this time, and I wish them well on their endeavours."
     }
   ],
   "Uses": [
@@ -423,6 +411,12 @@
     {
       "type": 0,
       "value": "seorang kucing van turki pedagang/jurutera sivil"
+    }
+  ],
+  "is now": [
+    {
+      "type": 0,
+      "value": "kini adalah"
     }
   ]
 }
