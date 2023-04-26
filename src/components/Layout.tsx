@@ -13,12 +13,12 @@ export default function Layout({
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
-        <title>smolpadok | Developer & Designer</title>
+        <title>purrnama | Developer & Designer</title>
         <meta
           name="description"
-          content="smolpadok is a frontend developer and designer based in Malaysia."
+          content="purrnama is a frontend developer and designer based in Malaysia."
         />
-        <link rel="icon" href="/img/logo-favicon.png" />
+        <link rel="icon" href="/img/logo-favicon-v2.png" />
       </Head>
 
       <Header />

@@ -8,22 +8,22 @@ export default function Footer() {
       <div className="md:self-center hidden dark:flex pb-2 md:pb-0">
         <Image
           alt="smolpadok logo"
-          src="/img/logo-light.png"
-          width={30}
-          height={30}
+          src="/img/logo-light-v2.png"
+          width={40}
+          height={40}
           placeholder="empty"
         ></Image>
       </div>
       <div className="flex md:self-center dark:hidden pb-2 md:pb-0">
         <Image
           alt="smolpadok logo"
-          src="/img/logo-dark.png"
-          width={30}
-          height={30}
+          src="/img/logo-dark-v2.png"
+          width={40}
+          height={40}
           placeholder="empty"
         ></Image>
       </div>
-      <small className="font-sans">© 2023 smolpadok</small>
+      <small className="font-sans">© 2023 purrnama</small>
     </div>
   );
 }

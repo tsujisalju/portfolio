@@ -40,11 +40,11 @@ export default function Header(Props: HeaderProp) {
       <div className="flex flex-row">
         <div className="flex flex-row flex-auto p-3 lg:p-6 lg:space-x-12">
           <Link href={"/"}>
-            <div className="flex flex-row justify-start items-center space-x-4 -ml-4 dark:ml-0">
+            <div className="flex flex-row justify-start items-center space-x-2 -ml-2 dark:ml-0">
               <Image
                 className="lg:self-center hidden dark:flex pb-2 lg:pb-0"
                 alt="smolpadok logo"
-                src="/img/logo-light.png"
+                src="/img/logo-light-v2.png"
                 width={50}
                 height={50}
                 placeholder="empty"
@@ -53,7 +53,7 @@ export default function Header(Props: HeaderProp) {
               <Image
                 className="flex lg:self-center dark:hidden pb-2 lg:pb-0"
                 alt="smolpadok logo"
-                src="/img/logo-dark.png"
+                src="/img/logo-dark-v2.png"
                 width={50}
                 height={50}
                 placeholder="empty"
