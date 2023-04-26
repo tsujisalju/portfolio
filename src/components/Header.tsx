@@ -45,8 +45,8 @@ export default function Header(Props: HeaderProp) {
                 className="lg:self-center hidden dark:flex pb-2 lg:pb-0"
                 alt="smolpadok logo"
                 src="/img/logo-light.png"
-                width={40}
-                height={40}
+                width={50}
+                height={50}
                 placeholder="empty"
                 priority={true}
               ></Image>
@@ -54,13 +54,13 @@ export default function Header(Props: HeaderProp) {
                 className="flex lg:self-center dark:hidden pb-2 lg:pb-0"
                 alt="smolpadok logo"
                 src="/img/logo-dark.png"
-                width={40}
-                height={40}
+                width={50}
+                height={50}
                 placeholder="empty"
                 priority={true}
               ></Image>
               <h1 className="text-3xl font-display hidden lg:inline">
-                smolpadok
+                purrnama
               </h1>
             </div>
           </Link>
