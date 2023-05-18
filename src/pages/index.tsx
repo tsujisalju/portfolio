@@ -30,13 +30,6 @@ export default function Home({
   return (
     <Layout>
       <FadeIn>
-        <div className="absolute hidden md:inline md:top-[-20%] lg:top-[-30%] xl:top-[-40%] -z-10">
-          <video autoPlay muted loop className="w-screen opacity-20">
-            <source src="/vid/garnet-timelapse.mp4" type="video/mp4" />
-            Supposed to be a timelapse video here, but your browser
-            doesn`&apos;t support HTML5 video.
-          </video>
-        </div>
         <Hero>
           <div className="mb-4 p-4 bg-stone-100/50 backdrop-blur-sm dark:bg-stone-800/50 rounded-md max-w-fit">
             <h1 className="font-sans text-lg">
