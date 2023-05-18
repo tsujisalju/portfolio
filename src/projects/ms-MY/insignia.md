@@ -1,5 +1,5 @@
 ---
-title: "Insignia"
+title: "Lencana"
 date: "2023-05-14"
 img: "/img/projects/insignia.jpg"
 width: 2000

@@ -1,5 +1,5 @@
 ---
-title: "Resolute"
+title: "Nekad"
 date: "2023-05-09"
 img: "/img/projects/resolute.jpg"
 width: 2000
