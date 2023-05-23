@@ -59,7 +59,7 @@ export default function Home({
           </div>
           <div className="flex flex-row pt-4 space-x-3">
             <Link
-              href={"https://twitter.com/smolpadok"}
+              href={"https://twitter.com/purrnama__"}
               target={"_blank"}
               className={
                 "text-stone-700 hover:text-stone-800 dark:text-stone-300 hover:dark:text-stone-200 transition duration-200"
@@ -77,7 +77,7 @@ export default function Home({
               </svg>
             </Link>
             <Link
-              href={"https://github.com/smolpadok"}
+              href={"https://github.com/purrnama"}
               target={"_blank"}
               className={
                 "text-stone-700 hover:text-stone-800 dark:text-stone-300 hover:dark:text-stone-200 transition duration-200"
