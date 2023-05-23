@@ -5,9 +5,11 @@ import NavLink from "./NavLink";
 import { useIntl } from "react-intl";
 import SelectLanguage from "./SelectLanguage";
 import SelectTheme from "./SelectTheme";
+import { useRouter } from "next/router";
 
 export default function MobileNav() {
   const intl = useIntl();
+  const router = useRouter();
   return (
     <Menu as="div" className={"lg:hidden relative"}>
       <Menu.Button
@@ -50,10 +52,9 @@ export default function MobileNav() {
                   "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
                   (active && " bg-stone-200 dark:bg-stone-700")
                 }
+                onClick={() => router.push("/")}
               >
-                <NavLink mobile href="/">
-                  {intl.formatMessage({ id: "Home" })}
-                </NavLink>
+                {intl.formatMessage({ id: "Home" })}
               </div>
             )}
           </Menu.Item>
@@ -64,10 +65,9 @@ export default function MobileNav() {
                   "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
                   (active && " bg-stone-200 dark:bg-stone-700")
                 }
+                onClick={() => router.push("/work")}
               >
-                <NavLink mobile href="/work">
-                  {intl.formatMessage({ id: "Work" })}
-                </NavLink>
+                {intl.formatMessage({ id: "Work" })}
               </div>
             )}
           </Menu.Item>
@@ -78,10 +78,9 @@ export default function MobileNav() {
                   "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
                   (active && " bg-stone-200 dark:bg-stone-700")
                 }
+                onClick={() => router.push("/bio")}
               >
-                <NavLink mobile href="/bio">
-                  {intl.formatMessage({ id: "Biography" })}
-                </NavLink>
+                {intl.formatMessage({ id: "Biography" })}
               </div>
             )}
           </Menu.Item>
@@ -92,10 +91,9 @@ export default function MobileNav() {
                   "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
                   (active && " bg-stone-200 dark:bg-stone-700")
                 }
+                onClick={() => router.push("/uses")}
               >
-                <NavLink mobile href="/uses">
-                  {intl.formatMessage({ id: "Uses" })}
-                </NavLink>
+                {intl.formatMessage({ id: "Uses" })}
               </div>
             )}
           </Menu.Item>
@@ -106,10 +104,9 @@ export default function MobileNav() {
                   "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
                   (active && " bg-stone-200 dark:bg-stone-700")
                 }
+                onClick={() => router.push("/ffxiv")}
               >
-                <NavLink mobile href="/ffxiv">
-                  {intl.formatMessage({ id: "FFXIV" })}
-                </NavLink>
+                {intl.formatMessage({ id: "FFXIV" })}
               </div>
             )}
           </Menu.Item>
