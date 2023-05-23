@@ -9,7 +9,6 @@ import { Transition } from "@headlessui/react";
 import Button from "../components/Button";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
 import ScrapbookPhoto from "../components/ffxiv-scrapbook/ScrapbookPhoto";
-import { Parallax } from "react-scroll-parallax";
 
 const characterID = "46130616";
 
@@ -276,15 +275,7 @@ export default function FFXIV({
             className="md:col-span-2 relative"
             imgClassName="rotate-1"
             dialogKey="2-a"
-          >
-            <Image
-              className="absolute top-20 right-3 -rotate-6 w-[72px] md:w-[96px]"
-              src={"/img/van-scrapbook/clipart/blackmage.png"}
-              alt="black mage icon"
-              width={128}
-              height={128}
-            ></Image>
-          </ScrapbookPhoto>
+          />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/3.jpg"}
             alt="Van, Aki, Driga and Carra preparing for battle against Garuda"
@@ -357,17 +348,7 @@ export default function FFXIV({
               width={1920}
               height={1080}
               dialogKey="10"
-            >
-              <Parallax speed={8} className="z-[1]">
-                <Image
-                  className="absolute bottom-10 left-0 rotate-6 w-[72px] md:w-[128px]"
-                  src={"/img/van-scrapbook/clipart/ishgardflag.png"}
-                  alt="low-poly grapes"
-                  width={226}
-                  height={271}
-                ></Image>
-              </Parallax>
-            </ScrapbookPhoto>
+            />
           </div>
           <ScrapbookPhoto
             src={"/img/van-scrapbook/11.jpg"}
@@ -423,17 +404,7 @@ export default function FFXIV({
               width={1920}
               height={1080}
               dialogKey="15"
-            >
-              <Parallax speed={8} className="z-[1]">
-                <Image
-                  className="absolute bottom-10 right-0 -rotate-3 w-[72px] md:w-[128px]"
-                  src={"/img/van-scrapbook/clipart/alamhigoflag.png"}
-                  alt="low-poly grapes"
-                  width={226}
-                  height={271}
-                ></Image>
-              </Parallax>
-            </ScrapbookPhoto>
+            />
           </div>
           <ScrapbookPhoto
             src={"/img/van-scrapbook/16.jpg"}
@@ -501,17 +472,7 @@ export default function FFXIV({
             height={1080}
             className="relative md:col-span-2"
             dialogKey="20"
-          >
-            <Parallax speed={8} className="z-[1]">
-              <Image
-                className="absolute bottom-10 right-0 rotate-12 w-[96px] md:w-[128px]"
-                src={"/img/van-scrapbook/clipart/grpaes.png"}
-                alt="low-poly grapes"
-                width={377}
-                height={540}
-              ></Image>
-            </Parallax>
-          </ScrapbookPhoto>
+          />
           <div className="md:col-span-2 lg:col-span-2">
             <ScrapbookPhoto
               src={"/img/van-scrapbook/21.jpg"}
