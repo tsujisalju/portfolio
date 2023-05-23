@@ -101,7 +101,7 @@ export default function ScrapbookPhoto({
           className={
             "transition duration-400 " +
             (!noborder &&
-              "border-8 border-solid border-white shadow-md hover:shadow-xl ") +
+              "border-4 border-solid border-white shadow-md hover:shadow-xl ") +
             imgClassName
           }
         ></Image>

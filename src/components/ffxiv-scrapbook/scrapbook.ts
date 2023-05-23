@@ -161,21 +161,21 @@ export const Dialogs = {
   "16-a": [
     {
       Char: "van",
-      Text: "Stand taaaaaaaall my friend..",
+      Text: "♪ Stand taaaaaaaall my friend..",
       Classname: "",
     },
   ],
   "16-b": [
     {
       Char: "van",
-      Text: "May all of the dark deep inside you find light again..",
+      Text: "♪ May all of the dark deep inside you find light again..",
       Classname: "",
     },
   ],
   "16-c": [
     {
       Char: "van",
-      Text: "This time, tumbling, turning we make amends..",
+      Text: "♪ This time, tumbling, turning we make amends..",
       Classname: "",
     },
   ],
@@ -211,7 +211,7 @@ export const Dialogs = {
   "19": [
     {
       Char: "van",
-      Text: "im coming for you emet selch uwu",
+      Text: "♪ Eternal winds from the land ascend..",
       Classname: "",
     },
   ],
@@ -258,6 +258,23 @@ export const Dialogs = {
     {
       Char: "van",
       Text: "Now, where were we? 🤍",
+      Classname: "",
+    },
+    {
+      Char: "carra",
+      Text: "shes in high places",
+      Classname: "",
+    },
+  ],
+  "23": [
+    {
+      Char: "van",
+      Text: "ayo blm lvl 90??",
+      Classname: "",
+    },
+    {
+      Char: "driga",
+      Text: "Congrats",
       Classname: "",
     },
   ],
