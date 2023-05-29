@@ -505,7 +505,7 @@ export default function FFXIV({
             })}
           </p>
         </div>
-        <div className="pt-8">
+        <div className="pt-8 pb-4">
           <div className="flex flex-row gap-x-4 py-1">
             <h1 className="font-xivmeter text-lg">
               {intl.formatMessage({
@@ -515,13 +515,6 @@ export default function FFXIV({
             <p className="font-sans font-light text-lg">Endwalker</p>
           </div>
           <hr />
-        </div>
-        <div className="container mx-auto grid place-content-center text-center py-8 gap-4">
-          <p className="font-sans text-lg">
-            {intl.formatMessage({
-              id: "Echoes from this chapter forward are currently being deciphered. Stay attuned!",
-            })}
-          </p>
         </div>
         <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
           <ScrapbookPhoto
@@ -627,6 +620,13 @@ export default function FFXIV({
           <hr />
         </div>
 
+        <div className="container mx-auto grid place-content-center text-center pb-4 gap-4">
+          <p className="font-sans text-lg">
+            {intl.formatMessage({
+              id: "Echoes from this chapter forward are currently being deciphered. Stay attuned!",
+            })}
+          </p>
+        </div>
         <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
           <ScrapbookPhoto
             src={"/img/van-scrapbook/32.jpg"}
