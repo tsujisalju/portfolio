@@ -16,6 +16,9 @@ export const friendsAvatar: { [key: string]: string } = {
     "https://img2.finalfantasyxiv.com/f/4ae95d3b5a30aab9dde937a0a4fc408f_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1680632233",
   aslan:
     "https://img2.finalfantasyxiv.com/f/9cab4b170d08b0ff5579e8e4d9e64504_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1680643131",
+  nero: "https://img2.finalfantasyxiv.com/f/b0e58acd95c01234b5a231d9c1f2b52b_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1685351531",
+  twitch:
+    "https://img2.finalfantasyxiv.com/f/ab8a67db04df731f2ce20a2a3a9b8004_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1685355666",
 };
 
 export const jobIcons: { [key: number]: string } = {

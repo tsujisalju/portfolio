@@ -278,4 +278,120 @@ export const Dialogs = {
       Classname: "",
     },
   ],
+  "24": [
+    {
+      Char: "van",
+      Text: "Eorzea Collection does things to me.",
+      Classname: "",
+    },
+  ],
+  "25": [
+    {
+      Char: "van",
+      Text: "El piss hehehehe",
+      Classname: "",
+    },
+  ],
+  "26": [
+    {
+      Char: "van",
+      Text: "conk and bowl torture",
+      Classname: "",
+    },
+    {
+      Char: "carra",
+      Text: "conk and bowl torture",
+      Classname: "",
+    },
+    {
+      Char: "aki",
+      Text: "my balls are on fire",
+      Classname: "",
+    },
+  ],
+  "27": [
+    {
+      Char: "van",
+      Text: "there she is",
+      Classname: "",
+    },
+    {
+      Char: "nero",
+      Text: "👏",
+      Classname: "",
+    },
+    {
+      Char: "carra",
+      Text: "also VAN IS SO PRETTY WHATDDAHELL",
+      Classname: "",
+    },
+    {
+      Char: "van",
+      Text: "new hair.. i'm growing up 😌",
+      Classname: "",
+    },
+  ],
+  "28": [
+    {
+      Char: "van",
+      Text: "heterochromia gang.. new to sage and healing",
+      Classname: "",
+    },
+    {
+      Char: "carra",
+      Text: "gfs /j",
+      Classname: "",
+    },
+    {
+      Char: "van",
+      Text: "sharlayan girls are something..",
+      Classname: "",
+    },
+    {
+      Char: "noir",
+      Text: "dude van is ***ing ADORABLE with that hairsxtyle she is winning",
+      Classname: "",
+    },
+    {
+      Char: "van",
+      Text: "thank youuuu!!! 💗",
+      Classname: "",
+    },
+  ],
+  "29": [
+    {
+      Char: "van",
+      Text: "dinner at carra and aki's house",
+      Classname: "",
+    },
+    {
+      Char: "twitch",
+      Text: "thankfully the pic doesnt show me pantsless; properly censored as it should lol",
+      Classname: "",
+    },
+    {
+      Char: "carra",
+      Text: ":saluting_face:",
+      Classname: "",
+    },
+  ],
+  "30": [
+    {
+      Char: "tuya",
+      Text: "Hoooo my goooosh 🥺 ✨ SHE LOOKS SO COOL AND AWESOME AND THE PIC IS SO PRETTY TOO; SCARY YET FRIEND",
+      Classname: "",
+    },
+    {
+      Char: "van",
+      Text: "I am friend 🤗 lets go together on the trial next time we on",
+      Classname: "",
+    },
+  ],
+  placeholder: [
+    {
+      Char: "",
+      Text: "",
+      Classname: "",
+    },
+  ],
 };

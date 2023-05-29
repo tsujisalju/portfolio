@@ -545,6 +545,7 @@ export default function FFXIV({
             alt="Van lounging in the Baldesion Annex"
             width={1920}
             height={1080}
+            dialogKey="24"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/25.jpg"}
@@ -558,6 +559,7 @@ export default function FFXIV({
             width={1920}
             height={1080}
             className="md:col-span-2"
+            dialogKey="25"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/27.jpg"}
@@ -565,6 +567,7 @@ export default function FFXIV({
             width={672}
             height={597}
             className="rotate-1"
+            dialogKey="26"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/28.jpg"}
@@ -572,6 +575,7 @@ export default function FFXIV({
             width={1920}
             height={1080}
             className="md:col-span-2"
+            dialogKey="27"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/29.jpg"}
@@ -579,12 +583,14 @@ export default function FFXIV({
             width={1920}
             height={1080}
             className="md:col-span-2"
+            dialogKey="28"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/30.jpg"}
             alt="Van, Twitch, Carra and Aki having dinner"
             width={1097}
             height={989}
+            dialogKey="29"
           />
           <ScrapbookPhoto
             src={"/img/van-scrapbook/31.jpg"}
@@ -592,6 +598,7 @@ export default function FFXIV({
             width={1920}
             height={1078}
             className="md:col-span-3"
+            dialogKey="30"
           />
         </div>
         <div className="container mx-auto grid place-content-center text-center py-24 gap-4">
