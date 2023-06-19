@@ -49,13 +49,13 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto grid place-items-center rotate-2 my-16">
+      <div className="container mx-auto grid place-items-center my-16">
         <Image
-          className="shadow-md saturate-50"
-          alt="Qayyum in a forest"
-          height={667}
+          className="-rotate-1 shadow-md saturate-50"
+          alt="Qayyum at a harbour"
+          height={787}
           width={500}
-          src={"/img/about/nurture-2.jpg"}
+          src={"/img/about/nurture-3.jpeg"}
           placeholder="empty"
         />
       </div>

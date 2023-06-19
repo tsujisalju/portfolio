@@ -112,11 +112,6 @@ export default function Uses() {
                       id: "If you need awesome, grotesque, avant-garde looking typefonts, this is the place for you! All fonts here are libre and open sourced.",
                     })}
                   </p>
-                  <p className="font-serif text-lg">
-                    {intl.formatMessage({
-                      id: "Update: They are currently on strike due to fight against increasing retirement age in France. Fonts are unavailable at this time, and I wish them well on their endeavours.",
-                    })}
-                  </p>
                 </li>
               </ul>
             </div>
