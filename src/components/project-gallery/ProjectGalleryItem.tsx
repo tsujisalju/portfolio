@@ -16,10 +16,10 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
       className={
         project.id === "ultimatum" || project.id === "tailwind"
           ? "md:col-span-2 lg:col-span-3 xl:col-span-4  md:row-span-2"
-          : project.width > project.height ||
-            project.id === "resolute" ||
-            project.id === "insignia"
-          ? "md:col-span-2"
+          : project.id === "nirmala"
+          ? "md:col-span-1"
+          : project.id === "redemption"
+          ? "md:col-span-3"
           : project.width < project.height
           ? "md:row-span-2"
           : ""
@@ -54,9 +54,9 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
             "md:childParallax block md:absolute bg-none md:backdrop-blur-md md:dark:bg-black/50 md:bg-white/50 md:py-3 md:px-5 md:m-4 m-1 rounded md:shadow-lg transition duration-400 transform "
           }
         >
-          <h1 className="font-display md:text-2xl text-xl">{project.title}</h1>
+          <h1 className="font-display md:text-xl text-lg">{project.title}</h1>
 
-          <div className="font-sans font-lg font-light">
+          <div className="font-sans font-md font-light">
             <FormattedDate
               value={project.date}
               day={"numeric"}
