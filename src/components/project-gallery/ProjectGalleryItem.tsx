@@ -18,7 +18,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
           ? "md:col-span-2 lg:col-span-3 xl:col-span-4  md:row-span-2"
           : project.id === "nirmala"
           ? "md:col-span-1"
-          : project.id === "redemption"
+          : project.id === "redemption" || project.id === "kirana"
           ? "md:col-span-3"
           : project.width < project.height
           ? "md:row-span-2"

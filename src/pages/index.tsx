@@ -31,7 +31,7 @@ export default function Home({
     <Layout>
       <FadeIn>
         <Hero>
-          <div className="mb-4 p-4 bg-stone-100/50 backdrop-blur-sm dark:bg-stone-800/50 rounded-md max-w-fit">
+          <div className="mb-4 p-4 bg-stone-100/50 backdrop-blur-sm dark:bg-stone-800/50 rounded-md max-w-fit shadow-lg">
             <h1 className="font-sans text-lg">
               ✦ <span className="font-display text-2xl"> smolpadok </span>{" "}
               {intl.formatMessage({ id: "is now" })}
