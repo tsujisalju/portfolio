@@ -225,7 +225,7 @@ export default function FFXIV({
         </div>
       </div>
 
-      <section className="mx-auto px-4 sm:px-8">
+      <section className="mx-auto px-4 sm:px-8 container">
         <div className="grid place-content-center text-center py-24 gap-2">
           <h1 className="font-handwritten text-5xl">
             {intl.formatMessage({ id: "The Unending Journey" })}
@@ -249,7 +249,7 @@ export default function FFXIV({
           </div>
           <hr />
         </div>
-        <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
           <ScrapbookPhoto
             src={"/img/van-scrapbook/1.jpg"}
             alt="A newly created Van Carina in Uldah"
