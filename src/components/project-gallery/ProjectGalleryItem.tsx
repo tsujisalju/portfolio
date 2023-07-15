@@ -15,13 +15,15 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
     <div
       className={
         project.id === "ultimatum" || project.id === "tailwind"
-          ? "md:col-span-2 lg:col-span-3 xl:col-span-4  md:row-span-2"
+          ? "md:col-span-2 lg:col-span-3 xl:col-span-3  md:row-span-2"
           : project.id === "nirmala"
           ? "md:col-span-1"
           : project.id === "redemption" || project.id === "kirana"
           ? "md:col-span-3"
           : project.width < project.height
           ? "md:row-span-2"
+          : project.width > project.height
+          ? "md:col-span-2"
           : ""
       }
     >
@@ -37,7 +39,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
             id={project.id}
             alt={project.id}
             className={
-              "transition shadow-sm hover:shadow-xl duration-400 rounded-md " +
+              "transition shadow-sm hover:shadow-xl duration-400 rounded-sm " +
               (!isShowing ? "transform scale-95 ease-out" : "ease-in-out")
             }
             src={project.img}

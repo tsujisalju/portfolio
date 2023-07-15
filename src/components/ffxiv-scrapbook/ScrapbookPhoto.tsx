@@ -98,10 +98,11 @@ export default function ScrapbookPhoto({
           src={src}
           height={height}
           width={width}
+          key={src}
           className={
             "transition duration-400 " +
             (!noborder &&
-              "border-4 border-solid border-white shadow-md hover:shadow-xl ") +
+              "border-[16px] border-b-[32px] border-solid border-white shadow-md hover:shadow-xl ") +
             imgClassName
           }
         ></Image>
