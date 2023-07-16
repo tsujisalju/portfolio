@@ -283,7 +283,7 @@ export default function FFXIV({
             height={1079}
             dialogKey="3"
           />
-          <div className="md:col-span-2 lg:col-span-3">
+          <div className="md:col-span-2">
             <ScrapbookPhoto
               src={"/img/van-scrapbook/3-a.jpg"}
               alt="Carra and Driga presenting Van during Binding Coil of Bahamut raid"
