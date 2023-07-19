@@ -4,11 +4,18 @@ import { useIntl } from "react-intl";
 import { InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
-import { ffxivGender, jobIcons } from "../lib/ffxiv";
+import { ffxivGender, friendsAvatar, jobIcons } from "../lib/ffxiv";
 import { Transition } from "@headlessui/react";
 import Button from "../components/Button";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
 import ScrapbookPhoto from "../components/ffxiv-scrapbook/ScrapbookPhoto";
+import {
+  scrapbookPhotos1,
+  scrapbookPhotos2,
+  scrapbookPhotos3,
+  scrapbookPhotos4,
+} from "../components/ffxiv-scrapbook/scrapbook";
+import { AnimatePresence, motion, Variants } from "framer-motion";
 
 const characterID = "46130616";
 
@@ -250,122 +257,20 @@ export default function FFXIV({
           <hr />
         </div>
         <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/1.jpg"}
-            alt="A newly created Van Carina in Uldah"
-            width={1096}
-            height={778}
-            className="md:col-span-2 relative"
-            dialogKey="1"
-          >
-            <div className="absolute bottom-5 left-[35%] w-[25%] h-[45%] backdrop-blur-lg"></div>
-          </ScrapbookPhoto>
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/2.jpg"}
-            alt="Van and Driga surrounding Carra who is afk in Thamaturges' Guild"
-            width={1747}
-            height={960}
-            dialogKey="2"
-          ></ScrapbookPhoto>
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/2-a.jpg"}
-            alt="Van sitting with her fellow brethren in Thamaturges' Guild"
-            width={1920}
-            height={1080}
-            className="md:col-span-2 relative"
-            imgClassName="rotate-1"
-            dialogKey="2-a"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/3.jpg"}
-            alt="Van, Aki, Driga and Carra preparing for battle against Garuda"
-            width={1919}
-            height={1079}
-            dialogKey="3"
-          />
-          <div className="md:col-span-2">
+          {scrapbookPhotos1.map((p) => (
             <ScrapbookPhoto
-              src={"/img/van-scrapbook/3-a.jpg"}
-              alt="Carra and Driga presenting Van during Binding Coil of Bahamut raid"
-              width={3440}
-              height={1440}
-              dialogKey="3-a"
+              key={p.Photo.src}
+              src={p.Photo.src}
+              alt={p.Photo.alt}
+              height={p.Photo.height}
+              width={p.Photo.width}
+              className={p.Photo.className}
+              imgClassName={p.Photo.imgClassName}
+              dialogs={p.Dialog}
             />
-          </div>
-          <div className="md:row-span-2">
-            <ScrapbookPhoto
-              src={"/img/van-scrapbook/4.jpg"}
-              alt="Aki welcoming Van at Foundation"
-              width={767}
-              height={873}
-              dialogKey="4"
-            />
-          </div>
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/5.jpg"}
-            alt="Van posing in Coerthas"
-            width={1920}
-            height={1080}
-            dialogKey="5"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/6.jpg"}
-            alt="Van waving in her decorated living room"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-            dialogKey="6"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/7.jpg"}
-            alt="Van and friends chatting before the diplomatic marriage begins"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-            dialogKey="7"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/7-a.jpg"}
-            alt="Van forces a smile"
-            width={300}
-            height={420}
-            dialogKey="7-a"
-          />
-          <div className="md:col-span-2">
-            <ScrapbookPhoto
-              src={"/img/van-scrapbook/9.jpg"}
-              alt="Van and friends in the diplomatic marriage"
-              width={1920}
-              height={1080}
-              dialogKey="9"
-            />
-          </div>
-
-          <div className="md:col-span-2">
-            <ScrapbookPhoto
-              src={"/img/van-scrapbook/10.jpg"}
-              alt="Van preparing for battle against Nidhogg"
-              width={1920}
-              height={1080}
-              dialogKey="10"
-            />
-          </div>
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/11.jpg"}
-            alt="Van and Rhae'li interrogating a sentient Ravhen chocolate fondue"
-            width={1920}
-            height={1080}
-            dialogKey="11"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/12.jpg"}
-            alt="Van and Carra looking at a sentient Ravhen chocolate fondue"
-            width={1920}
-            height={1080}
-            imgClassName="rotate-2"
-            dialogKey="12"
-          />
+          ))}
         </div>
+
         <div className="container mx-auto grid place-content-center text-center py-24 gap-4">
           <p className="font-sans text-lg">
             {intl.formatMessage({
@@ -397,91 +302,18 @@ export default function FFXIV({
           <hr />
         </div>
         <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-          <div className="md:col-span-2">
+          {scrapbookPhotos2.map((p) => (
             <ScrapbookPhoto
-              src={"/img/van-scrapbook/15.jpg"}
-              alt="Van in the Royal Menagerie garden"
-              width={1920}
-              height={1080}
-              dialogKey="15"
+              key={p.Photo.src}
+              src={p.Photo.src}
+              alt={p.Photo.alt}
+              height={p.Photo.height}
+              width={p.Photo.width}
+              className={p.Photo.className}
+              imgClassName={p.Photo.imgClassName}
+              dialogs={p.Dialog}
             />
-          </div>
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/16.jpg"}
-            alt="Van in the Rak'tika Greatwood"
-            width={1920}
-            height={1080}
-            dialogKey="16"
-          />
-          <div className="md:col-span-2 lg:col-span-2">
-            <ScrapbookPhoto
-              src={"/img/van-scrapbook/16-a.jpg"}
-              alt="Van at the Crystarium"
-              width={1920}
-              height={1080}
-              dialogKey="16-a"
-            />
-          </div>
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/16-b.jpg"}
-            alt="Van contemplating by the crystal tower, a rim light casts onto her"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-            dialogKey="16-b"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/16-c.jpg"}
-            alt="Van riding a chocobo in Il Mheg"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-            dialogKey="16-c"
-          />
-          <div className="md:col-span-2 lg:col-span-2">
-            <ScrapbookPhoto
-              src={"/img/van-scrapbook/19.jpg"}
-              alt="Van preparing for battle in Hades' Elegy"
-              width={1920}
-              height={1080}
-              dialogKey="19"
-            />
-          </div>
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/17.jpg"}
-            alt="A black mage's worst nightmare"
-            width={686}
-            height={482}
-            className=""
-            imgClassName="-rotate-2"
-            dialogKey="17"
-          />
-          <div className="md:col-span-2 lg:col-span-3 xl:col-span-4">
-            <ScrapbookPhoto
-              src={"/img/van-scrapbook/18.jpg"}
-              alt="Carra gposing as Van performance LB3"
-              width={3440}
-              height={1440}
-              dialogKey="18"
-            />
-          </div>
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/20.jpg"}
-            alt="Van teaching a Miqote child in the Crystarium"
-            width={1920}
-            height={1080}
-            className="relative md:col-span-2"
-            dialogKey="20"
-          />
-          <div className="md:col-span-2 lg:col-span-2">
-            <ScrapbookPhoto
-              src={"/img/van-scrapbook/21.jpg"}
-              alt="Van in Sharlayan"
-              width={1920}
-              height={1080}
-              dialogKey="21"
-            />
-          </div>
+          ))}
         </div>
         <div className="container mx-auto grid place-content-center text-center py-24 gap-4">
           <p className="font-sans text-lg">
@@ -516,83 +348,19 @@ export default function FFXIV({
           </div>
           <hr />
         </div>
-        <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/22.jpg"}
-            alt="Van in Mare Lamentorum"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-            dialogKey="22"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/23.jpg"}
-            alt="close-up shot Van posing with a Fae rod"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-            dialogKey="23"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/24.jpg"}
-            alt="Van lounging in the Baldesion Annex"
-            width={1920}
-            height={1080}
-            dialogKey="24"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/25.jpg"}
-            alt="Van looking out the scenery of Elpis"
-            width={1920}
-            height={1080}
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/26.jpg"}
-            alt="Van putting a finger on her lip in Elpis"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-            dialogKey="25"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/27.jpg"}
-            alt="Van, Carra and Aki huddling together and their pants are on fire"
-            width={672}
-            height={597}
-            className="rotate-1"
-            dialogKey="26"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/28.jpg"}
-            alt="Van pointing at mommy Hydaelyn"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-            dialogKey="27"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/29.jpg"}
-            alt="Van and Lalah Jinjahl"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-            dialogKey="28"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/30.jpg"}
-            alt="Van, Twitch, Carra and Aki having dinner"
-            width={1097}
-            height={989}
-            dialogKey="29"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/31.jpg"}
-            alt="Van preparing to fight the Endsinger"
-            width={1920}
-            height={1078}
-            className="md:col-span-3"
-            dialogKey="30"
-          />
+        <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 ">
+          {scrapbookPhotos3.map((p) => (
+            <ScrapbookPhoto
+              key={p.Photo.src}
+              src={p.Photo.src}
+              alt={p.Photo.alt}
+              height={p.Photo.height}
+              width={p.Photo.width}
+              className={p.Photo.className}
+              imgClassName={p.Photo.imgClassName}
+              dialogs={p.Dialog}
+            />
+          ))}
         </div>
         <div className="container mx-auto grid place-content-center text-center py-24 gap-4">
           <p className="font-sans text-lg">
@@ -619,61 +387,19 @@ export default function FFXIV({
           </div>
           <hr />
         </div>
-
-        <div className="container mx-auto grid place-content-center text-center pb-4 gap-4">
-          <p className="font-sans text-lg">
-            {intl.formatMessage({
-              id: "Echoes from this chapter forward are currently being deciphered. Stay attuned!",
-            })}
-          </p>
-        </div>
-        <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/32.jpg"}
-            alt="Van in Coronal crafting gear"
-            width={1920}
-            height={1080}
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/33.jpg"}
-            alt="Van performing the Little Ladies' Dance at the Firmament"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/34.jpg"}
-            alt="Van sneaking a photo beside Aki"
-            width={1920}
-            height={1080}
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/35.jpg"}
-            alt="Van and Carra sitting around a bonfire in Idyllshire"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/36.jpg"}
-            alt="Van vibing at the Loporrit dance floor"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/37.jpg"}
-            alt="Van sitting on a picnic chair in the variant dungeon"
-            width={1920}
-            height={1080}
-          />
-          <ScrapbookPhoto
-            src={"/img/van-scrapbook/38.jpg"}
-            alt="Close-up shot of Van sitting on a picnic chair in the variant dungeon"
-            width={1920}
-            height={1080}
-            className="md:col-span-2"
-          />
+        <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
+          {scrapbookPhotos4.map((p) => (
+            <ScrapbookPhoto
+              key={p.Photo.src}
+              src={p.Photo.src}
+              alt={p.Photo.alt}
+              height={p.Photo.height}
+              width={p.Photo.width}
+              className={p.Photo.className}
+              imgClassName={p.Photo.imgClassName}
+              dialogs={p.Dialog}
+            />
+          ))}
         </div>
         <div className="grid place-content-center text-center py-24 gap-2">
           <h1 className="font-handwritten text-5xl">

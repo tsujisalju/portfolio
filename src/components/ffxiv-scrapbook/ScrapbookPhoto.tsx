@@ -1,9 +1,14 @@
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
-import { Dialogs } from "./scrapbook";
 import { friendsAvatar } from "../../lib/ffxiv";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import { ReactNode, useState } from "react";
+
+type dialogs = {
+  char: string;
+  text: string;
+  className?: string;
+}[];
 
 export default function ScrapbookPhoto({
   children,
@@ -13,7 +18,7 @@ export default function ScrapbookPhoto({
   width,
   className,
   imgClassName,
-  dialogKey,
+  dialogs,
   noborder,
 }: {
   children?: ReactNode;
@@ -23,7 +28,7 @@ export default function ScrapbookPhoto({
   width: number;
   className?: string;
   imgClassName?: string;
-  dialogKey?: keyof typeof Dialogs;
+  dialogs?: dialogs;
   noborder?: boolean;
 }) {
   const [isShowing, setIsShowing] = useState(false);
@@ -65,7 +70,7 @@ export default function ScrapbookPhoto({
         duration: 0.1,
         type: "spring",
         stiffness: 300,
-        damping: 16,
+        damping: 32,
       },
     },
   };
@@ -108,29 +113,29 @@ export default function ScrapbookPhoto({
         ></Image>
       </Tilt>
       {children}
-      {dialogKey && (
+      {dialogs && (
         <AnimatePresence>
           <motion.div
             variants={dialogBoxVariant}
             className="z-10 absolute backdrop-blur-sm dark:bg-black/30 bg-white/30 py-2 px-3 xl:py-4 xl:px-6 m-2 xl:m-4 rounded-lg shadow-lg transition duration-400 transform space-y-2"
           >
-            {Dialogs[dialogKey].map((dialog) => (
+            {dialogs.map((dialog) => (
               <motion.div
                 variants={dialogVariant}
-                key={dialogKey}
+                key={src}
                 className="flex flex-row flex-auto space-x-2 xl:space-x-4 items-center"
               >
                 <Image
-                  src={friendsAvatar[dialog.Char]}
-                  alt={dialog.Char + "'s avatar"}
+                  src={friendsAvatar[dialog.char]}
+                  alt={dialog.char + "'s avatar"}
                   height={64}
                   width={64}
                   className="rounded-full shadow-md w-[48px] h-auto xl:w-auto"
                 ></Image>
                 <div>
                   <div className="bg-stone-50 dark:bg-stone-800 px-4 py-2 rounded-lg shadow-md">
-                    <p className={"font-sans text-md " + dialog.Classname}>
-                      {dialog.Text}
+                    <p className={"font-sans text-md " + dialog.className}>
+                      {dialog.text}
                     </p>
                   </div>
                 </div>
