@@ -14,12 +14,14 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
   return (
     <div
       className={
-        project.id === "ultimatum" || project.id === "tailwind"
+        project.id === "ultimatum" ||
+        project.id === "tailwind" ||
+        project.id === "redemption"
           ? "md:col-span-2 lg:col-span-3 xl:col-span-3  md:row-span-2"
           : project.id === "nirmala"
           ? "md:col-span-1"
-          : project.id === "redemption" || project.id === "kirana"
-          ? "md:col-span-3"
+          : project.id === "sonnet"
+          ? "md:col-span-2"
           : project.width < project.height
           ? "md:row-span-2"
           : project.width > project.height
