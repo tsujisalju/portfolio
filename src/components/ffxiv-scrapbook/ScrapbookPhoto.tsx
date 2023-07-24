@@ -113,7 +113,7 @@ export default function ScrapbookPhoto({
         ></Image>
       </Tilt>
       {children}
-      {dialogs && (
+      {dialogs && dialogs.length !== 0 && (
         <AnimatePresence>
           <motion.div
             variants={dialogBoxVariant}
