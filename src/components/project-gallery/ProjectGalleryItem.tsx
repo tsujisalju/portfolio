@@ -5,29 +5,38 @@ import Link from "next/link";
 import { Project } from "../../lib/projects";
 import React from "react";
 import Tilt from "react-parallax-tilt";
+import { AnimatePresence, motion, Variants } from "framer-motion";
 
 export default function ProjectGalleryItem({ project }: { project: Project }) {
   const [isShowing, setIsShowing] = React.useState<boolean>(true);
+  const titleVariant: Variants = {
+    hideTitle: {
+      opacity: 0,
+      y: -5,
+      transition: {
+        duration: 0.1,
+        ease: "easeIn",
+      },
+    },
+    showTitle: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.1,
+        ease: "easeOut",
+      },
+    },
+  };
   function HandleOnClick() {
     setIsShowing(false);
   }
   return (
-    <div
+    <motion.div
       className={
-        project.id === "ultimatum" ||
-        project.id === "tailwind" ||
-        project.id === "redemption"
-          ? "md:col-span-2 lg:col-span-3 xl:col-span-3  md:row-span-2"
-          : project.id === "nirmala"
-          ? "md:col-span-1"
-          : project.id === "sonnet"
-          ? "md:col-span-2"
-          : project.width < project.height
-          ? "md:row-span-2"
-          : project.width > project.height
-          ? "md:col-span-2"
-          : ""
+        "h-min " + (project.width > project.height ? "md:col-span-2" : "")
       }
+      initial="hideTitle"
+      whileHover="showTitle"
     >
       <Tilt
         tiltMaxAngleX={3}
@@ -53,14 +62,15 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
             )}`}
           ></Image>
         </Link>
-        <div
+        <motion.div
+          variants={titleVariant}
           className={
-            "md:childParallax block md:absolute bg-none md:backdrop-blur-md md:dark:bg-black/50 md:bg-white/50 md:py-3 md:px-5 md:m-4 m-1 rounded md:shadow-lg transition duration-400 transform "
+            "block md:absolute bg-none md:backdrop-blur-md md:dark:bg-black/50 md:bg-white/50 md:py-3 md:px-5 md:m-4 m-1 rounded md:shadow-lg transition duration-400 transform "
           }
         >
-          <h1 className="font-display md:text-xl text-lg">{project.title}</h1>
+          <h1 className="font-display md:text-2xl text-lg">{project.title}</h1>
 
-          <div className="font-sans font-md font-light">
+          <div className="font-sans font-lg font-light">
             <FormattedDate
               value={project.date}
               day={"numeric"}
@@ -68,8 +78,8 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
               year={"numeric"}
             />
           </div>
-        </div>
+        </motion.div>
       </Tilt>
-    </div>
+    </motion.div>
   );
 }
