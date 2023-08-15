@@ -5,10 +5,10 @@ import Link from "next/link";
 import { Project } from "../../lib/projects";
 import React from "react";
 import Tilt from "react-parallax-tilt";
-import { AnimatePresence, motion, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 export default function ProjectGalleryItem({ project }: { project: Project }) {
-  const [isShowing, setIsShowing] = React.useState<boolean>(true);
+  const [isShowing, setIsShowing] = React.useState<boolean>(false);
   const titleVariant: Variants = {
     hideTitle: {
       opacity: 0,
@@ -37,6 +37,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
       }
       initial="hideTitle"
       whileHover="showTitle"
+      animate={isShowing ? "showTitle" : "hideTitle"}
     >
       <Tilt
         tiltMaxAngleX={3}
@@ -65,7 +66,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
         <motion.div
           variants={titleVariant}
           className={
-            "block md:absolute bg-none md:backdrop-blur-md md:dark:bg-black/50 md:bg-white/50 md:py-3 md:px-5 md:m-4 m-1 rounded md:shadow-lg transition duration-400 transform "
+            "hidden md:inline md:absolute bg-none md:backdrop-blur-md md:dark:bg-black/50 md:bg-white/50 md:py-3 md:px-5 md:m-4 m-1 rounded md:shadow-lg transition duration-400 transform "
           }
         >
           <h1 className="font-display md:text-2xl text-lg">{project.title}</h1>
@@ -79,6 +80,22 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
             />
           </div>
         </motion.div>
+        <div
+          className={
+            "md:hidden block m-1 rounded transition duration-400 transform "
+          }
+        >
+          <h1 className="font-display md:text-2xl text-lg">{project.title}</h1>
+
+          <div className="font-sans font-lg font-light">
+            <FormattedDate
+              value={project.date}
+              day={"numeric"}
+              month={"long"}
+              year={"numeric"}
+            />
+          </div>
+        </div>
       </Tilt>
     </motion.div>
   );
