@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import React from "react";
-import { useIntl } from "react-intl";
+import { useIntl, FormattedDate } from "react-intl";
 import Image from "next/image";
 import Hero from "../components/Hero";
 import Button from "../components/Button";
@@ -31,6 +31,14 @@ export default function Achernar() {
           <Hero>
             <h2 className="font-display text-3xl">
               {intl.formatMessage({ id: "Minswap DEX" })}
+            </h2>
+            <h2 className="font-sans font-light text-lg">
+              <FormattedDate
+                value={"2021-05"}
+                month={"long"}
+                year={"numeric"}
+              />
+              {intl.formatMessage({ id: " - Present" })}
             </h2>
             <p className="font-sans text-lg pb-8">
               {intl.formatMessage({
