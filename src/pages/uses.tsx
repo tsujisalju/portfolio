@@ -38,7 +38,7 @@ export default function Uses() {
                     </h3>
                     <p className="font-serif text-lg">
                       {intl.formatMessage({
-                        id: "I daily drive a custom built Debian 12 as my main operating system, by which I begin with a very minimal install and begin installing only the necessary packages that I need. I have been using Linux for over 3 years now and I'm always learning something new about maintaing and configuring my computer to be the best it could be for my needs. Of course, I always have my Windows partition lying around just in case.",
+                        id: "I daily drive a custom built Debian 12 as my main operating system, by which I started with a very minimal install and then installing only the necessary packages that I need. I have been using Linux for over 3 years now and I'm always learning something new about maintaing and configuring my computer to be the best it could be for my needs. Of course, I always have my Windows partition lying around just in case.",
                       })}
                     </p>
                   </li>
@@ -58,7 +58,7 @@ export default function Uses() {
                     </h3>
                     <p className="font-serif text-lg">
                       {intl.formatMessage({
-                        id: "A pair of headphones I picked up at MediaMarkt while I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it.",
+                        id: "A pair of headphones I picked up at MediaMarkt when I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it.",
                       })}
                     </p>
                   </li>
