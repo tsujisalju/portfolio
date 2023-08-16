@@ -2,8 +2,8 @@
 title: "Sonnet"
 date: "2023-07-13"
 img: "/img/projects/sonnet.jpg"
-width: 2500
-height: 3000
+width: 3000
+height: 2500
 ---
 
 will you tell me that things will be okay?
