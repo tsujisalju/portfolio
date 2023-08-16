@@ -29,10 +29,22 @@
       "value": "A VAN WAS BORN"
     }
   ],
+  "A pair of headphones I picked up at MediaMarkt while I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it.": [
+    {
+      "type": 0,
+      "value": "A pair of headphones I picked up at MediaMarkt while I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it."
+    }
+  ],
   "A passion for commerce and collectibles awakens from slumber, and soon enough Van discovers a whole new dimension of tradecraft and glam hunting.": [
     {
       "type": 0,
       "value": "A passion for commerce and collectibles awakens from slumber, and soon enough Van discovers a whole new dimension of tradecraft and glam hunting."
+    }
+  ],
+  "A well-built mouse with 12 buttons on its side. Why? Because I play FFXIV. My tiny hands could never reach the entirety of my keyboard, so honestly with this RPG mouse, I couldn't have it any other way.": [
+    {
+      "type": 0,
+      "value": "A well-built mouse with 12 buttons on its side. Why? Because I play FFXIV. My tiny hands could never reach the entirety of my keyboard, so honestly with this RPG mouse, I couldn't have it any other way."
     }
   ],
   "About": [
@@ -45,12 +57,6 @@
     {
       "type": 0,
       "value": "Achenar"
-    }
-  ],
-  "Achernar": [
-    {
-      "type": 0,
-      "value": "Achernar"
     }
   ],
   "Almanac": [
@@ -113,6 +119,12 @@
       "value": "Dunkel"
     }
   ],
+  "Debian 12": [
+    {
+      "type": 0,
+      "value": "Debian 12"
+    }
+  ],
   "Design": [
     {
       "type": 0,
@@ -129,12 +141,6 @@
     {
       "type": 0,
       "value": "Jedes Kunstwerk hat eine Geschichte zu erzählen. Entdecken Sie eine, um zu erfahren, was es zu erzählen gibt!"
-    }
-  ],
-  "Echoes from this chapter forward are currently being deciphered. Stay attuned!": [
-    {
-      "type": 0,
-      "value": "Echoes from this chapter forward are currently being deciphered. Stay attuned!"
     }
   ],
   "FFXIV": [
@@ -173,6 +179,18 @@
       "value": "Hallo, Freund! Ich bin Qayyum."
     }
   ],
+  "Hi! I'm Qayyum Yazid.": [
+    {
+      "type": 0,
+      "value": "Hi! I'm Qayyum Yazid."
+    }
+  ],
+  "Hold power in fate. Hold faith in the fated.": [
+    {
+      "type": 0,
+      "value": "Hold power in fate. Hold faith in the fated."
+    }
+  ],
   "Home": [
     {
       "type": 0,
@@ -195,6 +213,18 @@
     {
       "type": 0,
       "value": "Mein Ziel ist es, mit meinen Illustrationen und Kreationen meine eigene kleine Geschichte zu erzählen. Meine Leidenschaft gilt dem kreativen Erzählen von Geschichten und dem eleganten Einsatz von Technologie. Ich lege großen Wert aur Effizienz und mühelose Erlebnisse für alle. Letztendlich wünsche ich mir, dass meine Kreationen allen Lebensbereichen zugute kommen."
+    }
+  ],
+  "I daily drive a custom built Debian 12 as my main operating system, by which I begin with a very minimal install and begin installing only the necessary packages that I need. I have been using Linux for over 3 years now and I'm always learning something new about maintaing and configuring my computer to be the best it could be for my needs. Of course, I always have my Windows partition lying around just in case.": [
+    {
+      "type": 0,
+      "value": "I daily drive a custom built Debian 12 as my main operating system, by which I begin with a very minimal install and begin installing only the necessary packages that I need. I have been using Linux for over 3 years now and I'm always learning something new about maintaing and configuring my computer to be the best it could be for my needs. Of course, I always have my Windows partition lying around just in case."
+    }
+  ],
+  "I found my passion in art and technology through the ability to express my creativity and create new worlds of wonder, brought to life by my characters and personas, whom serve as vessels that make up who I am. As I journey through this life, my illustrations catalog my joy and happiness, as well as my trials and tribulations. ❤️‍🩹": [
+    {
+      "type": 0,
+      "value": "I found my passion in art and technology through the ability to express my creativity and create new worlds of wonder, brought to life by my characters and personas, whom serve as vessels that make up who I am. As I journey through this life, my illustrations catalog my joy and happiness, as well as my trials and tribulations. ❤️‍🩹"
     }
   ],
   "I remember writing journals when I was in middle school. Starting Form 1, I had a notebook in which I wrote just about anything that happened one particular day, and I would also scribble drawings on the side. There was a total of about 8 books and 3 sketchbooks before I took the SPM exam. Some of them got caught in the rain while some went missing and was later found with boob vandalism on my more feminine characters. They are largely embarassing now, but they remain fragments of memories worth documenting here perpetually.": [
@@ -231,6 +261,12 @@
     {
       "type": 0,
       "value": "I was born in a small town in the northern region of Kedah. When I was 6 years old, my family moved all the way down to southern Johore. There used to be a small kindergarten in the neighbourhood, and there was only 3 to 4 children there. I remember eating scrambled eggs for breakfast, reading storybooks with grandma and going to the park nearby every saturday. It's a whole little family in there and I felt like I was part of it too. Today I looked back at the now defunct corner lot terrace where the kindergarten used to be, oh how I wish I could do it all over again."
+    }
+  ],
+  "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework.": [
+    {
+      "type": 0,
+      "value": "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework."
     }
   ],
   "I'm Qayyum, a computer science student based in Deggendorf, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tales of hope amidst terrible choices.": [
@@ -335,6 +371,12 @@
       "value": "Minswap DEX ist eine dezentrale Multi-Pool-Börse auf der Cardano-Blockchain. Ich arbeite mit der Marketing- und UI / UX-Abteilung zusammen, um Werbeinhalte, Waren und Interface-Designs bereitzustellen."
     }
   ],
+  "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": [
+    {
+      "type": 0,
+      "value": "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD."
+    }
+  ],
   "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD. I also installed Debian 11 as the main OS.": [
     {
       "type": 0,
@@ -353,6 +395,12 @@
       "value": "My new personal project, page under construction :)"
     }
   ],
+  "Next.js": [
+    {
+      "type": 0,
+      "value": "Next.js"
+    }
+  ],
   "No doubt everyone uses this. I use it for all my game and web dev work. It's so nice to have all sorts of support and extensions for any programming work imaginable.": [
     {
       "type": 0,
@@ -369,6 +417,24 @@
     {
       "type": 0,
       "value": "Padok ist ein malaiischer Slang für Padu, was so viel wie mächtig bedeutet."
+    }
+  ],
+  "Razer Kraken V3": [
+    {
+      "type": 0,
+      "value": "Razer Kraken V3"
+    }
+  ],
+  "Razer Naga X": [
+    {
+      "type": 0,
+      "value": "Razer Naga X"
+    }
+  ],
+  "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia": [
+    {
+      "type": 0,
+      "value": "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia"
     }
   ],
   "Student, dev and design by day,": [
@@ -407,6 +473,12 @@
       "value": "There is a whole new adventure in store for the sproutly Van."
     }
   ],
+  "This website serves as the main hub for showcasing all my artworks, as well as a creative outlet for all kinds of fun projects that combine programming and art! Soon you will find more ways to interact with me in interesting ways.": [
+    {
+      "type": 0,
+      "value": "This website serves as the main hub for showcasing all my artworks, as well as a creative outlet for all kinds of fun projects that combine programming and art! Soon you will find more ways to interact with me in interesting ways."
+    }
+  ],
   "To speak plainly, my laptop broke.": [
     {
       "type": 0,
@@ -417,12 +489,6 @@
     {
       "type": 0,
       "value": "Werkzeuge des Handels"
-    }
-  ],
-  "Update: They are currently on strike due to fight against increasing retirement age in France. Fonts are unavailable at this time, and I wish them well on their endeavours.": [
-    {
-      "type": 0,
-      "value": "Update: They are currently on strike due to fight against increasing retirement age in France. Fonts are unavailable at this time, and I wish them well on their endeavours."
     }
   ],
   "Uses": [
@@ -495,6 +561,12 @@
     {
       "type": 0,
       "value": "Would she realize that the fun was in the journey all along?"
+    }
+  ],
+  "You may known me as purrnama, or my previous alias smolpadok, or by the name of my personas, Van or Cooper. Welcome to my little corner of the internet!": [
+    {
+      "type": 0,
+      "value": "You may known me as purrnama, or my previous alias smolpadok, or by the name of my personas, Van or Cooper. Welcome to my little corner of the internet!"
     }
   ],
   "a turkish van merchant/civil engineer.": [
