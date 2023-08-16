@@ -4,7 +4,7 @@ import { useIntl } from "react-intl";
 import Image from "next/image";
 import Hero from "../components/Hero";
 import Button from "../components/Button";
-import { intlFormat } from "date-fns";
+import { FadeIn } from "../utilities/FadeIn";
 
 export default function Achernar() {
   const intl = useIntl();
@@ -14,138 +14,140 @@ export default function Achernar() {
   }, []);
   return (
     <Layout>
-      <section className="relative">
-        <Image
-          className="z-[-1] object-cover inline dark:hidden"
-          src={"/img/minswap/background2_light.png"}
-          alt="minswap "
-          fill
-        />
-        <Image
-          className="z-[-1] object-cover hidden dark:inline"
-          src={"/img/minswap/background2_dark.png"}
-          alt="minswap "
-          fill
-        />
-        <Hero>
-          <h2 className="font-display text-3xl">
-            {intl.formatMessage({ id: "Minswap DEX" })}
-          </h2>
-          <p className="font-sans text-lg pb-8">
-            {intl.formatMessage({
-              id: "Minswap DEX is a decentralized multi-pool exchange on the Cardano blockchain. I work alongside the marketing and UI/UX department to provide promotional content, merchandise and interface designs.",
-            })}
-          </p>
-          <Button href="https://minswap.org">
-            {intl.formatMessage({ id: "Visit Website" })}
-          </Button>
-        </Hero>
-        <div className="max-w-full overflow-x-hidden whitespace-nowrap py-8">
-          <div
-            id="minswap-gallery"
-            className="h-[400px] min-w-max left-0 flex flex-row"
-          >
-            <Image
-              alt="Catdano tokenomics"
-              className="scroller"
-              src="/img/minswap/catdano-minomics.png"
-              width={320}
-              height={400}
-            />
-            <Image
-              alt="Catdano cneta"
-              className="scroller"
-              src="/img/minswap/catdano-cneta.png"
-              width={500}
-              height={400}
-            />
-            <Image
-              alt="Catdano yummi"
-              className="scroller"
-              src="/img/minswap/catdano-yummi.png"
-              width={320}
-              height={400}
-            />
-            <Image
-              alt="Catdano hosky"
-              className="scroller"
-              src="/img/minswap/catdano-hosky.png"
-              width={320}
-              height={400}
-            />
-            <Image
-              alt="Catdano christmas"
-              className="scroller"
-              src="/img/minswap/catdano-christmas.png"
-              width={400}
-              height={400}
-            />
-            <Image
-              alt="Catdano lunar new year"
-              className="scroller"
-              src="/img/minswap/catdano-lny.png"
-              width={668}
-              height={400}
-            />
-            <Image
-              alt="Catdano 1st anniversary"
-              className="scroller"
-              src="/img/minswap/catdano-1stanniversary.png"
-              width={322}
-              height={400}
-            />
-            <Image
-              alt="Catdano tokenomics"
-              className="scroller"
-              src="/img/minswap/catdano-minomics.png"
-              width={320}
-              height={400}
-            />
-            <Image
-              alt="Catdano cneta"
-              className="scroller"
-              src="/img/minswap/catdano-cneta.png"
-              width={500}
-              height={400}
-            />
-            <Image
-              alt="Catdano yummi"
-              className="scroller"
-              src="/img/minswap/catdano-yummi.png"
-              width={320}
-              height={400}
-            />
-            <Image
-              alt="Catdano hosky"
-              className="scroller"
-              src="/img/minswap/catdano-hosky.png"
-              width={320}
-              height={400}
-            />
-            <Image
-              alt="Catdano christmas"
-              className="scroller"
-              src="/img/minswap/catdano-christmas.png"
-              width={400}
-              height={400}
-            />
-            <Image
-              alt="Catdano lunar new year"
-              className="scroller"
-              src="/img/minswap/catdano-lny.png"
-              width={668}
-              height={400}
-            />
-            <Image
-              alt="Catdano 1st anniversary"
-              className="scroller"
-              src="/img/minswap/catdano-1stanniversary.png"
-              width={322}
-              height={400}
-            />
+      <FadeIn>
+        <section className="relative">
+          <Image
+            className="z-[-1] object-cover inline dark:hidden bg-bottom"
+            src={"/img/minswap/background2_light.png"}
+            alt="minswap "
+            fill
+          />
+          <Image
+            className="z-[-1] object-cover hidden dark:inline bg-bottom"
+            src={"/img/minswap/background2_dark.png"}
+            alt="minswap "
+            fill
+          />
+          <Hero>
+            <h2 className="font-display text-3xl">
+              {intl.formatMessage({ id: "Minswap DEX" })}
+            </h2>
+            <p className="font-sans text-lg pb-8">
+              {intl.formatMessage({
+                id: "Minswap DEX is a decentralized multi-pool exchange on the Cardano blockchain. I work alongside the marketing and UI/UX department to provide promotional content, merchandise and interface designs.",
+              })}
+            </p>
+            <Button href="https://minswap.org">
+              {intl.formatMessage({ id: "Visit Website" })}
+            </Button>
+          </Hero>
+          <div className="max-w-full overflow-x-hidden whitespace-nowrap pt-16">
+            <div
+              id="minswap-gallery"
+              className="h-[400px] min-w-max left-0 flex flex-row"
+            >
+              <Image
+                alt="Catdano tokenomics"
+                className="scroller"
+                src="/img/minswap/catdano-minomics.png"
+                width={320}
+                height={400}
+              />
+              <Image
+                alt="Catdano cneta"
+                className="scroller"
+                src="/img/minswap/catdano-cneta.png"
+                width={500}
+                height={400}
+              />
+              <Image
+                alt="Catdano yummi"
+                className="scroller"
+                src="/img/minswap/catdano-yummi.png"
+                width={320}
+                height={400}
+              />
+              <Image
+                alt="Catdano hosky"
+                className="scroller"
+                src="/img/minswap/catdano-hosky.png"
+                width={320}
+                height={400}
+              />
+              <Image
+                alt="Catdano christmas"
+                className="scroller"
+                src="/img/minswap/catdano-christmas.png"
+                width={400}
+                height={400}
+              />
+              <Image
+                alt="Catdano lunar new year"
+                className="scroller"
+                src="/img/minswap/catdano-lny.png"
+                width={668}
+                height={400}
+              />
+              <Image
+                alt="Catdano 1st anniversary"
+                className="scroller"
+                src="/img/minswap/catdano-1stanniversary.png"
+                width={322}
+                height={400}
+              />
+              <Image
+                alt="Catdano tokenomics"
+                className="scroller"
+                src="/img/minswap/catdano-minomics.png"
+                width={320}
+                height={400}
+              />
+              <Image
+                alt="Catdano cneta"
+                className="scroller"
+                src="/img/minswap/catdano-cneta.png"
+                width={500}
+                height={400}
+              />
+              <Image
+                alt="Catdano yummi"
+                className="scroller"
+                src="/img/minswap/catdano-yummi.png"
+                width={320}
+                height={400}
+              />
+              <Image
+                alt="Catdano hosky"
+                className="scroller"
+                src="/img/minswap/catdano-hosky.png"
+                width={320}
+                height={400}
+              />
+              <Image
+                alt="Catdano christmas"
+                className="scroller"
+                src="/img/minswap/catdano-christmas.png"
+                width={400}
+                height={400}
+              />
+              <Image
+                alt="Catdano lunar new year"
+                className="scroller"
+                src="/img/minswap/catdano-lny.png"
+                width={668}
+                height={400}
+              />
+              <Image
+                alt="Catdano 1st anniversary"
+                className="scroller"
+                src="/img/minswap/catdano-1stanniversary.png"
+                width={322}
+                height={400}
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </FadeIn>
     </Layout>
   );
 }
