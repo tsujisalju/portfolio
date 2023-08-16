@@ -66,6 +66,9 @@ export default function Header(Props: HeaderProp) {
           </Link>
           <nav className="hidden lg:flex flex-row self-center space-x-8">
             <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
+            <NavLink href="/about">
+              {intl.formatMessage({ id: "About" })}
+            </NavLink>
             <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
             <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
             <NavLink href="/ffxiv">
