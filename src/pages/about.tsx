@@ -43,7 +43,7 @@ export default function About() {
             </div>
             <p className="font-sans text-lg">
               {intl.formatMessage({
-                id: "You may known me as purrnama, or my previous alias smolpadok, or by the name of my personas, Van or Cooper. Welcome to my little corner of the internet!",
+                id: "You may know me as purrnama, or my previous alias smolpadok, or by the name of my personas, Van or Cooper. Welcome to my little corner of the internet!",
               })}
             </p>
             <p className="font-sans text-lg">
