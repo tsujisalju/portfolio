@@ -1,11 +1,11 @@
 import Layout from "../components/Layout";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 import { useIntl } from "react-intl";
 import { InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
 import { ffxivGender, jobIcons } from "../lib/ffxiv";
-import { Transition } from "@headlessui/react";
+import { Transition, Tab } from "@headlessui/react";
 import Button from "../components/Button";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
 import ScrapbookPhoto from "../components/ffxiv-scrapbook/ScrapbookPhoto";
@@ -92,7 +92,7 @@ export default function FFXIV({
 
   return (
     <Layout>
-      <div className="sm:container mx-auto grid grid-cols-1 lg:grid-cols-2 space-y-4 lg:space-y-0 pb-16">
+      <div className="sm:container mx-auto grid lg:grid-cols-2 space-y-4 lg:space-y-0 pb-16">
         <div className="p-2 sm:p-8">
           <Transition
             show={isShowing}
@@ -171,7 +171,7 @@ export default function FFXIV({
                   : `EXP ${xivapi.Character.ActiveClassJob.ExpLevel} / ${xivapi.Character.ActiveClassJob.ExpLevelMax}`}
               </p>
             </div>
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
               <div>
                 <h2 className="font-xivmeter text-lg">RACE / CLAN / GENDER</h2>
                 <p className="font-sans text-lg">
@@ -244,8 +244,8 @@ export default function FFXIV({
         </FadeIn>
       </div>
       <FadeIn>
-        <section className="mx-auto px-4 sm:px-8 container">
-          <div className="grid place-content-center text-center py-24 gap-2">
+        <section className="mx-auto px-4 lg:container">
+          <div className="grid place-content-center text-center pt-24 pb-16 gap-2">
             <h1 className="font-handwritten text-5xl">
               {intl.formatMessage({ id: "The Unending Journey" })}
             </h1>
@@ -255,169 +255,248 @@ export default function FFXIV({
               })}
             </p>
           </div>
-          <div className="pt-8 pb-4">
-            <div className="flex flex-row gap-x-4 py-1">
-              <h1 className="font-xivmeter text-lg">
-                {intl.formatMessage({
-                  id: "A VAN WAS BORN",
-                })}
-              </h1>
-              <p className="font-sans font-light text-lg">
-                A Realm Reborn - Heavensward
-              </p>
-            </div>
-            <hr />
-          </div>
-          <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
-            {scrapbookPhotos1.map((p) => (
-              <ScrapbookPhoto
-                key={p.Photo.src}
-                src={p.Photo.src}
-                alt={p.Photo.alt}
-                height={p.Photo.height}
-                width={p.Photo.width}
-                className={p.Photo.className}
-                imgClassName={p.Photo.imgClassName}
-                dialogs={p.Dialog}
-              />
-            ))}
-          </div>
+          <Tab.Group>
+            <Tab.List className="flex flex-row space-x-1 rounded-t-lg">
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button
+                    className={
+                      (selected
+                        ? "dark:bg-stone-700 bg-stone-200 grow"
+                        : "bg-stone-300 dark:bg-stone-800") +
+                      " transition transition-75 py-2 px-4 rounded-t-lg"
+                    }
+                  >
+                    <div className={selected ? "" : "hidden lg:inline"}>
+                      <h1 className="font-xivmeter text-lg">
+                        {intl.formatMessage({
+                          id: "A VAN WAS BORN",
+                        })}
+                      </h1>
+                      <p className="font-sans font-light text-lg">
+                        A Realm Reborn - Heavensward
+                      </p>
+                    </div>
+                  </button>
+                )}
+              </Tab>
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button
+                    className={
+                      (selected
+                        ? "dark:bg-stone-700 bg-stone-200 grow"
+                        : "bg-stone-300 dark:bg-stone-800") +
+                      " transition transition-75 py-2 px-4 rounded-t-lg"
+                    }
+                  >
+                    <div className={selected ? "" : "hidden lg:inline"}>
+                      <h1 className="font-xivmeter text-lg">
+                        {intl.formatMessage({
+                          id: "WAY TOO FAST",
+                        })}
+                      </h1>
+                      <p className="font-sans font-light text-lg">
+                        Stormblood - Shadowbringers
+                      </p>
+                    </div>
+                  </button>
+                )}
+              </Tab>
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button
+                    className={
+                      (selected
+                        ? "dark:bg-stone-700 bg-stone-200 grow"
+                        : "bg-stone-300 dark:bg-stone-800") +
+                      " transition transition-75 py-2 px-4 rounded-t-lg"
+                    }
+                  >
+                    <div className={selected ? "" : "hidden lg:inline"}>
+                      <h1 className="font-xivmeter text-lg">
+                        {intl.formatMessage({
+                          id: "WILL NOT SQUANDER",
+                        })}
+                      </h1>
+                      <p className="font-sans font-light text-lg">Endwalker</p>
+                    </div>
+                  </button>
+                )}
+              </Tab>
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button
+                    className={
+                      (selected
+                        ? "dark:bg-stone-700 bg-stone-200 grow"
+                        : "bg-stone-300 dark:bg-stone-800") +
+                      " transition transition-75 py-2 px-4 rounded-t-lg"
+                    }
+                  >
+                    <div className={selected ? "" : "hidden lg:inline"}>
+                      <h1 className="font-xivmeter text-lg">
+                        {intl.formatMessage({
+                          id: "A SOLE REASON",
+                        })}
+                      </h1>
+                      <p className="font-sans font-light text-lg">
+                        Post-Endwalker Crafting Arc
+                      </p>
+                    </div>
+                  </button>
+                )}
+              </Tab>
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button
+                    className={
+                      (selected
+                        ? "dark:bg-stone-700 bg-stone-200 grow"
+                        : "bg-stone-300 dark:bg-stone-800") +
+                      " transition transition-75 py-2 px-4 rounded-t-lg"
+                    }
+                  >
+                    <div className={selected ? "" : "hidden lg:inline"}>
+                      <h1 className="font-xivmeter text-lg">
+                        {intl.formatMessage({
+                          id: "THE GLAM HUNT",
+                        })}
+                      </h1>
+                      <p className="font-sans font-light text-lg">
+                        Post-Endwalker Glamour Arc
+                      </p>
+                    </div>
+                  </button>
+                )}
+              </Tab>
+            </Tab.List>
+            <Tab.Panels className="bg-stone-200 dark:bg-stone-700 p-4 pt-8 rounded-b-lg">
+              <Tab.Panel>
+                <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
+                  {scrapbookPhotos1.map((p) => (
+                    <ScrapbookPhoto
+                      key={p.Photo.src}
+                      src={p.Photo.src}
+                      alt={p.Photo.alt}
+                      height={p.Photo.height}
+                      width={p.Photo.width}
+                      className={p.Photo.className}
+                      imgClassName={p.Photo.imgClassName}
+                      dialogs={p.Dialog}
+                    />
+                  ))}
+                </div>
 
-          <div className="container mx-auto grid place-content-center text-center py-24 gap-4">
-            <p className="font-sans text-lg">
-              {intl.formatMessage({
-                id: "There is a whole new adventure in store for the sproutly Van.",
-              })}
-            </p>
-            <p className="font-sans text-lg">
-              {intl.formatMessage({
-                id: "Out of fear of missing out, she breezed through the main scenario, believing that the real fun awaits in the end.",
-              })}
-            </p>
-            <p className="font-sans text-lg">
-              {intl.formatMessage({
-                id: "Would she realize that the fun was in the journey all along?",
-              })}
-            </p>
-          </div>
-          <div className="pt-8 pb-4">
-            <div className="flex flex-row gap-x-4 py-1">
-              <h1 className="font-xivmeter text-lg">
-                {intl.formatMessage({
-                  id: "WAY TOO FAST",
-                })}
-              </h1>
-              <p className="font-sans font-light text-lg">
-                Stormblood - Shadowbringers
-              </p>
-            </div>
-            <hr />
-          </div>
-          <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-            {scrapbookPhotos2.map((p) => (
-              <ScrapbookPhoto
-                key={p.Photo.src}
-                src={p.Photo.src}
-                alt={p.Photo.alt}
-                height={p.Photo.height}
-                width={p.Photo.width}
-                className={p.Photo.className}
-                imgClassName={p.Photo.imgClassName}
-                dialogs={p.Dialog}
-              />
-            ))}
-          </div>
-          <div className="container mx-auto grid place-content-center text-center py-24 gap-4">
-            <p className="font-sans text-lg">
-              {intl.formatMessage({
-                id: "As if by fate, Van's aetherial signature began to weaken, preventing her from manifesting her corporeal form.",
-              })}
-            </p>
-            <p className="font-sans text-lg">
-              {intl.formatMessage({
-                id: "And so she went on a month-long hiatus to recover, watching her friends from the aetherial sea.",
-              })}
-            </p>
-            <p className="font-sans text-lg">
-              {intl.formatMessage({
-                id: "In the process, she began telegraphing her memories, which are collected and catalogued in the form of a scrapbook you see today.",
-              })}
-            </p>
-            <p className="font-sans text-lg">
-              {intl.formatMessage({
-                id: "To speak plainly, my laptop broke.",
-              })}
-            </p>
-          </div>
-          <div className="pt-8 pb-4">
-            <div className="flex flex-row gap-x-4 py-1">
-              <h1 className="font-xivmeter text-lg">
-                {intl.formatMessage({
-                  id: "WILL NOT SQUANDER",
-                })}
-              </h1>
-              <p className="font-sans font-light text-lg">Endwalker</p>
-            </div>
-            <hr />
-          </div>
-          <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 ">
-            {scrapbookPhotos3.map((p) => (
-              <ScrapbookPhoto
-                key={p.Photo.src}
-                src={p.Photo.src}
-                alt={p.Photo.alt}
-                height={p.Photo.height}
-                width={p.Photo.width}
-                className={p.Photo.className}
-                imgClassName={p.Photo.imgClassName}
-                dialogs={p.Dialog}
-              />
-            ))}
-          </div>
-          <div className="container mx-auto grid place-content-center text-center py-24 gap-4">
-            <p className="font-sans text-lg">
-              {intl.formatMessage({
-                id: "Fresh from finishing Endwalker, Van decides to take a small step back and see what else the world has to offer in preparation for the next journey ahead.",
-              })}
-            </p>
-            <p className="font-sans text-lg">
-              {intl.formatMessage({
-                id: "A passion for commerce and collectibles awakens from slumber, and soon enough Van discovers a whole new dimension of tradecraft and glam hunting.",
-              })}
-            </p>
-          </div>
-          <div className="pt-8 pb-4">
-            <div className="flex flex-row gap-x-4 py-1">
-              <h1 className="font-xivmeter text-lg">
-                {intl.formatMessage({
-                  id: "A SOLE REASON",
-                })}
-              </h1>
-              <p className="font-sans font-light text-lg">
-                Post-Endwalker Crafting Arc
-              </p>
-            </div>
-            <hr />
-          </div>
-          <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
-            {scrapbookPhotos4.map((p) => (
-              <ScrapbookPhoto
-                key={p.Photo.src}
-                src={p.Photo.src}
-                alt={p.Photo.alt}
-                height={p.Photo.height}
-                width={p.Photo.width}
-                className={p.Photo.className}
-                imgClassName={p.Photo.imgClassName}
-                dialogs={p.Dialog}
-              />
-            ))}
-          </div>
-          <div className="grid place-content-center text-center py-24 gap-2">
-            <h1 className="font-handwritten text-5xl">
-              {intl.formatMessage({ id: "The journey continues.." })}
-            </h1>
-          </div>
+                <div className="container mx-auto grid place-content-center text-center font-serif text-lg py-24 gap-4">
+                  <p>
+                    {intl.formatMessage({
+                      id: "There is a whole new adventure in store for the sproutly Van.",
+                    })}
+                  </p>
+                  <p>
+                    {intl.formatMessage({
+                      id: "Out of fear of missing out, she breezed through the main scenario, believing that the real fun awaits in the end.",
+                    })}
+                  </p>
+                  <p>
+                    {intl.formatMessage({
+                      id: "Would she realize that the fun was in the journey all along?",
+                    })}
+                  </p>
+                </div>
+              </Tab.Panel>
+              <Tab.Panel>
+                <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+                  {scrapbookPhotos2.map((p) => (
+                    <ScrapbookPhoto
+                      key={p.Photo.src}
+                      src={p.Photo.src}
+                      alt={p.Photo.alt}
+                      height={p.Photo.height}
+                      width={p.Photo.width}
+                      className={p.Photo.className}
+                      imgClassName={p.Photo.imgClassName}
+                      dialogs={p.Dialog}
+                    />
+                  ))}
+                </div>
+                <div className="container mx-auto grid place-content-center text-center font-serif text-lg py-24 gap-4">
+                  <p>
+                    {intl.formatMessage({
+                      id: "As if by fate, Van's aetherial signature began to weaken, preventing her from manifesting her corporeal form.",
+                    })}
+                  </p>
+                  <p>
+                    {intl.formatMessage({
+                      id: "And so she went on a month-long hiatus to recover, watching her friends from the aetherial sea.",
+                    })}
+                  </p>
+                  <p>
+                    {intl.formatMessage({
+                      id: "In the process, she began telegraphing her memories, which are collected and catalogued in the form of a scrapbook you see today.",
+                    })}
+                  </p>
+                  <p>
+                    {intl.formatMessage({
+                      id: "To speak plainly, my laptop broke.",
+                    })}
+                  </p>
+                </div>
+              </Tab.Panel>
+              <Tab.Panel>
+                <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 ">
+                  {scrapbookPhotos3.map((p) => (
+                    <ScrapbookPhoto
+                      key={p.Photo.src}
+                      src={p.Photo.src}
+                      alt={p.Photo.alt}
+                      height={p.Photo.height}
+                      width={p.Photo.width}
+                      className={p.Photo.className}
+                      imgClassName={p.Photo.imgClassName}
+                      dialogs={p.Dialog}
+                    />
+                  ))}
+                </div>
+                <div className="container mx-auto grid place-content-center text-center font-serif text-lg py-24 gap-4">
+                  <p>
+                    {intl.formatMessage({
+                      id: "Fresh from finishing Endwalker, Van decides to take a small step back and see what else the world has to offer in preparation for the next journey ahead.",
+                    })}
+                  </p>
+                  <p>
+                    {intl.formatMessage({
+                      id: "A passion for commerce and collectibles awakens from slumber, and soon enough Van discovers a whole new dimension of tradecraft and glam hunting.",
+                    })}
+                  </p>
+                </div>
+              </Tab.Panel>
+              <Tab.Panel>
+                <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
+                  {scrapbookPhotos4.map((p) => (
+                    <ScrapbookPhoto
+                      key={p.Photo.src}
+                      src={p.Photo.src}
+                      alt={p.Photo.alt}
+                      height={p.Photo.height}
+                      width={p.Photo.width}
+                      className={p.Photo.className}
+                      imgClassName={p.Photo.imgClassName}
+                      dialogs={p.Dialog}
+                    />
+                  ))}
+                </div>
+              </Tab.Panel>
+              <Tab.Panel>
+                <div className="grid place-content-center text-center py-24 gap-2">
+                  <h1 className="font-handwritten text-5xl">
+                    {intl.formatMessage({ id: "The journey continues.." })}
+                  </h1>
+                </div>
+              </Tab.Panel>
+            </Tab.Panels>
+          </Tab.Group>
         </section>
       </FadeIn>
     </Layout>
