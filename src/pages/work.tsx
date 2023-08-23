@@ -2,7 +2,6 @@ import Layout from "../components/Layout";
 import React from "react";
 import { useIntl, FormattedDate } from "react-intl";
 import Image from "next/image";
-import Hero from "../components/Hero";
 import Button from "../components/Button";
 import { FadeIn } from "../utilities/FadeIn";
 
@@ -15,20 +14,20 @@ export default function Achernar() {
   return (
     <Layout>
       <FadeIn>
-        <section className="relative">
+        <section className="relative sm:px-0 sm:container mx-4 sm:mx-auto overflow-hidden">
           <Image
-            className="z-[-1] object-cover inline dark:hidden bg-bottom"
+            className="z-[-1] object-cover inline dark:hidden bg-bottom rounded-lg"
             src={"/img/minswap/background2_light.png"}
             alt="minswap "
             fill
           />
           <Image
-            className="z-[-1] object-cover hidden dark:inline bg-bottom"
+            className="z-[-1] object-cover hidden dark:inline bg-bottom rounded-lg"
             src={"/img/minswap/background2_dark.png"}
             alt="minswap "
             fill
           />
-          <Hero>
+          <div className="container mx-auto max-w-5xl flex flex-1 flex-col p-16 pt-20 xl:px-0 space-y-4">
             <h2 className="font-display text-3xl">
               {intl.formatMessage({ id: "Minswap DEX" })}
             </h2>
@@ -48,8 +47,8 @@ export default function Achernar() {
             <Button href="https://minswap.org">
               {intl.formatMessage({ id: "Visit Website" })}
             </Button>
-          </Hero>
-          <div className="max-w-full overflow-x-hidden whitespace-nowrap pt-16">
+          </div>
+          <div className="max-w-full overflow-x-hidden whitespace-nowrap">
             <div
               id="minswap-gallery"
               className="h-[400px] min-w-max left-0 flex flex-row"
@@ -155,6 +154,13 @@ export default function Achernar() {
             </div>
           </div>
         </section>
+        {/*<section className="mx-4 sm:container sm:mx-auto my-4">
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="h-[400px] bg-stone-500 bg-opacity-10 rounded-lg"></div>
+            <div className="h-[400px] bg-stone-500 bg-opacity-10 rounded-lg"></div>
+            <div className="h-[400px] bg-stone-500 bg-opacity-10 rounded-lg"></div>
+          </div>
+            </section>*/}
       </FadeIn>
     </Layout>
   );

@@ -17,7 +17,7 @@ export default function Uses() {
         <div className=" max-w-3xl mx-auto space-y-20 mt-16">
           <section className="md:border-l md:border-stone-400 dark:md:border-stone-700 md:pl-6">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8 px-8 lg:px-0">
-              <h2 className="font-display text-lg">
+              <h2 className="font-display text-2xl md:text-lg">
                 {intl.formatMessage({ id: "Workstation" })}
               </h2>
               <div className="md:col-span-3">
@@ -79,7 +79,7 @@ export default function Uses() {
 
           <section className="md:border-l md:border-stone-400 dark:md:border-stone-700  md:pl-6">
             <div className="grid max-w-3xl mx-auto grid-cols-1 md:grid-cols-4 gap-y-8 px-8 lg:px-0">
-              <h2 className="font-display text-lg">
+              <h2 className="font-display text-2xl md:text-lg">
                 {intl.formatMessage({ id: "Development" })}
               </h2>
               <div className="md:col-span-3">
@@ -110,7 +110,7 @@ export default function Uses() {
           </section>
           <section className="md:border-l md:border-stone-400 dark:md:border-stone-700  md:pl-6">
             <div className="grid max-w-3xl mx-auto grid-cols-1 md:grid-cols-4 gap-y-8 px-8 lg:px-0">
-              <h2 className="font-display text-lg">
+              <h2 className="font-display text-2xl md:text-lg">
                 {intl.formatMessage({ id: "Design" })}
               </h2>
               <div className="md:col-span-3">

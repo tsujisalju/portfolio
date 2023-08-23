@@ -15,7 +15,7 @@ export default function About() {
   return (
     <Layout>
       <FadeIn>
-        <div className="container mx-auto grid md:grid-cols-3 place-content-center gap-16 pt-16 px-4 md:px-0">
+        <div className="sm:container mx-auto grid md:grid-cols-3 place-content-center gap-16 pt-16 px-8 sm:px-4 md:px-0">
           <div className="justify-self-center md:justify-self-end">
             <Image
               src="/img/avatar.png"
@@ -32,12 +32,7 @@ export default function About() {
             <div className="text-center">
               <h2 className="font-sans text-lg">
                 {intl.formatMessage({
-                  id: "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia",
-                })}
-              </h2>
-              <h2 className="font-sans italic text-lg pt-2">
-                {intl.formatMessage({
-                  id: "Hold power in fate. Hold faith in the fated.",
+                  id: "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia 🇲🇾",
                 })}
               </h2>
             </div>
