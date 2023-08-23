@@ -6,6 +6,7 @@ import SelectTheme from "./SelectTheme";
 import NavLink from "./NavLink";
 import React from "react";
 import MobileNav from "./MobileNav";
+import PurrnamaTypography from "../lib/svg/PurrnamaTypography";
 
 interface HeaderProp {
   disableOnTop?: boolean;
@@ -43,7 +44,7 @@ export default function Header(Props: HeaderProp) {
             <div className="flex flex-row justify-start items-center space-x-2 -ml-2 dark:ml-0">
               <Image
                 className="lg:self-center hidden dark:flex pb-2 lg:pb-0"
-                alt="smolpadok logo"
+                alt="purrnama logo"
                 src="/img/logo-light-v2.png"
                 width={50}
                 height={50}
@@ -52,16 +53,14 @@ export default function Header(Props: HeaderProp) {
               ></Image>
               <Image
                 className="flex lg:self-center dark:hidden pb-2 lg:pb-0"
-                alt="smolpadok logo"
+                alt="purrnama logo"
                 src="/img/logo-dark-v2.png"
                 width={50}
                 height={50}
                 placeholder="empty"
                 priority={true}
               ></Image>
-              <h1 className="text-3xl font-display hidden lg:inline">
-                purrnama
-              </h1>
+              <PurrnamaTypography className="hidden lg:inline h-[22px]" />
             </div>
           </Link>
           <nav className="hidden lg:flex flex-row self-center space-x-8">
