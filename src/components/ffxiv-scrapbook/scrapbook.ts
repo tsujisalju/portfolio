@@ -743,8 +743,82 @@ export const scrapbookPhotos4: scrapbookPhoto[] = [
       },
     ],
   },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/39.jpg",
+      alt: "Van in her fully renovated room",
+      width: 1728,
+      height: 1080,
+      className: "md:col-span-2",
+    },
+    Dialog: [
+      {
+        char: "van",
+        text: "fc room update",
+      },
+      {
+        char: "noir",
+        text: "PREDDYYY",
+      },
+      {
+        char: "carra",
+        text: "cool room >:))))",
+      },
+    ],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/40.jpg",
+      alt: "Van in her study area surrounded by vials and a cauldron",
+      width: 1728,
+      height: 1080,
+    },
+    Dialog: [],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/42.jpg",
+      alt: "Portrait of Van smiling candidly, wearing her newly crafted Rinascita Hood of Casting",
+      width: 680,
+      height: 1079,
+    },
+    Dialog: [],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/43.jpg",
+      alt: "Wider shot of Van posing, wearing her newly crafted Rinascita Hood of Casting",
+      width: 1728,
+      height: 1080,
+      className: "md:col-span-2",
+    },
+    Dialog: [
+      {
+        char: "van",
+        text: "Took a break from msq and spent 3 weeks maxing out gsm and min to craft this gorgeous Rinascita Hood of Casting of my own.",
+      },
+      {
+        char: "tuya",
+        text: "YOU DID IIIIT!! CONGRATS VAN, everything looks wonderful!",
+      },
+      {
+        char: "carra",
+        text: "the two week journey has come to an end, and now you got some income too.. wth has it been 3 wks already ghgh",
+      },
+    ],
+  },
 ];
-
+// eslint-disable-next-line
+const scrapbookPhotos5: scrapbookPhoto = {
+  Photo: {
+    src: "",
+    alt: "",
+    width: 0,
+    height: 0,
+  },
+  Dialog: [{ char: "", text: "" }],
+};
+// eslint-disable-next-line
 const emptyPhoto: scrapbookPhoto = {
   Photo: {
     src: "",
