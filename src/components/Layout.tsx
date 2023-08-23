@@ -37,7 +37,7 @@ export default function Layout({
             />
             <meta
               property="og:image"
-              content="https://purrnama-portfolio.vercel.app/img/meta-img.png"
+              content="https://portfolio-purrnama.vercel.app/img/meta-img.png"
             />
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:url" content="purrnama.dev" />
@@ -51,7 +51,7 @@ export default function Layout({
             />
             <meta
               property="twitter:image"
-              content="https://purrnama-portfolio.vercel.app/img/meta-img.png"
+              content="https://portfolio-purrnama.vercel.app/img/meta-img.png"
             />
           </>
         )}
