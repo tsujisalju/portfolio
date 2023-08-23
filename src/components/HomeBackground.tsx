@@ -1,6 +1,4 @@
-import { url } from "inspector";
 import { Parallax } from "react-scroll-parallax";
-import Hero from "./Hero";
 
 const style = {
   bg1: {
