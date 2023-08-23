@@ -1,4 +1,3 @@
-import type { GetStaticProps, NextPage } from "next";
 import Layout from "../../components/Layout";
 
 export default function Home() {

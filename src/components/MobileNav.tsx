@@ -1,7 +1,6 @@
 import { Menu } from "@headlessui/react";
 import { Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import NavLink from "./NavLink";
 import { useIntl } from "react-intl";
 import SelectLanguage from "./SelectLanguage";
 import SelectTheme from "./SelectTheme";

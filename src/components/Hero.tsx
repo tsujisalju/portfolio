@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { FadeIn } from "../utilities/FadeIn";
 
 export default function Hero({ children }: { children: ReactNode }) {
   return (

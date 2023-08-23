@@ -5,7 +5,6 @@ import Footer from "./Footer";
 
 export default function Layout({
   children,
-  home,
 }: {
   children: ReactNode;
   home?: boolean;

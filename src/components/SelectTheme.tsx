@@ -1,7 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { Menu, Transition } from "@headlessui/react";
-import { useRouter } from "next/router";
 import { useIntl } from "react-intl";
 
 export default function SelectTheme() {
