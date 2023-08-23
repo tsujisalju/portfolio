@@ -53,6 +53,12 @@
       "value": "And so she went on a month-long hiatus to recover, watching her friends from the aetherial sea."
     }
   ],
+  "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission.": [
+    {
+      "type": 0,
+      "value": "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission."
+    }
+  ],
   "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent.": [
     {
       "type": 0,
@@ -113,10 +119,10 @@
       "value": "Hi! I'm Qayyum Yazid."
     }
   ],
-  "Hold power in fate. Hold faith in the fated.": [
+  "Hold power to fate. Hold faith in the fated.": [
     {
       "type": 0,
-      "value": "Hold power in fate. Hold faith in the fated."
+      "value": "Hold power to fate. Hold faith in the fated."
     }
   ],
   "Home": [
@@ -293,22 +299,16 @@
       "value": "Razer Naga X"
     }
   ],
-  "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia": [
+  "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia 🇲🇾": [
     {
       "type": 0,
-      "value": "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia"
+      "value": "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia 🇲🇾"
     }
   ],
   "THE GLAM HUNT": [
     {
       "type": 0,
       "value": "THE GLAM HUNT"
-    }
-  ],
-  "Tales of hope amidst terrible choices.": [
-    {
-      "type": 0,
-      "value": "Tales of hope amidst terrible choices."
     }
   ],
   "The Unending Journey": [
@@ -411,12 +411,6 @@
     {
       "type": 0,
       "value": "You may know me as purrnama, or my previous alias smolpadok, or by the name of my personas, Van or Cooper. Welcome to my little corner of the internet!"
-    }
-  ],
-  "is now": [
-    {
-      "type": 0,
-      "value": "is now"
     }
   ]
 }
