@@ -4,7 +4,7 @@ import { useIntl } from "react-intl";
 export default function Footer() {
   const intl = useIntl();
   return (
-    <div className="mt-8 flex flex-col py-4 space-y-2 items-center">
+    <div className="mt-8 flex flex-col py-4 space-y-2 items-center px-4">
       <div className="md:self-center hidden dark:flex pb-2 md:pb-0">
         <Image
           alt="smolpadok logo"
@@ -23,7 +23,11 @@ export default function Footer() {
           placeholder="empty"
         ></Image>
       </div>
-      <small className="font-sans">© 2023 purrnama</small>
+      <small className="font-sans text-center">
+        {intl.formatMessage({
+          id: "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission.",
+        })}
+      </small>
     </div>
   );
 }
