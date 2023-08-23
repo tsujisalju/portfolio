@@ -70,17 +70,17 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
         <meta name="twitter:description" content={excerpt} />
         <meta
           name="twitter:image"
-          content={"https://portfolio-smolpadok.vercel.app" + projectData.img}
+          content={"https://portfolio-purrnama.vercel.app" + projectData.img}
         />
         <meta property="og:title" content={projectData.title} />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content={"https://portfolio-smolpadok.vercel.app" + projectData.img}
+          content={"https://portfolio-purrnama.vercel.app" + projectData.img}
         />
         <meta property="og:description" content={excerpt} />
       </Head>
-      <Layout>
+      <Layout disableMeta>
         <section
           className={
             "sm:container mx-auto grid grid-cols-1 " +
