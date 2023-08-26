@@ -359,16 +359,22 @@
       "value": "Dihasilkan dengan 😻 menggunakan Next.js dan Tailwind"
     }
   ],
-  "Minswap DEX": [
+  "Minswap": [
     {
       "type": 0,
-      "value": "Minswap DEX"
+      "value": "Minswap"
     }
   ],
   "Minswap DEX is a decentralized multi-pool exchange on the Cardano blockchain. I work alongside the marketing and UI/UX department to provide promotional content, merchandise and interface designs.": [
     {
       "type": 0,
       "value": "Minswap DEX adalah pusat pertukaran kripto terdesentralisasi di blockchain Cardano. Saya berkerja bersama-sama jabatan pemasaran dan UI/UX untuk membekalkan kandungan promosi, barangan merch dan rekaan antaramuka."
+    }
+  ],
+  "Minswap is a decentralized exchange on the Cardano blockchain. I work with a global team of agile individuals to provide promotional content, merchandise and interface designs. Below is the mascot I designed, named Merlin!": [
+    {
+      "type": 0,
+      "value": "Minswap adalah pusat pertukaran kripto terdesentralisasi di blockchain Cardano. Saya berkerja bersama-sama kumpulan individu global yang tangkas untuk membekalkan kandungan promosi, barangan merch dan rekaan antaramuka. Di bawah adalah maskot rekaan saya bernama Merlin!"
     }
   ],
   "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": [
@@ -393,6 +399,12 @@
     {
       "type": 0,
       "value": "My new personal project, page under construction :)"
+    }
+  ],
+  "NAMEDAY SPECIAL": [
+    {
+      "type": 0,
+      "value": "NAMEDAY SPECIAL"
     }
   ],
   "Next.js": [
@@ -507,6 +519,12 @@
     {
       "type": 0,
       "value": "Kegunaan"
+    }
+  ],
+  "Van's Nameday Party": [
+    {
+      "type": 0,
+      "value": "Van's Nameday Party"
     }
   ],
   "Velvetyne": [

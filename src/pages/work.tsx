@@ -29,7 +29,7 @@ export default function Achernar() {
           />
           <div className="container mx-auto max-w-5xl flex flex-1 flex-col p-16 pt-20 xl:px-0 space-y-4">
             <h2 className="font-display text-3xl">
-              {intl.formatMessage({ id: "Minswap DEX" })}
+              {intl.formatMessage({ id: "Minswap" })}
             </h2>
             <h2 className="font-sans font-light text-lg">
               <FormattedDate
@@ -41,7 +41,7 @@ export default function Achernar() {
             </h2>
             <p className="font-sans text-lg pb-8">
               {intl.formatMessage({
-                id: "Minswap DEX is a decentralized multi-pool exchange on the Cardano blockchain. I work alongside the marketing and UI/UX department to provide promotional content, merchandise and interface designs.",
+                id: "Minswap is a decentralized exchange on the Cardano blockchain. I work with a global team of agile individuals to provide promotional content, merchandise and interface designs. Below is the mascot I designed, named Merlin!",
               })}
             </p>
             <Button href="https://minswap.org">
