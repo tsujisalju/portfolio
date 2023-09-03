@@ -1,12 +1,8 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useIntl } from "react-intl";
-import SelectLanguage from "../components/SelectLanguage";
-import SelectTheme from "../components/SelectTheme";
-import NavLink from "../components/NavLink";
+import NavLink from "../app/NavLink";
 import React from "react";
-import MobileNav from "../components/MobileNav";
 import PurrnamaTypography from "../lib/svg/PurrnamaTypography";
 
 interface HeaderProp {
@@ -16,7 +12,6 @@ interface HeaderProp {
 export default function Header(Props: HeaderProp) {
   const { disableOnTop = false } = Props;
   const [onTop, setOnTop] = React.useState(true);
-  const intl = useIntl();
 
   function HandleOnTop(value: boolean) {
     setOnTop(value);
@@ -61,27 +56,16 @@ export default function Header(Props: HeaderProp) {
                 placeholder="empty"
                 priority={true}
               ></Image>
-              <PurrnamaTypography className="hidden lg:inline" height={22} />
+              <PurrnamaTypography className="hidden lg:inline h-[22px]" />
             </div>
           </Link>
           <nav className="hidden lg:flex flex-row self-center space-x-8">
-            <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
-            <NavLink href="/about">
-              {intl.formatMessage({ id: "About" })}
-            </NavLink>
-            <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
-            <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
-            <NavLink href="/ffxiv">
-              {intl.formatMessage({ id: "FFXIV" })}
-            </NavLink>
+            <NavLink href="/">Home</NavLink>
+            <NavLink href="/about">About</NavLink>
+            <NavLink href="/work">Work</NavLink>
+            <NavLink href="/uses">Uses</NavLink>
+            <NavLink href="/ffxiv">FFXIV</NavLink>
           </nav>
-        </div>
-        <div className="hidden lg:flex flex-row space-x-2 flex-1 justify-end items-center p-4">
-          <SelectLanguage />
-          <SelectTheme />
-        </div>
-        <div className="lg:hidden flex flex-row flex-1 justify-end items-center p-4">
-          <MobileNav />
         </div>
       </div>
     </header>

@@ -273,9 +273,11 @@ export default function FFXIV({
                           id: "A VAN WAS BORN",
                         })}
                       </h1>
-                      <p className="font-sans font-light text-lg">
-                        A Realm Reborn - Heavensward
-                      </p>
+                      {selected && (
+                        <p className="font-sans font-light text-lg">
+                          A Realm Reborn - Heavensward
+                        </p>
+                      )}
                     </div>
                   </button>
                 )}
@@ -296,9 +298,11 @@ export default function FFXIV({
                           id: "WAY TOO FAST",
                         })}
                       </h1>
-                      <p className="font-sans font-light text-lg">
-                        Stormblood - Shadowbringers
-                      </p>
+                      {selected && (
+                        <p className="font-sans font-light text-lg">
+                          Stormblood - Shadowbringers
+                        </p>
+                      )}
                     </div>
                   </button>
                 )}
@@ -319,7 +323,11 @@ export default function FFXIV({
                           id: "WILL NOT SQUANDER",
                         })}
                       </h1>
-                      <p className="font-sans font-light text-lg">Endwalker</p>
+                      {selected && (
+                        <p className="font-sans font-light text-lg">
+                          Endwalker
+                        </p>
+                      )}
                     </div>
                   </button>
                 )}
@@ -340,9 +348,36 @@ export default function FFXIV({
                           id: "A SOLE REASON",
                         })}
                       </h1>
-                      <p className="font-sans font-light text-lg">
-                        Post-Endwalker Crafting Arc
-                      </p>
+                      {selected && (
+                        <p className="font-sans font-light text-lg">
+                          Post-Endwalker Crafting Arc
+                        </p>
+                      )}
+                    </div>
+                  </button>
+                )}
+              </Tab>
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button
+                    className={
+                      (selected
+                        ? "dark:bg-stone-700 bg-stone-200 grow"
+                        : "bg-stone-300 dark:bg-stone-800") +
+                      " transition transition-75 py-2 px-4 rounded-t-lg"
+                    }
+                  >
+                    <div className={selected ? "" : "hidden lg:inline"}>
+                      <h1 className="font-xivmeter text-lg">
+                        {intl.formatMessage({
+                          id: "NAMEDAY SPECIAL",
+                        })}
+                      </h1>
+                      {selected && (
+                        <p className="font-sans font-light text-lg">
+                          {intl.formatMessage({ id: "Van's Nameday Party" })}
+                        </p>
+                      )}
                     </div>
                   </button>
                 )}
@@ -363,9 +398,11 @@ export default function FFXIV({
                           id: "THE GLAM HUNT",
                         })}
                       </h1>
-                      <p className="font-sans font-light text-lg">
-                        Post-Endwalker Glamour Arc
-                      </p>
+                      {selected && (
+                        <p className="font-sans font-light text-lg">
+                          Post-Endwalker Glamour Arc
+                        </p>
+                      )}
                     </div>
                   </button>
                 )}

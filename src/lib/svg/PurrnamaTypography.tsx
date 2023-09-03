@@ -1,13 +1,15 @@
 export default function PurrnamaTypography({
   className,
+  height,
 }: {
   className: string;
+  height: number;
 }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      height={height}
       className={className}
-      height="79.578"
       viewBox="0 0 182.684 21.055"
     >
       <path
