@@ -16,17 +16,34 @@ export type Zettel = {
 export function getZettelkasten() {
   const filenames = readdirSync(zettelDirectory);
   const allZettel = filenames.map((filename) => {
-    const id = filename.replace(/\.md$/, "").replace(/\s/g, "-");
-
     const fullPath = path.join(zettelDirectory, filename);
     const fileContents = readFileSync(fullPath, "utf8");
-
     const matterResult = matter(fileContents);
+    const excerpt = matterResult.content.substring(0, 50);
     return {
-      id,
+      excerpt,
       ...(matterResult.data as {
-        date: string;
+        id: string;
+        title: string;
       }),
     };
   });
+
+  const filteredZettel = allZettel.filter((zettel) => {
+    if (!zettel.id) {
+      return false;
+    } else {
+      return true;
+    }
+  });
+
+  return filteredZettel.sort((a, b) => {
+    if (Number(a.id) < Number(b.id)) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
 }
+
+export async function getZettel() {}

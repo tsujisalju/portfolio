@@ -1,48 +1,19 @@
 import React from "react";
 import { Metadata } from "next";
 import "../styles/globals.css";
-import {
-  DM_Serif_Display,
-  Karla,
-  Source_Serif_4,
-  Gruppo,
-  Zeyada,
-} from "next/font/google";
 import Link from "next/link";
 import PurrnamaTypography from "../lib/svg/PurrnamaTypography";
 import PurrnamaLogo from "../lib/svg/PurrnamaLogo";
 import Provider from "../components/Provider";
 import { cookies } from "next/headers";
 import SelectTheme from "./SelectTheme";
-
-const karla = Karla({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  variable: "--font-karla",
-});
-const source_serif = Source_Serif_4({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  variable: "--font-source-serif-pro",
-});
-const dm_serif_display = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal"],
-  variable: "--font-dm-serif-display",
-});
-const gruppo = Gruppo({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal"],
-  variable: "--font-gruppo",
-});
-const zeyada = Zeyada({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal"],
-  variable: "--font-zeyada",
-});
+import {
+  karla,
+  source_serif,
+  dm_serif_display,
+  gruppo,
+  zeyada,
+} from "../lib/fonts";
 
 export const metadata: Metadata = {
   title: "purrnama | Freelance Developer and Designer",
@@ -67,7 +38,7 @@ export default function RootLayout({
         >
           <div className="flex flex-row h-screen">
             <div className="relative w-[420px] left-0 top-0 h-screen flex flex-col">
-              <div className="top-0 relative w-auto overflow-auto h-screen border-r border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900 backdrop-blur backdrop-filter flex flex-col">
+              <div className="top-0 relative w-auto overflow-auto h-screen border-r border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-950 backdrop-blur backdrop-filter flex flex-col">
                 <div className="sticky top-0 z-10 backdrop-blur-md">
                   <div className="flex h-auto py-6 px-10 flex-col gap-8">
                     <Link href={"/"} className="flex items-center gap-2">
@@ -117,10 +88,10 @@ export default function RootLayout({
                 </div>
               </div>
             </div>
-            <div className="w-full h-screen relative overflow-auto">
+            <div className="w-full min-h-screen relative overflow-auto">
               <div className="flex flex-col relative">
-                <div className="sticky top-0 z-10 border-b border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900">
-                  <nav className="h-12 backdrop-blur backdrop-filter bg-opacity-75">
+                <div className="sticky top-0 z-10 border-b bg-opacity-60 dark:bg-opacity-60 backdrop-blur-md border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-950">
+                  <nav className="h-12">
                     <div className="px-5 max-w-7xl mx-auto flex gap-3 justify-between items-center h-full">
                       <div className="flex grow items-center justify-end gap-3">
                         <SelectTheme />
@@ -128,7 +99,25 @@ export default function RootLayout({
                     </div>
                   </nav>
                 </div>
-                <div>{children}</div>
+                <div className="min-h-full">
+                  {children}
+
+                  <footer className="max-w-6xl mx-auto pb-16 w-full">
+                    <div className="mt-16"></div>
+                    <hr className="my-6 border-stone-200 dark:border-stone-800"></hr>
+                    <div className="flex gap-4 items-center justify-between">
+                      <div className="flex flex-row gap-3">
+                        <p className="font-sans text-xs">© purrnama</p>
+                        <p className="font-sans text-xs">-</p>
+                        <p className="font-sans text-xs">Art</p>
+                        <p className="font-sans text-xs">Work</p>
+                        <p className="font-sans text-xs">Uses</p>
+                        <p className="font-sans text-xs">FFXIV</p>
+                        <p className="font-sans text-xs">Zettelkasten</p>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
               </div>
             </div>
           </div>

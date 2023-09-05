@@ -18,6 +18,7 @@ export type ProjectData = Project & {
   contentHtml: string;
 };
 
+//get all projects data and sort them chronologically
 export function getSortedProjectsData(locale: string) {
   const fileNames = fs.readdirSync(projectsDirectory + "/" + locale);
   const allProjectsData = fileNames.map((fileName) => {
@@ -49,6 +50,7 @@ export function getSortedProjectsData(locale: string) {
   });
 }
 
+//get data of one project from id and local
 export async function getProjectData(id: string, locale: string) {
   const fullPath = path.join(projectsDirectory, locale, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
