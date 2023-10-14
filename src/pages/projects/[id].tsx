@@ -84,10 +84,10 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
         <section
           className={
             "sm:container mx-auto grid grid-cols-1 " +
-            (projectData.width <= projectData.height && "lg:grid-cols-3")
+            (projectData.width <= projectData.height && "lg:grid-cols-5")
           }
         >
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3">
             <Image
               className="transition duration-500 ease-in-out shadow-lg"
               alt={projectData.title}
@@ -100,7 +100,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
               )}`}
             />
           </div>
-          <div>
+          <div className="lg:col-span-2">
             <div className={"flex flex-col p-8 space-y-4 "}>
               <div className="flex flex-col space-y-2 mb-4">
                 <h1 className="font-display text-5xl lg:text-6xl ">
