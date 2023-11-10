@@ -119,10 +119,10 @@
       "value": "Hi! I'm Qayyum Yazid."
     }
   ],
-  "Hold power to fate. Hold faith in the fated.": [
+  "Hold infinity in the palm of your hand.": [
     {
       "type": 0,
-      "value": "Hold power to fate. Hold faith in the fated."
+      "value": "Hold infinity in the palm of your hand."
     }
   ],
   "Home": [
@@ -269,12 +269,6 @@
       "value": "My new personal project, page under construction :)"
     }
   ],
-  "NAMEDAY SPECIAL": [
-    {
-      "type": 0,
-      "value": "NAMEDAY SPECIAL"
-    }
-  ],
   "Next.js": [
     {
       "type": 0,
@@ -351,12 +345,6 @@
     {
       "type": 0,
       "value": "Uses"
-    }
-  ],
-  "Van's Nameday Party": [
-    {
-      "type": 0,
-      "value": "Van's Nameday Party"
     }
   ],
   "Velvetyne": [

@@ -33,7 +33,7 @@ export default function Home({
           <div>
             <h1 className="font-display text-4xl">
               {intl.formatMessage({
-                id: "Hold power to fate. Hold faith in the fated.",
+                id: "Hold infinity in the palm of your hand.",
               })}
             </h1>
           </div>

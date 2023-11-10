@@ -197,6 +197,12 @@
       "value": "Salam! Saya Qayyum Yazid."
     }
   ],
+  "Hold infinity in the palm of your hand.": [
+    {
+      "type": 0,
+      "value": "Genggam infiniti dalam tapak tanganmu."
+    }
+  ],
   "Hold power to fate. Hold faith in the fated.": [
     {
       "type": 0,
@@ -401,12 +407,6 @@
       "value": "My new personal project, page under construction :)"
     }
   ],
-  "NAMEDAY SPECIAL": [
-    {
-      "type": 0,
-      "value": "NAMEDAY SPECIAL"
-    }
-  ],
   "Next.js": [
     {
       "type": 0,
@@ -519,12 +519,6 @@
     {
       "type": 0,
       "value": "Kegunaan"
-    }
-  ],
-  "Van's Nameday Party": [
-    {
-      "type": 0,
-      "value": "Van's Nameday Party"
     }
   ],
   "Velvetyne": [
