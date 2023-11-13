@@ -1,5 +1,5 @@
 ---
-title: "Flux"
+title: "Fluss"
 date: "2023-11-09"
 img: "/img/projects/flux.jpg"
 width: 2000
