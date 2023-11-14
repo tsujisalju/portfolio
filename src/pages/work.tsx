@@ -154,7 +154,23 @@ export default function Achernar() {
             </div>
           </div>
         </section>
-        {/*<section className="mx-4 sm:container sm:mx-auto my-4">
+        {/*
+        <section className="relative sm:px-0 sm:container mx-4 sm:mx-auto overflow-hidden">
+          <div className="container mx-auto max-w-5xl flex flex-1 flex-col p-16 pt-20 xl:px-0 space-y-4">
+            <h2 className="font-display text-3xl">
+              {intl.formatMessage({ id: "Taskaru" })}
+            </h2>
+
+            <h2 className="font-sans font-light text-lg">
+              <FormattedDate
+                value={"2023-09"}
+                month={"long"}
+                year={"numeric"}
+              />
+            </h2>
+          </div>
+        </section>
+        <section className="mx-4 sm:container sm:mx-auto my-4">
           <div className="grid md:grid-cols-3 gap-4">
             <div className="h-[400px] bg-stone-500 bg-opacity-10 rounded-lg"></div>
             <div className="h-[400px] bg-stone-500 bg-opacity-10 rounded-lg"></div>

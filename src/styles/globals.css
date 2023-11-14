@@ -16,6 +16,11 @@
   src: url("/fonts/Eurostar/Eurostar-Extended.ttf");
 }
 
+@font-face {
+  font-family: "Sinistre";
+  src: url("/fonts/Sinistre/Sinistre-Bold.otf");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
