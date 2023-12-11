@@ -23,7 +23,7 @@ export default function Footer() {
           placeholder="empty"
         ></Image>
       </div>
-      <small className="font-sans text-center">
+      <small className="font-sans text-center opacity-50">
         {intl.formatMessage({
           id: "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission.",
         })}

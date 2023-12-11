@@ -299,6 +299,12 @@
       "value": "Saya Qayyum, seorang siswa sains komputer berpangkal di Leipzig, Jerman. Saya seorang pembangun dan pereka untuk Minswap DEX di Cardano. Selain itu, saya menceritakan kisah Khajiit neo pada garis masa yang lain."
     }
   ],
+  "I'm Qayyum, a freelance developer and designer based in Johore, Malaysia.": [
+    {
+      "type": 0,
+      "value": "Saya Qayyum, pereka dan pembangun perisian bebas berpangkalan di Johor, Malaysia."
+    }
+  ],
   "I'm Qayyum, a frontend developer and designer based in Johore, Malaysia.": [
     {
       "type": 0,
@@ -489,6 +495,12 @@
     {
       "type": 0,
       "value": "Pengembaraan diteruskan.."
+    }
+  ],
+  "The world is ours to explore, design and nurture, for the betterment of all walks of life.": [
+    {
+      "type": 0,
+      "value": "Dunia ini milik kami untuk menerokai, mereka dan memulihara, demi kesejahteraan segala kehidupan."
     }
   ],
   "There is a whole new adventure in store for the sproutly Van.": [

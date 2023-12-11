@@ -299,6 +299,12 @@
       "value": "Ich bin Qayyum, ein Informatik-Student in Leipzig, Deutschland. Ich bin Entwickler und Designer für Minswap DEX bei Cardano. Ansonsten erzähle ich die Geschichte von Neo-Khajiits aus einer anderer Zeitlinie."
     }
   ],
+  "I'm Qayyum, a freelance developer and designer based in Johore, Malaysia.": [
+    {
+      "type": 0,
+      "value": "Ich heiße Qayyum, ein freiberuflicher Entwickler und Designer aus Johore, Malaysia."
+    }
+  ],
   "I'm Qayyum, a frontend developer and designer based in Johore, Malaysia.": [
     {
       "type": 0,
@@ -501,6 +507,12 @@
     {
       "type": 0,
       "value": "Die Reise geht weiter..."
+    }
+  ],
+  "The world is ours to explore, design and nurture, for the betterment of all walks of life.": [
+    {
+      "type": 0,
+      "value": "Die Welt gehört uns, um sie zu erforschen, zu gestalten und zu fördern, zum Wohle aller Lebensbereiche."
     }
   ],
   "There is a whole new adventure in store for the sproutly Van.": [
