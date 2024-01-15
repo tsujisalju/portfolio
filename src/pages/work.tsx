@@ -4,6 +4,8 @@ import { useIntl, FormattedDate } from "react-intl";
 import Image from "next/image";
 import Button from "../components/Button";
 import { FadeIn } from "../utilities/FadeIn";
+import MinswapLogo from "../components/svg/MinswapLogo";
+//import SteelSwapLogo from "../components/svg/SteelSwapLogo";
 
 export default function Achernar() {
   const intl = useIntl();
@@ -14,6 +16,46 @@ export default function Achernar() {
   return (
     <Layout>
       <FadeIn>
+        {/*<section className="relative sm:px-0 sm:container mx-4 sm:mx-auto overflow-hidden h-[700px]">
+          <Image
+            className="z-[-1] object-cover lg:object-contain inline bg-bottom rounded-lg opacity-90"
+            src={"/img/steelswap/steelswap-bg.png"}
+            alt="steelswap cityscape"
+            fill
+          />
+          <div className="container mx-auto max-w-5xl flex flex-1 flex-col p-16 pt-20 xl:px-0 space-y-4">
+            <SteelSwapLogo className="text-[#2F272E] dark:text-[#ffeddc] h-24" />
+            <div className="flex flex-row gap-2">
+              <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
+                {intl.formatMessage({
+                  id: "Graphic Design",
+                })}
+              </div>
+              <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
+                {intl.formatMessage({
+                  id: "UI/UX Design",
+                })}
+              </div>
+            </div>
+            <h2 className="font-sans font-light text-lg">
+              <FormattedDate
+                value={"2024-01"}
+                month={"long"}
+                year={"numeric"}
+              />
+            </h2>
+            <p className="font-sans text-lg">
+              {intl.formatMessage({
+                id: "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to the next level with various illustrations and interface designs with a rusty cyberpunk aesthetic.",
+              })}
+            </p>
+            <p className="font-sans text-lg italic">
+              &quot;0 regrets on this design purrnama. You are doing amazing
+              work.&quot;
+            </p>
+            <p className="font-sans text-lg">- ElderM, Founder of SteelSwap</p>
+          </div>
+            </section>*/}
         <section className="relative sm:px-0 sm:container mx-4 sm:mx-auto overflow-hidden">
           <Image
             className="z-[-1] object-cover inline dark:hidden bg-bottom rounded-lg"
@@ -28,20 +70,40 @@ export default function Achernar() {
             fill
           />
           <div className="container mx-auto max-w-5xl flex flex-1 flex-col p-16 pt-20 xl:px-0 space-y-4">
-            <h2 className="font-display text-3xl">
-              {intl.formatMessage({ id: "Minswap" })}
-            </h2>
+            <MinswapLogo className="slate-950 dark:slate-50 w-[210px]" />
+            <div className="flex flex-row gap-2">
+              <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
+                {intl.formatMessage({
+                  id: "Graphic Design",
+                })}
+              </div>
+              <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
+                {intl.formatMessage({
+                  id: "Front End",
+                })}
+              </div>
+              <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
+                {intl.formatMessage({
+                  id: "Merchandise",
+                })}
+              </div>
+            </div>
             <h2 className="font-sans font-light text-lg">
               <FormattedDate
                 value={"2021-05"}
                 month={"long"}
                 year={"numeric"}
               />
-              {intl.formatMessage({ id: " - Present" })}
+              {" - "}
+              <FormattedDate
+                value={"2024-01"}
+                month={"long"}
+                year={"numeric"}
+              />
             </h2>
             <p className="font-sans text-lg pb-8">
               {intl.formatMessage({
-                id: "Minswap is a decentralized exchange on the Cardano blockchain. I work with a global team of agile individuals to provide promotional content, merchandise and interface designs. Below is the mascot I designed, named Merlin!",
+                id: "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs.",
               })}
             </p>
             <Button href="https://minswap.org">
