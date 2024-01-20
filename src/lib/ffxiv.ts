@@ -21,6 +21,17 @@ export const friendsAvatar: { [key: string]: string } = {
     "https://img2.finalfantasyxiv.com/f/ab8a67db04df731f2ce20a2a3a9b8004_644311b63b607133c989d7c1188467dafc0_96x96.jpg?1685355666",
 };
 
+export const jobNameByIcon: { [key: string]: string } = {
+  "https://lds-img.finalfantasyxiv.com/h/U/F5JzG9RPIKFSogtaKNBk455aYA.png":
+    "Gladiator",
+  "https://lds-img.finalfantasyxiv.com/h/V/iW7IBKQ7oglB9jmbn6LwdZXkWw.png":
+    "Pugilist",
+  "https://lds-img.finalfantasyxiv.com/h/N/St9rjDJB3xNKGYg-vwooZ4j6CM.png":
+    "Marauder",
+  "https://lds-img.finalfantasyxiv.com/h/P/V01m8YRBYcIs5vgbRtpDiqltSE.png":
+    "Blackmage",
+};
+
 export const jobIcons: { [key: number]: string } = {
   1: "https://img.finalfantasyxiv.com/lds/h/U/F5JzG9RPIKFSogtaKNBk455aYA.png",
   2: "https://img.finalfantasyxiv.com/lds/h/V/iW7IBKQ7oglB9jmbn6LwdZXkWw.png",
@@ -63,3 +74,201 @@ export const jobIcons: { [key: number]: string } = {
   39: "https://img.finalfantasyxiv.com/lds/h/7/cLlXUaeMPJDM2nBhIeM-uDmPzM.png",
   40: "https://img.finalfantasyxiv.com/lds/h/g/_oYApASVVReLLmsokuCJGkEpk0.png",
 };
+export interface Nodestone {
+  Character: Character;
+  ClassJobs: ClassJobs;
+}
+
+export interface Character {
+  ID: number;
+  ActiveClassjob: string;
+  Level: number;
+  Avatar: string;
+  Bio: string;
+  ClassjobIcons: ClassjobIcons;
+  FreeCompany: FreeCompany;
+  Name: string;
+  Rank: string;
+  GuardianDeity: GuardianDeity;
+  Nameday: string;
+  Portrait: string;
+  PvpTeam: any;
+  Race: string;
+  Tribe: string;
+  Gender: string;
+  Title: string;
+  Town: Town;
+  Strength: number;
+  Dexterity: number;
+  Vitality: number;
+  Intelligence: number;
+  Mind: number;
+  CriticalHitRate: number;
+  Determination: number;
+  DirectHitRate: number;
+  Defense: number;
+  MagicDefense: number;
+  AttackPower: number;
+  SkillSpeed: number;
+  AttackMagicPotency: number;
+  HealingMagicPotency: number;
+  SpellSpeed: number;
+  Tenacity: number;
+  Piety: number;
+  Hp: number;
+  MpGpCp: number;
+  MpGpCpParameterName: string;
+  Mainhand: Mainhand;
+  Offhand: any;
+  Head: Head;
+  Body: Body;
+  Hands: Hands;
+  Waist: any;
+  Legs: Legs;
+  Feet: Feet;
+  Earrings: Earrings;
+  Necklace: Necklace;
+  Bracelets: Bracelets;
+  Ring1: Ring1;
+  Ring2: Ring2;
+  Soulcrystal: Soulcrystal;
+}
+
+export interface ClassjobIcons {
+  List: List[];
+}
+
+export interface List {
+  Icon: string;
+}
+
+export interface FreeCompany {
+  ID: string;
+  IconLayers: IconLayers;
+}
+
+export interface IconLayers {
+  Bottom: string;
+  MIDdle: string;
+  Top: string;
+}
+
+export interface GuardianDeity {
+  Name: string;
+  Icon: string;
+}
+
+export interface Town {
+  Name: string;
+  Icon: string;
+}
+
+export interface Mainhand {
+  Name: string;
+  DbLink: string;
+  MirageName: string;
+  CreatorName: string;
+}
+
+export interface Head {
+  Name: string;
+  DbLink: string;
+  MirageName: string;
+}
+
+export interface Body {
+  Name: string;
+  DbLink: string;
+  MirageName: string;
+}
+
+export interface Hands {
+  Name: string;
+  DbLink: string;
+  MirageName: string;
+}
+
+export interface Legs {
+  Name: string;
+  DbLink: string;
+  MirageName: string;
+}
+
+export interface Feet {
+  Name: string;
+  DbLink: string;
+  MirageName: string;
+}
+
+export interface Earrings {
+  Name: string;
+  DbLink: string;
+}
+
+export interface Necklace {
+  Name: string;
+  DbLink: string;
+}
+
+export interface Bracelets {
+  Name: string;
+  DbLink: string;
+  MirageName: string;
+}
+
+export interface Ring1 {
+  Name: string;
+  DbLink: string;
+  CreatorName: string;
+}
+
+export interface Ring2 {
+  Name: string;
+  DbLink: string;
+}
+
+export interface Soulcrystal {
+  Name: string;
+}
+
+export interface ClassJobs {
+  [index: string]: ClassJob;
+  Bozja: any;
+  Eureka: any;
+  Paladin: ClassJob;
+  Warrior: ClassJob;
+  Darkknight: ClassJob;
+  Gunbreaker: ClassJob;
+  Monk: ClassJob;
+  Dragoon: ClassJob;
+  Ninja: ClassJob;
+  Samurai: ClassJob;
+  Whitemage: ClassJob;
+  Scholar: ClassJob;
+  Astrologian: ClassJob;
+  Bard: ClassJob;
+  Machinist: ClassJob;
+  Dancer: ClassJob;
+  Blackmage: ClassJob;
+  Summoner: ClassJob;
+  Redmage: ClassJob;
+  Bluemage: ClassJob;
+  Carpenter: ClassJob;
+  Blacksmith: ClassJob;
+  Armorer: ClassJob;
+  Goldsmith: ClassJob;
+  Leatherworker: ClassJob;
+  Weaver: ClassJob;
+  Alchemist: ClassJob;
+  Culinarian: ClassJob;
+  Miner: ClassJob;
+  Botanist: ClassJob;
+  Fisher: ClassJob;
+}
+
+export interface ClassJob {
+  Level: number | string;
+  Unlockstate: string;
+  CurrentEXP: string;
+  MaxEXP: string;
+}

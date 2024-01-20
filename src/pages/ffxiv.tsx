@@ -4,7 +4,7 @@ import { useIntl } from "react-intl";
 import { InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
-import { ffxivGender, jobIcons } from "../lib/ffxiv";
+import { ClassJob, Nodestone, jobNameByIcon } from "../lib/ffxiv";
 import { Transition, Tab } from "@headlessui/react";
 import Button from "../components/Button";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
@@ -19,71 +19,18 @@ import { FadeIn } from "../utilities/FadeIn";
 
 const characterID = "46130616";
 
-type xivData = {
-  Character: {
-    ActiveClassJob: {
-      ExpLevel: number;
-      ExpLevelMax: number;
-      Level: number;
-      UnlockedState: {
-        ID: number;
-        Name: string;
-      };
-    };
-    ClassJobs: [
-      {
-        Level: number;
-        UnlockedState: {
-          ID: number;
-          Name: string;
-        };
-      }
-    ];
-    GrandCompany: {
-      Company: {
-        Name: string;
-      };
-      Rank: {
-        Name: string;
-      };
-    };
-    Avatar: string;
-    Bio: string;
-    Race: {
-      Name: string;
-    };
-    Name: string;
-    Nameday: string;
-    Gender: number;
-    Portrait: string;
-    Title: {
-      Name: string;
-    };
-    TitleTop: boolean;
-    Server: string;
-    GuardianDeity: {
-      Name: string;
-    };
-    FreeCompanyName: string;
-    Town: {
-      Name: string;
-    };
-    Tribe: {
-      Name: string;
-    };
-  };
-};
-
 export default function FFXIV({
-  xivapi,
+  nodestone,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [isShowing, setIsShowing] = useState(false);
   const intl = useIntl();
+  const activeClassJob: ClassJob =
+    nodestone.ClassJobs[jobNameByIcon[nodestone.Character.ActiveClassjob]];
   const xivLevelPercentage = () => {
-    if (xivapi.Character) {
+    if (nodestone.Character) {
       return (
-        (xivapi.Character.ActiveClassJob.ExpLevel /
-          xivapi.Character.ActiveClassJob.ExpLevelMax) *
+        (parseInt(activeClassJob.CurrentEXP) /
+          parseInt(activeClassJob.MaxEXP)) *
         100
       );
     } else {
@@ -91,6 +38,8 @@ export default function FFXIV({
     }
   };
 
+  const icon = jobNameByIcon[nodestone.Character.ActiveClassjob];
+  console.log(icon ?? "null");
   useEffect(() => {
     document.body.style.backgroundImage = "";
     document.body.className = "";
@@ -99,7 +48,7 @@ export default function FFXIV({
 
   return (
     <Layout>
-      {xivapi.Character ? (
+      {nodestone.Character ? (
         <div className="sm:container mx-auto grid lg:grid-cols-2 space-y-4 lg:space-y-0 pb-16">
           <div className="p-2 sm:p-8">
             <Transition
@@ -115,7 +64,7 @@ export default function FFXIV({
                 scale={1.03}
               >
                 <Image
-                  src={xivapi.Character.Portrait}
+                  src={nodestone.Character.Portrait}
                   alt="Player Avatar"
                   width={640}
                   height={873}
@@ -132,37 +81,28 @@ export default function FFXIV({
           <FadeIn>
             <div className="flex flex-col p-8 lg:pr-16 space-y-8">
               <div>
-                {xivapi.Character.TitleTop && (
-                  <p className="font-sans text-lg">
-                    {xivapi.Character.Title.Name}
-                  </p>
-                )}
                 <h1 className="font-display text-4xl">
-                  {xivapi.Character.Name}
+                  {nodestone.Character.Name}
                 </h1>
-                {!xivapi.Character.TitleTop && (
-                  <p className="font-sans text-lg">
-                    {xivapi.Character.Title.Name}
-                  </p>
-                )}
+                <p className="font-sans text-lg">{nodestone.Character.Title}</p>
               </div>
               <div>
                 <div className="flex flex-row space-x-2 items-center pb-2">
                   <Image
-                    src={
-                      jobIcons[xivapi.Character.ActiveClassJob.UnlockedState.ID]
-                    }
-                    alt={xivapi.Character.ActiveClassJob.UnlockedState.Name}
+                    src={nodestone.Character.ActiveClassjob}
+                    alt={"Active Class Job Icon"}
                     height={32}
                     width={32}
                   />
                   <h2 className="font-display text-bold text-2xl">
-                    {xivapi.Character.ActiveClassJob.UnlockedState.Name.toUpperCase()}
+                    {activeClassJob
+                      ? activeClassJob.Unlockstate.toUpperCase()
+                      : ""}
                   </h2>
                 </div>
 
                 <h2 className="font-xivmeter text-xl">
-                  LEVEL {xivapi.Character.ActiveClassJob.Level}
+                  LEVEL {activeClassJob ? activeClassJob.Level : "--"}
                 </h2>
                 <div className="h-1 min-w-max bg-stone-300 dark:bg-stone-700">
                   <div
@@ -181,9 +121,11 @@ export default function FFXIV({
                   </div>
                 </div>
                 <p className="font-sans text-md">
-                  {xivapi.Character.ActiveClassJob.Level === 90
-                    ? "MAX"
-                    : `EXP ${xivapi.Character.ActiveClassJob.ExpLevel} / ${xivapi.Character.ActiveClassJob.ExpLevelMax}`}
+                  {activeClassJob
+                    ? activeClassJob.Level === 90
+                      ? "MAX"
+                      : `EXP ${activeClassJob.CurrentEXP} / ${activeClassJob.MaxEXP}`
+                    : "--"}
                 </p>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
@@ -192,49 +134,35 @@ export default function FFXIV({
                     RACE / CLAN / GENDER
                   </h2>
                   <p className="font-sans text-lg">
-                    {xivapi.Character.Race.Name}
+                    {nodestone.Character.Race}
                   </p>
                   <p className="font-sans text-lg">
-                    {xivapi.Character.Tribe.Name}{" "}
-                    {ffxivGender[xivapi.Character.Gender]}
+                    {nodestone.Character.Tribe} {nodestone.Character.Gender}
                   </p>
                 </div>
                 <div>
                   <h2 className="font-xivmeter text-lg">NAMEDAY</h2>
                   <p className="font-sans text-lg">
-                    {xivapi.Character.Nameday}
+                    {nodestone.Character.Nameday}
                   </p>
                 </div>
                 <div>
                   <h2 className="font-xivmeter text-lg">GUARDIAN DEITY</h2>
                   <p className="font-sans text-lg">
-                    {xivapi.Character.GuardianDeity.Name}
+                    {nodestone.Character.GuardianDeity.Name}
                   </p>
                 </div>
                 <div>
-                  <h2 className="font-xivmeter text-lg">GRAND COMPANY</h2>
+                  <h2 className="font-xivmeter text-lg">GRAND COMPANY RANK</h2>
                   <p className="font-sans text-lg">
-                    {xivapi.Character.GrandCompany.Company.Name}
+                    {nodestone.Character.Rank}
                   </p>
-                  <p className="font-sans text-lg">
-                    {xivapi.Character.GrandCompany.Rank.Name}
-                  </p>
-                </div>
-                <div>
-                  <h2 className="font-xivmeter text-lg">FREE COMPANY</h2>
-                  <p className="font-sans text-lg">
-                    {xivapi.Character.FreeCompanyName}
-                  </p>
-                </div>
-                <div>
-                  <h2 className="font-xivmeter text-lg">SERVER</h2>
-                  <p className="font-sans text-lg">{xivapi.Character.Server}</p>
                 </div>
               </div>
-              <div className="grid grid-flow-row-dense grid-cols-8 gap-2 py-2">
-                {xivapi.Character.ClassJobs.map((classJob) => (
+              {/*<div className="grid grid-flow-row-dense grid-cols-8 gap-2 py-2">
+                {Object.keys(nodestone.ClassJobs).map((key) => (
                   <div
-                    key={classJob.UnlockedState.Name}
+                    key={nodestone.ClassJobs[key].Unlockstate}
                     className="flex flex-col text-center pb-1"
                   >
                     <Image
@@ -249,7 +177,7 @@ export default function FFXIV({
                     </p>
                   </div>
                 ))}
-              </div>
+                </div>*/}
 
               <Button
                 href={
@@ -267,7 +195,7 @@ export default function FFXIV({
           <div className="py-4 px-6 bg-stone-200 dark:bg-stone-800 rotate-1 shadow-md rounded-md">
             <p className="font-sans text-lg">
               {intl.formatMessage({
-                id: "XIVAPI is currently unavailable. Sorry for the inconvenience!",
+                id: "Lodestone data is currently unavailable. Sorry for the inconvenience!",
               })}
             </p>
           </div>
@@ -404,9 +332,9 @@ export default function FFXIV({
             <Tab.Panels className="bg-stone-200 dark:bg-stone-700 p-4 pt-8 rounded-b-lg">
               <Tab.Panel>
                 <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
-                  {scrapbookPhotos1.map((p) => (
+                  {scrapbookPhotos1.map((p, i) => (
                     <ScrapbookPhoto
-                      key={p.Photo.src}
+                      key={i}
                       src={p.Photo.src}
                       alt={p.Photo.alt}
                       height={p.Photo.height}
@@ -438,9 +366,9 @@ export default function FFXIV({
               </Tab.Panel>
               <Tab.Panel>
                 <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-                  {scrapbookPhotos2.map((p) => (
+                  {scrapbookPhotos2.map((p, i) => (
                     <ScrapbookPhoto
-                      key={p.Photo.src}
+                      key={i}
                       src={p.Photo.src}
                       alt={p.Photo.alt}
                       height={p.Photo.height}
@@ -476,9 +404,9 @@ export default function FFXIV({
               </Tab.Panel>
               <Tab.Panel>
                 <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 ">
-                  {scrapbookPhotos3.map((p) => (
+                  {scrapbookPhotos3.map((p, i) => (
                     <ScrapbookPhoto
-                      key={p.Photo.src}
+                      key={i}
                       src={p.Photo.src}
                       alt={p.Photo.alt}
                       height={p.Photo.height}
@@ -504,9 +432,9 @@ export default function FFXIV({
               </Tab.Panel>
               <Tab.Panel>
                 <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
-                  {scrapbookPhotos4.map((p) => (
+                  {scrapbookPhotos4.map((p, i) => (
                     <ScrapbookPhoto
-                      key={p.Photo.src}
+                      key={i}
                       src={p.Photo.src}
                       alt={p.Photo.alt}
                       height={p.Photo.height}
@@ -534,16 +462,16 @@ export default function FFXIV({
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(
-    "https://xivapi.com/character/" +
+  const resChar = await fetch(
+    "https://nodestone-e4o46op7lq-lz.a.run.app/Character/" +
       characterID +
-      "?extended=1&private_key=262e2e1202664c97b38032efa438f17866006b77e11a4ccfad6aec87523dea19"
+      "?data=CJ"
   );
-  const xivapi: xivData = await res.json();
+  const nodestone: Nodestone = await resChar.json();
 
   return {
     props: {
-      xivapi,
+      nodestone,
     },
   };
 };
