@@ -5,7 +5,7 @@ import Image from "next/image";
 import Button from "../components/Button";
 import { FadeIn } from "../utilities/FadeIn";
 import MinswapLogo from "../components/svg/MinswapLogo";
-//import SteelSwapLogo from "../components/svg/SteelSwapLogo";
+import SteelSwapLogo from "../components/svg/SteelSwapLogo";
 
 export default function Achernar() {
   const intl = useIntl();
@@ -16,47 +16,114 @@ export default function Achernar() {
   return (
     <Layout>
       <FadeIn>
-        {/*<section className="relative sm:px-0 sm:container mx-4 sm:mx-auto overflow-hidden h-[700px]">
-          <Image
-            className="z-[-1] object-cover lg:object-contain inline bg-bottom rounded-lg opacity-90"
-            src={"/img/steelswap/steelswap-bg.png"}
-            alt="steelswap cityscape"
-            fill
-          />
-          <div className="container mx-auto max-w-5xl flex flex-1 flex-col p-16 pt-20 xl:px-0 space-y-4">
-            <SteelSwapLogo className="text-[#2F272E] dark:text-[#ffeddc] h-24" />
-            <div className="flex flex-row gap-2">
-              <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
-                {intl.formatMessage({
-                  id: "Graphic Design",
-                })}
+        <div className="container mx-auto">
+          <section className="grid grid-cols-3 py-12 gap-12">
+            <div className="relative h-[300px]">
+              <Image
+                className="object-cover rounded-lg shadow-md"
+                src={"/img/steelswap/steelswap-bg.png"}
+                alt="steelswap cityscape"
+                fill
+              />
+            </div>
+            <div className="col-span-2 flex flex-1 flex-col gap-y-6">
+              <SteelSwapLogo className="text-[#2F272E] dark:text-[#ffeddc] h-24" />
+              <div className="flex flex-row gap-2">
+                <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
+                  {intl.formatMessage({
+                    id: "Graphic Design",
+                  })}
+                </div>
+                <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
+                  {intl.formatMessage({
+                    id: "UI/UX Design",
+                  })}
+                </div>
               </div>
-              <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
+              <h2 className="font-sans font-light text-lg">
+                <FormattedDate
+                  value={"2024-01"}
+                  month={"long"}
+                  year={"numeric"}
+                />
+              </h2>
+              <p className="font-sans text-lg">
                 {intl.formatMessage({
-                  id: "UI/UX Design",
+                  id: "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to new heights with various illustrations and interface designs with a rusty cyberpunk aesthetic.",
                 })}
+              </p>
+              <div className="font-serif text-lg py-4 px-6 bg-stone-50 dark:bg-stone-950/20 max-w-fit rounded-md shadow-inner">
+                <p className="italic">
+                  &quot;0 regrets on this design purrnama. You are doing amazing
+                  work.&quot;
+                </p>
+                <p className="font-sans text-lg">
+                  - ElderM, Founder of SteelSwap
+                </p>
               </div>
             </div>
-            <h2 className="font-sans font-light text-lg">
-              <FormattedDate
-                value={"2024-01"}
-                month={"long"}
-                year={"numeric"}
+          </section>
+          <hr className="opacity-20" />
+          <section className="container mx-auto grid grid-cols-3 py-12 gap-12">
+            <div className="relative h-[300px]">
+              <Image
+                className="inline dark:hidden object-cover rounded-lg shadow-md"
+                src={"/img/minswap/background2_light.png"}
+                alt="minswap "
+                fill
               />
-            </h2>
-            <p className="font-sans text-lg">
-              {intl.formatMessage({
-                id: "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to the next level with various illustrations and interface designs with a rusty cyberpunk aesthetic.",
-              })}
-            </p>
-            <p className="font-sans text-lg italic">
-              &quot;0 regrets on this design purrnama. You are doing amazing
-              work.&quot;
-            </p>
-            <p className="font-sans text-lg">- ElderM, Founder of SteelSwap</p>
-          </div>
-            </section>*/}
-        <section className="relative sm:px-0 sm:container mx-4 sm:mx-auto overflow-hidden">
+              <Image
+                className="hidden dark:inline object-cover rounded-lg shadow-md"
+                src={"/img/minswap/background2_dark.png"}
+                alt="minswap "
+                fill
+              />
+            </div>
+            <div className="col-span-2 flex flex-1 flex-col gap-y-6">
+              <MinswapLogo className="slate-950 dark:slate-50 w-[210px]" />
+              <div className="flex flex-row gap-2">
+                <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
+                  {intl.formatMessage({
+                    id: "Graphic Design",
+                  })}
+                </div>
+                <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
+                  {intl.formatMessage({
+                    id: "Front End",
+                  })}
+                </div>
+                <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
+                  {intl.formatMessage({
+                    id: "Merchandise",
+                  })}
+                </div>
+              </div>
+              <h2 className="font-sans font-light text-lg">
+                <FormattedDate
+                  value={"2021-05"}
+                  month={"long"}
+                  year={"numeric"}
+                />
+                {" - "}
+                <FormattedDate
+                  value={"2024-01"}
+                  month={"long"}
+                  year={"numeric"}
+                />
+              </h2>
+              <p className="font-sans text-lg">
+                {intl.formatMessage({
+                  id: "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs.",
+                })}
+              </p>
+              <Button href="https://minswap.org">
+                {intl.formatMessage({ id: "Visit Website" })}
+              </Button>
+            </div>
+          </section>
+        </div>
+
+        {/*<section className="relative sm:px-0 sm:container mx-4 sm:mx-auto overflow-hidden">
           <Image
             className="z-[-1] object-cover inline dark:hidden bg-bottom rounded-lg"
             src={"/img/minswap/background2_light.png"}
@@ -214,29 +281,6 @@ export default function Achernar() {
                 height={400}
               />
             </div>
-          </div>
-        </section>
-        {/*
-        <section className="relative sm:px-0 sm:container mx-4 sm:mx-auto overflow-hidden">
-          <div className="container mx-auto max-w-5xl flex flex-1 flex-col p-16 pt-20 xl:px-0 space-y-4">
-            <h2 className="font-display text-3xl">
-              {intl.formatMessage({ id: "Taskaru" })}
-            </h2>
-
-            <h2 className="font-sans font-light text-lg">
-              <FormattedDate
-                value={"2023-09"}
-                month={"long"}
-                year={"numeric"}
-              />
-            </h2>
-          </div>
-        </section>
-        <section className="mx-4 sm:container sm:mx-auto my-4">
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="h-[400px] bg-stone-500 bg-opacity-10 rounded-lg"></div>
-            <div className="h-[400px] bg-stone-500 bg-opacity-10 rounded-lg"></div>
-            <div className="h-[400px] bg-stone-500 bg-opacity-10 rounded-lg"></div>
           </div>
             </section>*/}
       </FadeIn>
