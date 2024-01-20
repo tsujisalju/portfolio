@@ -173,6 +173,18 @@
       "value": "Frisch nach dem Abschluss von Endwalker beschließt Van, einen kleinen Schritt zurückzutreten und zu sehen, was die Welt sonst noch zu bieten hat, um sich auf die nächste Reise vorzubereiten."
     }
   ],
+  "Front End": [
+    {
+      "type": 0,
+      "value": "Front End"
+    }
+  ],
+  "Graphic Design": [
+    {
+      "type": 0,
+      "value": "Grafische Gestaltung"
+    }
+  ],
   "Greetings traveler.": [
     {
       "type": 0,
@@ -383,10 +395,10 @@
       "value": "Mit 😻 gemacht mit Next.js und Tailwind"
     }
   ],
-  "Minswap": [
+  "Merchandise": [
     {
       "type": 0,
-      "value": "Minswap"
+      "value": "Merchandise"
     }
   ],
   "Minswap DEX is a decentralized multi-pool exchange on the Cardano blockchain. I work alongside the marketing and UI/UX department to provide promotional content, merchandise and interface designs.": [
@@ -399,6 +411,12 @@
     {
       "type": 0,
       "value": "Minswap ist eine dezentralisierte Börse auf der Cardano-Blockchain. Ich arbeite mit einem globalen Team von agilen Personen zusammen, um Werbeinhalte, Merchandise und Interface-Designs zu erstellen. Unten sehen Sie das Maskottchen, das ich entworfen habe, namens Merlin!"
+    }
+  ],
+  "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs.": [
+    {
+      "type": 0,
+      "value": "Minswap ist eine dezentralisierte Börse auf der Cardano-Blockchain. Ich habe mit einem globalen Team von agilen Personen zusammengearbeitet, um Werbeinhalte, Waren und Schnittstellendesigns bereitzustellen."
     }
   ],
   "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": [
@@ -473,6 +491,12 @@
       "value": "Student der Softwaretechnik, freiberuflicher Entwickler und Designer | Sitz in Johore, Malaysia 🇲🇾"
     }
   ],
+  "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to new heights with various illustrations and interface designs with a rusty cyberpunk aesthetic.": [
+    {
+      "type": 0,
+      "value": "SteelSwap ist ein DEX-Aggregator auf der Cardano-Blockchain. Mit verschiedenen Illustrationen und Interfacedesigns in einer rostigen Cyberpunk-Ästhetik hebt SteelSwap sein Fundament auf neue Höhen."
+    }
+  ],
   "Student, dev and design by day,": [
     {
       "type": 0,
@@ -537,6 +561,12 @@
     {
       "type": 0,
       "value": "Werkzeuge des Handels"
+    }
+  ],
+  "UI/UX Design": [
+    {
+      "type": 0,
+      "value": "UI/UX Gestaltung"
     }
   ],
   "Uses": [

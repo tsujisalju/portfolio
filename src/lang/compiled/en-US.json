@@ -1,10 +1,4 @@
 {
-  " - Present": [
-    {
-      "type": 0,
-      "value": " - Present"
-    }
-  ],
   "A SOLE REASON": [
     {
       "type": 0,
@@ -111,6 +105,18 @@
     {
       "type": 0,
       "value": "Fresh from finishing Endwalker, Van decides to take a small step back and see what else the world has to offer in preparation for the next journey ahead."
+    }
+  ],
+  "Front End": [
+    {
+      "type": 0,
+      "value": "Front End"
+    }
+  ],
+  "Graphic Design": [
+    {
+      "type": 0,
+      "value": "Graphic Design"
     }
   ],
   "Hi! I'm Qayyum Yazid.": [
@@ -233,16 +239,16 @@
       "value": "Light"
     }
   ],
-  "Minswap": [
+  "Merchandise": [
     {
       "type": 0,
-      "value": "Minswap"
+      "value": "Merchandise"
     }
   ],
-  "Minswap is a decentralized exchange on the Cardano blockchain. I work with a global team of agile individuals to provide promotional content, merchandise and interface designs. Below is the mascot I designed, named Merlin!": [
+  "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs.": [
     {
       "type": 0,
-      "value": "Minswap is a decentralized exchange on the Cardano blockchain. I work with a global team of agile individuals to provide promotional content, merchandise and interface designs. Below is the mascot I designed, named Merlin!"
+      "value": "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs."
     }
   ],
   "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": [
@@ -299,6 +305,12 @@
       "value": "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia 🇲🇾"
     }
   ],
+  "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to new heights with various illustrations and interface designs with a rusty cyberpunk aesthetic.": [
+    {
+      "type": 0,
+      "value": "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to new heights with various illustrations and interface designs with a rusty cyberpunk aesthetic."
+    }
+  ],
   "THE GLAM HUNT": [
     {
       "type": 0,
@@ -339,6 +351,12 @@
     {
       "type": 0,
       "value": "To speak plainly, my laptop broke."
+    }
+  ],
+  "UI/UX Design": [
+    {
+      "type": 0,
+      "value": "UI/UX Design"
     }
   ],
   "Uses": [

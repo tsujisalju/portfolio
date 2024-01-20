@@ -74,7 +74,7 @@
   "And so she went on a month-long hiatus to recover, watching her friends from the aetherial sea.": [
     {
       "type": 0,
-      "value": "Maka dia brehat selama sebulan untuk menyembuh, melihat rakan-rakannya di lautan aetherial."
+      "value": "Maka dia berehat selama sebulan untuk menyembuh, melihat rakan-rakannya di lautan aetherial."
     }
   ],
   "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission.": [
@@ -171,6 +171,18 @@
     {
       "type": 0,
       "value": "Baru sahaja menamatkan Endwalker, Van memutuskan untuk mengambil langkah ke belakang dan melihat apa lagi yang dunia ini tawarkan sebagai persediaan untuk perjalanan seterusnya."
+    }
+  ],
+  "Front End": [
+    {
+      "type": 0,
+      "value": "Front End"
+    }
+  ],
+  "Graphic Design": [
+    {
+      "type": 0,
+      "value": "Reka Bentuk Grafik"
     }
   ],
   "Greetings traveler.": [
@@ -371,10 +383,10 @@
       "value": "Dihasilkan dengan 😻 menggunakan Next.js dan Tailwind"
     }
   ],
-  "Minswap": [
+  "Merchandise": [
     {
       "type": 0,
-      "value": "Minswap"
+      "value": "Merchandise"
     }
   ],
   "Minswap DEX is a decentralized multi-pool exchange on the Cardano blockchain. I work alongside the marketing and UI/UX department to provide promotional content, merchandise and interface designs.": [
@@ -387,6 +399,12 @@
     {
       "type": 0,
       "value": "Minswap adalah pusat pertukaran kripto terdesentralisasi di blockchain Cardano. Saya berkerja bersama-sama kumpulan individu global yang tangkas untuk membekalkan kandungan promosi, barangan merch dan rekaan antaramuka. Di bawah adalah maskot rekaan saya bernama Merlin!"
+    }
+  ],
+  "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs.": [
+    {
+      "type": 0,
+      "value": "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs."
     }
   ],
   "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": [
@@ -461,6 +479,12 @@
       "value": "Siswa Kejuruteraan Perisian, Pengaturcara dan Pereka Design Bebas | Berpangkalan di Johor, Malaysia 🇲🇾"
     }
   ],
+  "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to new heights with various illustrations and interface designs with a rusty cyberpunk aesthetic.": [
+    {
+      "type": 0,
+      "value": "SteelSwap ialah agregator DEX di blockchain Cardano. Membawa asasnya ke tahap baharu dengan pelbagai ilustrasi dan reka bentuk antara muka dengan estetika cyberpunk berkarat."
+    }
+  ],
   "Student, dev and design by day,": [
     {
       "type": 0,
@@ -525,6 +549,12 @@
     {
       "type": 0,
       "value": "Alatan"
+    }
+  ],
+  "UI/UX Design": [
+    {
+      "type": 0,
+      "value": "Reka Bentuk UI/UX"
     }
   ],
   "Uses": [
