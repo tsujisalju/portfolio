@@ -16,8 +16,8 @@ export default function Achernar() {
   return (
     <Layout>
       <FadeIn>
-        <div className="container mx-auto">
-          <section className="grid grid-cols-3 py-12 gap-12">
+        <div className="px-4 lg:px-0 max-w-7xl mx-auto">
+          <section className="grid grid-cols-1 lg:grid-cols-3 py-12 lg:gap-12">
             <div className="relative h-[300px]">
               <Image
                 className="object-cover rounded-lg shadow-md"
@@ -64,7 +64,7 @@ export default function Achernar() {
             </div>
           </section>
           <hr className="opacity-20" />
-          <section className="container mx-auto grid grid-cols-3 py-12 gap-12">
+          <section className="grid grid-cols-1 lg:grid-cols-3 py-12 lg:gap-12">
             <div className="relative h-[300px]">
               <Image
                 className="inline dark:hidden object-cover rounded-lg shadow-md"
