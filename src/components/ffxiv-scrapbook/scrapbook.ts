@@ -21,7 +21,7 @@ export const scrapbookPhotos1: scrapbookPhoto[] = [
       alt: "A newly created Van Carina in Uldah",
       width: 778,
       height: 778,
-      className: "md:col-span-2",
+      className: "",
     },
     Dialog: [
       {
@@ -36,6 +36,7 @@ export const scrapbookPhotos1: scrapbookPhoto[] = [
       alt: "Van and Driga surrounding Carra who is afk in Thamaturges' Guild",
       width: 1536,
       height: 960,
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -50,7 +51,7 @@ export const scrapbookPhotos1: scrapbookPhoto[] = [
       alt: "Van sitting with her fellow brethren in Thamaturges' Guild",
       width: 1699,
       height: 1062,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       { char: "van", text: "amongst my brethren", className: "" },
@@ -138,7 +139,7 @@ export const scrapbookPhotos1: scrapbookPhoto[] = [
       alt: "Van and friends chatting before the diplomatic marriage begins",
       width: 1686,
       height: 1054,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -166,7 +167,7 @@ export const scrapbookPhotos1: scrapbookPhoto[] = [
       alt: "Van and friends in the diplomatic marriage",
       width: 1728,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -189,7 +190,7 @@ export const scrapbookPhotos1: scrapbookPhoto[] = [
       alt: "Van preparing for battle against Nidhogg",
       width: 1728,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -240,7 +241,7 @@ export const scrapbookPhotos2: scrapbookPhoto[] = [
       alt: "Van in the Royal Menagerie garden",
       width: 1080,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -277,7 +278,7 @@ export const scrapbookPhotos2: scrapbookPhoto[] = [
       alt: "Van at the Crystarium",
       width: 1728,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -293,7 +294,7 @@ export const scrapbookPhotos2: scrapbookPhoto[] = [
       alt: "Van contemplating by the crystal tower, a rim light casts onto her",
       width: 1728,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -309,7 +310,7 @@ export const scrapbookPhotos2: scrapbookPhoto[] = [
       alt: "Van riding a chocobo in Il Mheg",
       width: 1080,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -325,7 +326,7 @@ export const scrapbookPhotos2: scrapbookPhoto[] = [
       alt: "Van preparing for battle in Hades' Elegy",
       width: 1821,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -364,7 +365,7 @@ export const scrapbookPhotos2: scrapbookPhoto[] = [
       alt: "Carra gposing as Van performance LB3",
       width: 3440,
       height: 1440,
-      className: "md:col-span-2 lg:col-span-3 xl:col-span-4",
+      className: "lg:col-span-2 lg:col-span-3 xl:col-span-4",
     },
     Dialog: [
       {
@@ -385,7 +386,7 @@ export const scrapbookPhotos2: scrapbookPhoto[] = [
       alt: "Van teaching a Miqote child in the Crystarium",
       width: 1728,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -411,7 +412,7 @@ export const scrapbookPhotos2: scrapbookPhoto[] = [
       alt: "Van in Sharlayan",
       width: 1080,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -504,7 +505,7 @@ export const scrapbookPhotos3: scrapbookPhoto[] = [
       alt: "Van putting a finger on her lip in Elpis",
       width: 799,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -546,7 +547,7 @@ export const scrapbookPhotos3: scrapbookPhoto[] = [
       alt: "Van pointing at mommy Hydaelyn",
       width: 1728,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -577,7 +578,7 @@ export const scrapbookPhotos3: scrapbookPhoto[] = [
       alt: "Van and Lalah Jinjahl",
       width: 1728,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -638,7 +639,7 @@ export const scrapbookPhotos3: scrapbookPhoto[] = [
       alt: "Van preparing to fight the Endsinger",
       width: 1920,
       height: 1078,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -676,7 +677,7 @@ export const scrapbookPhotos4: scrapbookPhoto[] = [
       alt: "Van performing the Little Ladies' Dance at the Firmament",
       width: 1536,
       height: 960,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -704,7 +705,7 @@ export const scrapbookPhotos4: scrapbookPhoto[] = [
       alt: "Van and Carra sitting around a bonfire in Idyllshire",
       width: 1728,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       { char: "van", text: "cozy fireside chat with carra 🤗" },
@@ -717,7 +718,7 @@ export const scrapbookPhotos4: scrapbookPhoto[] = [
       alt: "Van sitting on a picnic chair in the variant dungeon",
       width: 1728,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       { char: "van", text: "solo blm variant dungeon 💀" },
@@ -749,7 +750,7 @@ export const scrapbookPhotos4: scrapbookPhoto[] = [
       alt: "Van in her fully renovated room",
       width: 1728,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -790,7 +791,7 @@ export const scrapbookPhotos4: scrapbookPhoto[] = [
       alt: "Wider shot of Van posing, wearing her newly crafted Rinascita Hood of Casting",
       width: 1728,
       height: 1080,
-      className: "md:col-span-2",
+      className: "lg:col-span-2",
     },
     Dialog: [
       {
@@ -808,16 +809,222 @@ export const scrapbookPhotos4: scrapbookPhoto[] = [
     ],
   },
 ];
-// eslint-disable-next-line
-const scrapbookPhotos5: scrapbookPhoto = {
-  Photo: {
-    src: "",
-    alt: "",
-    width: 0,
-    height: 0,
+
+export const scrapbookPhotos5: scrapbookPhoto[] = [
+  {
+    Photo: {
+      src: "/img/van-scrapbook/44.jpg",
+      alt: "Van, Zhloe, Khloe and orphan Miqote in a conversation",
+      width: 1750,
+      height: 1080,
+      className: "lg:col-span-2",
+    },
+    Dialog: [
+      { char: "van", text: "There are 4 miqos in this image" },
+      { char: "carra", text: "🎩" },
+    ],
   },
-  Dialog: [{ char: "", text: "" }],
-};
+  {
+    Photo: {
+      src: "/img/van-scrapbook/45.jpg",
+      alt: "Van culling her head from a blinding light",
+      width: 1296,
+      height: 1080,
+      className: "",
+    },
+    Dialog: [],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/46.jpg",
+      alt: "Van in awe of her surroundings in the Omphalos",
+      width: 1750,
+      height: 1080,
+      className: "lg:col-span-2",
+    },
+    Dialog: [
+      {
+        char: "van",
+        text: "posting old photos, so glad I picked Nophica sheeeeeeesh",
+      },
+      { char: "carra", text: "dotter" },
+    ],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/47.jpg",
+      alt: "Van and Aki lying on the floor waiting for the queue to pop",
+      width: 1750,
+      height: 1080,
+      className: "lg:col-span-2 -rotate-1",
+    },
+    Dialog: [
+      {
+        char: "aki",
+        text: "yea no ones gonna queue up the raid at this hour",
+      },
+    ],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/48.jpg",
+      alt: "Van during a hunt",
+      width: 1080,
+      height: 1080,
+      className: "",
+    },
+    Dialog: [
+      {
+        char: "van",
+        text: "Going hunting!",
+      },
+    ],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/49.jpg",
+      alt: "Van in Voidcast Dais",
+      width: 1750,
+      height: 1080,
+      className: "lg:col-span-2",
+    },
+    Dialog: [
+      {
+        char: "van",
+        text: "..I'm about to make a mistake",
+      },
+      {
+        char: "carra",
+        text: "Van how could you",
+      },
+      {
+        char: "aki",
+        text: "why did you go without us",
+      },
+      {
+        char: "van",
+        text: "IM SORRYY",
+      },
+    ],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/50.jpg",
+      alt: "Van looking at an egg on a pan",
+      width: 1277,
+      height: 1064,
+      className: "",
+    },
+    Dialog: [
+      {
+        char: "carra",
+        text: "longingly looking at egg 2023",
+      },
+    ],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/51.jpg",
+      alt: "Van and Aki making eye contact",
+      width: 1750,
+      height: 1080,
+      className: "rotate-1",
+    },
+    Dialog: [
+      {
+        char: "van",
+        text: "guys what do I say to him 😳😳😳",
+      },
+    ],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/52-1.jpg",
+      alt: "Van's expeditioner's glam",
+      width: 669,
+      height: 1079,
+      className: "",
+    },
+    Dialog: [
+      {
+        char: "van",
+        text: "Glaming",
+      },
+    ],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/52.jpg",
+      alt: "Van posing as dancer",
+      width: 1750,
+      height: 1080,
+      className: "lg:col-span-2",
+    },
+    Dialog: [
+      {
+        char: "carra",
+        text: "HER HAIR",
+      },
+      {
+        char: "carra",
+        text: "GORGEST",
+      },
+      {
+        char: "ravhen",
+        text: "HI KWEEN",
+      },
+    ],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/53.jpg",
+      alt: "Van looking at a smilling Aki",
+      width: 1750,
+      height: 1080,
+      className: "",
+    },
+    Dialog: [
+      {
+        char: "carra",
+        text: "son and dotter",
+      },
+    ],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/54.jpg",
+      alt: "Van and Aki looking at Carra",
+      width: 1750,
+      height: 1080,
+      className: "lg:col-span-2",
+    },
+    Dialog: [
+      {
+        char: "van",
+        text: "Queuing up for my very first real extreme trial..",
+      },
+      {
+        char: "carra",
+        text: "Aunty son and dotter",
+      },
+    ],
+  },
+  {
+    Photo: {
+      src: "/img/van-scrapbook/55.jpg",
+      alt: "Valhallans in Voidcast Dais (Extreme)",
+      width: 1750,
+      height: 1080,
+      className: "lg:col-span-2",
+    },
+    Dialog: [
+      {
+        char: "van",
+        text: "Goofy ahh trial run >:)",
+      },
+    ],
+  },
+];
 // eslint-disable-next-line
 const emptyPhoto: scrapbookPhoto = {
   Photo: {

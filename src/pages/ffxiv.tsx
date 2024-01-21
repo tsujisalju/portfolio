@@ -4,7 +4,12 @@ import { useIntl } from "react-intl";
 import { InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
-import { ClassJob, Nodestone, jobNameByIcon } from "../lib/ffxiv";
+import {
+  ClassJob,
+  Nodestone,
+  jobIconByName,
+  jobNameByIcon,
+} from "../lib/ffxiv";
 import { Transition, Tab } from "@headlessui/react";
 import Button from "../components/Button";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
@@ -14,8 +19,10 @@ import {
   scrapbookPhotos2,
   scrapbookPhotos3,
   scrapbookPhotos4,
+  scrapbookPhotos5,
 } from "../components/ffxiv-scrapbook/scrapbook";
 import { FadeIn } from "../utilities/FadeIn";
+import { motion } from "framer-motion";
 
 const characterID = "46130616";
 
@@ -29,8 +36,8 @@ export default function FFXIV({
   const xivLevelPercentage = () => {
     if (nodestone.Character) {
       return (
-        (parseInt(activeClassJob.CurrentEXP) /
-          parseInt(activeClassJob.MaxEXP)) *
+        (parseFloat(activeClassJob.CurrentEXP) /
+          parseFloat(activeClassJob.MaxEXP)) *
         100
       );
     } else {
@@ -38,8 +45,6 @@ export default function FFXIV({
     }
   };
 
-  const icon = jobNameByIcon[nodestone.Character.ActiveClassjob];
-  console.log(icon ?? "null");
   useEffect(() => {
     document.body.style.backgroundImage = "";
     document.body.className = "";
@@ -107,7 +112,7 @@ export default function FFXIV({
                 <div className="h-1 min-w-max bg-stone-300 dark:bg-stone-700">
                   <div
                     className="h-1"
-                    style={{ width: `${xivLevelPercentage}%` }}
+                    style={{ width: `${xivLevelPercentage()}%` }}
                   >
                     <Transition
                       appear={true}
@@ -159,25 +164,32 @@ export default function FFXIV({
                   </p>
                 </div>
               </div>
-              {/*<div className="grid grid-flow-row-dense grid-cols-8 gap-2 py-2">
-                {Object.keys(nodestone.ClassJobs).map((key) => (
-                  <div
-                    key={nodestone.ClassJobs[key].Unlockstate}
-                    className="flex flex-col text-center pb-1"
-                  >
-                    <Image
-                      className="mx-auto"
-                      src={jobIcons[classJob.UnlockedState.ID] ?? jobIcons[36]}
-                      alt={classJob.UnlockedState.Name}
-                      height={32}
-                      width={32}
-                    ></Image>
-                    <p className="font-sans text-lg">
-                      {classJob.Level !== 0 ? classJob.Level : "-"}
-                    </p>
-                  </div>
-                ))}
-                </div>*/}
+              <div className="grid grid-flow-row-dense grid-cols-8 gap-2 py-2">
+                {Object.keys(nodestone.ClassJobs).map(
+                  (key, index) =>
+                    index > 1 && (
+                      <div
+                        key={nodestone.ClassJobs[key].Unlockstate}
+                        className="flex flex-col text-center pb-1"
+                      >
+                        <Image
+                          className="mx-auto"
+                          src={
+                            jobIconByName[nodestone.ClassJobs[key].Unlockstate]
+                          }
+                          alt={nodestone.ClassJobs[key].Unlockstate}
+                          height={32}
+                          width={32}
+                        ></Image>
+                        <p className="font-sans text-lg">
+                          {nodestone.ClassJobs[key].Level !== 0
+                            ? nodestone.ClassJobs[key].Level
+                            : "-"}
+                        </p>
+                      </div>
+                    )
+                )}
+              </div>
 
               <Button
                 href={
@@ -303,7 +315,7 @@ export default function FFXIV({
                           })}
                         </h1>
                         <p className="font-sans font-light text-lg hidden md:inline">
-                          Post-Endwalker Crafting Arc
+                          Crafting Arc
                         </p>
                       </div>
                     </button>
@@ -322,11 +334,34 @@ export default function FFXIV({
                       <div className="">
                         <h1 className="font-xivmeter text-lg">
                           {intl.formatMessage({
-                            id: "THE GLAM HUNT",
+                            id: "FORM OR FUNCTION",
                           })}
                         </h1>
                         <p className="font-sans font-light text-lg hidden md:inline">
-                          Post-Endwalker Glamour Arc
+                          Endgame Content
+                        </p>
+                      </div>
+                    </button>
+                  )}
+                </Tab>
+                <Tab as={Fragment}>
+                  {({ selected }) => (
+                    <button
+                      className={
+                        (selected
+                          ? "dark:bg-stone-700 bg-stone-200"
+                          : "bg-stone-300 dark:bg-stone-800 shadow-md") +
+                        " transition transition-75 py-2 px-4 rounded-t-lg md:rounded-none md:rounded-l-lg"
+                      }
+                    >
+                      <div className="">
+                        <h1 className="font-xivmeter text-lg">
+                          {intl.formatMessage({
+                            id: "TAKE HEART",
+                          })}
+                        </h1>
+                        <p className="font-sans font-light text-lg hidden md:inline">
+                          (TBC)
                         </p>
                       </div>
                     </button>
@@ -335,7 +370,12 @@ export default function FFXIV({
               </Tab.List>
               <Tab.Panels className="bg-stone-200 dark:bg-stone-700 p-4 pt-8 rounded-b-lg md:rounded-lg min-h-[500px] grow">
                 <Tab.Panel>
-                  <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
+                  <motion.div
+                    className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 lg:grid-cols-3"
+                    initial={{ y: -10 }}
+                    animate={{ y: 0 }}
+                    exit={{ y: -10 }}
+                  >
                     {scrapbookPhotos1.map((p, i) => (
                       <ScrapbookPhoto
                         key={i}
@@ -348,7 +388,7 @@ export default function FFXIV({
                         dialogs={p.Dialog}
                       />
                     ))}
-                  </div>
+                  </motion.div>
 
                   <div className="container mx-auto grid place-content-center text-center font-serif text-lg py-24 gap-4">
                     <p>
@@ -369,7 +409,12 @@ export default function FFXIV({
                   </div>
                 </Tab.Panel>
                 <Tab.Panel>
-                  <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
+                  <motion.div
+                    className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3"
+                    initial={{ y: -10 }}
+                    animate={{ y: 0 }}
+                    exit={{ y: -10 }}
+                  >
                     {scrapbookPhotos2.map((p, i) => (
                       <ScrapbookPhoto
                         key={i}
@@ -382,7 +427,7 @@ export default function FFXIV({
                         dialogs={p.Dialog}
                       />
                     ))}
-                  </div>
+                  </motion.div>
                   <div className="container mx-auto grid place-content-center text-center font-serif text-lg py-24 gap-4">
                     <p>
                       {intl.formatMessage({
@@ -407,7 +452,12 @@ export default function FFXIV({
                   </div>
                 </Tab.Panel>
                 <Tab.Panel>
-                  <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3 ">
+                  <motion.div
+                    className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 lg:grid-cols-3"
+                    initial={{ y: -10 }}
+                    animate={{ y: 0 }}
+                    exit={{ y: -10 }}
+                  >
                     {scrapbookPhotos3.map((p, i) => (
                       <ScrapbookPhoto
                         key={i}
@@ -420,7 +470,7 @@ export default function FFXIV({
                         dialogs={p.Dialog}
                       />
                     ))}
-                  </div>
+                  </motion.div>
                   <div className="container mx-auto grid place-content-center text-center font-serif text-lg py-24 gap-4">
                     <p>
                       {intl.formatMessage({
@@ -435,7 +485,12 @@ export default function FFXIV({
                   </div>
                 </Tab.Panel>
                 <Tab.Panel>
-                  <div className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 md:grid-cols-3">
+                  <motion.div
+                    className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 lg:grid-cols-3"
+                    initial={{ y: -10 }}
+                    animate={{ y: 0 }}
+                    exit={{ y: -10 }}
+                  >
                     {scrapbookPhotos4.map((p, i) => (
                       <ScrapbookPhoto
                         key={i}
@@ -448,13 +503,66 @@ export default function FFXIV({
                         dialogs={p.Dialog}
                       />
                     ))}
+                  </motion.div>
+
+                  <div className="container mx-auto grid place-content-center text-center font-serif text-lg py-24 gap-4">
+                    <p>
+                      {intl.formatMessage({
+                        id: "Van's newly found love for glamours has only just begun. However, her friends has other ideas that will push her to the edge.",
+                      })}
+                    </p>
+                    <p>
+                      {intl.formatMessage({
+                        id: "She best come prepared for what's to come.",
+                      })}
+                    </p>
                   </div>
                 </Tab.Panel>
                 <Tab.Panel>
-                  <div className="grid place-content-center text-center py-24 gap-2">
-                    <h1 className="font-handwritten text-5xl">
-                      {intl.formatMessage({ id: "The journey continues.." })}
-                    </h1>
+                  <motion.div
+                    className="grid grid-flow-dense gap-4 xl:gap-6 grid-cols-1 lg:grid-cols-3"
+                    initial={{ y: -10 }}
+                    animate={{ y: 0 }}
+                    exit={{ y: -10 }}
+                  >
+                    {scrapbookPhotos5.map((p, i) => (
+                      <ScrapbookPhoto
+                        key={i}
+                        src={p.Photo.src}
+                        alt={p.Photo.alt}
+                        height={p.Photo.height}
+                        width={p.Photo.width}
+                        className={p.Photo.className}
+                        imgClassName={p.Photo.imgClassName}
+                        dialogs={p.Dialog}
+                      />
+                    ))}
+                  </motion.div>
+                  <div className="container mx-auto grid place-content-center text-center font-serif text-lg py-24 gap-4">
+                    <p>
+                      {intl.formatMessage({
+                        id: "Extreme trials can come from the outside and from within.",
+                      })}
+                    </p>
+                    <p>
+                      {intl.formatMessage({
+                        id: "A looming fear of losing sight of what's real and isn't creeps ever closer as disturbances begin to unravel through the flow of time.",
+                      })}
+                    </p>
+                    <p>
+                      {intl.formatMessage({
+                        id: "This time, Van chose to disappear again in search of heart.",
+                      })}
+                    </p>
+                  </div>
+                </Tab.Panel>
+                <Tab.Panel>
+                  <div className="container mx-auto grid place-content-center text-center font-handwritten text-5xl py-24 gap-4 min-h-[500px]">
+                    <p>
+                      {intl.formatMessage({
+                        id: "The journey continues...",
+                      })}
+                    </p>
                   </div>
                 </Tab.Panel>
               </Tab.Panels>
