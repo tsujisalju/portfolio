@@ -586,5 +586,6 @@ export const getStaticProps = async () => {
     props: {
       nodestone,
     },
+    revalidate: 3600,
   };
 };
