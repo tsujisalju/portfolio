@@ -63,10 +63,10 @@ export default function Header(Props: HeaderProp) {
               <PurrnamaTypography className="hidden lg:inline h-[22px]" />
             </div>
           </Link>
-          <nav className="hidden lg:flex flex-row self-center space-x-8">
+          <nav className="hidden lg:flex flex-row self-center space-x-12">
             <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
-            <NavLink href="/about">
-              {intl.formatMessage({ id: "About" })}
+            <NavLink href="/bio">
+              {intl.formatMessage({ id: "Biography" })}
             </NavLink>
             <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
             <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>

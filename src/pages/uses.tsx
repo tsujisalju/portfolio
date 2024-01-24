@@ -90,7 +90,7 @@ export default function Uses() {
                     </h3>
                     <p className="font-serif text-lg">
                       {intl.formatMessage({
-                        id: "No doubt everyone uses this. I use it for all my game and web dev work. It's so nice to have all sorts of support and extensions for any programming work imaginable.",
+                        id: "Polarizing topic regarding the best code editor aside, no doubt anyone would find its versatility and extensiveness of VS Code appealing. Most of my web and game projects are written with VS Code.",
                       })}
                     </p>
                   </li>
@@ -100,7 +100,7 @@ export default function Uses() {
                     </h3>
                     <p className="font-serif text-lg">
                       {intl.formatMessage({
-                        id: "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework.",
+                        id: "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework. I still need to figure out how to transition to the new app router though.",
                       })}
                     </p>
                   </li>
@@ -121,7 +121,7 @@ export default function Uses() {
                     </h3>
                     <p className="font-serif text-lg">
                       {intl.formatMessage({
-                        id: "I'm still surprised that this art program is free. It is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation!",
+                        id: "The best of the best in terms of value, its free! Krita is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this software to bits and I will not have it any other way.",
                       })}
                     </p>
                   </li>
@@ -131,7 +131,7 @@ export default function Uses() {
                     </h3>
                     <p className="font-serif text-lg">
                       {intl.formatMessage({
-                        id: "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs. Just found out they're being bought out by Adobe, so I only expect the worst.",
+                        id: "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs.",
                       })}
                     </p>
                   </li>

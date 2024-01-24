@@ -40,6 +40,12 @@ export default function About() {
                 id: "I remember writing journals when I was in middle school. Starting Form 1, I had a notebook in which I wrote just about anything that happened one particular day, and I would also scribble drawings on the side. There was a total of about 8 books and 3 sketchbooks before I took the SPM exam. Some of them got caught in the rain while some went missing and was later found with boob vandalism on my more feminine characters. They are largely embarassing now, but they remain fragments of memories worth documenting here perpetually.",
               })}
             </p>
+
+            <p>
+              {intl.formatMessage({
+                id: "It was once my dream to further my studies in Germany. I've always thought the place is akin to utopia, a land of knowledge and technological advancements. I laugh and cringe at how naive I was back then. But what I do know, is that when there is a will, there is definitely a way. I've received a sponsorship that brings me the opportunity to study there. I've completed a 6-month language course in Leipzig before starting my semester in a university in Deggendorf. I was quick to discover the harsh realities of life, like finding a place to stay, possibly making every mistake in the book. I was stuck in a state of survival, where would I be staying next every passing month. I realize that maybe I wasn't cut out for this, and I choose to call it quits. Nonetheless, I am determined to make amends and start anew in home soil, with newfound hope and empathy for others who are now facing what I once had. If I could achieve what I've dreamed before, I could achieve it again.",
+              })}
+            </p>
             <p>
               {intl.formatMessage({
                 id: "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life.",

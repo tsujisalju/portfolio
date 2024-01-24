@@ -311,10 +311,10 @@
       "value": "I was born in a small town in the northern region of Kedah. When I was 6 years old, my family moved all the way down to southern Johore. There used to be a small kindergarten in the neighbourhood, and there was only 3 to 4 children there. I remember eating scrambled eggs for breakfast, reading storybooks with grandma and going to the park nearby every saturday. It's a whole little family in there and I felt like I was part of it too. Today I looked back at the now defunct corner lot terrace where the kindergarten used to be, oh how I wish I could do it all over again."
     }
   ],
-  "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework.": [
+  "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework. I still need to figure out how to transition to the new app router though.": [
     {
       "type": 0,
-      "value": "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework."
+      "value": "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework. I still need to figure out how to transition to the new app router though."
     }
   ],
   "I'm Qayyum, a computer science student based in Deggendorf, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tales of hope amidst terrible choices.": [
@@ -341,12 +341,6 @@
       "value": "Saya Qayyum, seorang pembangun frontend dan pereka berpangkalan di Johor, Malaysia."
     }
   ],
-  "I'm still surprised that this art program is free. It is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation!": [
-    {
-      "type": 0,
-      "value": "I'm still surprised that this art program is free. It is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation!"
-    }
-  ],
   "If you need awesome, grotesque, avant-garde looking typefonts, this is the place for you! All fonts here are libre and open sourced.": [
     {
       "type": 0,
@@ -369,6 +363,12 @@
     {
       "type": 0,
       "value": "Inkscape"
+    }
+  ],
+  "It was once my dream to further my studies in Germany. I've always thought the place is akin to utopia, a land of knowledge and technological advancements. I laugh and cringe at how naive I was back then. But what I do know, is that when there is a will, there is definitely a way. I've received a sponsorship that brings me the opportunity to study there. I've completed a 6-month language course in Leipzig before starting my semester in a university in Deggendorf. I was quick to discover the harsh realities of life, like finding a place to stay, possibly making every mistake in the book. I was stuck in a state of survival, where would I be staying next every passing month. I realize that maybe I wasn't cut out for this, and I choose to call it quits. Nonetheless, I am determined to make amends and start anew in home soil, with newfound hope and empathy for others who are now facing what I once had. If I could achieve what I've dreamed before, I could achieve it again.": [
+    {
+      "type": 0,
+      "value": "It was once my dream to further my studies in Germany. I've always thought the place is akin to utopia, a land of knowledge and technological advancements. I laugh and cringe at how naive I was back then. But what I do know, is that when there is a will, there is definitely a way. I've received a sponsorship that brings me the opportunity to study there. I've completed a 6-month language course in Leipzig before starting my semester in a university in Deggendorf. I was quick to discover the harsh realities of life, like finding a place to stay, possibly making every mistake in the book. I was stuck in a state of survival, where would I be staying next every passing month. I realize that maybe I wasn't cut out for this, and I choose to call it quits. Nonetheless, I am determined to make amends and start anew in home soil, with newfound hope and empathy for others who are now facing what I once had. If I could achieve what I've dreamed before, I could achieve it again."
     }
   ],
   "Khajiit today makes 'soft wares'.": [
@@ -461,12 +461,6 @@
       "value": "Next.js"
     }
   ],
-  "No doubt everyone uses this. I use it for all my game and web dev work. It's so nice to have all sorts of support and extensions for any programming work imaginable.": [
-    {
-      "type": 0,
-      "value": "No doubt everyone uses this. I use it for all my game and web dev work. It's so nice to have all sorts of support and extensions for any programming work imaginable."
-    }
-  ],
   "Out of fear of missing out, she breezed through the main scenario, believing that the real fun awaits in the end.": [
     {
       "type": 0,
@@ -477,6 +471,12 @@
     {
       "type": 0,
       "value": "Padok adalah slanga melayu dari perkataan padu, yang bermaksud berkuasa."
+    }
+  ],
+  "Polarizing topic regarding the best code editor aside, no doubt anyone would find its versatility and extensiveness of VS Code appealing. Most of my web and game projects are written with VS Code.": [
+    {
+      "type": 0,
+      "value": "Polarizing topic regarding the best code editor aside, no doubt anyone would find its versatility and extensiveness of VS Code appealing. Most of my web and game projects are written with VS Code."
     }
   ],
   "Razer Kraken V3": [
@@ -537,6 +537,12 @@
     {
       "type": 0,
       "value": "Pengembaraan Tiada Penghujung"
+    }
+  ],
+  "The best of the best in terms of value, its free! Krita is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this software to bits and I will not have it any other way.": [
+    {
+      "type": 0,
+      "value": "The best of the best in terms of value, its free! Krita is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this software to bits and I will not have it any other way."
     }
   ],
   "The illustrations I make, describe a world of places I'm passionate about, the things I want to do and the kind of person I wish to become. They are not tied to a particular story, leaving enough room for self-interpretation.": [
@@ -647,10 +653,10 @@
       "value": "WILL NOT SQUANDER"
     }
   ],
-  "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs. Just found out they're being bought out by Adobe, so I only expect the worst.": [
+  "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs.": [
     {
       "type": 0,
-      "value": "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs. Just found out they're being bought out by Adobe, so I only expect the worst."
+      "value": "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs."
     }
   ],
   "What's in a name?": [
