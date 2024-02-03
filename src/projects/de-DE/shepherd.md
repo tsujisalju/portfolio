@@ -6,10 +6,10 @@ width: 3000
 height: 2000
 ---
 
-'Shepherd to the Stars'
+'Hirte zu den Sternen'
 
-A friend asked me why is she naked.
+Ein Freund fragte mich, warum sie nackt ist.
 
-Serious answer: As I go through my life, chapter after chapter, I've definitely learned a lot about myself, my strengths, my vulnerabilities and my principles going forward. I want to explore more corporeal and symbolical themes, as I capture these thoughts and experiences I've been feeling, and how I might focus on fundamental elements that can invoke certain emotions in my artworks. Nonetheless, I tread a fine line between provocation and solemnity, bringing an aura of mystery to uncover.
+Die ernste Antwort: Während ich Kapitel für Kapitel durch mein Leben gehe, habe ich definitiv eine Menge über mich selbst, meine Stärken, meine Schwachstellen und meine Grundsätze für die Zukunft gelernt. Ich möchte mehr körperliche und symbolische Themen erforschen, indem ich diese Gedanken und Erfahrungen, die ich empfunden habe, festhalte und mich auf grundlegende Elemente konzentriere, die bestimmte Emotionen in meinen Kunstwerken hervorrufen können. Dabei bewege ich mich auf einem schmalen Grat zwischen Provokation und Ernsthaftigkeit und bringe eine Aura des Geheimnisvollen zum Vorschein.
 
-Trivial answer: Why not 😳
+Triviale Antwort: Warum nicht 😳.
