@@ -1,7 +1,7 @@
 ---
 title: "Elysium"
 date: "2024-04-20"
-img: "/img/projects/earnest.jpg"
+img: "/img/projects/elysium.jpg"
 width: 3000
 height: 2000
 ---
