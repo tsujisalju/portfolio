@@ -34,7 +34,7 @@ export default function FFXIV({
   const activeClassJob: ClassJob =
     nodestone.ClassJobs[jobNameByIcon[nodestone.Character.ActiveClassjob]];
   const xivLevelPercentage = () => {
-    if (nodestone.Character) {
+    if (nodestone.Character && activeClassJob) {
       return (
         (parseFloat(activeClassJob.CurrentEXP) /
           parseFloat(activeClassJob.MaxEXP)) *
@@ -60,7 +60,7 @@ export default function FFXIV({
               show={isShowing}
               enter="transition duration-700"
               enterFrom="rotate-[30deg] -translate-y-[1000px]"
-              enterTo="-rotate-2 translate-y-0"
+              enterTo="translate-y-0"
             >
               <Tilt
                 tiltMaxAngleX={3}
@@ -73,7 +73,7 @@ export default function FFXIV({
                   alt="Player Avatar"
                   width={640}
                   height={873}
-                  className="transition rounded-lg shadow-md hover:shadow-xl w-[75%] mx-auto"
+                  className="transition rounded-lg shadow-md hover:shadow-xl w-[75%] mx-auto -rotate-2"
                   placeholder="blur"
                   blurDataURL={`data:image/svg+xml;base64,${toBase64(
                     shimmer(640, 873)
@@ -102,12 +102,21 @@ export default function FFXIV({
                   <h2 className="font-display text-bold text-2xl">
                     {activeClassJob
                       ? activeClassJob.Unlockstate.toUpperCase()
+                      : nodestone.Character
+                      ? jobNameByIcon[
+                          nodestone.Character.ActiveClassjob
+                        ].toUpperCase()
                       : ""}
                   </h2>
                 </div>
 
                 <h2 className="font-xivmeter text-xl">
-                  LEVEL {activeClassJob ? activeClassJob.Level : "--"}
+                  LEVEL{" "}
+                  {activeClassJob
+                    ? activeClassJob.Level
+                    : nodestone.Character
+                    ? nodestone.Character.Level
+                    : "--"}
                 </h2>
                 <div className="h-1 min-w-max bg-stone-300 dark:bg-stone-700">
                   <div
