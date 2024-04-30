@@ -7,6 +7,7 @@ import nookies from "nookies";
 import EN_US_LOCALE_MODULE from "../lang/compiled/en-US.json";
 import { useRouter } from "next/router";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import {
   DM_Serif_Display,
   Karla,
@@ -81,6 +82,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             className={`${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${gruppo.variable} ${zeyada.variable}`}
           >
             <Component {...pageProps} />
+            <SpeedInsights />
           </main>
         </ParallaxProvider>
       </ThemeProvider>
