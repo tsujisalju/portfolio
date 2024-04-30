@@ -20,7 +20,7 @@ export default function Achernar() {
           <section className="grid grid-cols-1 lg:grid-cols-3 py-12 lg:gap-12">
             <div className="relative h-[300px]">
               <Image
-                className="object-cover rounded-lg shadow-md"
+                className="object-cover rounded-md shadow-md"
                 src={"/img/steelswap/steelswap-bg.png"}
                 alt="steelswap cityscape"
                 fill
@@ -61,19 +61,48 @@ export default function Achernar() {
                   - ElderM, Founder of SteelSwap
                 </p>
               </div>
+              <Button href="https://steelswap.io">
+                {intl.formatMessage({ id: "Visit Website" })}
+              </Button>
+            </div>
+            <div className="col-span-3 grid grid-cols-5 gap-4">
+              <div className="relative h-[400px] col-span-5">
+                <Image
+                  className="object-cover rounded-md shadow-md"
+                  src={"/img/steelswap/steelswap-bg2.png"}
+                  alt="steelswap forge"
+                  fill
+                />
+              </div>
+              <div className="relative h-[400px] col-span-3">
+                <Image
+                  className="object-cover rounded-md shadow-md"
+                  src={"/img/steelswap/steelswap-ui-prototype.png"}
+                  alt="steelswap design"
+                  fill
+                />
+              </div>
+              <div className="relative h-[400px] col-span-2">
+                <Image
+                  className="object-cover rounded-md shadow-md"
+                  src={"/img/steelswap/steelswap-graphics.png"}
+                  alt="steelswap graphics"
+                  fill
+                />
+              </div>
             </div>
           </section>
           <hr className="opacity-20" />
           <section className="grid grid-cols-1 lg:grid-cols-3 py-12 lg:gap-12">
             <div className="relative h-[300px]">
               <Image
-                className="inline dark:hidden object-cover rounded-lg shadow-md"
+                className="inline dark:hidden object-cover rounded-md shadow-md"
                 src={"/img/minswap/background2_light.png"}
                 alt="minswap "
                 fill
               />
               <Image
-                className="hidden dark:inline object-cover rounded-lg shadow-md"
+                className="hidden dark:inline object-cover rounded-md shadow-md"
                 src={"/img/minswap/background2_dark.png"}
                 alt="minswap "
                 fill
@@ -119,6 +148,32 @@ export default function Achernar() {
               <Button href="https://minswap.org">
                 {intl.formatMessage({ id: "Visit Website" })}
               </Button>
+            </div>
+            <div className="col-span-3 grid grid-cols-5 gap-4">
+              <div className="relative h-[400px] col-span-5">
+                <Image
+                  className="object-cover rounded-md shadow-md"
+                  src={"/img/minswap/minswap-graphics.png"}
+                  alt="minswap graphics"
+                  fill
+                />
+              </div>
+              <div className="relative h-[400px] col-span-2">
+                <Image
+                  className="object-cover rounded-md shadow-md"
+                  src={"/img/minswap/minswap-governance.gif"}
+                  alt="minswap governance"
+                  fill
+                />
+              </div>
+              <div className="relative h-[400px] col-span-3">
+                <Image
+                  className="object-cover rounded-md shadow-md"
+                  src={"/img/minswap/minswap-ui.png"}
+                  alt="minswap ui"
+                  fill
+                />
+              </div>
             </div>
           </section>
         </div>
