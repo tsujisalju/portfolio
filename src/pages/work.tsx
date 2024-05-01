@@ -17,7 +17,7 @@ export default function Achernar() {
     <Layout>
       <FadeIn>
         <div className="px-4 lg:px-0 max-w-7xl mx-auto">
-          <section className="grid grid-cols-1 lg:grid-cols-3 py-12 lg:gap-12">
+          <section className="grid grid-cols-1 lg:grid-cols-3 py-12 gap-12">
             <div className="relative h-[300px]">
               <Image
                 className="object-cover rounded-md shadow-md"
@@ -26,9 +26,9 @@ export default function Achernar() {
                 fill
               />
             </div>
-            <div className="col-span-2 flex flex-1 flex-col gap-y-6">
+            <div className="lg:col-span-2 flex flex-1 flex-col gap-y-6 ">
               <SteelSwapLogo className="text-[#2F272E] dark:text-[#ffeddc] h-24" />
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-row gap-2 flex-wrap">
                 <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
                   {intl.formatMessage({
                     id: "Graphic Design",
@@ -65,8 +65,8 @@ export default function Achernar() {
                 {intl.formatMessage({ id: "Visit Website" })}
               </Button>
             </div>
-            <div className="col-span-3 grid grid-cols-5 gap-4">
-              <div className="relative h-[400px] col-span-5">
+            <div className="col-span-3 grid grid-cols-1 lg:grid-cols-5 gap-4">
+              <div className="relative h-[400px] lg:col-span-5">
                 <Image
                   className="object-cover rounded-md shadow-md"
                   src={"/img/steelswap/steelswap-bg2.png"}
@@ -74,7 +74,7 @@ export default function Achernar() {
                   fill
                 />
               </div>
-              <div className="relative h-[400px] col-span-3">
+              <div className="relative h-[400px] lg:col-span-3">
                 <Image
                   className="object-cover rounded-md shadow-md"
                   src={"/img/steelswap/steelswap-ui-prototype.png"}
@@ -82,7 +82,7 @@ export default function Achernar() {
                   fill
                 />
               </div>
-              <div className="relative h-[400px] col-span-2">
+              <div className="relative h-[400px] lg:col-span-2">
                 <Image
                   className="object-cover rounded-md shadow-md"
                   src={"/img/steelswap/steelswap-graphics.png"}
@@ -93,7 +93,7 @@ export default function Achernar() {
             </div>
           </section>
           <hr className="opacity-20" />
-          <section className="grid grid-cols-1 lg:grid-cols-3 py-12 lg:gap-12">
+          <section className="grid grid-cols-1 lg:grid-cols-3 py-12 gap-12">
             <div className="relative h-[300px]">
               <Image
                 className="inline dark:hidden object-cover rounded-md shadow-md"
@@ -110,7 +110,7 @@ export default function Achernar() {
             </div>
             <div className="col-span-2 flex flex-1 flex-col gap-y-6">
               <MinswapLogo className="slate-950 dark:slate-50 w-[210px]" />
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-row gap-2 flex-wrap">
                 <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
                   {intl.formatMessage({
                     id: "Graphic Design",
@@ -149,8 +149,8 @@ export default function Achernar() {
                 {intl.formatMessage({ id: "Visit Website" })}
               </Button>
             </div>
-            <div className="col-span-3 grid grid-cols-5 gap-4">
-              <div className="relative h-[400px] col-span-5">
+            <div className="col-span-3 grid grid-cols-1 lg:grid-cols-5 gap-4">
+              <div className="relative h-[400px] lg:col-span-5">
                 <Image
                   className="object-cover rounded-md shadow-md"
                   src={"/img/minswap/minswap-graphics.png"}
@@ -158,7 +158,7 @@ export default function Achernar() {
                   fill
                 />
               </div>
-              <div className="relative h-[400px] col-span-2">
+              <div className="relative h-[400px] lg:col-span-2">
                 <Image
                   className="object-cover rounded-md shadow-md"
                   src={"/img/minswap/minswap-governance.gif"}
@@ -166,7 +166,7 @@ export default function Achernar() {
                   fill
                 />
               </div>
-              <div className="relative h-[400px] col-span-3">
+              <div className="relative h-[400px] lg:col-span-3">
                 <Image
                   className="object-cover rounded-md shadow-md"
                   src={"/img/minswap/minswap-ui.png"}
