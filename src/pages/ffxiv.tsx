@@ -1,15 +1,9 @@
 import Layout from "../components/Layout";
 import { useState, useEffect, Fragment } from "react";
 import { useIntl } from "react-intl";
-import { InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
-import {
-  ClassJob,
-  Nodestone,
-  jobIconByName,
-  jobNameByIcon,
-} from "../lib/ffxiv";
+import { jobIconByName, jobNameByIcon, useNodestone } from "../lib/ffxiv";
 import { Transition, Tab } from "@headlessui/react";
 import Button from "../components/Button";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
@@ -23,44 +17,36 @@ import {
 } from "../components/ffxiv-scrapbook/scrapbook";
 import { FadeIn } from "../utilities/FadeIn";
 import { motion } from "framer-motion";
+import Spinner from "../lib/svg/Spinner";
 
 const characterID = "46130616";
 
-export default function FFXIV({
-  nodestone,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function FFXIV() {
   const [isShowing, setIsShowing] = useState(false);
   const intl = useIntl();
-  const activeClassJob: ClassJob =
-    nodestone.ClassJobs[jobNameByIcon[nodestone.Character.ActiveClassjob]];
-  const xivLevelPercentage = () => {
-    if (nodestone.Character && activeClassJob) {
-      return (
-        (parseFloat(activeClassJob.CurrentEXP) /
-          parseFloat(activeClassJob.MaxEXP)) *
-        100
-      );
-    } else {
-      return 0;
-    }
-  };
+  const { profile, isError, isLoading } = useNodestone();
 
   useEffect(() => {
     document.body.style.backgroundImage = "";
     document.body.className = "";
-    setIsShowing(true);
   }, []);
+
+  useEffect(() => {
+    if (!isLoading) {
+      setIsShowing(true);
+    }
+  }, [isLoading]);
 
   return (
     <Layout>
-      {nodestone.Character ? (
+      {!isError ? (
         <div className="sm:container mx-auto grid lg:grid-cols-2 space-y-4 lg:space-y-0 pb-16">
           <div className="p-2 sm:p-8">
             <Transition
               show={isShowing}
               enter="transition duration-700"
-              enterFrom="rotate-[30deg] -translate-y-[1000px]"
-              enterTo="translate-y-0"
+              enterFrom="rotate-[30deg] -translate-x-[1000px] sm:translate-x-0 sm:-translate-y-[1000px]"
+              enterTo="translate-x-0 sm:translate-y-0"
             >
               <Tilt
                 tiltMaxAngleX={3}
@@ -68,146 +54,244 @@ export default function FFXIV({
                 tiltReverse
                 scale={1.03}
               >
-                <Image
-                  src={nodestone.Character.Portrait}
-                  alt="Player Avatar"
-                  width={640}
-                  height={873}
-                  className="transition rounded-lg shadow-md hover:shadow-xl w-[75%] mx-auto -rotate-2"
-                  placeholder="blur"
-                  blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                    shimmer(640, 873)
-                  )}`}
-                  priority
-                />
+                {!isLoading ? (
+                  <Image
+                    src={profile.Character.Portrait}
+                    alt="Player Avatar"
+                    width={640}
+                    height={873}
+                    className="transition rounded-lg shadow-md hover:shadow-xl w-[75%] mx-auto -rotate-2"
+                    placeholder="blur"
+                    blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                      shimmer(640, 873)
+                    )}`}
+                    priority
+                  />
+                ) : (
+                  <Image
+                    src={""}
+                    alt="Player Avatar"
+                    width={640}
+                    height={873}
+                    className="transition rounded-lg shadow-md hover:shadow-xl w-[75%] mx-auto -rotate-2"
+                    placeholder="blur"
+                    blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                      shimmer(640, 873)
+                    )}`}
+                    priority
+                  />
+                )}
               </Tilt>
             </Transition>
           </div>
           <FadeIn>
-            <div className="flex flex-col p-8 lg:pr-16 space-y-8">
-              <div>
-                <h1 className="font-display text-4xl">
-                  {nodestone.Character.Name}
-                </h1>
-                <p className="font-sans text-lg">{nodestone.Character.Title}</p>
-              </div>
-              <div>
-                <div className="flex flex-row space-x-2 items-center pb-2">
-                  <Image
-                    src={nodestone.Character.ActiveClassjob}
-                    alt={"Active Class Job Icon"}
-                    height={32}
-                    width={32}
-                  />
-                  <h2 className="font-display text-bold text-2xl">
-                    {activeClassJob
-                      ? activeClassJob.Unlockstate.toUpperCase()
-                      : nodestone.Character
-                      ? jobNameByIcon[
-                          nodestone.Character.ActiveClassjob
-                        ].toUpperCase()
-                      : ""}
-                  </h2>
+            <div className="relative">
+              {isLoading && (
+                <div className="absolute inset-0 grid place-content-center">
+                  <Spinner className=" animate-spin w-[32px] h-[32px]" />
                 </div>
-
-                <h2 className="font-xivmeter text-xl">
-                  LEVEL{" "}
-                  {activeClassJob
-                    ? activeClassJob.Level
-                    : nodestone.Character
-                    ? nodestone.Character.Level
-                    : "--"}
-                </h2>
-                <div className="h-1 min-w-max bg-stone-300 dark:bg-stone-700">
-                  <div
-                    className="h-1"
-                    style={{ width: `${xivLevelPercentage()}%` }}
-                  >
-                    <Transition
-                      appear={true}
-                      show={isShowing}
-                      enter="origin-left transition duration-[700ms]"
-                      enterFrom="scale-x-0"
-                      enterTo="scale-x-100"
-                    >
-                      <div className="h-1 min-w-min bg-stone-600 dark:bg-stone-300"></div>
-                    </Transition>
-                  </div>
-                </div>
-                <p className="font-sans text-md">
-                  {activeClassJob
-                    ? activeClassJob.Level === 90
-                      ? "MAX"
-                      : `EXP ${activeClassJob.CurrentEXP} / ${activeClassJob.MaxEXP}`
-                    : "--"}
-                </p>
-              </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
-                <div>
-                  <h2 className="font-xivmeter text-lg">
-                    RACE / CLAN / GENDER
-                  </h2>
-                  <p className="font-sans text-lg">
-                    {nodestone.Character.Race}
-                  </p>
-                  <p className="font-sans text-lg">
-                    {nodestone.Character.Tribe} {nodestone.Character.Gender}
-                  </p>
-                </div>
-                <div>
-                  <h2 className="font-xivmeter text-lg">NAMEDAY</h2>
-                  <p className="font-sans text-lg">
-                    {nodestone.Character.Nameday}
-                  </p>
-                </div>
-                <div>
-                  <h2 className="font-xivmeter text-lg">GUARDIAN DEITY</h2>
-                  <p className="font-sans text-lg">
-                    {nodestone.Character.GuardianDeity.Name}
-                  </p>
-                </div>
-                <div>
-                  <h2 className="font-xivmeter text-lg">GRAND COMPANY RANK</h2>
-                  <p className="font-sans text-lg">
-                    {nodestone.Character.Rank}
-                  </p>
-                </div>
-              </div>
-              <div className="grid grid-flow-row-dense grid-cols-8 gap-2 py-2">
-                {Object.keys(nodestone.ClassJobs).map(
-                  (key, index) =>
-                    index > 1 && (
-                      <div
-                        key={nodestone.ClassJobs[key].Unlockstate}
-                        className="flex flex-col text-center pb-1"
-                      >
-                        <Image
-                          className="mx-auto"
-                          src={
-                            jobIconByName[nodestone.ClassJobs[key].Unlockstate]
-                          }
-                          alt={nodestone.ClassJobs[key].Unlockstate}
-                          height={32}
-                          width={32}
-                        ></Image>
-                        <p className="font-sans text-lg">
-                          {nodestone.ClassJobs[key].Level !== 0
-                            ? nodestone.ClassJobs[key].Level
-                            : "-"}
-                        </p>
-                      </div>
-                    )
-                )}
-              </div>
-
-              <Button
-                href={
-                  "https://na.finalfantasyxiv.com/lodestone/character/" +
-                  characterID
+              )}
+              <div
+                id="nodestone"
+                className={
+                  "transition duration-400 flex flex-col p-8 lg:pr-16 space-y-8 " +
+                  (isLoading ? "blur-lg " : "blur-none ") +
+                  (isError && "hidden")
                 }
               >
-                {intl.formatMessage({ id: "View on Lodestone" })}
-              </Button>
+                <div>
+                  <h1 className="font-display text-4xl">
+                    {!isLoading ? profile.Character.Name : "Character Name"}
+                  </h1>
+                  <p className="font-sans text-lg">
+                    {!isLoading ? profile.Character.Title : "Character Title"}
+                  </p>
+                </div>
+                <div>
+                  <div className="flex flex-row space-x-2 items-center pb-2">
+                    {!isLoading ? (
+                      <Image
+                        src={profile.Character.ActiveClassjob}
+                        alt={"Active Class Job Icon"}
+                        height={32}
+                        width={32}
+                      />
+                    ) : (
+                      <Image
+                        src={""}
+                        alt={"Active Class Job Icon"}
+                        height={32}
+                        width={32}
+                      />
+                    )}
+                    <h2 className="font-display text-bold text-2xl">
+                      {!isLoading
+                        ? profile.ClassJobs[
+                            jobNameByIcon[profile.Character.ActiveClassjob]
+                          ]
+                          ? profile.ClassJobs[
+                              jobNameByIcon[profile.Character.ActiveClassjob]
+                            ].Unlockstate.toUpperCase()
+                          : profile.Character
+                          ? jobNameByIcon[
+                              profile.Character.ActiveClassjob
+                            ].toUpperCase()
+                          : ""
+                        : "Job Name"}
+                    </h2>
+                  </div>
+                  <h2 className="font-xivmeter text-xl">
+                    LEVEL{" "}
+                    {!isLoading
+                      ? profile.ClassJobs[
+                          jobNameByIcon[profile.Character.ActiveClassjob]
+                        ]
+                        ? profile.ClassJobs[
+                            jobNameByIcon[profile.Character.ActiveClassjob]
+                          ].Level
+                        : profile.Character
+                        ? profile.Character.Level
+                        : "--"
+                      : ""}
+                  </h2>
+                  <div className="h-1 min-w-max bg-stone-300 dark:bg-stone-700">
+                    <div
+                      className="h-1"
+                      style={{
+                        width: `${
+                          !isLoading
+                            ? (parseFloat(
+                                profile.ClassJobs[
+                                  jobNameByIcon[
+                                    profile.Character.ActiveClassjob
+                                  ]
+                                ].CurrentEXP.replace(/,/gi, "")
+                              ) /
+                                parseFloat(
+                                  profile.ClassJobs[
+                                    jobNameByIcon[
+                                      profile.Character.ActiveClassjob
+                                    ]
+                                  ].MaxEXP.replace(/,/gi, "")
+                                )) *
+                              100
+                            : 0
+                        }%`,
+                      }}
+                    >
+                      <Transition
+                        appear={true}
+                        show={isShowing}
+                        enter="origin-left transition duration-[700ms]"
+                        enterFrom="scale-x-0"
+                        enterTo="scale-x-100"
+                      >
+                        <div className="h-1 min-w-min bg-stone-600 dark:bg-stone-300"></div>
+                      </Transition>
+                    </div>
+                  </div>
+                  <p className="font-sans text-md">
+                    {!isLoading
+                      ? profile.ClassJobs[
+                          jobNameByIcon[profile.Character.ActiveClassjob]
+                        ]
+                        ? profile.ClassJobs[
+                            jobNameByIcon[profile.Character.ActiveClassjob]
+                          ].Level === 90
+                          ? "MAX"
+                          : `EXP ${
+                              profile.ClassJobs[
+                                jobNameByIcon[profile.Character.ActiveClassjob]
+                              ].CurrentEXP
+                            } / ${
+                              profile.ClassJobs[
+                                jobNameByIcon[profile.Character.ActiveClassjob]
+                              ].MaxEXP
+                            }`
+                        : "--"
+                      : "EXP"}
+                  </p>
+                </div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
+                  <div>
+                    <h2 className="font-xivmeter text-lg">
+                      RACE / CLAN / GENDER
+                    </h2>
+                    <p className="font-sans text-lg">
+                      {!isLoading ? profile.Character.Race : "Character Race"}
+                    </p>
+                    <p className="font-sans text-lg">
+                      {!isLoading ? profile.Character.Tribe : "Tribe"}{" "}
+                      {!isLoading ? profile.Character.Gender : "Gender"}
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="font-xivmeter text-lg">NAMEDAY</h2>
+                    <p className="font-sans text-lg">
+                      {!isLoading
+                        ? profile.Character.Nameday
+                        : "Character Nameday"}
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="font-xivmeter text-lg">GUARDIAN DEITY</h2>
+                    <p className="font-sans text-lg">
+                      {!isLoading
+                        ? profile.Character.GuardianDeity.Name
+                        : "Character Deity"}
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="font-xivmeter text-lg">
+                      GRAND COMPANY RANK
+                    </h2>
+                    <p className="font-sans text-lg">
+                      {!isLoading ? profile.Character.Rank : "Character Rank"}
+                    </p>
+                  </div>
+                </div>
+                <div className="grid grid-flow-row-dense grid-cols-8 gap-2 py-2">
+                  {!isLoading ? (
+                    Object.keys(profile.ClassJobs).map(
+                      (key, index) =>
+                        index > 1 && (
+                          <div
+                            key={profile.ClassJobs[key].Unlockstate}
+                            className="flex flex-col text-center pb-1"
+                          >
+                            <Image
+                              className="mx-auto"
+                              src={
+                                jobIconByName[
+                                  profile.ClassJobs[key].Unlockstate
+                                ]
+                              }
+                              alt={profile.ClassJobs[key].Unlockstate}
+                              height={32}
+                              width={32}
+                            ></Image>
+                            <p className="font-sans text-lg">
+                              {profile.ClassJobs[key].Level !== 0
+                                ? profile.ClassJobs[key].Level
+                                : "-"}
+                            </p>
+                          </div>
+                        )
+                    )
+                  ) : (
+                    <div className="h-[280px]"></div>
+                  )}
+                </div>
+
+                <Button
+                  href={
+                    "https://na.finalfantasyxiv.com/lodestone/character/" +
+                    characterID
+                  }
+                >
+                  {intl.formatMessage({ id: "View on Lodestone" })}
+                </Button>
+              </div>
             </div>
           </FadeIn>
         </div>
@@ -222,6 +306,7 @@ export default function FFXIV({
           </div>
         </div>
       )}
+
       <FadeIn>
         <section className="mx-auto px-4 lg:container">
           <div className="grid place-content-center text-center pt-24 pb-16 gap-2">
@@ -582,19 +667,3 @@ export default function FFXIV({
     </Layout>
   );
 }
-
-export const getStaticProps = async () => {
-  const resChar = await fetch(
-    "https://nodestone-e4o46op7lq-lz.a.run.app/Character/" +
-      characterID +
-      "?data=CJ"
-  );
-  const nodestone: Nodestone = await resChar.json();
-
-  return {
-    props: {
-      nodestone,
-    },
-    revalidate: 300,
-  };
-};

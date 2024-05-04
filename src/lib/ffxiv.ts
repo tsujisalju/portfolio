@@ -1,3 +1,7 @@
+import useSWR from "swr";
+
+const characterID = "46130616";
+
 export const ffxivGender: { [key: number]: string } = {
   1: "♂",
   2: "♀",
@@ -378,4 +382,25 @@ export interface ClassJob {
   Unlockstate: string;
   CurrentEXP: string;
   MaxEXP: string;
+}
+
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
+
+export function useNodestone() {
+  const {
+    data,
+    error,
+    isLoading,
+  }: { data: Nodestone; error: any; isLoading: boolean } = useSWR(
+    "https://nodestone-e4o46op7lq-lz.a.run.app/Character/" +
+      characterID +
+      "?data=CJ",
+    fetcher,
+    { refreshInterval: 300000 }
+  );
+  return {
+    profile: data,
+    isLoading,
+    isError: error,
+  };
 }
