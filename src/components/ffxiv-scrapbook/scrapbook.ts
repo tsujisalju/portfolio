@@ -689,18 +689,6 @@ export const scrapbookPhotos4: scrapbookPhoto[] = [
   },
   {
     Photo: {
-      src: "/img/van-scrapbook/34.jpg",
-      alt: "Van sneaking a photo beside Aki",
-      width: 1080,
-      height: 1080,
-      imgClassName: "rotate-1",
-    },
-    Dialog: [
-      { char: "van", text: "im levelling crafter, aki's levelling gatherer" },
-    ],
-  },
-  {
-    Photo: {
       src: "/img/van-scrapbook/35.jpg",
       alt: "Van and Carra sitting around a bonfire in Idyllshire",
       width: 1728,
@@ -852,21 +840,6 @@ export const scrapbookPhotos5: scrapbookPhoto[] = [
   },
   {
     Photo: {
-      src: "/img/van-scrapbook/47.jpg",
-      alt: "Van and Aki lying on the floor waiting for the queue to pop",
-      width: 1750,
-      height: 1080,
-      className: "lg:col-span-2 -rotate-1",
-    },
-    Dialog: [
-      {
-        char: "aki",
-        text: "yea no ones gonna queue up the raid at this hour",
-      },
-    ],
-  },
-  {
-    Photo: {
       src: "/img/van-scrapbook/48.jpg",
       alt: "Van during a hunt",
       width: 1080,
@@ -924,21 +897,6 @@ export const scrapbookPhotos5: scrapbookPhoto[] = [
   },
   {
     Photo: {
-      src: "/img/van-scrapbook/51.jpg",
-      alt: "Van and Aki making eye contact",
-      width: 1750,
-      height: 1080,
-      className: "rotate-1",
-    },
-    Dialog: [
-      {
-        char: "van",
-        text: "guys what do I say to him 😳😳😳",
-      },
-    ],
-  },
-  {
-    Photo: {
       src: "/img/van-scrapbook/52-1.jpg",
       alt: "Van's expeditioner's glam",
       width: 669,
@@ -972,21 +930,6 @@ export const scrapbookPhotos5: scrapbookPhoto[] = [
       {
         char: "ravhen",
         text: "HI KWEEN",
-      },
-    ],
-  },
-  {
-    Photo: {
-      src: "/img/van-scrapbook/53.jpg",
-      alt: "Van looking at a smilling Aki",
-      width: 1750,
-      height: 1080,
-      className: "",
-    },
-    Dialog: [
-      {
-        char: "carra",
-        text: "son and dotter",
       },
     ],
   },
