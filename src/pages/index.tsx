@@ -5,7 +5,6 @@ import Layout from "../components/Layout";
 import Link from "next/link";
 import ProjectGallery from "../components/project-gallery/ProjectGallery";
 import Image from "next/image";
-
 import React from "react";
 import { useIntl } from "react-intl";
 import { FadeIn } from "../utilities/FadeIn";
@@ -43,7 +42,7 @@ export default function Home({
               <div>
                 <h1 className="font-display text-4xl">
                   {intl.formatMessage({
-                    id: "Hold infinity in the palm of your hand.",
+                    id: "Be the change you want to be.",
                   })}
                 </h1>
               </div>
