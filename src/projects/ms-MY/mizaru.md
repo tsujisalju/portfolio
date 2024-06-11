@@ -14,7 +14,7 @@ Terima kasih kerana merosakkan hidupku, atau jika aku mampu mengubah semula ayat
 
 Mata-mata melihatku, mempersoalkan setiap langkahku. Entah bagaimana aku sepatutnya berkelakuan atau _menunjuk reaksi_ untuk memenuhi kewajipan yang dibuat-buat. Setiap interaksi hanya membuatku memikir 3 hingga 4 kali bagaimana aku mungkin disalahertikan.
 
-Pada penghujung hari, aku tidak mengenali mereka dan apa yang mereka mampu lakukan. Tetapi aku tahu satu perkara, bahawa mereka mampu menggunakannya terhadap kamu.
+Pada penghujung hari, aku tidak mengenali mereka dan apa yang mereka mampu lakukan. Tetapi aku tahu satu perkara, jika benda mengubah hala, aku tidak mampu menpertahankan diri terhadapnya.
 
 Aku membawa tanggapan yang salah dan telah memberikan terlalu banyak, dan apa yang tinggal adalah lubang yang ternganga. Terlalu banyak.
 
