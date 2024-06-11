@@ -70,9 +70,6 @@ export default function Header(Props: HeaderProp) {
             </NavLink>
             <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
             <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
-            <NavLink href="/ffxiv">
-              {intl.formatMessage({ id: "FFXIV" })}
-            </NavLink>
           </nav>
         </div>
         <div className="hidden lg:flex flex-row space-x-2 flex-1 justify-end items-center p-4">
