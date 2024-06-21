@@ -1,4 +1,3 @@
-import { shimmer, toBase64 } from "../ImageSkeleton";
 import { FormattedDate } from "react-intl";
 import Link from "next/link";
 import { Project } from "../../lib/projects";
