@@ -26,10 +26,10 @@
 @tailwind utilities;
 
 @layer utilities {
-  .parallax-parent {
+  .parentParallax {
     transform-style: preserve-3d;
   }
-  .parallax-child {
+  .childParallax {
     transform: translateZ(50px);
   }
 }

@@ -32,7 +32,7 @@ export default function Home({
         <Hero>
           <div className="flex flex-col lg:flex-row lg:items-center gap-12">
             <Image
-              src="/img/avatars/mynx.png"
+              src="/img/avatar.png"
               height={120}
               width={120}
               alt="purrnama avatar"

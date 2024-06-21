@@ -41,22 +41,28 @@
       "value": "Keghairahan pada keusahawanan dan barang koleksi membangun dari lena, dan sejurus daripada itu Van menerokai dimensi perdagangan dan pemburuan glamour yang serba baru."
     }
   ],
+  "A well-built mouse with 12 buttons on its side. Why? Because I play FFXIV. My tiny hands could never reach the entirety of my keyboard, so honestly with this RPG mouse, I couldn't have it any other way.": [
+    {
+      "type": 0,
+      "value": "A well-built mouse with 12 buttons on its side. Why? Because I play FFXIV. My tiny hands could never reach the entirety of my keyboard, so honestly with this RPG mouse, I couldn't have it any other way."
+    }
+  ],
   "About": [
     {
       "type": 0,
       "value": "Kenali"
     }
   ],
+  "Achenar": [
+    {
+      "type": 0,
+      "value": "Achenar"
+    }
+  ],
   "Almanac": [
     {
       "type": 0,
       "value": "Almanak"
-    }
-  ],
-  "An unassuming yet well-built mouse with 12 buttons on its side. I happened to play MMOs occasionally, and my tiny hands could never reach the entirety of my keyboard, so honestly with this RPG mouse, there's no turning back.": [
-    {
-      "type": 0,
-      "value": "An unassuming yet well-built mouse with 12 buttons on its side. I happened to play MMOs occasionally, and my tiny hands could never reach the entirety of my keyboard, so honestly with this RPG mouse, there's no turning back."
     }
   ],
   "And so she went on a month-long hiatus to recover, watching her friends from the aetherial sea.": [
@@ -245,10 +251,10 @@
       "value": "Saya bercita-cita untuk menyampaikan kisah kecilku melalui hasil ilustrasi dan rekaan saya. Saya tertarik dengan penyampaian cerita yang kreatif dan penggunaan teknologi yang bernas. Saya menitikberatkan kecekapan dan pengalaman yang memudahkan bagi semua orang. Akhirnya, saya berharap hasil rekaan saya membawa kebaikan kepada seluruh alam."
     }
   ],
-  "I daily drive a custom built Debian 12 as my main operating system, by which I started with a very minimal install and then installing only the necessary packages that I need. I have been using Linux for over 3 years now and I'm always learning something new about maintaining and configuring my computer to be the best it could be for my needs. Of course, I always have my Windows partition lying around just in case.": [
+  "I daily drive a custom built Debian 12 as my main operating system, by which I started with a very minimal install and then installing only the necessary packages that I need. I have been using Linux for over 3 years now and I'm always learning something new about maintaing and configuring my computer to be the best it could be for my needs. Of course, I always have my Windows partition lying around just in case.": [
     {
       "type": 0,
-      "value": "I daily drive a custom built Debian 12 as my main operating system, by which I started with a very minimal install and then installing only the necessary packages that I need. I have been using Linux for over 3 years now and I'm always learning something new about maintaining and configuring my computer to be the best it could be for my needs. Of course, I always have my Windows partition lying around just in case."
+      "value": "I daily drive a custom built Debian 12 as my main operating system, by which I started with a very minimal install and then installing only the necessary packages that I need. I have been using Linux for over 3 years now and I'm always learning something new about maintaing and configuring my computer to be the best it could be for my needs. Of course, I always have my Windows partition lying around just in case."
     }
   ],
   "I found my passion in art and technology through the ability to express my creativity and create new worlds of wonder, brought to life by my characters and personas, whom serve as vessels that make up who I am. As I journey through this life, my illustrations catalog my joy and happiness, as well as my trials and tribulations. ❤️‍🩹": [
@@ -275,12 +281,6 @@
       "value": "Saya mengambil iktibar besar daripada sang kucing, sebagai seorang yang membela kucing dalam kehidupan. Kucing bersifat tegal, penyayang, cerdik dan aneh, serta sedar akan kewujudan makhluk yang lebih tinggi, sesuatu yang lebih baik. Jika dikurniakan akal, saya percaya mereka mampu mebina dunia yang lebih baik berbanding kita. Itu adalah naratif yang ingin saya bawakan kepada anda dalam karya saya, sebagai motivasi diri saya sendiri dan untuk anda belajar demi kebaikan masyarakat."
     }
   ],
-  "I use Figma for any form of design, from mock interfaces to marketing media. I find the sorting and layout particularly handy in comparison to other design programs.": [
-    {
-      "type": 0,
-      "value": "I use Figma for any form of design, from mock interfaces to marketing media. I find the sorting and layout particularly handy in comparison to other design programs."
-    }
-  ],
   "I was born in Malaysia and now continuing my studies in Germany. I'm a hobbyist frontend developer and designer for almost 9 years.": [
     {
       "type": 0,
@@ -299,10 +299,10 @@
       "value": "I was born in a small town in the northern region of Kedah. When I was 6 years old, my family moved all the way down to southern Johore. There used to be a small kindergarten in the neighbourhood, and there was only 3 to 4 children there. I remember eating scrambled eggs for breakfast, reading storybooks with grandma and going to the park nearby every saturday. It's a whole little family in there and I felt like I was part of it too. Today I looked back at the now defunct corner lot terrace where the kindergarten used to be, oh how I wish I could do it all over again."
     }
   ],
-  "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework.": [
+  "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework. I still need to figure out how to transition to the new app router though.": [
     {
       "type": 0,
-      "value": "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework."
+      "value": "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework. I still need to figure out how to transition to the new app router though."
     }
   ],
   "I'm Qayyum, a computer science student based in Deggendorf, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tales of hope amidst terrible choices.": [
@@ -419,22 +419,28 @@
       "value": "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs."
     }
   ],
+  "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": [
+    {
+      "type": 0,
+      "value": "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD."
+    }
+  ],
   "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD. I also installed Debian 11 as the main OS.": [
     {
       "type": 0,
       "value": "Laptop pertama saya. Ia menggunakan pemproses Ryzen 5 4600H dan Nvidia GTX 1650. Ia cukup untuk keperluan saya. Sebelum ini saya sering menggunakan computer keluarga iMac 2011, jadi ianya adalah naikan taraf yang besar. Saya juga menggunakan Debian 11 sebagai OS utama."
     }
   ],
-  "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It's a very endearing machine. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": [
-    {
-      "type": 0,
-      "value": "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It's a very endearing machine. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD."
-    }
-  ],
   "My mother introduced me to programming and game making since I was 9 years old, because I was always on the computer and I ought to put my hobby to good use rather than just mindless flash gaming. And you know what I was pretty hooked by the idea. The fact that I could create something awesome with my own touch of flare is amazing, and the passion burns strong since. The time was convenient enough that my middle school was getting around into participating robotics and game jam competitions. My friends and I pioneered the Robotics Club and I handled the programming side of things. One of the best memories I had was creating a Lego EV3 Mindstorms claw robot for an intrastate competition, and making the design decision to control it with another EV3 brick via Bluetooth instead of a phone over Wifi, which worked in our favor during the run. Before I left the school, they were already setting up courses for game dev with Unity3D, which is so super cool to see.": [
     {
       "type": 0,
       "value": "My mother introduced me to programming and game making since I was 9 years old, because I was always on the computer and I ought to put my hobby to good use rather than just mindless flash gaming. And you know what I was pretty hooked by the idea. The fact that I could create something awesome with my own touch of flare is amazing, and the passion burns strong since. The time was convenient enough that my middle school was getting around into participating robotics and game jam competitions. My friends and I pioneered the Robotics Club and I handled the programming side of things. One of the best memories I had was creating a Lego EV3 Mindstorms claw robot for an intrastate competition, and making the design decision to control it with another EV3 brick via Bluetooth instead of a phone over Wifi, which worked in our favor during the run. Before I left the school, they were already setting up courses for game dev with Unity3D, which is so super cool to see."
+    }
+  ],
+  "My new personal project, page under construction :)": [
+    {
+      "type": 0,
+      "value": "My new personal project, page under construction :)"
     }
   ],
   "Next.js": [
@@ -515,10 +521,10 @@
       "value": "Pengembaraan Tiada Penghujung"
     }
   ],
-  "The best of the best in terms of value, its free! Krita is very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this art program to bits and I will not have it any other way.": [
+  "The best of the best in terms of value, its free! Krita is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this software to bits and I will not have it any other way.": [
     {
       "type": 0,
-      "value": "The best of the best in terms of value, its free! Krita is very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this art program to bits and I will not have it any other way."
+      "value": "The best of the best in terms of value, its free! Krita is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this software to bits and I will not have it any other way."
     }
   ],
   "The illustrations I make, describe a world of places I'm passionate about, the things I want to do and the kind of person I wish to become. They are not tied to a particular story, leaving enough room for self-interpretation.": [
@@ -615,6 +621,12 @@
     {
       "type": 0,
       "value": "Visual Studio Code"
+    }
+  ],
+  "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs.": [
+    {
+      "type": 0,
+      "value": "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs."
     }
   ],
   "What's in a name?": [
