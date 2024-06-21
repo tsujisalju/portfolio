@@ -3,100 +3,67 @@ import { FormattedDate } from "react-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { Project } from "../../lib/projects";
-import React from "react";
+import React, { useEffect } from "react";
 import Tilt from "react-parallax-tilt";
-import { motion, Variants } from "framer-motion";
 
 export default function ProjectGalleryItem({ project }: { project: Project }) {
   const [isShowing, setIsShowing] = React.useState<boolean>(false);
-  const titleVariant: Variants = {
-    hideTitle: {
-      opacity: 0,
-      y: -5,
-      transition: {
-        duration: 0.1,
-        ease: "easeIn",
-      },
-    },
-    showTitle: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.1,
-        ease: "easeOut",
-      },
-    },
-  };
-  function HandleOnClick() {
-    setIsShowing(false);
-  }
   return (
-    <motion.div
+    <Link
+      href={"/projects/" + project.id}
       className={
-        "h-min " + (project.width > project.height ? "md:col-span-2" : "")
+        "min-h-80 hover:z-10 " +
+        (project.height < project.width
+          ? "sm:col-span-2"
+          : project.height > project.width
+          ? "sm:row-span-2"
+          : "")
       }
-      initial="hideTitle"
-      whileHover="showTitle"
-      animate={isShowing ? "showTitle" : "hideTitle"}
+      onMouseEnter={() => setIsShowing(true)}
+      onMouseLeave={() => setIsShowing(false)}
     >
       <Tilt
         tiltMaxAngleX={3}
         tiltMaxAngleY={3}
         tiltReverse
         scale={1.03}
-        className={"parentParallax flex flex-auto flex-col relative "}
+        className={"relative h-full w-full md:parallax-parent "}
       >
-        <Link href={"/projects/" + project.id} onClick={HandleOnClick}>
-          <Image
-            id={project.id}
-            alt={project.id}
-            className={
-              "transition shadow-sm hover:shadow-xl duration-400 rounded-sm " +
-              (!isShowing ? "transform scale-95 ease-out" : "ease-in-out")
-            }
-            src={project.img}
-            width={project.width}
-            height={project.height}
-            placeholder="blur"
-            blurDataURL={`data:image/svg+xml;base64,${toBase64(
-              shimmer(project.width, project.height)
-            )}`}
-          ></Image>
-        </Link>
-        <motion.div
-          variants={titleVariant}
+        <Image
+          id={project.id}
+          alt={project.id}
           className={
-            "hidden md:inline md:absolute bg-none md:backdrop-blur-md md:dark:bg-black/50 md:bg-white/50 md:py-3 md:px-5 md:m-4 m-1 rounded md:shadow-lg transition duration-400 transform "
+            "shadow-sm hover:shadow-xl rounded-md object-cover object-center"
           }
-        >
-          <h1 className="font-display md:text-2xl text-lg">{project.title}</h1>
-
-          <div className="font-sans font-lg font-light">
-            <FormattedDate
-              value={project.date}
-              day={"numeric"}
-              month={"long"}
-              year={"numeric"}
-            />
-          </div>
-        </motion.div>
+          src={project.img}
+          fill
+          placeholder="blur"
+          blurDataURL={`data:image/svg+xml;base64,${toBase64(
+            shimmer(project.width, project.height)
+          )}`}
+        ></Image>
         <div
           className={
-            "md:hidden block m-1 rounded transition duration-400 transform "
+            "absolute w-full md:w-auto md:parallax-child bg-white/50 dark:bg-black/50 px-4 lg:px-5 py-3 md:rounded-md md:backdrop-blur md:shadow-lg transition duration-300 " +
+            (isShowing ? "opacity-100" : "opacity-0")
           }
         >
-          <h1 className="font-display md:text-2xl text-lg">{project.title}</h1>
+          <div className="flex flex-row space-x-2 md:space-x-0 md:flex-col content-center">
+            <h1 className="font-display md:text-2xl text-xl">
+              {project.title}
+            </h1>
 
-          <div className="font-sans font-lg font-light">
-            <FormattedDate
-              value={project.date}
-              day={"numeric"}
-              month={"long"}
-              year={"numeric"}
-            />
+            <p className="font-sans font-lg font-light">
+              <FormattedDate
+                value={project.date}
+                day={"numeric"}
+                month={"long"}
+                year={"numeric"}
+              />
+            </p>
           </div>
         </div>
       </Tilt>
-    </motion.div>
+    </Link>
   );
 }
