@@ -14,8 +14,10 @@ Danke, dass du mein Leben ruiniert hast, oder, wenn ich es anders ausdrücken da
 
 Da waren Augen, die mich beobachteten, die jede meiner Bewegungen überprüften. Irgendwie soll ich mich auf eine bestimmte Art und Weise verhalten oder _reagieren_, um irgendwelche ungeschriebenen Verpflichtungen zu erfüllen. Bei jeder Interaktion denke ich 3 bis 4 Mal darüber nach, wie ich missverstanden werden könnte.
 
-Letztendlich weiß ich nicht, wer sie sind und wozu sie fähig sind. Aber ich weiß, dass ich zu schwach bin, um für mich selbst zu sorgen, wenn sich die Dinge umkehren.
+Letztendlich weiß ich nicht, wer sie sind und wozu sie fähig sind. Aber was ich weiß, ist, dass sie bereit sind, es gegen dich zu verwenden.
 
 Ich hatte die falschen Erwartungen und habe zu viel verraten, und alles, was geblieben ist, ist ein klaffendes Loch. Einfach zu viel.
 
 Es hat wohl Spaß gemacht, aber es ist längst überfällig, dass ich mich auf das konzentriere, was wirklich wichtig ist, für diejenigen, die mir wirklich etwas bedeuten.
+
+Übersetzt mit DeepL.com (kostenlose Version)
