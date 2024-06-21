@@ -5,7 +5,7 @@ export function FadeIn({
   className,
   children,
 }: {
-  className?: string;
+  className: string;
   children: ReactNode;
 }) {
   const [isShowing, setIsShowing] = useState(false);
