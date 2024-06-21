@@ -4,10 +4,6 @@ import React from "react";
 import { FadeIn } from "../../utilities/FadeIn";
 
 export default function ProjectGallery({ projects }: { projects: Project[] }) {
-  let shuffled = projects
-    .map((value) => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value);
   return (
     <section className="px-4">
       <FadeIn>
