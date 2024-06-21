@@ -3,11 +3,11 @@ import { FormattedDate } from "react-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { Project } from "../../lib/projects";
-import React, { useEffect } from "react";
 import Tilt from "react-parallax-tilt";
+import { useState } from "react";
 
 export default function ProjectGalleryItem({ project }: { project: Project }) {
-  const [isShowing, setIsShowing] = React.useState<boolean>(false);
+  const [isShowing, setIsShowing] = useState<boolean>(false);
   return (
     <Link
       href={"/projects/" + project.id}
