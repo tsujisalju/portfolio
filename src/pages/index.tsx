@@ -8,6 +8,7 @@ import Image from "next/image";
 import React from "react";
 import { useIntl } from "react-intl";
 import { FadeIn } from "../utilities/FadeIn";
+import { Socials } from "../lib/socials";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const allProjectsData: Project[] = getSortedProjectsData(locale as string);
@@ -60,7 +61,7 @@ export default function Home({
               </div>
               <div className="flex flex-row pt-4 space-x-3">
                 <Link
-                  href={"https://twitter.com/purrnama__"}
+                  href={Socials.X}
                   target={"_blank"}
                   className={
                     "text-stone-700 hover:text-stone-800 dark:text-stone-300 hover:dark:text-stone-200 transition duration-200"
@@ -78,7 +79,7 @@ export default function Home({
                   </svg>
                 </Link>
                 <Link
-                  href={"https://github.com/purrnama"}
+                  href={Socials.Github}
                   target={"_blank"}
                   className={
                     "text-stone-700 hover:text-stone-800 dark:text-stone-300 hover:dark:text-stone-200 transition duration-200"
