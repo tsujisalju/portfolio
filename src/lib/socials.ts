@@ -1,4 +1,4 @@
-export enum Socials {
-  X = "https://x.com/purrnama_dev",
-  Github = "https://github.com/purrnama",
-}
+export const Socials = {
+  X: "https://x.com/purrnama_dev",
+  Github: "https://github.com/purrnama",
+} as const;
