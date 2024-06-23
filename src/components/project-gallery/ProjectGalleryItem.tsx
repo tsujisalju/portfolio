@@ -16,7 +16,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
         (project.height < project.width
           ? "sm:col-span-2"
           : project.height > project.width
-          ? "sm:row-span-2"
+          ? "row-span-2"
           : "")
       }
       onMouseEnter={() => setIsShowing(true)}
@@ -44,8 +44,8 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
         ></Image>
         <div
           className={
-            "absolute w-full md:w-auto md:parallax-child bg-white/50 dark:bg-black/50 px-4 lg:px-5 py-3 md:rounded-md md:backdrop-blur md:shadow-lg transition duration-300 " +
-            (isShowing ? "opacity-100" : "opacity-0")
+            "absolute w-full bottom-0 md:bottom-auto md:w-auto md:parallax-child bg-white/50 dark:bg-black/50 px-4 lg:px-5 py-3 md:rounded-md md:backdrop-blur md:shadow-lg transition duration-300 " +
+            (isShowing ? "md:opacity-100" : "md:opacity-0")
           }
         >
           <div className="flex flex-row space-x-2 md:space-x-0 md:flex-col content-center">
