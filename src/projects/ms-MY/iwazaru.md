@@ -2,6 +2,7 @@
 title: "Iwazaru"
 date: "2024-06-19"
 img: "/img/projects/iwazaru.jpg"
+vid: "/vid/iwazaru-timelapse.mp4"
 width: 3000
 height: 4000
 ---

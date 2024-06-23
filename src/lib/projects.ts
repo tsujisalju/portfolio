@@ -10,6 +10,7 @@ export type Project = {
   date: string;
   title: string;
   img: string;
+  vid: string;
   width: number;
   height: number;
   id: string;
@@ -34,6 +35,7 @@ export function getSortedProjectsData(locale: string) {
         date: string;
         title: string;
         img: string;
+        vid: string;
         width: number;
         height: number;
       }),
@@ -67,6 +69,7 @@ export async function getProjectData(id: string, locale: string) {
       date: string;
       title: string;
       img: string;
+      vid: string;
       width: number;
       height: number;
     }),
