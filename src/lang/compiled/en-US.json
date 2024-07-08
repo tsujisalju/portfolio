@@ -65,6 +65,12 @@
       "value": "Development"
     }
   ],
+  "Enter": [
+    {
+      "type": 0,
+      "value": "Enter"
+    }
+  ],
   "Figma": [
     {
       "type": 0,
@@ -183,6 +189,12 @@
     {
       "type": 0,
       "value": "Light"
+    }
+  ],
+  "Logs": [
+    {
+      "type": 0,
+      "value": "Logs"
     }
   ],
   "Merchandise": [

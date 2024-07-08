@@ -155,6 +155,12 @@
       "value": "Setiap lukisan menyebut suatu kisah. Pilih salah satu dan lihat apa yang bakal menanti anda!"
     }
   ],
+  "Enter": [
+    {
+      "type": 0,
+      "value": "Terus"
+    }
+  ],
   "Extreme trials can come from the outside and from within.": [
     {
       "type": 0,
@@ -387,6 +393,12 @@
     {
       "type": 0,
       "value": "Informasi daripada Lodestone kini tidak tersedia. Maaf atas segala kesulitan!"
+    }
+  ],
+  "Logs": [
+    {
+      "type": 0,
+      "value": "Logs"
     }
   ],
   "Made with 😻 using Next.js and Tailwind": [

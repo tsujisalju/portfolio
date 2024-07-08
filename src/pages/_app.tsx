@@ -12,8 +12,7 @@ import {
   DM_Serif_Display,
   Karla,
   Source_Serif_4,
-  Gruppo,
-  Zeyada,
+  Source_Code_Pro,
 } from "next/font/google";
 
 const karla = Karla({
@@ -24,7 +23,7 @@ const karla = Karla({
 const source_serif = Source_Serif_4({
   subsets: ["latin"],
   style: ["normal", "italic"],
-  variable: "--font-source-serif-pro",
+  variable: "--font-source-serif",
 });
 const dm_serif_display = DM_Serif_Display({
   subsets: ["latin"],
@@ -32,17 +31,10 @@ const dm_serif_display = DM_Serif_Display({
   style: ["normal"],
   variable: "--font-dm-serif-display",
 });
-const gruppo = Gruppo({
+const source_code_pro = Source_Code_Pro({
   subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal"],
-  variable: "--font-gruppo",
-});
-const zeyada = Zeyada({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal"],
-  variable: "--font-zeyada",
+  style: ["normal", "italic"],
+  variable: "--font-source-code-pro",
 });
 
 type LocaleModule = Record<string, any>;
@@ -79,7 +71,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ParallaxProvider>
           <main
-            className={`${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${gruppo.variable} ${zeyada.variable}`}
+            className={`${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${source_code_pro.variable}`}
           >
             <Component {...pageProps} />
             <SpeedInsights />

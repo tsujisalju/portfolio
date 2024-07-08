@@ -14,10 +14,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-karla)", "sans-serif"],
-        serif: ["var(--font-source-serif-pro)", "serif"],
-        display: ["Sinistre", "var(--font-source-serif-pro)", "serif"],
-        handwritten: ["var(--font-zeyada)", "serif"],
-        xivmeter: ["Eurostar Extended", "var(--font-gruppo)"],
+        serif: ["var(--font-source-serif)", "serif"],
+        display: ["Sinistre", "var(--font-source-serif)", "serif"],
+        code: ["var(--font-source-code-pro)", "monospace"],
       },
     },
   },

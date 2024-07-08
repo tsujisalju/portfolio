@@ -49,7 +49,6 @@ export default function Header(Props: HeaderProp) {
                 width={50}
                 height={50}
                 placeholder="empty"
-                priority={true}
               ></Image>
               <Image
                 className="flex lg:self-center dark:hidden pb-2 lg:pb-0"
@@ -58,13 +57,13 @@ export default function Header(Props: HeaderProp) {
                 width={50}
                 height={50}
                 placeholder="empty"
-                priority={true}
               ></Image>
               <PurrnamaTypography className="hidden lg:inline h-[22px]" />
             </div>
           </Link>
           <nav className="hidden lg:flex flex-row self-center space-x-12">
             <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
+            <NavLink href="/logs">{intl.formatMessage({ id: "Logs" })}</NavLink>
             <NavLink href="/bio">
               {intl.formatMessage({ id: "Biography" })}
             </NavLink>

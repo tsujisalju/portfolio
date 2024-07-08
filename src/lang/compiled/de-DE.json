@@ -149,6 +149,12 @@
       "value": "Jedes Kunstwerk hat eine Geschichte zu erzählen. Entdecken Sie eine, um zu erfahren, was es zu erzählen gibt!"
     }
   ],
+  "Enter": [
+    {
+      "type": 0,
+      "value": "Eingabe"
+    }
+  ],
   "Figma": [
     {
       "type": 0,
@@ -389,6 +395,12 @@
       "value": "Hell"
     }
   ],
+  "Logs": [
+    {
+      "type": 0,
+      "value": "Protokolle"
+    }
+  ],
   "Made with 😻 using Next.js and Tailwind": [
     {
       "type": 0,
@@ -398,7 +410,7 @@
   "Merchandise": [
     {
       "type": 0,
-      "value": "Merchandise"
+      "value": "Handelswaren"
     }
   ],
   "Minswap DEX is a decentralized multi-pool exchange on the Cardano blockchain. I work alongside the marketing and UI/UX department to provide promotional content, merchandise and interface designs.": [
