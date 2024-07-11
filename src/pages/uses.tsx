@@ -15,7 +15,8 @@ export default function Uses() {
     <Layout>
       <FadeIn>
         <div className=" max-w-3xl mx-auto space-y-20 mt-16">
-          <section className="md:border-l md:border-stone-400 dark:md:border-stone-700 md:pl-6">
+          <section className="relative md:border-l md:border-black/20 dark:md:border-white/20 md:pl-6 md:overflow-hidden">
+            <div className="hidden md:inline absolute h-4 w-4 -top-2 -left-2 bg-black/20 dark:bg-white/20 rotate-45" />
             <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8 px-8 lg:px-0">
               <h2 className="font-display text-2xl md:text-lg">
                 {intl.formatMessage({ id: "Workstation" })}
@@ -77,7 +78,8 @@ export default function Uses() {
             </div>
           </section>
 
-          <section className="md:border-l md:border-stone-400 dark:md:border-stone-700  md:pl-6">
+          <section className="relative md:border-l md:border-black/20 dark:md:border-white/20 md:pl-6 md:overflow-hidden">
+            <div className="hidden md:inline absolute h-4 w-4 -top-2 -left-2 bg-black/20 dark:bg-white/20 rotate-45" />
             <div className="grid max-w-3xl mx-auto grid-cols-1 md:grid-cols-4 gap-y-8 px-8 lg:px-0">
               <h2 className="font-display text-2xl md:text-lg">
                 {intl.formatMessage({ id: "Development" })}
@@ -108,7 +110,8 @@ export default function Uses() {
               </div>
             </div>
           </section>
-          <section className="md:border-l md:border-stone-400 dark:md:border-stone-700  md:pl-6">
+          <section className="relative md:border-l md:border-black/20 dark:md:border-white/20 md:pl-6 md:overflow-hidden">
+            <div className="hidden md:inline absolute h-4 w-4 -top-2 -left-2 bg-black/20 dark:bg-white/20 rotate-45" />
             <div className="grid max-w-3xl mx-auto grid-cols-1 md:grid-cols-4 gap-y-8 px-8 lg:px-0">
               <h2 className="font-display text-2xl md:text-lg">
                 {intl.formatMessage({ id: "Design" })}

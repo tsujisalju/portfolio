@@ -31,7 +31,8 @@ export default function Home({
     <Layout>
       <FadeIn>
         <Hero>
-          <div className="flex flex-col lg:flex-row lg:items-center gap-12">
+          <div className="relative flex flex-col lg:flex-row lg:items-center gap-12 px-8 border-solid border-x border-black/20 dark:border-white/20 overflow-hidden">
+            <div className="absolute h-8 w-8 -top-4 -right-4 rotate-45 bg-black/20 dark:bg-white/20"></div>
             <Image
               src="/img/avatars/mynx.png"
               height={120}

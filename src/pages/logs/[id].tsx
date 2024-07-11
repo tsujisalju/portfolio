@@ -4,7 +4,7 @@ import path from "path";
 import { readdirSync } from "fs";
 import Layout from "../../components/Layout";
 import { FormattedDate, useIntl } from "react-intl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Typewriter from "../../utilities/Typewriter";
 import useKeyPressed from "../../utilities/KeyPressed";
 import { FadeIn } from "../../utilities/FadeIn";
@@ -42,6 +42,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export default function Log({ logData }: { logData: LogData }) {
   const intl = useIntl();
+  useEffect(() => {
+    document.body.style.backgroundImage = "";
+    document.body.className = "";
+  }, []);
   const [isFinished, setIsFinished] = useState<boolean>(false);
   const [currentParagraph, setCurrentParagraph] = useState<number>(0);
   const paragraphs = logData.contentHtml.split("</p>");

@@ -15,19 +15,31 @@ export default function NavLink({
 }) {
   const router = useRouter();
   return (
-    <Link
-      href={href}
+    <div
       className={
-        "relative transition duration-100 truncate font-sans text-lg " +
-        (disabled
-          ? "text-stone-400 dark:text-stone-600 pointer-events-none"
-          : "text-stone-700 hover:text-stone-600 dark:text-stone-300 dark:hover:text-stone-400 ")
+        "relative px-6 py-1 " +
+        (router.asPath === href && !mobile
+          ? "border-solid border-black/20 dark:border-white/20 border-y overflow-hidden"
+          : "")
       }
     >
-      {children}
-      {router.asPath === href && !mobile && (
-        <span className="absolute inset-x-1 bottom-0 h-px bg-gradient-to-r from-stone-700 dark:from-stone-300 lg:from-transparent lg:dark:from-transparent lg:via-stone-700 lg:dark:via-stone-300 to-transparent"></span>
+      <Link
+        href={href}
+        className={
+          "relative transition duration-100 truncate font-sans text-lg " +
+          (disabled
+            ? "text-stone-400 dark:text-stone-600 pointer-events-none"
+            : "text-stone-700 hover:text-stone-600 dark:text-stone-300 dark:hover:text-stone-400 ")
+        }
+      >
+        {children}
+      </Link>
+      {router.asPath === href && (
+        <>
+          <div className="absolute h-4 w-4 -top-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
+          <div className="absolute h-4 w-4 -bottom-2 -right-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
+        </>
       )}
-    </Link>
+    </div>
   );
 }

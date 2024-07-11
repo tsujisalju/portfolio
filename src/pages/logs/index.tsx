@@ -5,6 +5,7 @@ import { FormattedDate } from "react-intl";
 import Link from "next/link";
 import { FadeIn } from "../../utilities/FadeIn";
 import Tilt from "react-parallax-tilt";
+import { useEffect } from "react";
 
 export const getStaticProps: GetStaticProps = async () => {
   const allLogsData: Log[] = getSortedLogsData();
@@ -16,6 +17,10 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 export default function Logs({ allLogsData }: { allLogsData: Log[] }) {
+  useEffect(() => {
+    document.body.style.backgroundImage = "";
+    document.body.className = "";
+  }, []);
   return (
     <Layout>
       <FadeIn>
