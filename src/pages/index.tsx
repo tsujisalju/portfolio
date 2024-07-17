@@ -142,32 +142,41 @@ export default function Home({
               <div className="relative text-center lg:text-left px-4 py-2 border-solid border border-l-0 border-black/20 dark:border-white/20 overflow-hidden">
                 <div className="absolute h-4 w-4 -bottom-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
                 <div className="absolute h-4 w-4 -bottom-2 -right-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
-
-                <h1 className="font-code uppercase text-xl">
-                  {intl.formatMessage({ id: "Latest Artworks" })}
-                </h1>
+                <Link href={"/artworks"}>
+                  <h1 className="font-code uppercase text-xl">
+                    {intl.formatMessage({ id: "Latest Artworks" })}
+                    {" >"}
+                  </h1>
+                </Link>
               </div>
             </div>
             <div className="relative">
               <div className="overflow-x-auto rounded-md mx-4">
                 <div className="absolute h-full right-0 w-[100px] bg-gradient-to-l from-stone-100 dark:from-stone-900"></div>
-                <div className="flex flex-row flex-nowrap h-[600px] space-x-2">
+                <div className="flex flex-row flex-nowrap h-[600px] space-x-2 w-max">
                   {allProjectsData.slice(0, 5).map((project: Project) => (
-                    <Image
+                    <Link
+                      href={"/projects/" + project.id}
                       key={project.id}
-                      className="rounded-md min-w-max"
-                      src={project.img}
-                      alt={project.id}
-                      width={project.width}
-                      height={project.height}
-                      placeholder="blur"
-                      blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                        shimmer(project.width, project.height),
-                      )}`}
-                    />
+                      className="flex flex-col rounded-md"
+                    >
+                      <Image
+                        className="h-full w-full"
+                        src={project.img}
+                        alt={project.id}
+                        width={project.width}
+                        height={project.height}
+                        placeholder="blur"
+                        blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                          shimmer(project.width, project.height),
+                        )}`}
+                      ></Image>
+                    </Link>
                   ))}
                   <div className="grid place-content-center min-w-[300px]">
-                    <p className="font-sans text-lg">View more artworks</p>
+                    <Link href={"/artworks"}>
+                      <p className="font-sans text-lg">View more artworks</p>
+                    </Link>
                   </div>
                 </div>
               </div>
