@@ -1,5 +1,5 @@
 ---
-title: "Project Muwafaqah: Motivation"
+title: "Muwafaqah: Motivation"
 date: "2024-05-07"
 author: "Qayyum Yazid"
 ---

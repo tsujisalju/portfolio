@@ -57,6 +57,19 @@ export default function MobileNav() {
               </div>
             )}
           </Menu.Item>
+          <Menu.Item key={"artworks"}>
+            {({ active }) => (
+              <div
+                className={
+                  "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
+                  (active && " bg-stone-200 dark:bg-stone-700")
+                }
+                onClick={() => router.push("/artworks")}
+              >
+                {intl.formatMessage({ id: "Artworks" })}
+              </div>
+            )}
+          </Menu.Item>
           <Menu.Item key={"logs"}>
             {({ active }) => (
               <div
@@ -64,7 +77,7 @@ export default function MobileNav() {
                   "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
                   (active && " bg-stone-200 dark:bg-stone-700")
                 }
-                onClick={() => router.push("/")}
+                onClick={() => router.push("/logs")}
               >
                 {intl.formatMessage({ id: "Logs" })}
               </div>

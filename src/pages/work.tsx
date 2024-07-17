@@ -102,14 +102,17 @@ export default function Achernar() {
                 fill
               />
               <Image
-                className="hidden dark:inline object-cover rounded-md shadow-md"
+                className="hidden dark:inline -ml-2 object-cover rounded-md shadow-md"
                 src={"/img/minswap/background2_dark.png"}
                 alt="minswap "
                 fill
               />
             </div>
             <div className="col-span-2 flex flex-1 flex-col gap-y-6">
-              <MinswapLogo className="slate-950 dark:slate-50 w-[210px]" />
+              <div className=" flex flex-row space-x-4 items-center">
+                <MinswapLogo className="slate-950 dark:slate-50 w-[210px]" />
+                <p className="font-sans text-xl">V1</p>
+              </div>
               <div className="flex flex-row gap-2 flex-wrap">
                 <div className="px-3 py-1 rounded-full font-sans bg-stone-50 dark:bg-stone-800 shadow-md">
                   {intl.formatMessage({

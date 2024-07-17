@@ -16,8 +16,8 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
         (project.height < project.width
           ? "sm:col-span-2"
           : project.height > project.width
-          ? "row-span-2"
-          : "")
+            ? "row-span-2"
+            : "")
       }
       onMouseEnter={() => setIsShowing(true)}
       onMouseLeave={() => setIsShowing(false)}
@@ -39,16 +39,17 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
           fill
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(project.width, project.height)
+            shimmer(project.width, project.height),
           )}`}
         ></Image>
         <div
           className={
-            "absolute w-full bottom-0 md:bottom-auto md:w-auto md:parallax-child bg-white/50 dark:bg-black/50 px-4 lg:px-5 py-3 md:rounded-md md:backdrop-blur md:shadow-lg transition duration-300 " +
+            "absolute overflow-hidden border-solid border border-black/20 dark:border-white/20 w-full bottom-0 rounded-b-md md:rounded-none md:bottom-auto md:w-auto md:parallax-child bg-white/50 dark:bg-black/50 px-4 lg:px-5 py-3 md:backdrop-blur md:shadow-lg transition duration-300 " +
             (isShowing ? "md:opacity-100" : "md:opacity-0")
           }
         >
           <div className="flex flex-row space-x-2 md:space-x-0 md:flex-col content-center">
+            <div className="hidden md:inline absolute h-8 w-8 -bottom-4 -right-4 rotate-45 bg-black dark:bg-white opacity-20"></div>
             <h1 className="font-display md:text-2xl text-xl">
               {project.title}
             </h1>

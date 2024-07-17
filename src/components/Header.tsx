@@ -61,16 +61,19 @@ export default function Header(Props: HeaderProp) {
               <PurrnamaTypography className="hidden lg:inline h-[22px]" />
             </div>
           </Link>
-          <nav className="hidden lg:flex flex-row place-items-center space-x-6">
-            <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
-            <NavLink href="/logs">{intl.formatMessage({ id: "Logs" })}</NavLink>
-            <NavLink href="/bio">
-              {intl.formatMessage({ id: "Biography" })}
-            </NavLink>
-            <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
-            <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
-          </nav>
         </div>
+        <nav className="hidden lg:flex grow flex-row place-items-center space-x-6">
+          <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
+          <NavLink href="/artworks">
+            {intl.formatMessage({ id: "Artworks" })}
+          </NavLink>
+          <NavLink href="/logs">{intl.formatMessage({ id: "Logs" })}</NavLink>
+          <NavLink href="/bio">
+            {intl.formatMessage({ id: "Biography" })}
+          </NavLink>
+          <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
+          <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
+        </nav>
         <div className="hidden lg:flex flex-row space-x-2 flex-1 justify-end items-center p-4">
           <SelectLanguage />
           <SelectTheme />

@@ -3,24 +3,28 @@ import { Project, getSortedProjectsData } from "../lib/projects";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import Link from "next/link";
-import ProjectGallery from "../components/project-gallery/ProjectGallery";
 import Image from "next/image";
 import React from "react";
-import { useIntl } from "react-intl";
+import { FormattedDate, useIntl } from "react-intl";
 import { FadeIn } from "../utilities/FadeIn";
 import { Socials } from "../lib/socials";
+import { shimmer, toBase64 } from "../components/ImageSkeleton";
+import { getSortedLogsData, Log } from "../lib/logs";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const allProjectsData: Project[] = getSortedProjectsData(locale as string);
+  const allLogsData: Log[] = getSortedLogsData();
   return {
     props: {
       allProjectsData,
+      allLogsData,
     },
   };
 };
 
 export default function Home({
   allProjectsData,
+  allLogsData,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const intl = useIntl();
   React.useEffect(() => {
@@ -101,8 +105,76 @@ export default function Home({
             </div>
           </div>
         </Hero>
+        <div className="grid lg:grid-cols-3 gap-4 lg:px-4">
+          <div className="w-full">
+            <div className="p-4">
+              <div className="relative text-center lg:text-left px-4 py-2 border-solid border border-r-0 border-black/20 dark:border-white/20 overflow-hidden">
+                <div className="absolute h-4 w-4 -bottom-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
+                <div className="absolute h-4 w-4 -bottom-2 -right-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
+                <Link href={"/logs"}>
+                  <h1 className="font-code uppercase text-xl">
+                    {intl.formatMessage({ id: "Latest Logs" })}
+                    {" >"}
+                  </h1>
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-col col-span-2 flex-1 space-y-2 mx-4 p-4 rounded-lg bg-black/10 shadow-inner h-[600px] overflow-y-auto">
+              {allLogsData.slice(0, 5).map((log: Log) => (
+                <Link href={"/logs/" + log.id} key={log.id} id={log.id}>
+                  <div className="flex flex-col space-y-2 px-3 py-4 rounded-md bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg">
+                    <h1 className="font-display text-2xl">{log.title}</h1>
+                    <p className="font-code font-light text-md">
+                      <FormattedDate
+                        value={log.date}
+                        year="numeric"
+                        month="long"
+                        day="numeric"
+                      />
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className="w-full order-first lg:-order-none lg:col-span-2">
+            <div className="p-4">
+              <div className="relative text-center lg:text-left px-4 py-2 border-solid border border-l-0 border-black/20 dark:border-white/20 overflow-hidden">
+                <div className="absolute h-4 w-4 -bottom-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
+                <div className="absolute h-4 w-4 -bottom-2 -right-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
+
+                <h1 className="font-code uppercase text-xl">
+                  {intl.formatMessage({ id: "Latest Artworks" })}
+                </h1>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="overflow-x-auto rounded-md mx-4">
+                <div className="absolute h-full right-0 w-[100px] bg-gradient-to-l from-stone-100 dark:from-stone-900"></div>
+                <div className="flex flex-row flex-nowrap h-[600px] space-x-2">
+                  {allProjectsData.slice(0, 5).map((project: Project) => (
+                    <Image
+                      key={project.id}
+                      className="rounded-md min-w-max"
+                      src={project.img}
+                      alt={project.id}
+                      width={project.width}
+                      height={project.height}
+                      placeholder="blur"
+                      blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                        shimmer(project.width, project.height),
+                      )}`}
+                    />
+                  ))}
+                  <div className="grid place-content-center min-w-[300px]">
+                    <p className="font-sans text-lg">View more artworks</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </FadeIn>
-      <ProjectGallery projects={allProjectsData} />
     </Layout>
   );
 }

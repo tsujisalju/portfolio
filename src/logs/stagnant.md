@@ -1,5 +1,5 @@
 ---
-title: "Stagnant Water"
+title: "Stagnant"
 date: "2024-07-06"
 author: "Van Carina"
 ---
