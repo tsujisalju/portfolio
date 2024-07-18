@@ -105,7 +105,7 @@ export default function Home({
             </div>
           </div>
         </Hero>
-        <div className="grid lg:grid-cols-3 gap-4 lg:px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:px-4">
           <div className="w-full">
             <div className="p-4">
               <div className="relative text-center lg:text-left px-4 py-2 border-solid border border-r-0 border-black/20 dark:border-white/20 overflow-hidden">
