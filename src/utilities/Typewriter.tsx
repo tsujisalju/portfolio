@@ -11,8 +11,8 @@ export default function Typewriter({
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const delay = 20;
-  const delayPeriod = 400;
-  const delayComma = 200;
+  const delayLong = 400;
+  const delayShort = 200;
 
   useEffect(() => {
     if (currentIndex < text.length) {
@@ -21,11 +21,13 @@ export default function Typewriter({
           setCurrentText((prev) => prev + text[currentIndex]);
           setCurrentIndex((prev) => prev + 1);
         },
-        text[currentIndex - 1] == "."
-          ? delayPeriod
-          : text[currentIndex - 1] == ","
-          ? delayComma
-          : delay
+        text[currentIndex - 1] == "." ||
+          text[currentIndex - 1] == "?" ||
+          text[currentIndex - 1] == "!"
+          ? delayLong
+          : text[currentIndex - 1] == "," || text[currentIndex - 1] == ";"
+            ? delayShort
+            : delay,
       );
       return () => clearTimeout(timeout);
     } else {

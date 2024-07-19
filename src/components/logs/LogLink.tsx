@@ -1,17 +1,8 @@
 import { FormattedDate } from "react-intl";
-import Image from "next/image";
 import Link from "next/link";
 import { Log } from "../../lib/logs";
+import LogAuthorAvatar from "./LogAuthorAvatar";
 import Tilt from "react-parallax-tilt";
-
-function getAuthor(name: string) {
-  if (name == "Cooper Baihaqi") {
-    return "/img/avatars/cooper.png";
-  }
-  if (name == "Van Carina") {
-    return "/img/avatars/van.png";
-  }
-}
 
 export default function LogLink({ log }: { log: Log }) {
   return (
@@ -29,13 +20,12 @@ export default function LogLink({ log }: { log: Log }) {
             <h1 className="font-display text-2xl">{log.title}</h1>
             <div className="flex flex-row space-x-4">
               <div className="flex flex-row space-x-3 items-center">
-                <Image
+                <LogAuthorAvatar
                   className="w-6 h-6 rounded-full"
-                  src={getAuthor(log.author) ?? ""}
-                  alt={log.author}
+                  author={log.author}
                   height={48}
                   width={48}
-                ></Image>
+                ></LogAuthorAvatar>
                 <p className="font-code font-light text-md">{log.author}</p>
               </div>
             </div>

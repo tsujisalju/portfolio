@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { FadeIn } from "../../utilities/FadeIn";
 import Layout from "../../components/Layout";
 import Link from "next/link";
+import LogAuthorAvatar from "../../components/logs/LogAuthorAvatar";
 import Typewriter from "../../utilities/Typewriter";
 import path from "path";
 import { readdirSync } from "fs";
@@ -95,6 +96,15 @@ export default function Log({ logData }: { logData: LogData }) {
                 month={"long"}
                 year={"numeric"}
               />
+            </div>
+            <div className="py-4 flex flex-row space-x-4">
+              <LogAuthorAvatar
+                className="h-8 w-8 rounded-full"
+                author={logData.author}
+                height={48}
+                width={48}
+              />
+              <p className="font-code text-lg">{logData.author}</p>
             </div>
           </div>
           <div className="col-span-2 flex flex-col space-y-6 p-8 text-justify font-code text-md bg-black/10 rounded-lg shadow-inner min-h-[300px] lg:h-[600px] lg:overflow-y-auto">
