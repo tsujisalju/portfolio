@@ -1,15 +1,16 @@
+import { FormattedDate, useIntl } from "react-intl";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
+import { Log, getSortedLogsData } from "../lib/logs";
 import { Project, getSortedProjectsData } from "../lib/projects";
+import { shimmer, toBase64 } from "../components/ImageSkeleton";
+import { FadeIn } from "../utilities/FadeIn";
 import Hero from "../components/Hero";
+import Image from "next/image";
 import Layout from "../components/Layout";
 import Link from "next/link";
-import Image from "next/image";
 import React from "react";
-import { FormattedDate, useIntl } from "react-intl";
-import { FadeIn } from "../utilities/FadeIn";
 import { Socials } from "../lib/socials";
-import { shimmer, toBase64 } from "../components/ImageSkeleton";
-import { getSortedLogsData, Log } from "../lib/logs";
+import LogLink from "../components/logs/LogLink";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const allProjectsData: Project[] = getSortedProjectsData(locale as string);
@@ -105,8 +106,8 @@ export default function Home({
             </div>
           </div>
         </Hero>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:px-4">
-          <div className="w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:px-4">
+          <div className="w-full lg:col-span-2">
             <div className="p-4">
               <div className="relative text-center lg:text-left px-4 py-2 border-solid border border-r-0 border-black/20 dark:border-white/20 overflow-hidden">
                 <div className="absolute h-4 w-4 -bottom-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
@@ -121,23 +122,11 @@ export default function Home({
             </div>
             <div className="flex flex-col col-span-2 flex-1 space-y-2 mx-4 p-4 rounded-lg bg-black/10 shadow-inner h-[600px] overflow-y-auto">
               {allLogsData.slice(0, 5).map((log: Log) => (
-                <Link href={"/logs/" + log.id} key={log.id} id={log.id}>
-                  <div className="flex flex-col space-y-2 px-3 py-4 rounded-md bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg">
-                    <h1 className="font-display text-2xl">{log.title}</h1>
-                    <p className="font-code font-light text-md">
-                      <FormattedDate
-                        value={log.date}
-                        year="numeric"
-                        month="long"
-                        day="numeric"
-                      />
-                    </p>
-                  </div>
-                </Link>
+                <LogLink key={log.title} log={log} />
               ))}
             </div>
           </div>
-          <div className="w-full order-first lg:-order-none lg:col-span-2">
+          <div className="w-full order-first lg:-order-none lg:col-span-3">
             <div className="p-4">
               <div className="relative text-center lg:text-left px-4 py-2 border-solid border border-l-0 border-black/20 dark:border-white/20 overflow-hidden">
                 <div className="absolute h-4 w-4 -bottom-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
@@ -161,7 +150,7 @@ export default function Home({
                       className="flex flex-col rounded-md"
                     >
                       <Image
-                        className="h-full w-full"
+                        className="rounded-md h-full w-full"
                         src={project.img}
                         alt={project.id}
                         width={project.width}
