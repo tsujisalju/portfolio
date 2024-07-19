@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import Link from "next/link";
+import LogLink from "../components/logs/LogLink";
 import React from "react";
 import { Socials } from "../lib/socials";
 import { useIntl } from "react-intl";
