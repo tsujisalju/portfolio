@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
-import { useTheme } from "next-themes";
 import { Menu, Transition } from "@headlessui/react";
 import { useIntl } from "react-intl";
+import { useTheme } from "next-themes";
 
 export default function SelectTheme() {
   const [mounted, setMounted] = useState(false);

@@ -1,7 +1,7 @@
-import ProjectGalleryItem from "./ProjectGalleryItem";
-import { Project } from "../../lib/projects";
-import React from "react";
 import { FadeIn } from "../../utilities/FadeIn";
+import { Project } from "../../lib/projects";
+import ProjectGalleryItem from "./ProjectGalleryItem";
+import React from "react";
 
 export default function ProjectGallery({ projects }: { projects: Project[] }) {
   return (

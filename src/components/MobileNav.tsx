@@ -1,9 +1,9 @@
-import { Menu } from "@headlessui/react";
-import { Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import { useIntl } from "react-intl";
+import { Menu } from "@headlessui/react";
 import SelectLanguage from "./SelectLanguage";
 import SelectTheme from "./SelectTheme";
+import { Transition } from "@headlessui/react";
+import { useIntl } from "react-intl";
 import { useRouter } from "next/router";
 
 export default function MobileNav() {

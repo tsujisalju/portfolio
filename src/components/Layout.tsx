@@ -1,7 +1,7 @@
-import Head from "next/head";
 import React, { ReactNode } from "react";
-import Header from "./Header";
 import Footer from "./Footer";
+import Head from "next/head";
+import Header from "./Header";
 
 export default function Layout({
   children,

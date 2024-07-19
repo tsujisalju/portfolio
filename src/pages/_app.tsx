@@ -1,19 +1,19 @@
-import type { AppProps } from "next/app";
-import { ThemeProvider } from "next-themes";
-import React from "react";
-import { IntlProvider } from "react-intl";
 import "../styles/globals.css";
-import nookies from "nookies";
-import EN_US_LOCALE_MODULE from "../lang/compiled/en-US.json";
-import { useRouter } from "next/router";
-import { ParallaxProvider } from "react-scroll-parallax";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import {
   DM_Serif_Display,
   Karla,
-  Source_Serif_4,
   Source_Code_Pro,
+  Source_Serif_4,
 } from "next/font/google";
+import type { AppProps } from "next/app";
+import EN_US_LOCALE_MODULE from "../lang/compiled/en-US.json";
+import { IntlProvider } from "react-intl";
+import { ParallaxProvider } from "react-scroll-parallax";
+import React from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { ThemeProvider } from "next-themes";
+import nookies from "nookies";
+import { useRouter } from "next/router";
 
 const karla = Karla({
   subsets: ["latin"],

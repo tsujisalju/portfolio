@@ -1,15 +1,15 @@
-import Layout from "../../components/Layout";
-import { ProjectData, getProjectData } from "../../lib/projects";
 import { GetStaticPaths, GetStaticProps } from "next";
-import Image from "next/image";
-import Head from "next/head";
+import { ProjectData, getProjectData } from "../../lib/projects";
 import React, { useState } from "react";
-import { useTheme } from "next-themes";
-import path from "path";
-import fs from "fs";
-import { FormattedDate } from "react-intl";
 import { shimmer, toBase64 } from "../../components/ImageSkeleton";
 import { FadeIn } from "../../utilities/FadeIn";
+import { FormattedDate } from "react-intl";
+import Head from "next/head";
+import Image from "next/image";
+import Layout from "../../components/Layout";
+import fs from "fs";
+import path from "path";
+import { useTheme } from "next-themes";
 
 const projectsDirectory = path.join(process.cwd(), "src/projects");
 

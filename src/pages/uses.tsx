@@ -1,7 +1,7 @@
+import { FadeIn } from "../utilities/FadeIn";
 import Layout from "../components/Layout";
 import { useEffect } from "react";
 import { useIntl } from "react-intl";
-import { FadeIn } from "../utilities/FadeIn";
 
 export default function Uses() {
   const intl = useIntl();
@@ -145,16 +145,6 @@ export default function Uses() {
                     <p className="font-serif text-lg">
                       {intl.formatMessage({
                         id: "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent.",
-                      })}
-                    </p>
-                  </li>
-                  <li>
-                    <h3 className="font-sans font-bold text-lg">
-                      {intl.formatMessage({ id: "Velvetyne" })}
-                    </h3>
-                    <p className="font-serif text-lg">
-                      {intl.formatMessage({
-                        id: "If you need awesome, grotesque, avant-garde looking typefonts, this is the place for you! All fonts here are libre and open sourced.",
                       })}
                     </p>
                   </li>

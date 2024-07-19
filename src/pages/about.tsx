@@ -1,8 +1,8 @@
+import { FadeIn } from "../utilities/FadeIn";
+import Image from "next/image";
 import Layout from "../components/Layout";
 import { useEffect } from "react";
 import { useIntl } from "react-intl";
-import Image from "next/image";
-import { FadeIn } from "../utilities/FadeIn";
 
 export default function About() {
   const intl = useIntl();

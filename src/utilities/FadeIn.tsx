@@ -1,5 +1,5 @@
-import { Transition } from "@headlessui/react";
 import { ReactNode, useEffect, useState } from "react";
+import { Transition } from "@headlessui/react";
 
 export function FadeIn({ children }: { children: ReactNode }) {
   const [isShowing, setIsShowing] = useState(false);
