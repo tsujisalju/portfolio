@@ -1,14 +1,14 @@
+import { FormattedDate, useIntl } from "react-intl";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { LogData, getLogData } from "../../lib/logs";
+import { useEffect, useState } from "react";
+import { FadeIn } from "../../utilities/FadeIn";
+import Layout from "../../components/Layout";
+import Link from "next/link";
+import Typewriter from "../../utilities/Typewriter";
 import path from "path";
 import { readdirSync } from "fs";
-import Layout from "../../components/Layout";
-import { FormattedDate, useIntl } from "react-intl";
-import { useEffect, useState } from "react";
-import Typewriter from "../../utilities/Typewriter";
 import useKeyPressed from "../../utilities/KeyPressed";
-import { FadeIn } from "../../utilities/FadeIn";
-import Link from "next/link";
 
 const logsDirectory = path.join(process.cwd(), "src/logs");
 
@@ -97,7 +97,8 @@ export default function Log({ logData }: { logData: LogData }) {
               />
             </div>
           </div>
-          <div className="col-span-2 flex flex-col space-y-6 p-8 text-justify font-code text-md bg-black/10 rounded-lg shadow-inner min-h-[600px] lg:h-[600px] lg:overflow-y-auto">
+          <div className="col-span-2 flex flex-col space-y-6 p-8 text-justify font-code text-md bg-black/10 rounded-lg shadow-inner min-h-[300px] lg:h-[600px] lg:overflow-y-auto">
+            <div className="mt-auto" />
             {typeParagraphs.map((p, i) => {
               if (i < currentParagraph) {
                 return <span key={i}>{p}</span>;
