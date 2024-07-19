@@ -1,4 +1,3 @@
-import { FormattedDate, useIntl } from "react-intl";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Log, getSortedLogsData } from "../lib/logs";
 import { Project, getSortedProjectsData } from "../lib/projects";
@@ -10,7 +9,7 @@ import Layout from "../components/Layout";
 import Link from "next/link";
 import React from "react";
 import { Socials } from "../lib/socials";
-import LogLink from "../components/logs/LogLink";
+import { useIntl } from "react-intl";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const allProjectsData: Project[] = getSortedProjectsData(locale as string);
