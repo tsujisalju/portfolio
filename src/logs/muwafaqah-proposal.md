@@ -1,7 +1,7 @@
 ---
 title: "Muwafaqah: Motivation"
 date: "2024-05-07"
-author: "Qayyum Yazid"
+author: "Cooper Baihaqi"
 ---
 
 I am writing this report to document my research and thought process of making my very own DIY self-hosted home server.
