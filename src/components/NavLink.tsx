@@ -24,6 +24,7 @@ export default function NavLink({
       }
     >
       <Link
+        scroll={false}
         href={href}
         className={
           "relative transition duration-100 truncate font-sans text-lg " +

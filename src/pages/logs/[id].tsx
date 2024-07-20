@@ -2,7 +2,6 @@ import { FormattedDate, useIntl } from "react-intl";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { LogData, getLogData } from "../../lib/logs";
 import { useEffect, useState } from "react";
-import { FadeIn } from "../../utilities/FadeIn";
 import Layout from "../../components/Layout";
 import Link from "next/link";
 import LogAuthorAvatar from "../../components/logs/LogAuthorAvatar";
@@ -71,68 +70,66 @@ export default function Log({ logData }: { logData: LogData }) {
 
   return (
     <Layout>
-      <FadeIn>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 px-8 lg:grid-cols-3 my-8 gap-6">
-          <div className="flex flex-col space-y-6 mb-4 py-2">
-            <Link href={"/logs" + "#" + logData.id}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="h-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M9.53 2.47a.75.75 0 0 1 0 1.06L4.81 8.25H15a6.75 6.75 0 0 1 0 13.5h-3a.75.75 0 0 1 0-1.5h3a5.25 5.25 0 1 0 0-10.5H4.81l4.72 4.72a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </Link>
-            <h1 className="font-display text-3xl ">{logData.title}</h1>
-            <div className="font-code font-light font-lg">
-              <FormattedDate
-                value={logData.date}
-                day={"numeric"}
-                month={"long"}
-                year={"numeric"}
-              />
-            </div>
-            <div className="py-4 flex flex-row space-x-4">
-              <LogAuthorAvatar
-                className="h-8 w-8 rounded-full"
-                author={logData.author}
-                height={48}
-                width={48}
-              />
-              <p className="font-code text-lg">{logData.author}</p>
-            </div>
-          </div>
-          <div className="col-span-2 flex flex-col space-y-6 p-8 text-justify font-code text-md bg-black/10 rounded-lg shadow-inner min-h-[300px] lg:h-[600px] lg:overflow-y-auto">
-            <div className="mt-auto" />
-            {typeParagraphs.map((p, i) => {
-              if (i < currentParagraph) {
-                return <span key={i}>{p}</span>;
-              } else if (i == currentParagraph) {
-                return (
-                  <span key={i}>
-                    <Typewriter text={p} onFinished={handleOnFinished} />
-                  </span>
-                );
-              }
-            })}
-            <button
-              className={
-                "place-self-end grow-0 p-4 pb-6 pr-16 lg:p-1 lg:pb-2 lg:pr-4 font-code text-sm border-2 border-b-4 border-r-4 rounded-md border-black/50 dark:border-white/50 transition " +
-                (isFinished ? "animate-pulse" : "opacity-0")
-              }
-              disabled={!isFinished}
-              onClick={handleKeyPressed}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 px-8 lg:grid-cols-3 my-8 gap-6">
+        <div className="flex flex-col space-y-6 mb-4 py-2">
+          <Link href={"/logs" + "#" + logData.id}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="h-5"
             >
-              {intl.formatMessage({ id: "Enter" })}
-            </button>
+              <path
+                fillRule="evenodd"
+                d="M9.53 2.47a.75.75 0 0 1 0 1.06L4.81 8.25H15a6.75 6.75 0 0 1 0 13.5h-3a.75.75 0 0 1 0-1.5h3a5.25 5.25 0 1 0 0-10.5H4.81l4.72 4.72a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </Link>
+          <h1 className="font-display text-3xl ">{logData.title}</h1>
+          <div className="font-code font-light font-lg">
+            <FormattedDate
+              value={logData.date}
+              day={"numeric"}
+              month={"long"}
+              year={"numeric"}
+            />
+          </div>
+          <div className="py-4 flex flex-row space-x-4">
+            <LogAuthorAvatar
+              className="h-8 w-8 rounded-full"
+              author={logData.author}
+              height={48}
+              width={48}
+            />
+            <p className="font-code text-lg">{logData.author}</p>
           </div>
         </div>
-      </FadeIn>
+        <div className="col-span-2 flex flex-col space-y-6 p-8 text-justify font-code text-md bg-black/10 rounded-lg shadow-inner min-h-[300px] lg:h-[600px] lg:overflow-y-auto">
+          <div className="mt-auto" />
+          {typeParagraphs.map((p, i) => {
+            if (i < currentParagraph) {
+              return <span key={i}>{p}</span>;
+            } else if (i == currentParagraph) {
+              return (
+                <span key={i}>
+                  <Typewriter text={p} onFinished={handleOnFinished} />
+                </span>
+              );
+            }
+          })}
+          <button
+            className={
+              "place-self-end grow-0 p-4 pb-6 pr-16 lg:p-1 lg:pb-2 lg:pr-4 font-code text-sm border-2 border-b-4 border-r-4 rounded-md border-black/50 dark:border-white/50 transition " +
+              (isFinished ? "animate-pulse" : "opacity-0")
+            }
+            disabled={!isFinished}
+            onClick={handleKeyPressed}
+          >
+            {intl.formatMessage({ id: "Enter" })}
+          </button>
+        </div>
+      </div>
     </Layout>
   );
 }

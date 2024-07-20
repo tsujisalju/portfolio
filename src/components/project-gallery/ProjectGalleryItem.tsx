@@ -10,6 +10,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
   const [isShowing, setIsShowing] = useState<boolean>(false);
   return (
     <Link
+      scroll={false}
       href={"/projects/" + project.id}
       className={
         "min-h-80 hover:z-10 " +

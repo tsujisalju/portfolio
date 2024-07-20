@@ -6,7 +6,7 @@ import Tilt from "react-parallax-tilt";
 
 export default function LogLink({ log }: { log: Log }) {
   return (
-    <Link href={"/logs/" + log.id} key={log.id} id={log.id}>
+    <Link scroll={false} href={"/logs/" + log.id} key={log.id} id={log.id}>
       <Tilt
         tiltMaxAngleY={3}
         tiltReverse

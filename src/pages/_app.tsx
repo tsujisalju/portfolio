@@ -5,6 +5,7 @@ import {
   Source_Code_Pro,
   Source_Serif_4,
 } from "next/font/google";
+import { AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
 import EN_US_LOCALE_MODULE from "../lang/compiled/en-US.json";
 import { IntlProvider } from "react-intl";
@@ -73,7 +74,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           <main
             className={`${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${source_code_pro.variable}`}
           >
-            <Component {...pageProps} />
+            <AnimatePresence
+              mode="wait"
+              onExitComplete={() => window.scrollTo(0, 0)}
+            >
+              <Component key={router.asPath} {...pageProps} />
+            </AnimatePresence>
             <SpeedInsights />
           </main>
         </ParallaxProvider>

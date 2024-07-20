@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import Footer from "./Footer";
 import Head from "next/head";
 import Header from "./Header";
+import { motion } from "framer-motion";
 
 export default function Layout({
   children,
@@ -60,9 +61,15 @@ export default function Layout({
       </Head>
 
       <Header />
-
-      <main className="flex-1">{children}</main>
-
+      <motion.div
+        className="flex-1"
+        initial={{ x: 5, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        exit={{ x: -5, opacity: 0 }}
+        transition={{ duration: 0.1 }}
+      >
+        {children}
+      </motion.div>
       <footer>
         <Footer />
       </footer>
