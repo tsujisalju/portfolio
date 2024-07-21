@@ -1,68 +1,34 @@
 {
-  " - Present": [
-    {
-      "type": 0,
-      "value": " - Gegenwart"
-    }
-  ],
-  "\"The power of any weapon comes from [the heart], but only when tempered by [the discipline] ..": [
-    {
-      "type": 0,
-      "value": "\"Der Macht jede Waffe kommt von [dem Herzen], im Zusammenspiel mit [Disziplin] .."
-    }
-  ],
-  ".. the self-control of the one who wields it.\"": [
-    {
-      "type": 0,
-      "value": ".. die Selbstbeherrschung von dem, der sie trägt.\""
-    }
-  ],
-  "7 cats by alternate world.": [
-    {
-      "type": 0,
-      "value": "7 Katzen bei alternative Welt."
-    }
-  ],
   "A pair of headphones I picked up at MediaMarkt when I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it.": [
     {
       "type": 0,
-      "value": "Ein Paar Kopfhörer, die ich bei MediaMarkt gekauft habe, als ich in Deutschland war. Ich brauchte etwas Günstiges mit einem eingebauten Mikrofon, weil meine Kopfhörer so kaputt waren. Das war es."
+      "value": "A pair of headphones I picked up at MediaMarkt when I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it."
     }
   ],
-  "A passion for commerce and collectibles awakens from slumber, and soon enough Van discovers a whole new dimension of tradecraft and glam hunting.": [
+  "A picture paints a thousand words. Here, there are {value} words.": [
     {
       "type": 0,
-      "value": "Die Leidenschaft für Handel und Sammlerstücke erwacht aus dem Dornröschenschlaf, und schon bald entdeckt Van eine ganz neue Dimension des Handels und der Glamourjagd."
+      "value": "Ein Bild sagt mehr als tausend Worte. Hier, gibt es "
+    },
+    {
+      "type": 1,
+      "value": "value"
+    },
+    {
+      "type": 0,
+      "value": " Worte."
     }
   ],
-  "A well-built mouse with 12 buttons on its side. Why? Because I play FFXIV. My tiny hands could never reach the entirety of my keyboard, so honestly with this RPG mouse, I couldn't have it any other way.": [
+  "A solid mouse with 12 buttons on the side. I play MMOs every now and then, and my tiny hands could never reach the entirety of my keyboard to press all the hotkeys, so honestly with this RPG mouse, I couldn't have it any other way.": [
     {
       "type": 0,
-      "value": "A well-built mouse with 12 buttons on its side. Why? Because I play FFXIV. My tiny hands could never reach the entirety of my keyboard, so honestly with this RPG mouse, I couldn't have it any other way."
+      "value": "A solid mouse with 12 buttons on the side. I play MMOs every now and then, and my tiny hands could never reach the entirety of my keyboard to press all the hotkeys, so honestly with this RPG mouse, I couldn't have it any other way."
     }
   ],
-  "About": [
+  "Artworks": [
     {
       "type": 0,
-      "value": "Über mich"
-    }
-  ],
-  "Achenar": [
-    {
-      "type": 0,
-      "value": "Achenar"
-    }
-  ],
-  "Almanac": [
-    {
-      "type": 0,
-      "value": "Almanach"
-    }
-  ],
-  "And so she went on a month-long hiatus to recover, watching her friends from the aetherial sea.": [
-    {
-      "type": 0,
-      "value": "Und so legte sie eine einmonatige Pause ein, um sich zu erholen und ihre Freunde aus dem Ätherischen Meer zu beobachten."
+      "value": "Kunstwerke"
     }
   ],
   "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission.": [
@@ -74,25 +40,7 @@
   "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent.": [
     {
       "type": 0,
-      "value": "Während ich mich von Adobe losmache, gewöhne ich mich an FOSS-Alternativen. Ich habe Inkscape für viele Warendesigns genutzt. Wenn man sich erst einmal daran gewöhnt hat, wie es funktioniert, ist es ziemlich kompentent."
-    }
-  ],
-  "As if by fate, Van's aetherial signature began to weaken, preventing her from manifesting her corporeal form.": [
-    {
-      "type": 0,
-      "value": "Wie es das Schicksal wollte, begann Vans ätherische Signatur zu schwächeln und hinderte sie daran, ihre körperliche Form zu manifestieren."
-    }
-  ],
-  "At a young age, I can be seen tinkering with whatever I put my mind to. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation. Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. In my spare time, I like to draw and play rhythm games.": [
-    {
-      "type": 0,
-      "value": "Schon in jungen Jahren habe ich an allem herumgebastelt, was mir in den Sinn kam. Ich war fasziniert von der Idee, mit der Kraft der Programmierung etwas zu erschaffen, und diese Leidenschaft ist bis heute ungebrochen. Ich habe mich in verschiedenen Hobbyprojekten in den Bereichen Spieleentwicklung, Webdesign und Inhaltserstellung versucht. Derzeit arbeite ich als Frontend-Entwickler und Designer für Minswap DEX auf der Cardano-Blockchain. In meiner Freizeit zeichne ich gerne und spiele Rhythmusspiele."
-    }
-  ],
-  "At a young age, my mother introduced me to programming and game making. I was so fascinated at the idea of creating anything with the power of programming, and the passion burns strong since. I have dabbled in various hobby projects relating to game development, web design and content creation.": [
-    {
-      "type": 0,
-      "value": "Als ich noch sehr jung war, führte mich meine Mutter die Programmierung und Entwicklung von Spielen ein. Ich war fasziniert von der Idee, mit der Kraft der Programmierung etwas zu erschaffen, und diese Leidenschaft ist bis heute ungebrochen. Ich habe mich in verschiedenen Hobbyprojekten in den Bereichen Spieleentwicklung, Webdesign und Inhaltserstellung versucht."
+      "value": "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent."
     }
   ],
   "Be the change you want to be.": [
@@ -105,18 +53,6 @@
     {
       "type": 0,
       "value": "Biographie"
-    }
-  ],
-  "Cats?": [
-    {
-      "type": 0,
-      "value": "Katzen?"
-    }
-  ],
-  "Currently, I work remotely as a frontend dev and designer for Minswap DEX on the Cardano blockchain. I am always on the lookout for new opportunities, and I found a place where my style and ideas can contribute to bleeding edge technology.": [
-    {
-      "type": 0,
-      "value": "Derzeit arbeite ich als Frontend-Entwickler und Designer für Minswap DEX auf der Cardano-Blockchain. Ich bin immer auf der Suche nach Möglichkeiten, und ich habe einen Ort gefunden, an dem mein Stil und meine Ideen zu Spitzentechnologie beitragen können."
     }
   ],
   "Dark": [
@@ -143,12 +79,6 @@
       "value": "Entwicklung"
     }
   ],
-  "Each one is a story to tell. Discover one and find out what's in store!": [
-    {
-      "type": 0,
-      "value": "Jedes Kunstwerk hat eine Geschichte zu erzählen. Entdecken Sie eine, um zu erfahren, was es zu erzählen gibt!"
-    }
-  ],
   "Enter": [
     {
       "type": 0,
@@ -161,12 +91,6 @@
       "value": "Figma"
     }
   ],
-  "Fresh from finishing Endwalker, Van decides to take a small step back and see what else the world has to offer in preparation for the next journey ahead.": [
-    {
-      "type": 0,
-      "value": "Frisch nach dem Abschluss von Endwalker beschließt Van, einen kleinen Schritt zurückzutreten und zu sehen, was die Welt sonst noch zu bieten hat, um sich auf die nächste Reise vorzubereiten."
-    }
-  ],
   "Front End": [
     {
       "type": 0,
@@ -176,55 +100,19 @@
   "Graphic Design": [
     {
       "type": 0,
-      "value": "Grafische Gestaltung"
-    }
-  ],
-  "Greetings traveler.": [
-    {
-      "type": 0,
-      "value": "Grüße Reisende."
-    }
-  ],
-  "Hello, friend!": [
-    {
-      "type": 0,
-      "value": "Hallo, Freund!"
-    }
-  ],
-  "Hello, friend! I'm Qayyum.": [
-    {
-      "type": 0,
-      "value": "Hallo, Freund! Ich bin Qayyum."
+      "value": "Graphische Gestaltung"
     }
   ],
   "Hi! I'm Qayyum Yazid.": [
     {
       "type": 0,
-      "value": "Hallo! Ich heiße Qayyum Yazid."
-    }
-  ],
-  "Hold infinity in the palm of your hand.": [
-    {
-      "type": 0,
-      "value": "Halte die Unendlichkeit in deiner Handfläche."
-    }
-  ],
-  "Hold power to fate. Hold faith in the fated.": [
-    {
-      "type": 0,
-      "value": "Halte die Macht des Schicksals. Halte den Glauben an das Schicksal."
+      "value": "Hi! I'm Qayyum Yazid."
     }
   ],
   "Home": [
     {
       "type": 0,
       "value": "Hauptseite"
-    }
-  ],
-  "Hover over a photo to echo a (silly) conversation of the past.": [
-    {
-      "type": 0,
-      "value": "Bewegen Sie den Mauszeiger über ein Foto, um ein (dummes) Gespräch aus der Vergangenheit wiederzugeben."
     }
   ],
   "Huion Inspiroy Q11K V2": [
@@ -236,7 +124,7 @@
   "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life.": [
     {
       "type": 0,
-      "value": "Mein Ziel ist es, mit meinen Illustrationen und Kreationen meine eigene kleine Geschichte zu erzählen. Meine Leidenschaft gilt dem kreativen Erzählen von Geschichten und dem eleganten Einsatz von Technologie. Ich lege großen Wert aur Effizienz und mühelose Erlebnisse für alle. Letztendlich wünsche ich mir, dass meine Kreationen allen Lebensbereichen zugute kommen."
+      "value": "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life."
     }
   ],
   "I daily drive a custom built Debian 12 as my main operating system, by which I started with a very minimal install and then installing only the necessary packages that I need. I have been using Linux for over 3 years now and I'm always learning something new about maintaing and configuring my computer to be the best it could be for my needs. Of course, I always have my Windows partition lying around just in case.": [
@@ -248,7 +136,7 @@
   "I found my passion in art and technology through the ability to express my creativity and create new worlds of wonder, brought to life by my characters and personas, whom serve as vessels that make up who I am. As I journey through this life, my illustrations catalog my joy and happiness, as well as my trials and tribulations. ❤️‍🩹": [
     {
       "type": 0,
-      "value": "Ich habe meine Leidenschaft für Kunst und Technologie entdeckt, weil ich meine Kreativität zum Ausdruck bringen und neue wunderbare Welten erschaffen kann, die durch meine Charaktere und Persönlichkeiten zum Leben erweckt werden, die als Gefäße dienen, die mich selbst ausmachen. Auf meiner Reise durch dieses Leben dokumentieren meine Illustrationen meine Freude und mein Glück, aber auch meine Prüfungen und Schwierigkeiten. ❤️‍🩹"
+      "value": "I found my passion in art and technology through the ability to express my creativity and create new worlds of wonder, brought to life by my characters and personas, whom serve as vessels that make up who I am. As I journey through this life, my illustrations catalog my joy and happiness, as well as my trials and tribulations. ❤️‍🩹"
     }
   ],
   "I remember writing journals when I was in middle school. Starting Form 1, I had a notebook in which I wrote just about anything that happened one particular day, and I would also scribble drawings on the side. There was a total of about 8 books and 3 sketchbooks before I took the SPM exam. Some of them got caught in the rain while some went missing and was later found with boob vandalism on my more feminine characters. They are largely embarassing now, but they remain fragments of memories worth documenting here perpetually.": [
@@ -260,25 +148,7 @@
   "I specifically bought this tablet for its wireless feature. As a bonus, it also has a native Linux driver. The port on my previous tablet has gotten loose and frequently disconnects, plus I had to use workarounds to configure the buttons. This new one just works out of the box.": [
     {
       "type": 0,
-      "value": "Ich habe dieses Tablet speziell wegen seiner Wireless-Funktion gekauft. Als Bonus hat es auch einen nativen Linux-Treiber. Der Anschluss an meinem vorherigen Tablet hat sich gelockert und wird häufig getrennt. Außerdem musste ich Umwege gehen, um die Schaltflächen zu konfigurieren. Dieses neue Tablet funktioniert sofort nach dem Auspacken."
-    }
-  ],
-  "I take great lessons from cats, being a person who has pet cats in real life. Cats are resilient, loving, intelligent yet whimsical and they are more aware of the existence of higher beings, things of greater good. If granted sentience, I believe they can create better worlds than we do. That is a narrative I'd like to bring in my illustrations, as a motivation for myself, and hopefully for others to explore and learn for the betterment of society.": [
-    {
-      "type": 0,
-      "value": "Als jemand, der im wirklichen Leben Katzen als Haustiere hat, kann ich viel von Katzen lernen. Katzen sind unverwüstlich, liebevoll, intelligent und doch launisch, und sie sind sich der Existenz höherer Wesen, der Dinge des größeren Guten, bewusster. Ich glaube, dass sie, wenn ihnen ein Gefühl gegeben wird, bessere Welten schaffen können als wir es tun. Das ist eine Geschichte, die ich in meine Illustrationen einbringen möchte, als Motivation für mich selbst, und hoffentlich auch für andere, zu erforschen und zu lernen, um die Gesellschaft zu verbessern."
-    }
-  ],
-  "I waLaman web ini berfungsi sebagai hab utama untuk mempamerkan semua karya seni saya, serta saluran kreatif untuk semua jenis projek menyeronokkan yang menggabungkan pengaturcaraan dan seni! Tidak lama lagi anda akan menemui lebih banyak cara untuk berinteraksi dengan saya dengan cara yang menarik.s born in Malaysia and now continuing my studies in Germany. I'm a hobbyist frontend developer and designer for almost 9 years.": [
-    {
-      "type": 0,
-      "value": "Ich wurde in Malaysia geboren und studiere jetzt in Deutschland. Ich bin ein Hobby-Frontend-Entwickler und Designer für fast 9 Jahre."
-    }
-  ],
-  "I was born in Malaysia, previously based in Germany and now starting fresh back in home country. I'm a hobbyist frontend developer and designer for almost 10 years.": [
-    {
-      "type": 0,
-      "value": "Ich wurde in Malaysia geboren. Ich war früher in Deutschland tätig und fange jetzt in meinem Heimatland neu an. Ich bin ein Hobby-Frontend-Entwickler und Designer für fast 10 Jahre."
+      "value": "I specifically bought this tablet for its wireless feature. As a bonus, it also has a native Linux driver. The port on my previous tablet has gotten loose and frequently disconnects, plus I had to use workarounds to configure the buttons. This new one just works out of the box."
     }
   ],
   "I was born in a small town in the northern region of Kedah. When I was 6 years old, my family moved all the way down to southern Johore. There used to be a small kindergarten in the neighbourhood, and there was only 3 to 4 children there. I remember eating scrambled eggs for breakfast, reading storybooks with grandma and going to the park nearby every saturday. It's a whole little family in there and I felt like I was part of it too. Today I looked back at the now defunct corner lot terrace where the kindergarten used to be, oh how I wish I could do it all over again.": [
@@ -287,28 +157,10 @@
       "value": "I was born in a small town in the northern region of Kedah. When I was 6 years old, my family moved all the way down to southern Johore. There used to be a small kindergarten in the neighbourhood, and there was only 3 to 4 children there. I remember eating scrambled eggs for breakfast, reading storybooks with grandma and going to the park nearby every saturday. It's a whole little family in there and I felt like I was part of it too. Today I looked back at the now defunct corner lot terrace where the kindergarten used to be, oh how I wish I could do it all over again."
     }
   ],
-  "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework.": [
-    {
-      "type": 0,
-      "value": "Ich habe Next.js im Rahmen meiner Frontend-Arbeit bei Minswap kennengelernt. Als Training ist diese Website auch mit dem gleichen Framework entwickelt."
-    }
-  ],
   "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework. I still need to figure out how to transition to the new app router though.": [
     {
       "type": 0,
       "value": "I was exposed to Next.js as part of my frontend work at Minswap. As training, this website is also developed using the same framework. I still need to figure out how to transition to the new app router though."
-    }
-  ],
-  "I'm Qayyum, a computer science student based in Deggendorf, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tales of hope amidst terrible choices.": [
-    {
-      "type": 0,
-      "value": "Ich bin Qayyum, ein Informatik-Student in Leipzig, Deutschland. Ich bin Entwickler und Designer für Minswap DEX bei Cardano. Ansonsten erzähle ich die Geschichte von Hoffnung inmitten schrecklicher Entscheidungen."
-    }
-  ],
-  "I'm Qayyum, a computer science student based in Leipzig, Germany. I am a developer and designer at Minswap DEX in Cardano. Other than that, I tell the tale of neo Khajiits in a different timeline.": [
-    {
-      "type": 0,
-      "value": "Ich bin Qayyum, ein Informatik-Student in Leipzig, Deutschland. Ich bin Entwickler und Designer für Minswap DEX bei Cardano. Ansonsten erzähle ich die Geschichte von Neo-Khajiits aus einer anderer Zeitlinie."
     }
   ],
   "I'm Qayyum, a freelance developer and designer based in Johore, Malaysia.": [
@@ -317,52 +169,10 @@
       "value": "Ich heiße Qayyum, ein freiberuflicher Entwickler und Designer aus Johore, Malaysia."
     }
   ],
-  "I'm Qayyum, a frontend developer and designer based in Johore, Malaysia.": [
-    {
-      "type": 0,
-      "value": "Ich heiße Qayyum, ein Frontend-Entwickler und Designer aus Johor, Malaysia"
-    }
-  ],
-  "I'm Qayyum, a software engineering student based in Johore, Malaysia. I am a frontend developer and designer at Minswap DEX on Cardano. Other than that, I tell the tales of hope amidst terrible choices.": [
-    {
-      "type": 0,
-      "value": "Ich bin Qayyum, ein Software-Ingenieur-Student in Malaysia. Ich bin Entwickler und Designer für Minswap DEX bei Cardano. Ansonsten erzähle ich die Geschichte von Hoffnung inmitten schrecklicher Entscheidungen."
-    }
-  ],
-  "I'm still surprised that this art program is free. It is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation!": [
-    {
-      "type": 0,
-      "value": "Ich bin immer noch überrascht, dass dieses Kunstprogramm kostenlos ist. Für eine Open-Source-Software ist das sehr respektable. Kommt mit vielen Pinseln, kann Timelapses aufnehmen und auch Animationen machen!"
-    }
-  ],
-  "If you need awesome, grotesque, avant-garde looking typefonts, this is the place for you! All fonts here are libre and open sourced.": [
-    {
-      "type": 0,
-      "value": "Wenn Sie auf der Suche nach großartigen, grotesken, avantgardistischen Schriftarten sind, sind Sie hier genau richtig! Alle Schriftarten sind libre und Open-Source."
-    }
-  ],
-  "In a sea of conflict and convolution, I seek solace in the few things I have left.": [
-    {
-      "type": 0,
-      "value": "In einem Meer von Konflikten und Verwicklungen suche ich Trost in den wenigen Dingen, die mir noch bleiben."
-    }
-  ],
-  "In the process, she began telegraphing her memories, which are collected and catalogued in the form of a scrapbook you see today.": [
-    {
-      "type": 0,
-      "value": "Dabei begann sie, ihre Erinnerungen zu telegrafieren, die in Form eines Sammelalbums gesammelt und katalogisiert wurden, das Sie heute sehen."
-    }
-  ],
   "Inkscape": [
     {
       "type": 0,
       "value": "Inkscape"
-    }
-  ],
-  "It has been a while since I've revisited some old game projects of mine. My feelings for Unity has been a little tainted lately, after all the shenanigans of the upper management. I may consider checking out other engines too.": [
-    {
-      "type": 0,
-      "value": "Es ist schon eine Weile her, dass ich einige alte Spielprojekte von mir wieder aufgreiffen habe. Meine Gefühle für Unitz sind in letzter Zeit etwas getrübt worden, nach all dem Unfug der oberen Führungsebene. Ich werde vielleicht auch andere Spiel-Engines ausprobieren."
     }
   ],
   "It was once my dream to further my studies in Germany. I've always thought the place is akin to utopia, a land of knowledge and technological advancements. I laugh and cringe at how naive I was back then. But what I do know, is that when there is a will, there is definitely a way. I've received a sponsorship that brings me the opportunity to study there. I've completed a 6-month language course in Leipzig before starting my semester in a university in Deggendorf. I was quick to discover the harsh realities of life, like finding a place to stay, possibly making every mistake in the book. I was stuck in a state of survival, where would I be staying next every passing month. I realize that maybe I wasn't cut out for this, and I choose to call it quits. Nonetheless, I am determined to make amends and start anew in home soil, with newfound hope and empathy for others who are now facing what I once had. If I could achieve what I've dreamed before, I could achieve it again.": [
@@ -371,16 +181,22 @@
       "value": "It was once my dream to further my studies in Germany. I've always thought the place is akin to utopia, a land of knowledge and technological advancements. I laugh and cringe at how naive I was back then. But what I do know, is that when there is a will, there is definitely a way. I've received a sponsorship that brings me the opportunity to study there. I've completed a 6-month language course in Leipzig before starting my semester in a university in Deggendorf. I was quick to discover the harsh realities of life, like finding a place to stay, possibly making every mistake in the book. I was stuck in a state of survival, where would I be staying next every passing month. I realize that maybe I wasn't cut out for this, and I choose to call it quits. Nonetheless, I am determined to make amends and start anew in home soil, with newfound hope and empathy for others who are now facing what I once had. If I could achieve what I've dreamed before, I could achieve it again."
     }
   ],
-  "Khajiit today makes 'soft wares'.": [
-    {
-      "type": 0,
-      "value": "Heutzitage herstellen Khajiit 'soft wares'."
-    }
-  ],
   "Krita": [
     {
       "type": 0,
       "value": "Krita"
+    }
+  ],
+  "Latest Artworks": [
+    {
+      "type": 0,
+      "value": "Neueste Kunstwerke"
+    }
+  ],
+  "Latest Logs": [
+    {
+      "type": 0,
+      "value": "Neueste Protokolle"
     }
   ],
   "Lenovo Legion 5 15ARH05": [
@@ -392,7 +208,7 @@
   "Light": [
     {
       "type": 0,
-      "value": "Hell"
+      "value": "Light"
     }
   ],
   "Logs": [
@@ -401,28 +217,10 @@
       "value": "Protokolle"
     }
   ],
-  "Made with 😻 using Next.js and Tailwind": [
-    {
-      "type": 0,
-      "value": "Mit 😻 gemacht mit Next.js und Tailwind"
-    }
-  ],
   "Merchandise": [
     {
       "type": 0,
       "value": "Handelswaren"
-    }
-  ],
-  "Minswap DEX is a decentralized multi-pool exchange on the Cardano blockchain. I work alongside the marketing and UI/UX department to provide promotional content, merchandise and interface designs.": [
-    {
-      "type": 0,
-      "value": "Minswap DEX ist eine dezentrale Multi-Pool-Börse auf der Cardano-Blockchain. Ich arbeite mit der Marketing- und UI / UX-Abteilung zusammen, um Werbeinhalte, Waren und Interface-Designs bereitzustellen."
-    }
-  ],
-  "Minswap is a decentralized exchange on the Cardano blockchain. I work with a global team of agile individuals to provide promotional content, merchandise and interface designs. Below is the mascot I designed, named Merlin!": [
-    {
-      "type": 0,
-      "value": "Minswap ist eine dezentralisierte Börse auf der Cardano-Blockchain. Ich arbeite mit einem globalen Team von agilen Personen zusammen, um Werbeinhalte, Merchandise und Interface-Designs zu erstellen. Unten sehen Sie das Maskottchen, das ich entworfen habe, namens Merlin!"
     }
   ],
   "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs.": [
@@ -434,13 +232,7 @@
   "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": [
     {
       "type": 0,
-      "value": "Mein erster Laptop. Es läuft auf einem bescheidenen AMD Ryzen 5 4600H und Nvidia GTX 1650. Es ist ausreichend für das, was ich tue. Vorher habe ich den 2011er iMac der Familie benutzt, also ist dies ein bedeutendes Upgrade. Später habe ich den RAM auf 16 GB aufgerüstet und eine zweite 1 TB SSD hinzugefügt."
-    }
-  ],
-  "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD. I also installed Debian 11 as the main OS.": [
-    {
-      "type": 0,
-      "value": "Mein erster Laptop. Er läuft mit einem bescheidenen AMD Ryzen 5 4600H und Nvidia GTX 1650. Für meine Arbeit ist es ausreichend. Vorher habe ich den 2011er iMac der Familie verwendet, daher ist dies eine bedeutende Besserung. Später auf dem Weg habe ich den RAM auf 16 GB aufgerüstet und eine zweite 1-TB SSD hinzugefügt. Ich habe auch Debian 11 als das Hauptbetriebssystem installiert."
+      "value": "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD."
     }
   ],
   "My mother introduced me to programming and game making since I was 9 years old, because I was always on the computer and I ought to put my hobby to good use rather than just mindless flash gaming. And you know what I was pretty hooked by the idea. The fact that I could create something awesome with my own touch of flare is amazing, and the passion burns strong since. The time was convenient enough that my middle school was getting around into participating robotics and game jam competitions. My friends and I pioneered the Robotics Club and I handled the programming side of things. One of the best memories I had was creating a Lego EV3 Mindstorms claw robot for an intrastate competition, and making the design decision to control it with another EV3 brick via Bluetooth instead of a phone over Wifi, which worked in our favor during the run. Before I left the school, they were already setting up courses for game dev with Unity3D, which is so super cool to see.": [
@@ -449,34 +241,10 @@
       "value": "My mother introduced me to programming and game making since I was 9 years old, because I was always on the computer and I ought to put my hobby to good use rather than just mindless flash gaming. And you know what I was pretty hooked by the idea. The fact that I could create something awesome with my own touch of flare is amazing, and the passion burns strong since. The time was convenient enough that my middle school was getting around into participating robotics and game jam competitions. My friends and I pioneered the Robotics Club and I handled the programming side of things. One of the best memories I had was creating a Lego EV3 Mindstorms claw robot for an intrastate competition, and making the design decision to control it with another EV3 brick via Bluetooth instead of a phone over Wifi, which worked in our favor during the run. Before I left the school, they were already setting up courses for game dev with Unity3D, which is so super cool to see."
     }
   ],
-  "My new personal project, page under construction :)": [
-    {
-      "type": 0,
-      "value": "My new personal project, page under construction :)"
-    }
-  ],
   "Next.js": [
     {
       "type": 0,
       "value": "Next.js"
-    }
-  ],
-  "No doubt everyone uses this. I use it for all my game and web dev work. It's so nice to have all sorts of support and extensions for any programming work imaginable.": [
-    {
-      "type": 0,
-      "value": "Keine Zweifel, jeder nutzt dies. Ich nutze sie für alle meine Spiel- und Webentwicklungen. Es ist so bequem, alle Arten von Unterstützung und Erweiterung für jede erdenkliche Programmierarbeit zu haben."
-    }
-  ],
-  "Out of fear of missing out, she breezed through the main scenario, believing that the real fun awaits in the end.": [
-    {
-      "type": 0,
-      "value": "Aus Angst, etwas zu verpassen, durchlief sie das Hauptszenario in dem Glauben, dass der eigentliche Spaß erst am Ende kommt."
-    }
-  ],
-  "Padok is a Malay slang for padu, which means powerful.": [
-    {
-      "type": 0,
-      "value": "Padok ist ein malaiischer Slang für Padu, was so viel wie mächtig bedeutet."
     }
   ],
   "Polarizing topic regarding the best code editor aside, no doubt anyone would find its versatility and extensiveness of VS Code appealing. Most of my web and game projects are written with VS Code.": [
@@ -497,16 +265,16 @@
       "value": "Razer Naga X"
     }
   ],
-  "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia": [
+  "Reports, recollections and reflections.": [
     {
       "type": 0,
-      "value": "Student der Softwaretechnik, freiberuflicher Entwickler und Designer | Sitz in Johore, Malaysia"
+      "value": "Berichte, Erinnerungen und Überlegungen."
     }
   ],
   "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia 🇲🇾": [
     {
       "type": 0,
-      "value": "Student der Softwaretechnik, freiberuflicher Entwickler und Designer | Sitz in Johore, Malaysia 🇲🇾"
+      "value": "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia 🇲🇾"
     }
   ],
   "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to new heights with various illustrations and interface designs with a rusty cyberpunk aesthetic.": [
@@ -515,40 +283,10 @@
       "value": "SteelSwap ist ein DEX-Aggregator auf der Cardano-Blockchain. Mit verschiedenen Illustrationen und Interfacedesigns in einer rostigen Cyberpunk-Ästhetik hebt SteelSwap sein Fundament auf neue Höhen."
     }
   ],
-  "Student, dev and design by day,": [
-    {
-      "type": 0,
-      "value": "Student, Entwickler und Designer am Tag,"
-    }
-  ],
-  "Tales of hope amidst terrible choices.": [
-    {
-      "type": 0,
-      "value": "Geschichten der Hoffnung inmitten schrecklicher Entscheidungen."
-    }
-  ],
-  "The Unending Journey": [
-    {
-      "type": 0,
-      "value": "Die unendliche Reise"
-    }
-  ],
   "The best of the best in terms of value, its free! Krita is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this software to bits and I will not have it any other way.": [
     {
       "type": 0,
       "value": "The best of the best in terms of value, its free! Krita is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this software to bits and I will not have it any other way."
-    }
-  ],
-  "The illustrations I make, describe a world of places I'm passionate about, the things I want to do and the kind of person I wish to become. They are not tied to a particular story, leaving enough room for self-interpretation.": [
-    {
-      "type": 0,
-      "value": "Die Illustrationen, die ich anfertige, beschreiben eine Welt der Orte, für die ich mich begeistere, die DInge, die ich tun möchte, und die Art von Menschen, die ich werden möchte. Sie sind nicht an eine bestimmte Geschichte gebunden und lassen genügend Raum für einige Interpretationen. "
-    }
-  ],
-  "The journey continues..": [
-    {
-      "type": 0,
-      "value": "Die Reise geht weiter..."
     }
   ],
   "The world is ours to explore, design and nurture, for the betterment of all walks of life.": [
@@ -557,28 +295,10 @@
       "value": "Die Welt gehört uns, um sie zu erforschen, zu gestalten und zu fördern, zum Wohle aller Lebensbereiche."
     }
   ],
-  "There is a whole new adventure in store for the sproutly Van.": [
-    {
-      "type": 0,
-      "value": "Für den sprießenden Van steht ein ganz neues Abenteuer an."
-    }
-  ],
   "This website serves as the main hub for showcasing all my artworks, as well as a creative outlet for all kinds of fun projects that combine programming and art! Soon you will find more ways to interact with me in interesting ways.": [
     {
       "type": 0,
-      "value": "Diese Website dient als zentraler Knotenpunkt für die Präsentation all meiner Kunstwerke sowie als kreatives Ventil für alle Arten von lustigen Projekten, die Programmierung und Kunst verbinden! Bald werden Sie mehr Möglichkeiten finden, mit mir auf interessante Weise zu interagieren."
-    }
-  ],
-  "To speak plainly, my laptop broke.": [
-    {
-      "type": 0,
-      "value": "Um es klar zu sagen: Mein Laptop ist kaputt."
-    }
-  ],
-  "Tools of the Trade": [
-    {
-      "type": 0,
-      "value": "Werkzeuge des Handels"
+      "value": "This website serves as the main hub for showcasing all my artworks, as well as a creative outlet for all kinds of fun projects that combine programming and art! Soon you will find more ways to interact with me in interesting ways."
     }
   ],
   "UI/UX Design": [
@@ -591,18 +311,6 @@
     {
       "type": 0,
       "value": "Nutzt"
-    }
-  ],
-  "Velvetyne": [
-    {
-      "type": 0,
-      "value": "Velvetyne"
-    }
-  ],
-  "View on Lodestone": [
-    {
-      "type": 0,
-      "value": "Blick auf Lodestone"
     }
   ],
   "Visit Website": [
@@ -623,18 +331,6 @@
       "value": "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs."
     }
   ],
-  "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs. Just found out they're being bought out by Adobe, so I only expect the worst.": [
-    {
-      "type": 0,
-      "value": "Wir verwenden Figma für alle Mock-Interfaces und Marketingmedien.Ich finde die Sortierung und das Layout-Funktion besonders praktisch im Vergleixh zu anderen Designprogrammen. Ich habe gerade erfahren, dass sie von Adobe aufgekauft werden, also kann ich nur das Schlimmste erwarten."
-    }
-  ],
-  "When I was a kid I had always been a little smaller in size than my peers. Even today, but only a minor difference.": [
-    {
-      "type": 0,
-      "value": "Als Kind war ich immer ein wenig kleiner als meine Altersgenossen. Auch heute noch, aber nur ein kleiner Unterschied."
-    }
-  ],
   "Work": [
     {
       "type": 0,
@@ -647,34 +343,10 @@
       "value": "Arbeitsplatz"
     }
   ],
-  "Would she realize that the fun was in the journey all along?": [
-    {
-      "type": 0,
-      "value": "Würde sie erkennen, dass der Spaß die ganze Zeit auf der Reise lag?"
-    }
-  ],
-  "XIVAPI is currently unavailable. Sorry for the inconvenience!": [
-    {
-      "type": 0,
-      "value": "XIVAPI ist derzeit nicht verfügbar. Entschuldigung für die Unannehmlichkeiten!"
-    }
-  ],
   "You may know me as purrnama, or my previous alias smolpadok, or by the name of my personas, Van or Cooper. Welcome to my little corner of the internet!": [
     {
       "type": 0,
-      "value": "Du kennst mich vielleicht als purrnama, oder unter meinem früheren Alias smolpadok, oder unter dem Namen meiner Personas, Van oder Cooper. Willkommen in meiner kleinen Ecke des Internets!"
-    }
-  ],
-  "a turkish van merchant/civil engineer.": [
-    {
-      "type": 0,
-      "value": "eine türkische Van-Katze Händlerin/Bauingenieurin."
-    }
-  ],
-  "is now": [
-    {
-      "type": 0,
-      "value": "ist jetzt"
+      "value": "You may know me as purrnama, or my previous alias smolpadok, or by the name of my personas, Van or Cooper. Welcome to my little corner of the internet!"
     }
   ]
 }

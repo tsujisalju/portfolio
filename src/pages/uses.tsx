@@ -67,7 +67,7 @@ export default function Uses() {
                   </h3>
                   <p className="font-serif text-lg">
                     {intl.formatMessage({
-                      id: "A well-built mouse with 12 buttons on its side. Why? Because I play FFXIV. My tiny hands could never reach the entirety of my keyboard, so honestly with this RPG mouse, I couldn't have it any other way.",
+                      id: "A solid mouse with 12 buttons on the side. I play MMOs every now and then, and my tiny hands could never reach the entirety of my keyboard to press all the hotkeys, so honestly with this RPG mouse, I couldn't have it any other way.",
                     })}
                   </p>
                 </li>

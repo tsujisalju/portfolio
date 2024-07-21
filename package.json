@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "extract-lang": "formatjs extract \"src/**/*.ts*\" --ignore=\"**/*.d.ts\" --throws --flatten --format formatter.js --out-file src/lang/extracted/en-US.json && node scripts/update-lang.js",
-    "compile-lang": "formatjs compile-folder --format simple --ast src/lang/extracted src/lang/compiled"
+    "extract-lang": "formatjs extract \"src/**/*.ts*\" --ignore=\"**/*.d.ts\" --throws --flatten --format scripts/formatter-extract.js --out-file src/lang/extracted/en-US.json && node scripts/update-lang.js",
+    "compile-lang": "formatjs compile-folder --format scripts/formatter-compile.js --ast src/lang/extracted src/lang/compiled"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",

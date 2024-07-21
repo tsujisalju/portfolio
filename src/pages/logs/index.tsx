@@ -25,7 +25,9 @@ export default function Logs({ allLogsData }: { allLogsData: Log[] }) {
       <div className="max-w-7xl mx-auto grid grid-cols-1 px-8 lg:grid-cols-3 my-8 gap-8 h-full">
         <div className="flex flex-col space-y-4 py-8">
           <div className="flex flex-row items-start space-x-2">
-            <h1 className="font-display text-4xl">Logs</h1>
+            <h1 className="font-display text-4xl">
+              {intl.formatMessage({ id: "Logs" })}
+            </h1>
             <div className="text-sm font-sans px-2 rounded-full border-solid border-2 border-black/10 dark:border-white/10">
               BETA
             </div>

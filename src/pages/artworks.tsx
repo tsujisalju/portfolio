@@ -39,7 +39,7 @@ export default function Artworks({
           <p className="font-sans text-lg">
             {intl.formatMessage(
               {
-                id: "A picture paints a thousand words.",
+                id: "A picture paints a thousand words. Here, there are {value} words.",
                 defaultMessage:
                   "A picture paints a thousand words. Here, there are {value} words.",
               },
