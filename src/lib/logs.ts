@@ -11,6 +11,7 @@ export type Log = {
   title: string;
   author: string;
   id: string;
+  readtime: number;
 };
 
 export type LogData = Log & {
@@ -31,6 +32,7 @@ export function getSortedLogsData() {
         date: string;
         title: string;
         author: string;
+        readtime: number;
       }),
     };
   });
@@ -61,6 +63,7 @@ export async function getLogData(id: string) {
       date: string;
       title: string;
       author: string;
+      readtime: number;
     }),
   };
 }

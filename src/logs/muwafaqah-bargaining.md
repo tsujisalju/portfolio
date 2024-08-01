@@ -2,6 +2,7 @@
 title: "Muwafaqah: Bargaining"
 date: "2024-05-17"
 author: "Cooper Baihaqi"
+readtime: 6
 ---
 
 I've given some more thought on how the hardware configuration for the server. Perhaps it wouldn't be future-proof to opt for a Pi 4 Model B when the latest model is already here. That means I have to find a different case solution altogether.

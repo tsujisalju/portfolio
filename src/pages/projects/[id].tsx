@@ -63,6 +63,15 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
       "bg-fixed bg-center bg-cover backdrop-blur-lg bg-blend-overlay";
   }, [projectData.img, theme]);
 
+  React.useEffect(() => {
+    if (isVideoMode) {
+      const vid: HTMLVideoElement = document.getElementById(
+        "timelapse",
+      ) as HTMLVideoElement;
+      vid.volume = 0.3;
+    }
+  }, [isVideoMode]);
+
   return (
     <>
       <Head>
@@ -122,6 +131,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
             )}
             {isVideoMode && (
               <video
+                id="timelapse"
                 className="absolute"
                 width={projectData.width}
                 height={projectData.height}

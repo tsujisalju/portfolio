@@ -2,6 +2,7 @@
 title: "Stagnant"
 date: "2024-07-06"
 author: "Van Carina"
+readtime: 5
 ---
 
 A stream of stagnancy, a spark of ecstacy, a sense of sanctuary, a flash of animosity, a rapture of reality, return to stagnancy.

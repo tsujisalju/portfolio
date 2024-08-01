@@ -2,6 +2,7 @@
 title: "Muwafaqah: Preliminary Research"
 date: "2024-05-08"
 author: "Cooper Baihaqi"
+readtime: 5
 ---
 
 The plan is to create a small home server that my family can use to store all our data as a substitute to their existing available storage. While I could just get a pre-built solution, I intend to make it a DIY project, built from the ground up from bare components and software, in an effort to learn about the whole process of administering a server. The end goal is to build a solution that is not only cheaper, but I verify everything that is going on with the system.

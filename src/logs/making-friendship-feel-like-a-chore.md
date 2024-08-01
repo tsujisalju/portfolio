@@ -2,6 +2,7 @@
 title: "Making Friendship Feel Like a Chore"
 date: "2023-09-04"
 author: "Van Carina"
+readtime: 3
 ---
 
 I think a lot about what it means to be friends. What does it take to be a good friend? Do each of us have something to gain from each other? Could the relationship flourish into something more, or just stay the same?

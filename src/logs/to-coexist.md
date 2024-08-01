@@ -2,6 +2,7 @@
 title: "To Coexist"
 date: "2021-03-04"
 author: "Van Carina"
+readtime: 2
 ---
 
 If I decided to leave everything behind and start anew, am I beginning or have I failed?

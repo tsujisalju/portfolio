@@ -2,6 +2,7 @@
 title: "Our Accustomed Perception of the World"
 date: "2023-08-04"
 author: "Cooper Baihaqi"
+readtime: 1
 ---
 
 We are accustomed to the knowledge that things are classified by their different attributes, and some things that are almost similar to each other are considered to be related.
