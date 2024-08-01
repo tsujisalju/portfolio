@@ -68,9 +68,6 @@ export default function Header(Props: HeaderProp) {
             {intl.formatMessage({ id: "Artworks" })}
           </NavLink>
           <NavLink href="/logs">{intl.formatMessage({ id: "Logs" })}</NavLink>
-          <NavLink href="/bio">
-            {intl.formatMessage({ id: "Biography" })}
-          </NavLink>
           <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
           <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
         </nav>
