@@ -2,6 +2,7 @@
 title: "24 Hours"
 date: "2021-03-08"
 author: "Cooper Baihaqi"
+readtime: 2
 ---
 
 I should be getting to work now but I have the urge to write.
