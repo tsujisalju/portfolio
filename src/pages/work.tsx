@@ -18,7 +18,7 @@ export default function Achernar() {
     <Layout>
       <div className="px-4 lg:px-0 max-w-7xl mx-auto flex flex-col space-y-8">
         <GeoDiv
-          border="x"
+          borderx
           corner
           cornersize={4}
           className="grid grid-cols-1 lg:grid-cols-3 p-8 gap-12"
@@ -105,7 +105,7 @@ export default function Achernar() {
         </GeoDiv>
         <hr className="text-black dark:text-white opacity-20" />
         <GeoDiv
-          border="x"
+          borderx
           corner
           cornersize={4}
           className="grid grid-cols-1 lg:grid-cols-3 p-8 gap-12"

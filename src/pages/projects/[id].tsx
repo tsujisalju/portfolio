@@ -155,7 +155,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
               )}`}
             />
           </div>
-          <GeoDiv className="lg:col-span-2 h-max" border="all" corner>
+          <GeoDiv className="lg:col-span-2 h-max" border corner>
             <div className={"flex flex-col p-8 space-y-4 "}>
               <div className="flex flex-col space-y-2 mb-4">
                 <h1 className="font-display text-5xl lg:text-6xl ">

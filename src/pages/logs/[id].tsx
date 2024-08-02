@@ -98,7 +98,7 @@ export default function Log({ logData }: { logData: LogData }) {
           </div>
           <GeoDiv
             className="py-4 flex flex-row space-x-4 h-full"
-            border="all"
+            border
             cornertr
           >
             <LogAuthorAvatar

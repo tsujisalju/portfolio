@@ -37,7 +37,7 @@ export default function Home({
       <Hero>
         <GeoDiv
           className="flex flex-col lg:flex-row lg:items-center gap-12 px-8"
-          border="x"
+          borderx
           cornertr
           cornersize={8}
         >
@@ -114,7 +114,7 @@ export default function Home({
           <div className="p-4">
             <GeoDiv
               className="text-center lg:text-left px-4 py-2 border-r-0"
-              border="all"
+              border
               cornerbl
               cornerbr
               cornersize={4}
@@ -137,7 +137,7 @@ export default function Home({
           <div className="p-4">
             <GeoDiv
               className="text-center lg:text-left px-4 py-2 border-l-0"
-              border="all"
+              border
               cornerbl
               cornerbr
               cornersize={4}

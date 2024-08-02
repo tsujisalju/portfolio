@@ -1,21 +1,14 @@
 import { ReactNode } from "react";
 
-type Border = "t" | "b" | "l" | "r" | "x" | "y" | "all" | "none";
-
-const borders: Record<Border, string> = {
-  t: "border-t",
-  b: "border-b",
-  l: "border-l",
-  r: "border-r",
-  x: "border-x",
-  y: "border-y",
-  all: "border",
-  none: "",
-};
-
 export default function GeoDiv({
   children,
-  border,
+  border = false,
+  bordert = false,
+  borderb = false,
+  borderr = false,
+  borderl = false,
+  borderx = false,
+  bordery = false,
   corner = false,
   cornertl = false,
   cornertr = false,
@@ -25,7 +18,13 @@ export default function GeoDiv({
   className,
 }: {
   children: ReactNode;
-  border?: Border;
+  border?: boolean;
+  bordert?: boolean;
+  borderb?: boolean;
+  borderr?: boolean;
+  borderl?: boolean;
+  borderx?: boolean;
+  bordery?: boolean;
   corner?: boolean;
   cornertl?: boolean;
   cornertr?: boolean;
@@ -39,7 +38,13 @@ export default function GeoDiv({
       className={
         className +
         " relative border-solid border-black/20 dark:border-white/20 overflow-hidden " +
-        (border && borders[border])
+        (border ? "border " : "") +
+        (bordert ? "border-t " : "") +
+        (borderb ? "border-b " : "") +
+        (borderl ? "border-l " : "") +
+        (borderr ? "border-r " : "") +
+        (borderx ? "border-x " : "") +
+        (bordery ? "border-y " : "")
       }
     >
       {(cornertl || corner) && (

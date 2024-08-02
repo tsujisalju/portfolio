@@ -13,7 +13,7 @@ export default function Button({
     <Link href={href} target={"_blank"} rel="noreferrer noopener">
       <GeoDiv
         className="transition duration-100 bg-stone-50 dark:bg-stone-800 w-max px-4 py-2 shadow-md hover:bg-opacity-50 dark:hover:bg-opacity-50 hover:shadow-lg"
-        border="all"
+        border
       >
         <p className="font-sans text-lg">{children}</p>
       </GeoDiv>

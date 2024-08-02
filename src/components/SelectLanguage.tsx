@@ -24,7 +24,7 @@ export default function SelectLanguage() {
       <Menu.Button as="button">
         <GeoDiv
           className="h-8 flex flex-row w-full justify-center items-center transition transition-75 bg-stone-50 dark:bg-stone-800 px-3 py-2 space-x-2 text-lg font-sans hover:bg-opacity-50 dark:hover:bg-opacity-50 shadow-md hover:shadow-lg"
-          border="all"
+          border
         >
           <p>{getShortName(locale)}</p>
           <svg
@@ -55,7 +55,7 @@ export default function SelectLanguage() {
         <Menu.Items className={"absolute right-0 mt-2"}>
           <GeoDiv
             className="w-max bg-stone-100 dark:bg-stone-800 text-left shadow-lg"
-            border="all"
+            border
           >
             {SUPPORTED_LOCALES.map((lang) => (
               <Menu.Item key={lang}>

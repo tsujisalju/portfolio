@@ -18,7 +18,7 @@ export default function NavLink({
   return (
     <GeoDiv
       className="relative px-6 py-1"
-      border={router.asPath === href && !mobile ? "y" : "none"}
+      bordery={router.asPath === href && !mobile}
       cornertl={router.asPath === href && !mobile}
       cornerbr={router.asPath === href && !mobile}
     >
