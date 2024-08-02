@@ -39,7 +39,7 @@ export default function Home({
           className="flex flex-col lg:flex-row lg:items-center gap-12 px-8"
           borderx
           cornertr
-          cornersize={8}
+          cornersize="large"
         >
           <Image
             src="/img/avatars/mynx.png"
@@ -117,7 +117,7 @@ export default function Home({
               border
               cornerbl
               cornerbr
-              cornersize={4}
+              cornersize="normal"
             >
               <Link scroll={false} href={"/logs"}>
                 <h1 className="font-code uppercase text-xl">
@@ -140,7 +140,7 @@ export default function Home({
               border
               cornerbl
               cornerbr
-              cornersize={4}
+              cornersize="normal"
             >
               <Link scroll={false} href={"/artworks"}>
                 <h1 className="font-code uppercase text-xl">

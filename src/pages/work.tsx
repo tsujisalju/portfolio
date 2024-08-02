@@ -20,7 +20,7 @@ export default function Achernar() {
         <GeoDiv
           borderx
           corner
-          cornersize={4}
+          cornersize="normal"
           className="grid grid-cols-1 lg:grid-cols-3 p-8 gap-12"
         >
           <div className="relative h-[300px]">
@@ -107,7 +107,7 @@ export default function Achernar() {
         <GeoDiv
           borderx
           corner
-          cornersize={4}
+          cornersize="normal"
           className="grid grid-cols-1 lg:grid-cols-3 p-8 gap-12"
         >
           <div className="relative h-[300px]">

@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 
+type CornerType = "normal" | "large";
+
 export default function GeoDiv({
   children,
   border = false,
@@ -14,7 +16,7 @@ export default function GeoDiv({
   cornertr = false,
   cornerbl = false,
   cornerbr = false,
-  cornersize = 4,
+  cornersize = "normal",
   className,
 }: {
   children: ReactNode;
@@ -30,7 +32,7 @@ export default function GeoDiv({
   cornertr?: boolean;
   cornerbl?: boolean;
   cornerbr?: boolean;
-  cornersize?: number;
+  cornersize?: CornerType;
   className?: string;
 }) {
   return (
@@ -49,22 +51,42 @@ export default function GeoDiv({
     >
       {(cornertl || corner) && (
         <div
-          className={`absolute h-${cornersize} w-${cornersize} -top-${cornersize / 2} -left-${cornersize / 2} rotate-45 bg-black/20 dark:bg-white/20`}
+          className={
+            "absolute rotate-45 bg-black/20 dark:bg-white/20 " +
+            (cornersize == "normal"
+              ? "h-4 w-4 -top-2 -left-2"
+              : "h-8 w-8 -top-4 -left-4")
+          }
         ></div>
       )}
       {(cornertr || corner) && (
         <div
-          className={`absolute h-${cornersize} w-${cornersize} -top-${cornersize / 2} -right-${cornersize / 2} rotate-45 bg-black/20 dark:bg-white/20`}
+          className={
+            "absolute rotate-45 bg-black/20 dark:bg-white/20 " +
+            (cornersize == "normal"
+              ? "h-4 w-4 -top-2 -right-2"
+              : "h-8 w-8 -top-4 -right-4")
+          }
         ></div>
       )}
       {(cornerbl || corner) && (
         <div
-          className={`absolute h-${cornersize} w-${cornersize} -bottom-${cornersize / 2} -left-${cornersize / 2} rotate-45 bg-black/20 dark:bg-white/20`}
+          className={
+            "absolute rotate-45 bg-black/20 dark:bg-white/20 " +
+            (cornersize == "normal"
+              ? "h-4 w-4 -bottom-2 -left-2"
+              : "h-8 w-8 -bottom-4 -left-4")
+          }
         ></div>
       )}
       {(cornerbr || corner) && (
         <div
-          className={`absolute h-${cornersize} w-${cornersize} -bottom-${cornersize / 2} -right-${cornersize / 2} rotate-45 bg-black/20 dark:bg-white/20`}
+          className={
+            "absolute rotate-45 bg-black/20 dark:bg-white/20 " +
+            (cornersize == "normal"
+              ? "h-4 w-4 -bottom-2 -right-2"
+              : "h-8 w-8 -bottom-4 -right-4")
+          }
         ></div>
       )}
       {children}
