@@ -3,7 +3,7 @@ import { ProjectData, getProjectData } from "../../lib/projects";
 import React, { useState } from "react";
 import { shimmer, toBase64 } from "../../components/ImageSkeleton";
 import { FormattedDate } from "react-intl";
-import GeoDiv from "../../utilities/GeoDiv";
+import GeoDiv from "../../components/GeoDiv";
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../../components/Layout";

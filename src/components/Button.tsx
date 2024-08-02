@@ -1,4 +1,4 @@
-import GeoDiv from "../utilities/GeoDiv";
+import GeoDiv from "../components/GeoDiv";
 import Link from "next/link";
 import { ReactNode } from "react";
 

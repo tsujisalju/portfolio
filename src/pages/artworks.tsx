@@ -1,6 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Project, getSortedProjectsData } from "../lib/projects";
-import GeoDiv from "../utilities/GeoDiv";
+import GeoDiv from "../components/GeoDiv";
 import Layout from "../components/Layout";
 import ProjectGallery from "../components/project-gallery/ProjectGallery";
 import { useEffect } from "react";

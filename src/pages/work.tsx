@@ -1,6 +1,6 @@
 import { FormattedDate, useIntl } from "react-intl";
 import Button from "../components/Button";
-import GeoDiv from "../utilities/GeoDiv";
+import GeoDiv from "../components/GeoDiv";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import MinswapLogo from "../components/svg/MinswapLogo";

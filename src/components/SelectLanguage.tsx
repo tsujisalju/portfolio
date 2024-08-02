@@ -1,7 +1,7 @@
 import { LOCALE_LABEL, SUPPORTED_LOCALES } from "../constants/locales";
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import GeoDiv from "../utilities/GeoDiv";
+import GeoDiv from "../components/GeoDiv";
 import { useRouter } from "next/router";
 
 function getShortName(locale: string): string {

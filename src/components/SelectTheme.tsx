@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
-import GeoDiv from "../utilities/GeoDiv";
+import GeoDiv from "../components/GeoDiv";
 import { useIntl } from "react-intl";
 import { useTheme } from "next-themes";
 

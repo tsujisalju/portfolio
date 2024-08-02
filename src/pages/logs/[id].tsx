@@ -2,7 +2,7 @@ import { FormattedDate, useIntl } from "react-intl";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { LogData, getLogData } from "../../lib/logs";
 import { useEffect, useState } from "react";
-import GeoDiv from "../../utilities/GeoDiv";
+import GeoDiv from "../../components/GeoDiv";
 import Layout from "../../components/Layout";
 import Link from "next/link";
 import LogAuthorAvatar from "../../components/logs/LogAuthorAvatar";

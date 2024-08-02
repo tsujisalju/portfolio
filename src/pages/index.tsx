@@ -2,7 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Log, getSortedLogsData } from "../lib/logs";
 import { Project, getSortedProjectsData } from "../lib/projects";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
-import GeoDiv from "../utilities/GeoDiv";
+import GeoDiv from "../components/GeoDiv";
 import Hero from "../components/Hero";
 import Image from "next/image";
 import Layout from "../components/Layout";
