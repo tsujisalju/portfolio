@@ -31,7 +31,7 @@ export default function Artworks({
           className="px-4 py-6 my-8 mx-4 md:mx-8 lg:mx-12"
           bordery
           corner
-          cornersize={8}
+          cornersize="large"
         >
           <div className="hidden md:inline absolute aspect-square rotate-45 inset-y-0 left-6 border-solid border border-black/20 dark:border-white/20"></div>
           <div className="hidden md:inline absolute aspect-square rotate-45 inset-y-0 right-6 border-solid border border-black/20 dark:border-white/20"></div>
