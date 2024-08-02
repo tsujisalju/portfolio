@@ -2,6 +2,7 @@ import { FormattedDate, useIntl } from "react-intl";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { LogData, getLogData } from "../../lib/logs";
 import { useEffect, useState } from "react";
+import GeoDiv from "../../utilities/GeoDiv";
 import Layout from "../../components/Layout";
 import Link from "next/link";
 import LogAuthorAvatar from "../../components/logs/LogAuthorAvatar";
@@ -95,7 +96,11 @@ export default function Log({ logData }: { logData: LogData }) {
               year={"numeric"}
             />
           </div>
-          <div className="py-4 flex flex-row space-x-4">
+          <GeoDiv
+            className="py-4 flex flex-row space-x-4 h-full"
+            border="all"
+            cornertr
+          >
             <LogAuthorAvatar
               className="h-8 w-8 rounded-full"
               author={logData.author}
@@ -103,7 +108,7 @@ export default function Log({ logData }: { logData: LogData }) {
               width={48}
             />
             <p className="font-code text-lg">{logData.author}</p>
-          </div>
+          </GeoDiv>
         </div>
         <div className="col-span-2 flex flex-col space-y-6 p-8 text-justify font-code text-md bg-black/10 rounded-lg shadow-inner min-h-[300px] lg:h-[600px] lg:overflow-y-auto">
           <div className="mt-auto" />

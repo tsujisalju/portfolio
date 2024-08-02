@@ -1,3 +1,4 @@
+import GeoDiv from "../utilities/GeoDiv";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { useRouter } from "next/router";
@@ -15,13 +16,11 @@ export default function NavLink({
 }) {
   const router = useRouter();
   return (
-    <div
-      className={
-        "relative px-6 py-1 " +
-        (router.asPath === href && !mobile
-          ? "border-solid border-black/20 dark:border-white/20 border-y overflow-hidden"
-          : "")
-      }
+    <GeoDiv
+      className="relative px-6 py-1"
+      border={router.asPath === href && !mobile ? "y" : "none"}
+      cornertl={router.asPath === href && !mobile}
+      cornerbr={router.asPath === href && !mobile}
     >
       <Link
         scroll={false}
@@ -41,6 +40,6 @@ export default function NavLink({
           <div className="absolute h-4 w-4 -bottom-2 -right-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
         </>
       )}
-    </div>
+    </GeoDiv>
   );
 }

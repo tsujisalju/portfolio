@@ -1,5 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Project, getSortedProjectsData } from "../lib/projects";
+import GeoDiv from "../utilities/GeoDiv";
 import Layout from "../components/Layout";
 import ProjectGallery from "../components/project-gallery/ProjectGallery";
 import { useEffect } from "react";
@@ -26,11 +27,12 @@ export default function Artworks({
   return (
     <Layout>
       <div className="mx-auto text-center">
-        <div className="relative px-4 py-6 my-8 mx-4 md:mx-8 lg:mx-12 border-solid border-y border-black/20 dark:border-white/20 overflow-hidden">
-          <div className="absolute h-8 w-8 -top-4 -right-4 rotate-45 bg-black/20 dark:bg-white/20"></div>
-          <div className="absolute h-8 w-8 -top-4 -left-4 rotate-45 bg-black/20 dark:bg-white/20"></div>
-          <div className="absolute h-8 w-8 -bottom-4 -right-4 rotate-45 bg-black/20 dark:bg-white/20"></div>
-          <div className="absolute h-8 w-8 -bottom-4 -left-4 rotate-45 bg-black/20 dark:bg-white/20"></div>
+        <GeoDiv
+          className="px-4 py-6 my-8 mx-4 md:mx-8 lg:mx-12"
+          border="y"
+          corner
+          cornersize={8}
+        >
           <div className="hidden md:inline absolute aspect-square rotate-45 inset-y-0 left-6 border-solid border border-black/20 dark:border-white/20"></div>
           <div className="hidden md:inline absolute aspect-square rotate-45 inset-y-0 right-6 border-solid border border-black/20 dark:border-white/20"></div>
           <h1 className="font-display text-3xl">
@@ -46,7 +48,7 @@ export default function Artworks({
               { value: allProjectsData.length * 1000 },
             )}
           </p>
-        </div>
+        </GeoDiv>
       </div>
       <ProjectGallery projects={allProjectsData} />
     </Layout>

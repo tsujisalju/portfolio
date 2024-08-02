@@ -1,3 +1,4 @@
+import GeoDiv from "../utilities/GeoDiv";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -10,9 +11,12 @@ export default function Button({
 }) {
   return (
     <Link href={href} target={"_blank"} rel="noreferrer noopener">
-      <div className="transition duration-100 bg-stone-50 dark:bg-stone-800 border-solid border border-black/20 dark:border-white/20 w-max px-4 py-2 shadow-md hover:bg-opacity-50 dark:hover:bg-opacity-50 hover:shadow-lg">
+      <GeoDiv
+        className="transition duration-100 bg-stone-50 dark:bg-stone-800 w-max px-4 py-2 shadow-md hover:bg-opacity-50 dark:hover:bg-opacity-50 hover:shadow-lg"
+        border="all"
+      >
         <p className="font-sans text-lg">{children}</p>
-      </div>
+      </GeoDiv>
     </Link>
   );
 }

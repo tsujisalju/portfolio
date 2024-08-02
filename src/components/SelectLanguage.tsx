@@ -1,6 +1,7 @@
 import { LOCALE_LABEL, SUPPORTED_LOCALES } from "../constants/locales";
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
+import GeoDiv from "../utilities/GeoDiv";
 import { useRouter } from "next/router";
 
 function getShortName(locale: string): string {
@@ -19,26 +20,28 @@ export default function SelectLanguage() {
   }
 
   return (
-    <Menu as="div" className={"relative w-20"}>
-      <Menu.Button
-        as="button"
-        className="h-8 flex flex-row w-full justify-center items-center transition transition-75 rounded-lg bg-stone-50 dark:bg-stone-800 px-2 py-1 space-x-2 text-lg font-sans hover:bg-opacity-50 hover:dark:bg-opacity-50 shadow-sm"
-      >
-        <p>{getShortName(locale)}</p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
+    <Menu as="div" className={"relative"}>
+      <Menu.Button as="button">
+        <GeoDiv
+          className="h-8 flex flex-row w-full justify-center items-center transition transition-75 bg-stone-50 dark:bg-stone-800 px-3 py-2 space-x-2 text-lg font-sans hover:bg-opacity-50 dark:hover:bg-opacity-50 shadow-md hover:shadow-lg"
+          border="all"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
+          <p>{getShortName(locale)}</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6 text-black/50 dark:text-white/50"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </GeoDiv>
       </Menu.Button>
       <Transition
         as={Fragment}
@@ -49,26 +52,27 @@ export default function SelectLanguage() {
         leaveFrom="transform translate-0 opacity-100"
         leaveTo="transform -translate-y-1 opacity-0"
       >
-        <Menu.Items
-          className={
-            "absolute right-0 mt-2 p-3 w-max space-y-1 bg-stone-100 dark:bg-stone-800 rounded-lg text-left shadow-lg"
-          }
-        >
-          {SUPPORTED_LOCALES.map((lang) => (
-            <Menu.Item key={lang}>
-              {({ active }) => (
-                <div
-                  className={
-                    "font-sans transition transition-75 text-lg py-1 pl-2 pr-4 text-left rounded-md" +
-                    (active && " bg-stone-200 dark:bg-stone-700")
-                  }
-                  onClick={() => HandleSelectLanguage(lang)}
-                >
-                  {LOCALE_LABEL[lang]}
-                </div>
-              )}
-            </Menu.Item>
-          ))}
+        <Menu.Items className={"absolute right-0 mt-2"}>
+          <GeoDiv
+            className="w-max bg-stone-100 dark:bg-stone-800 text-left shadow-lg"
+            border="all"
+          >
+            {SUPPORTED_LOCALES.map((lang) => (
+              <Menu.Item key={lang}>
+                {({ active }) => (
+                  <div
+                    className={
+                      "font-sans transition transition-75 text-lg p-2 pl-3 pr-4 text-left" +
+                      (active && " bg-stone-200 dark:bg-stone-700")
+                    }
+                    onClick={() => HandleSelectLanguage(lang)}
+                  >
+                    {LOCALE_LABEL[lang]}
+                  </div>
+                )}
+              </Menu.Item>
+            ))}
+          </GeoDiv>
         </Menu.Items>
       </Transition>
     </Menu>

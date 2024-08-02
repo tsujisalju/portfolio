@@ -18,11 +18,19 @@ export default function LogLink({ log }: { log: Log }) {
         <div className="flex flex-col p-4 space-y-2">
           <div className="flex flex-row flex-1 items-start">
             <h1 className="font-display text-2xl grow">{log.title}</h1>
-            <p className="font-code font-light text-md">
+            <p className="hidden xl:inline font-code font-light text-md">
               <FormattedDate
                 value={log.date}
                 year="numeric"
                 month="long"
+                day="numeric"
+              />
+            </p>
+            <p className="inline xl:hidden font-code font-light text-md">
+              <FormattedDate
+                value={log.date}
+                year="numeric"
+                month="numeric"
                 day="numeric"
               />
             </p>
@@ -53,8 +61,15 @@ export default function LogLink({ log }: { log: Log }) {
                 />
               </svg>
 
-              <p className="font-code font-light text-md">
+              <p className="hidden xl:inline font-code font-light text-md">
                 <FormattedRelativeTime value={log.readtime} unit="minute" />
+              </p>
+              <p className="inline xl:hidden font-code font-light text-md">
+                <FormattedRelativeTime
+                  value={log.readtime}
+                  unit="minute"
+                  style="narrow"
+                />
               </p>
             </div>
           </div>

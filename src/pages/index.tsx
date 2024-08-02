@@ -2,6 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Log, getSortedLogsData } from "../lib/logs";
 import { Project, getSortedProjectsData } from "../lib/projects";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
+import GeoDiv from "../utilities/GeoDiv";
 import Hero from "../components/Hero";
 import Image from "next/image";
 import Layout from "../components/Layout";
@@ -34,8 +35,12 @@ export default function Home({
   return (
     <Layout>
       <Hero>
-        <div className="relative flex flex-col lg:flex-row lg:items-center gap-12 px-8 border-solid border-x border-black/20 dark:border-white/20 overflow-hidden">
-          <div className="absolute h-8 w-8 -top-4 -right-4 rotate-45 bg-black/20 dark:bg-white/20"></div>
+        <GeoDiv
+          className="flex flex-col lg:flex-row lg:items-center gap-12 px-8"
+          border="x"
+          cornertr
+          cornersize={8}
+        >
           <Image
             src="/img/avatars/mynx.png"
             height={120}
@@ -102,21 +107,25 @@ export default function Home({
               </Link>
             </div>
           </div>
-        </div>
+        </GeoDiv>
       </Hero>
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:px-4">
         <div className="w-full lg:col-span-2">
           <div className="p-4">
-            <div className="relative text-center lg:text-left px-4 py-2 border-solid border border-r-0 border-black/20 dark:border-white/20 overflow-hidden">
-              <div className="absolute h-4 w-4 -bottom-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
-              <div className="absolute h-4 w-4 -bottom-2 -right-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
+            <GeoDiv
+              className="text-center lg:text-left px-4 py-2 border-r-0"
+              border="all"
+              cornerbl
+              cornerbr
+              cornersize={4}
+            >
               <Link scroll={false} href={"/logs"}>
                 <h1 className="font-code uppercase text-xl">
                   {intl.formatMessage({ id: "Latest Logs" })}
                   {" >"}
                 </h1>
               </Link>
-            </div>
+            </GeoDiv>
           </div>
           <div className="flex flex-col col-span-2 flex-1 space-y-2 mx-4 p-4 rounded-lg bg-black/10 shadow-inner h-[600px] overflow-y-auto">
             {allLogsData.slice(0, 5).map((log: Log) => (
@@ -126,16 +135,20 @@ export default function Home({
         </div>
         <div className="w-full order-first lg:-order-none lg:col-span-3">
           <div className="p-4">
-            <div className="relative text-center lg:text-left px-4 py-2 border-solid border border-l-0 border-black/20 dark:border-white/20 overflow-hidden">
-              <div className="absolute h-4 w-4 -bottom-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
-              <div className="absolute h-4 w-4 -bottom-2 -right-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
+            <GeoDiv
+              className="text-center lg:text-left px-4 py-2 border-l-0"
+              border="all"
+              cornerbl
+              cornerbr
+              cornersize={4}
+            >
               <Link scroll={false} href={"/artworks"}>
                 <h1 className="font-code uppercase text-xl">
                   {intl.formatMessage({ id: "Latest Artworks" })}
                   {" >"}
                 </h1>
               </Link>
-            </div>
+            </GeoDiv>
           </div>
           <div className="relative">
             <div className="overflow-x-auto rounded-md mx-4">

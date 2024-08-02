@@ -3,6 +3,7 @@ import { ProjectData, getProjectData } from "../../lib/projects";
 import React, { useState } from "react";
 import { shimmer, toBase64 } from "../../components/ImageSkeleton";
 import { FormattedDate } from "react-intl";
+import GeoDiv from "../../utilities/GeoDiv";
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../../components/Layout";
@@ -94,7 +95,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
       <Layout disableMeta>
         <section
           className={
-            "sm:container mx-auto grid grid-cols-1 " +
+            "sm:container mx-auto grid grid-cols-1 gap-4 " +
             (projectData.width <= projectData.height && "lg:grid-cols-5")
           }
         >
@@ -154,7 +155,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
               )}`}
             />
           </div>
-          <div className="lg:col-span-2">
+          <GeoDiv className="lg:col-span-2 h-max" border="all" corner>
             <div className={"flex flex-col p-8 space-y-4 "}>
               <div className="flex flex-col space-y-2 mb-4">
                 <h1 className="font-display text-5xl lg:text-6xl ">
@@ -169,13 +170,13 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
                   />
                 </div>
               </div>
-              <hr className="opacity-20" />
+              <hr className="text-black dark:text-white opacity-20" />
               <div
                 className="flex flex-col space-y-4 font-serif font-normal text-lg"
                 dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
               />
             </div>
-          </div>
+          </GeoDiv>
         </section>
       </Layout>
     </>

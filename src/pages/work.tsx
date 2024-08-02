@@ -1,5 +1,6 @@
 import { FormattedDate, useIntl } from "react-intl";
 import Button from "../components/Button";
+import GeoDiv from "../utilities/GeoDiv";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import MinswapLogo from "../components/svg/MinswapLogo";
@@ -16,11 +17,12 @@ export default function Achernar() {
   return (
     <Layout>
       <div className="px-4 lg:px-0 max-w-7xl mx-auto flex flex-col space-y-8">
-        <section className="relative grid grid-cols-1 lg:grid-cols-3 p-8 gap-12 border-solid border-x border-black/20 dark:border-white/20 overflow-hidden">
-          <div className="absolute h-4 w-4 -top-2 -right-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
-          <div className="absolute h-4 w-4 -top-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
-          <div className="absolute h-4 w-4 -bottom-2 -right-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
-          <div className="absolute h-4 w-4 -bottom-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
+        <GeoDiv
+          border="x"
+          corner
+          cornersize={4}
+          className="grid grid-cols-1 lg:grid-cols-3 p-8 gap-12"
+        >
           <div className="relative h-[300px]">
             <Image
               className="object-cover rounded-sm shadow-md"
@@ -100,13 +102,14 @@ export default function Achernar() {
               />
             </div>
           </div>
-        </section>
+        </GeoDiv>
         <hr className="text-black dark:text-white opacity-20" />
-        <section className="relative grid grid-cols-1 lg:grid-cols-3 p-8 gap-12 border-solid border-x border-black/20 dark:border-white/20 overflow-hidden">
-          <div className="absolute h-4 w-4 -top-2 -right-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
-          <div className="absolute h-4 w-4 -top-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
-          <div className="absolute h-4 w-4 -bottom-2 -right-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
-          <div className="absolute h-4 w-4 -bottom-2 -left-2 rotate-45 bg-black/20 dark:bg-white/20"></div>
+        <GeoDiv
+          border="x"
+          corner
+          cornersize={4}
+          className="grid grid-cols-1 lg:grid-cols-3 p-8 gap-12"
+        >
           <div className="relative h-[300px]">
             <Image
               className="inline dark:hidden object-cover rounded-sm shadow-md"
@@ -192,7 +195,7 @@ export default function Achernar() {
               />
             </div>
           </div>
-        </section>
+        </GeoDiv>
       </div>
     </Layout>
   );
