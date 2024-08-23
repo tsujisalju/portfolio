@@ -39,7 +39,7 @@ export default function Header(Props: HeaderProp) {
       }
     >
       <div className="flex flex-row">
-        <div className="flex flex-row flex-auto p-3 lg:p-6 lg:space-x-12">
+        <div className="flex flex-row flex-1 p-3 lg:p-6 lg:space-x-12">
           <Link href={"/"}>
             <div className="flex flex-row justify-start items-center space-x-2 -ml-2 dark:ml-0">
               <Image
@@ -62,7 +62,7 @@ export default function Header(Props: HeaderProp) {
             </div>
           </Link>
         </div>
-        <nav className="hidden lg:flex grow flex-row place-items-center space-x-6">
+        <nav className="hidden lg:flex grow flex-row place-items-center justify-center space-x-6">
           <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
           <NavLink href="/artworks">
             {intl.formatMessage({ id: "Artworks" })}
@@ -71,7 +71,7 @@ export default function Header(Props: HeaderProp) {
           <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
           <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
         </nav>
-        <div className="hidden lg:flex flex-row space-x-2 flex-1 justify-end items-center p-4">
+        <div className="hidden lg:flex flex-row flex-1 space-x-2 justify-end items-center p-4">
           <SelectLanguage />
           <SelectTheme />
         </div>
