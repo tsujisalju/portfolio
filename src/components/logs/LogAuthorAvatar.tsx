@@ -7,6 +7,9 @@ export function getAuthor(name: string) {
   if (name == "Van Carina") {
     return "/img/avatars/van.png";
   }
+  if (name == "Mynx Amina") {
+    return "/img/avatars/mynx.png";
+  }
   return "";
 }
 export default function LogAuthorAvatar({

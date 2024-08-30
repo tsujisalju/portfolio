@@ -71,7 +71,7 @@ export default function Log({ logData }: { logData: LogData }) {
 
   return (
     <Layout>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 px-8 lg:grid-cols-3 my-8 gap-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 px-4 md:px-8 lg:grid-cols-3 my-8 gap-6">
         <div className="flex flex-col space-y-6 mb-4 py-2">
           <Link href={"/logs" + "#" + logData.id}>
             <svg
