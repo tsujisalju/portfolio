@@ -1,3 +1,4 @@
+import { FormattedDate, useIntl } from "react-intl";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Log, getSortedLogsData } from "../lib/logs";
 import { Project, getSortedProjectsData } from "../lib/projects";
@@ -10,7 +11,6 @@ import Link from "next/link";
 import LogLink from "../components/logs/LogLink";
 import React from "react";
 import { Socials } from "../lib/socials";
-import { useIntl } from "react-intl";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const allProjectsData: Project[] = getSortedProjectsData(locale as string);
@@ -150,37 +150,40 @@ export default function Home({
               </Link>
             </GeoDiv>
           </div>
-          <div className="relative">
-            <div className="overflow-x-auto rounded-md mx-4">
-              <div className="absolute h-full right-0 w-[100px] bg-gradient-to-l from-stone-100 dark:from-stone-900"></div>
-              <div className="flex flex-row flex-nowrap h-[600px] space-x-2 w-max">
-                {allProjectsData.slice(0, 5).map((project: Project) => (
-                  <Link
-                    scroll={false}
-                    href={"/projects/" + project.id}
-                    key={project.id}
-                    className="flex flex-col rounded-md"
-                  >
-                    <Image
-                      className="rounded-md h-full w-full"
-                      src={project.img}
-                      alt={project.id}
-                      width={project.width}
-                      height={project.height}
-                      placeholder="blur"
-                      blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                        shimmer(project.width, project.height),
-                      )}`}
-                    ></Image>
-                  </Link>
-                ))}
-                <div className="grid place-content-center min-w-[300px]">
-                  <Link scroll={false} href={"/artworks"}>
-                    <p className="font-sans text-lg">View more artworks</p>
-                  </Link>
+          <div className="p-4 mx-4 bg-black/10 shadow-inner h-[600px]">
+            <Link scroll={false} href={"/projects/" + allProjectsData[0].id}>
+              <div className="relative w-full h-full">
+                <Image
+                  src={allProjectsData[0].img}
+                  alt={allProjectsData[0].title}
+                  fill
+                  className="object-cover object-top"
+                  placeholder="blur"
+                  blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                    shimmer(
+                      allProjectsData[0].width,
+                      allProjectsData[0].height,
+                    ),
+                  )}`}
+                />
+                <div className="absolute w-full top-0 p-4 border bg-white/50 dark:bg-black/50 border-black/20 dark:border-white/20">
+                  <div className="flex flex-row space-x-4 content-center">
+                    <h1 className="font-display md:text-2xl text-xl">
+                      {allProjectsData[0].title}
+                    </h1>
+
+                    <p className="font-sans font-lg font-light">
+                      <FormattedDate
+                        value={allProjectsData[0].date}
+                        day={"numeric"}
+                        month={"long"}
+                        year={"numeric"}
+                      />
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
