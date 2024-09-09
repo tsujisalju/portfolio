@@ -157,7 +157,7 @@ export default function Home({
                   src={allProjectsData[0].img}
                   alt={allProjectsData[0].title}
                   fill
-                  className="object-cover object-top"
+                  className="object-cover"
                   placeholder="blur"
                   blurDataURL={`data:image/svg+xml;base64,${toBase64(
                     shimmer(

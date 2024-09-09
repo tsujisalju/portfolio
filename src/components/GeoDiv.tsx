@@ -19,7 +19,7 @@ export default function GeoDiv({
   cornersize = "normal",
   className,
 }: {
-  children: ReactNode;
+  children?: ReactNode;
   border?: boolean;
   bordert?: boolean;
   borderb?: boolean;
