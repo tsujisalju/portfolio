@@ -46,7 +46,7 @@ export default function Home({
             height={120}
             width={120}
             alt="purrnama avatar"
-            className="rounded-full"
+            className="rounded-full bg-black/20"
           />
           <div className="flex flex-col space-y-4">
             <div>
@@ -129,7 +129,7 @@ export default function Home({
           </div>
           <div className="flex flex-col col-span-2 flex-1 space-y-2 mx-4 p-4 rounded-lg bg-black/10 shadow-inner h-[600px] overflow-y-auto">
             {allLogsData.slice(0, 5).map((log: Log) => (
-              <LogLink key={log.title} log={log} />
+              <LogLink key={log.title} log={log} simple />
             ))}
           </div>
         </div>

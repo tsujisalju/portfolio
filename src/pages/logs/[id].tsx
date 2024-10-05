@@ -97,15 +97,15 @@ export default function Log({ logData }: { logData: LogData }) {
             />
           </div>
           <GeoDiv
-            className="py-4 flex flex-row space-x-4 h-full"
+            className="p-4 flex flex-row items-center space-x-4"
             border
             cornertr
           >
             <LogAuthorAvatar
-              className="h-8 w-8 rounded-full"
+              className="h-16 w-16 bg-black/30 rounded-full"
               author={logData.author}
-              height={48}
-              width={48}
+              height={120}
+              width={120}
             />
             <p className="font-code text-lg">{logData.author}</p>
           </GeoDiv>

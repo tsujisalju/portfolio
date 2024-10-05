@@ -49,6 +49,7 @@ export default function GeoDiv({
         (bordery ? "border-y " : "")
       }
     >
+      {children}
       {(cornertl || corner) && (
         <div
           className={
@@ -89,7 +90,6 @@ export default function GeoDiv({
           }
         ></div>
       )}
-      {children}
     </div>
   );
 }
