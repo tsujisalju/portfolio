@@ -5,7 +5,7 @@ author: "Cooper Baihaqi"
 readtime: 5
 ---
 
-Sometimes I really just don't how things could ever work out.
+Sometimes I really just don't know how things could ever work out.
 
 I'm on my second year of my degree in Software Engineering, and on the side I also freelancing as an illustrator. I enjoy both programming and doing art.
 
