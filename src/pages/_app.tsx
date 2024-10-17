@@ -11,11 +11,11 @@ import { AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
 import EN_US_LOCALE_MODULE from "../lang/compiled/en-US.json";
 import { IntlProvider } from "react-intl";
-import localFont from "next/font/local";
 import { ParallaxProvider } from "react-scroll-parallax";
 import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "next-themes";
+import localFont from "next/font/local";
 import nookies from "nookies";
 import { useRouter } from "next/router";
 
