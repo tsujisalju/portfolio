@@ -86,11 +86,11 @@ export default function Uses() {
               <ul className="space-y-16">
                 <li>
                   <h3 className="font-sans font-bold text-lg mb-2">
-                    {intl.formatMessage({ id: "Visual Studio Code" })}
+                    {intl.formatMessage({ id: "Zed" })}
                   </h3>
                   <p className="font-serif">
                     {intl.formatMessage({
-                      id: "Polarizing topic regarding the best code editor aside, no doubt anyone would find its versatility and extensiveness of VS Code appealing. Most of my web and game projects are written with VS Code.",
+                      id: "Formerly using VS Code, I immediately fell in love by Zed's simpler and overall faster coding experience, realizing how cluttered everything was after going back. It's got some minor issues here and there, but the ecosystem is actively growing and getting better each passing day.",
                     })}
                   </p>
                 </li>

@@ -1,9 +1,36 @@
 {
+  "Formerly using VS Code, I immediately fell in love by Zed's simpler and overall faster coding experience, realizing how cluttered everything was after going back. It's got some minor issues here and there, but the ecosystem is actively growing and getting better each passing day.": {
+    "string": "Früher habe ich VS Code verwendet und mich sofort in die einfachere und insgesamt schnellere Codierungserfahrung von Zed verliebt, als ich merkte, wie unübersichtlich alles war, als ich zurückging. Es hat einige kleinere Probleme hier und da, aber das Ökosystem wächst aktiv und wird jeden Tag besser."
+  },
+  "Zed": {
+    "string": "Zed"
+  },
+  " Creating a place where I can fully trust to store my data and the things I care for, all while learning about running a server in general, from hardware considerations, networking and security measures.": {
+    "string": "Ich möchte einen Ort schaffen, an dem ich meine Daten und die Dinge, die mir wichtig sind, vertrauensvoll speichern kann, während ich gleichzeitig etwas über den Betrieb eines Servers im Allgemeinen lerne, von Hardwareüberlegungen über Netzwerke bis hin zu Sicherheitsmaßnahmen."
+  },
+  "A personal DIY home server using Nextcloud, powered by a Raspberry Pi 5 running Ubuntu Server.": {
+    "string": "Ein persönlicher DIY-Heimserver mit Nextcloud, betrieben von einem Raspberry Pi 5 mit Ubuntu Server."
+  },
+  "Forever (hopefully)": {
+    "string": "(hoffentlich) für immer"
+  },
+  "Linux": {
+    "string": "Linux"
+  },
+  "More info": {
+    "string": "Mehr Infos"
+  },
+  "Raspberry Pi": {
+    "string": "Raspberry Pi"
+  },
+  "System Admin": {
+    "string": "Systemverwalter"
+  },
   "A solid mouse with 12 buttons on the side. I play MMOs every now and then, and my tiny hands could never reach the entirety of my keyboard to press all the hotkeys, so honestly with this RPG mouse, I couldn't have it any other way.": {
-    "string": "A solid mouse with 12 buttons on the side. I play MMOs every now and then, and my tiny hands could never reach the entirety of my keyboard to press all the hotkeys, so honestly with this RPG mouse, I couldn't have it any other way."
+    "string": "Eine zuverlässige Maus mit 12 Tasten an der Seite. Ich spiele hin und wieder MMOs und meine kleinen Hände könnten nie die gesamte Tastatur erreichen, um alle Hotkeys zu drücken, also könnte ich es mit dieser RPG-Maus gar nicht anders haben."
   },
   "A pair of headphones I picked up at MediaMarkt when I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it.": {
-    "string": "A pair of headphones I picked up at MediaMarkt when I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it."
+    "string": "Ein Paar Kopfhörer, die ich bei MediaMarkt gekauft habe, als ich in Deutschland war. Ich brauchte etwas Günstiges mit einem eingebauten Mikrofon, weil meine Kopfhörer so kaputt waren. Das war es."
   },
   "A picture paints a thousand words. Here, there are {value} words.": {
     "string": "Ein Bild sagt mehr als tausend Worte. Hier, gibt es {value} Worte."

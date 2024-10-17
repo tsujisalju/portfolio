@@ -1,4 +1,31 @@
 {
+  "Formerly using VS Code, I immediately fell in love by Zed's simpler and overall faster coding experience, realizing how cluttered everything was after going back. It's got some minor issues here and there, but the ecosystem is actively growing and getting better each passing day.": {
+    "string": "Sebelum ini menggunakan VS Code, aku terus jatuh cinta dengan pengalaman pengaturcaraan yang lebih mudah dan tangkas, dan sedar betapa berterabur perkara selepas balik semula. Terdapat beberapa isu kecil sini dan sana, namun ekosistemnya terus berkembang aktif dan bertambahbaik saban hari."
+  },
+  "Zed": {
+    "string": "Zed"
+  },
+  " Creating a place where I can fully trust to store my data and the things I care for, all while learning about running a server in general, from hardware considerations, networking and security measures.": {
+    "string": "Menghasilkan tempat di mana aku benar-benar percayai untuk menyimpan data dan perkara-perkara yang aku ambil berat, sambil mempelajarai cara mengendalikan server, daripada pertimbangan perkakasan, rangkaian dan langkah-langkah keselamatan."
+  },
+  "A personal DIY home server using Nextcloud, powered by a Raspberry Pi 5 running Ubuntu Server.": {
+    "string": "Server rumah DIY menggunakan Nextcloud, dikuasai dengan sebuah Raspberry Pi 5 menggunakan Ubuntu Server."
+  },
+  "Forever (hopefully)": {
+    "string": "Selama-lamanya (harapnya)"
+  },
+  "Linux": {
+    "string": "Linux"
+  },
+  "More info": {
+    "string": "Lebih lanjut"
+  },
+  "Raspberry Pi": {
+    "string": "Raspberry Pi"
+  },
+  "System Admin": {
+    "string": "Pentadbir Sistem"
+  },
   "A solid mouse with 12 buttons on the side. I play MMOs every now and then, and my tiny hands could never reach the entirety of my keyboard to press all the hotkeys, so honestly with this RPG mouse, I couldn't have it any other way.": {
     "string": "Tetikus yang elok dengan 12 butang di tepinya. Aku sekali sekala bermain MMO, dan tangan kecilku tidak mampu mencapai keseluruhan papan kekunci. Jadi sejujurnya, dengan tetikus RPG ini, tiada cara lain yang ingin aku terima."
   },

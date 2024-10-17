@@ -1,8 +1,20 @@
 {
+  " Creating a place where I can fully trust to store my data and the things I care for, all while learning about running a server in general, from hardware considerations, networking and security measures.": [
+    {
+      "type": 0,
+      "value": "Ich möchte einen Ort schaffen, an dem ich meine Daten und die Dinge, die mir wichtig sind, vertrauensvoll speichern kann, während ich gleichzeitig etwas über den Betrieb eines Servers im Allgemeinen lerne, von Hardwareüberlegungen über Netzwerke bis hin zu Sicherheitsmaßnahmen."
+    }
+  ],
   "A pair of headphones I picked up at MediaMarkt when I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it.": [
     {
       "type": 0,
-      "value": "A pair of headphones I picked up at MediaMarkt when I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it."
+      "value": "Ein Paar Kopfhörer, die ich bei MediaMarkt gekauft habe, als ich in Deutschland war. Ich brauchte etwas Günstiges mit einem eingebauten Mikrofon, weil meine Kopfhörer so kaputt waren. Das war es."
+    }
+  ],
+  "A personal DIY home server using Nextcloud, powered by a Raspberry Pi 5 running Ubuntu Server.": [
+    {
+      "type": 0,
+      "value": "Ein persönlicher DIY-Heimserver mit Nextcloud, betrieben von einem Raspberry Pi 5 mit Ubuntu Server."
     }
   ],
   "A picture paints a thousand words. Here, there are {value} words.": [
@@ -22,7 +34,7 @@
   "A solid mouse with 12 buttons on the side. I play MMOs every now and then, and my tiny hands could never reach the entirety of my keyboard to press all the hotkeys, so honestly with this RPG mouse, I couldn't have it any other way.": [
     {
       "type": 0,
-      "value": "A solid mouse with 12 buttons on the side. I play MMOs every now and then, and my tiny hands could never reach the entirety of my keyboard to press all the hotkeys, so honestly with this RPG mouse, I couldn't have it any other way."
+      "value": "Eine zuverlässige Maus mit 12 Tasten an der Seite. Ich spiele hin und wieder MMOs und meine kleinen Hände könnten nie die gesamte Tastatur erreichen, um alle Hotkeys zu drücken, also könnte ich es mit dieser RPG-Maus gar nicht anders haben."
     }
   ],
   "Artworks": [
@@ -40,7 +52,7 @@
   "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent.": [
     {
       "type": 0,
-      "value": "As I ween my way out of Adobe, I'm getting used to FOSS alternatives. I have used Inkscape for many merch designs. Once you get used to how it works, it's fairly competent."
+      "value": "Während ich mich von Adobe losmache, gewöhne ich mich an FOSS-Alternativen. Ich habe Inkscape für viele Warendesigns genutzt. Wenn man sich erst einmal daran gewöhnt hat, wie es funktioniert, ist es ziemlich kompentent."
     }
   ],
   "Be the change you want to be.": [
@@ -89,6 +101,18 @@
     {
       "type": 0,
       "value": "Figma"
+    }
+  ],
+  "Forever (hopefully)": [
+    {
+      "type": 0,
+      "value": "(hoffentlich) für immer"
+    }
+  ],
+  "Formerly using VS Code, I immediately fell in love by Zed's simpler and overall faster coding experience, realizing how cluttered everything was after going back. It's got some minor issues here and there, but the ecosystem is actively growing and getting better each passing day.": [
+    {
+      "type": 0,
+      "value": "Früher habe ich VS Code verwendet und mich sofort in die einfachere und insgesamt schnellere Codierungserfahrung von Zed verliebt, als ich merkte, wie unübersichtlich alles war, als ich zurückging. Es hat einige kleinere Probleme hier und da, aber das Ökosystem wächst aktiv und wird jeden Tag besser."
     }
   ],
   "Front End": [
@@ -211,6 +235,12 @@
       "value": "Light"
     }
   ],
+  "Linux": [
+    {
+      "type": 0,
+      "value": "Linux"
+    }
+  ],
   "Logs": [
     {
       "type": 0,
@@ -229,10 +259,16 @@
       "value": "Minswap ist eine dezentralisierte Börse auf der Cardano-Blockchain. Ich habe mit einem globalen Team von agilen Personen zusammengearbeitet, um Werbeinhalte, Waren und Schnittstellendesigns bereitzustellen."
     }
   ],
+  "More info": [
+    {
+      "type": 0,
+      "value": "Mehr Infos"
+    }
+  ],
   "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": [
     {
       "type": 0,
-      "value": "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD."
+      "value": "Mein erster Laptop. Es läuft auf einem bescheidenen AMD Ryzen 5 4600H und Nvidia GTX 1650. Es ist ausreichend für das, was ich tue. Vorher habe ich den 2011er iMac der Familie benutzt, also ist dies ein bedeutendes Upgrade. Später habe ich den RAM auf 16 GB aufgerüstet und eine zweite 1 TB SSD hinzugefügt."
     }
   ],
   "My mother introduced me to programming and game making since I was 9 years old, because I was always on the computer and I ought to put my hobby to good use rather than just mindless flash gaming. And you know what I was pretty hooked by the idea. The fact that I could create something awesome with my own touch of flare is amazing, and the passion burns strong since. The time was convenient enough that my middle school was getting around into participating robotics and game jam competitions. My friends and I pioneered the Robotics Club and I handled the programming side of things. One of the best memories I had was creating a Lego EV3 Mindstorms claw robot for an intrastate competition, and making the design decision to control it with another EV3 brick via Bluetooth instead of a phone over Wifi, which worked in our favor during the run. Before I left the school, they were already setting up courses for game dev with Unity3D, which is so super cool to see.": [
@@ -251,6 +287,12 @@
     {
       "type": 0,
       "value": "Polarizing topic regarding the best code editor aside, no doubt anyone would find its versatility and extensiveness of VS Code appealing. Most of my web and game projects are written with VS Code."
+    }
+  ],
+  "Raspberry Pi": [
+    {
+      "type": 0,
+      "value": "Raspberry Pi"
     }
   ],
   "Razer Kraken V3": [
@@ -281,6 +323,12 @@
     {
       "type": 0,
       "value": "SteelSwap ist ein DEX-Aggregator auf der Cardano-Blockchain. Mit verschiedenen Illustrationen und Interfacedesigns in einer rostigen Cyberpunk-Ästhetik hebt SteelSwap sein Fundament auf neue Höhen."
+    }
+  ],
+  "System Admin": [
+    {
+      "type": 0,
+      "value": "Systemverwalter"
     }
   ],
   "The best of the best in terms of value, its free! Krita is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this software to bits and I will not have it any other way.": [
@@ -347,6 +395,12 @@
     {
       "type": 0,
       "value": "You may know me as purrnama, or my previous alias smolpadok, or by the name of my personas, Van or Cooper. Welcome to my little corner of the internet!"
+    }
+  ],
+  "Zed": [
+    {
+      "type": 0,
+      "value": "Zed"
     }
   ]
 }

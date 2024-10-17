@@ -1,6 +1,12 @@
 {
+  " Creating a place where I can fully trust to store my data and the things I care for, all while learning about running a server in general, from hardware considerations, networking and security measures.": {
+    "string": " Creating a place where I can fully trust to store my data and the things I care for, all while learning about running a server in general, from hardware considerations, networking and security measures."
+  },
   "A pair of headphones I picked up at MediaMarkt when I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it.": {
     "string": "A pair of headphones I picked up at MediaMarkt when I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it."
+  },
+  "A personal DIY home server using Nextcloud, powered by a Raspberry Pi 5 running Ubuntu Server.": {
+    "string": "A personal DIY home server using Nextcloud, powered by a Raspberry Pi 5 running Ubuntu Server."
   },
   "A picture paints a thousand words. Here, there are {value} words.": {
     "string": "A picture paints a thousand words. Here, there are {value} words."
@@ -20,9 +26,6 @@
   "Be the change you want to be.": {
     "string": "Be the change you want to be."
   },
-  "Biography": {
-    "string": "Biography"
-  },
   "Dark": {
     "string": "Dark"
   },
@@ -40,6 +43,12 @@
   },
   "Figma": {
     "string": "Figma"
+  },
+  "Forever (hopefully)": {
+    "string": "Forever (hopefully)"
+  },
+  "Formerly using VS Code, I immediately fell in love by Zed's simpler and overall faster coding experience, realizing how cluttered everything was after going back. It's got some minor issues here and there, but the ecosystem is actively growing and getting better each passing day.": {
+    "string": "Formerly using VS Code, I immediately fell in love by Zed's simpler and overall faster coding experience, realizing how cluttered everything was after going back. It's got some minor issues here and there, but the ecosystem is actively growing and getting better each passing day."
   },
   "Front End": {
     "string": "Front End"
@@ -101,6 +110,9 @@
   "Light": {
     "string": "Light"
   },
+  "Linux": {
+    "string": "Linux"
+  },
   "Logs": {
     "string": "Logs"
   },
@@ -109,6 +121,9 @@
   },
   "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs.": {
     "string": "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs."
+  },
+  "More info": {
+    "string": "More info"
   },
   "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": {
     "string": "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD."
@@ -119,8 +134,8 @@
   "Next.js": {
     "string": "Next.js"
   },
-  "Polarizing topic regarding the best code editor aside, no doubt anyone would find its versatility and extensiveness of VS Code appealing. Most of my web and game projects are written with VS Code.": {
-    "string": "Polarizing topic regarding the best code editor aside, no doubt anyone would find its versatility and extensiveness of VS Code appealing. Most of my web and game projects are written with VS Code."
+  "Raspberry Pi": {
+    "string": "Raspberry Pi"
   },
   "Razer Kraken V3": {
     "string": "Razer Kraken V3"
@@ -136,6 +151,9 @@
   },
   "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to new heights with various illustrations and interface designs with a rusty cyberpunk aesthetic.": {
     "string": "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to new heights with various illustrations and interface designs with a rusty cyberpunk aesthetic."
+  },
+  "System Admin": {
+    "string": "System Admin"
   },
   "The best of the best in terms of value, its free! Krita is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this software to bits and I will not have it any other way.": {
     "string": "The best of the best in terms of value, its free! Krita is a very respectable for an open-source software. Comes with lots of brushes, can record timelapses and also do animation! I love this software to bits and I will not have it any other way."
@@ -155,9 +173,6 @@
   "Visit Website": {
     "string": "Visit Website"
   },
-  "Visual Studio Code": {
-    "string": "Visual Studio Code"
-  },
   "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs.": {
     "string": "We use Figma for all the interface mocks and marketing media. I find the sorting and layout particularly handy in comparison to other design programs."
   },
@@ -169,5 +184,8 @@
   },
   "You may know me as purrnama, or my previous alias smolpadok, or by the name of my personas, Van or Cooper. Welcome to my little corner of the internet!": {
     "string": "You may know me as purrnama, or my previous alias smolpadok, or by the name of my personas, Van or Cooper. Welcome to my little corner of the internet!"
+  },
+  "Zed": {
+    "string": "Zed"
   }
 }

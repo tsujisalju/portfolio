@@ -4,6 +4,7 @@ import GeoDiv from "../components/GeoDiv";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import MinswapLogo from "../components/svg/MinswapLogo";
+import MuwafaqahLogo from "../components/svg/MuwafaqahLogo";
 import React from "react";
 import SteelSwapLogo from "../components/svg/SteelSwapLogo";
 import Tag from "../components/Tag";
@@ -29,15 +30,77 @@ export default function Achernar() {
         ></GeoDiv>
       </div>
        */}
+
       <div className="px-4 lg:px-0 max-w-7xl mx-auto flex flex-col space-y-6">
         {/*<GeoDiv className="px-8 py-4" bordery borderl cornerbl cornerbr>
           <h1 className="font-code uppercase text-xl">Past commercial works</h1>
         </GeoDiv>*/}
+
         <GeoDiv
           borderx
           corner
           cornersize="normal"
-          className="grid grid-cols-1 lg:grid-cols-3 p-8 gap-12"
+          className="grid grid-cols-1 lg:grid-cols-3 p-4 lg:p-8 gap-12"
+        >
+          <div className="relative h-[300px]">
+            <Image
+              className="object-contain"
+              src={"/img/muwafaqah/muwafaqah-lulu-full.png"}
+              alt="lulu the cat"
+              fill
+            />
+          </div>
+          <div className="lg:col-span-2 flex flex-1 flex-col gap-y-6 ">
+            <MuwafaqahLogo className="text-stone-950 dark:text-stone-50 h-16" />
+            <div className="flex flex-row gap-2 flex-wrap">
+              <Tag>
+                {intl.formatMessage({
+                  id: "System Admin",
+                })}
+              </Tag>
+              <Tag>
+                {intl.formatMessage({
+                  id: "Linux",
+                })}
+              </Tag>
+              <Tag>
+                {intl.formatMessage({
+                  id: "Raspberry Pi",
+                })}
+              </Tag>
+            </div>
+            <h2 className="font-sans font-light">
+              <FormattedDate
+                value={"2024-07"}
+                month={"long"}
+                year={"numeric"}
+              />
+              {" - "}
+              {intl.formatMessage({
+                id: "Forever (hopefully)",
+              })}
+            </h2>
+            <p className="font-sans">
+              {intl.formatMessage({
+                id: "A personal DIY home server using Nextcloud, powered by a Raspberry Pi 5 running Ubuntu Server.",
+              })}
+            </p>
+            <p className="font-sans">
+              {intl.formatMessage({
+                id: " Creating a place where I can fully trust to store my data and the things I care for, all while learning about running a server in general, from hardware considerations, networking and security measures.",
+              })}
+            </p>
+            <Button href="/logs/muwafaqah-proposal">
+              {intl.formatMessage({ id: "More info" })}
+            </Button>
+          </div>
+        </GeoDiv>
+        <hr className="text-black dark:text-white opacity-20" />
+        <GeoDiv
+          borderx
+          corner
+          cornersize="normal"
+          className="grid grid-cols-1 lg:grid-cols-3 p-4 lg:p-8  gap-12"
         >
           <div className="relative h-[300px]">
             <Image
@@ -122,7 +185,7 @@ export default function Achernar() {
           borderx
           corner
           cornersize="normal"
-          className="grid grid-cols-1 lg:grid-cols-3 p-8 gap-12"
+          className="grid grid-cols-1 lg:grid-cols-3 p-4 lg:p-8  gap-12"
         >
           <div className="relative h-[300px]">
             <Image
