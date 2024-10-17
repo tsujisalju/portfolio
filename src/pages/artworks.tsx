@@ -38,7 +38,7 @@ export default function Artworks({
           <h1 className="font-display text-3xl">
             {intl.formatMessage({ id: "Artworks" })}
           </h1>
-          <p className="font-sans text-lg">
+          <p className="font-sans">
             {intl.formatMessage(
               {
                 id: "A picture paints a thousand words. Here, there are {value} words.",

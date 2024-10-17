@@ -13,10 +13,10 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-karla)", "sans-serif"],
-        serif: ["var(--font-source-serif)", "serif"],
+        sans: ["var(--font-m-plus)", "sans-serif"],
+        serif: ["var(--font-m-plus-code)", "serif"],
         display: ["Sinistre", "var(--font-source-serif)", "serif"],
-        code: ["var(--font-source-code-pro)", "monospace"],
+        code: ["var(--font-m-plus-code)", "monospace"],
       },
     },
   },

@@ -16,7 +16,23 @@ export default function Achernar() {
   }, []);
   return (
     <Layout>
-      <div className="px-4 lg:px-0 max-w-7xl mx-auto flex flex-col space-y-8">
+      {/*
+      <div className="px-4 lg:px-0 max-w-7xl mx-auto flex flex-col space-y-6 mb-12">
+        <GeoDiv className="px-8 py-4" bordery borderl cornerbl cornerbr>
+          <h1 className="font-code uppercase text-xl">Skills</h1>
+        </GeoDiv>
+        <GeoDiv
+          borderx
+          corner
+          cornersize="normal"
+          className="grid grid-cols-1 lg:grid-cols-3 p-8 gap-12"
+        ></GeoDiv>
+      </div>
+       */}
+      <div className="px-4 lg:px-0 max-w-7xl mx-auto flex flex-col space-y-6">
+        {/*<GeoDiv className="px-8 py-4" bordery borderl cornerbl cornerbr>
+          <h1 className="font-code uppercase text-xl">Past commercial works</h1>
+        </GeoDiv>*/}
         <GeoDiv
           borderx
           corner
@@ -32,7 +48,7 @@ export default function Achernar() {
             />
           </div>
           <div className="lg:col-span-2 flex flex-1 flex-col gap-y-6 ">
-            <SteelSwapLogo className="text-[#2F272E] dark:text-[#ffeddc] h-24" />
+            <SteelSwapLogo className="text-[#2F272E] dark:text-[#ffeddc] h-16" />
             <div className="flex flex-row gap-2 flex-wrap">
               <Tag>
                 {intl.formatMessage({
@@ -45,7 +61,7 @@ export default function Achernar() {
                 })}
               </Tag>
             </div>
-            <h2 className="font-sans font-light text-lg">
+            <h2 className="font-sans font-light">
               <FormattedDate
                 value={"2023-12"}
                 month={"long"}
@@ -58,19 +74,17 @@ export default function Achernar() {
                 year={"numeric"}
               />
             </h2>
-            <p className="font-sans text-lg">
+            <p className="font-sans">
               {intl.formatMessage({
                 id: "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to new heights with various illustrations and interface designs with a rusty cyberpunk aesthetic.",
               })}
             </p>
-            <div className="font-serif text-lg py-4 px-6 bg-stone-50 dark:bg-stone-950/20 max-w-fit rounded-md shadow-inner">
+            <div className="font-serif py-4 px-6 bg-stone-50 dark:bg-stone-950/20 max-w-fit rounded-md shadow-inner">
               <p className="italic">
                 &quot;0 regrets on this design purrnama. You are doing amazing
                 work.&quot;
               </p>
-              <p className="font-sans text-lg">
-                - ElderM, Founder of SteelSwap
-              </p>
+              <p className="font-sans">- ElderM, Founder of SteelSwap</p>
             </div>
             <Button href="https://steelswap.io">
               {intl.formatMessage({ id: "Visit Website" })}
@@ -126,8 +140,8 @@ export default function Achernar() {
           </div>
           <div className="col-span-2 flex flex-1 flex-col gap-y-6">
             <div className=" flex flex-row space-x-4 items-center">
-              <MinswapLogo className="slate-950 dark:slate-50 w-[210px]" />
-              <p className="font-sans text-xl">V1</p>
+              <MinswapLogo className="slate-950 dark:slate-50 w-[210px] h-16" />
+              <p className="font-code text-xl">V1</p>
             </div>
             <div className="flex flex-row gap-2 flex-wrap">
               <Tag>
@@ -146,7 +160,7 @@ export default function Achernar() {
                 })}
               </Tag>
             </div>
-            <h2 className="font-sans font-light text-lg">
+            <h2 className="font-sans font-light">
               <FormattedDate
                 value={"2021-05"}
                 month={"long"}
@@ -159,7 +173,7 @@ export default function Achernar() {
                 year={"numeric"}
               />
             </h2>
-            <p className="font-sans text-lg">
+            <p className="font-sans">
               {intl.formatMessage({
                 id: "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs.",
               })}

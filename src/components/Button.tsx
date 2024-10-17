@@ -15,7 +15,7 @@ export default function Button({
         className="transition duration-100 bg-stone-50 dark:bg-stone-800 w-max px-4 py-2 shadow-md hover:bg-opacity-50 dark:hover:bg-opacity-50 hover:shadow-lg"
         border
       >
-        <p className="font-sans text-lg">{children}</p>
+        <p className="font-sans">{children}</p>
       </GeoDiv>
     </Link>
   );

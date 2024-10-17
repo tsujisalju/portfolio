@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import {
   DM_Serif_Display,
   Karla,
+  M_PLUS_1,
+  M_PLUS_1_Code,
   Source_Code_Pro,
   Source_Serif_4,
 } from "next/font/google";
@@ -15,6 +17,18 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "next-themes";
 import nookies from "nookies";
 import { useRouter } from "next/router";
+
+const m_plus = M_PLUS_1({
+  subsets: ["latin"],
+  style: ["normal"],
+  variable: "--font-m-plus",
+});
+
+const m_plus_code = M_PLUS_1_Code({
+  subsets: ["latin"],
+  style: ["normal"],
+  variable: "--font-m-plus-code",
+});
 
 const karla = Karla({
   subsets: ["latin"],
@@ -72,7 +86,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ParallaxProvider>
           <main
-            className={`${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${source_code_pro.variable}`}
+            className={`${m_plus.variable} ${m_plus_code.variable} ${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${source_code_pro.variable}`}
           >
             <AnimatePresence
               mode="wait"

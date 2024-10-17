@@ -28,7 +28,7 @@ export default function LogLink({
               <h1 className="font-display text-xl md:text-2xl grow">
                 {log.title}
               </h1>
-              <p className="hidden xl:inline font-code font-light text-md">
+              <p className="hidden xl:inline font-sans font-light text-md">
                 <FormattedDate
                   value={log.date}
                   year="numeric"
@@ -36,7 +36,7 @@ export default function LogLink({
                   day="numeric"
                 />
               </p>
-              <p className="inline xl:hidden font-code font-light text-md">
+              <p className="inline xl:hidden font-sans font-light text-md">
                 <FormattedDate
                   value={log.date}
                   year="numeric"
@@ -53,7 +53,7 @@ export default function LogLink({
                   height={48}
                   width={48}
                 ></LogAuthorAvatar>
-                <p className="font-code font-light text-md">{log.author}</p>
+                <p className="font-sans font-light text-md">{log.author}</p>
               </div>
               <div className="flex flex-row items-center space-x-3">
                 <svg
@@ -71,7 +71,7 @@ export default function LogLink({
                   />
                 </svg>
 
-                <p className="hidden xl:inline font-code font-light text-md">
+                <p className="hidden xl:inline font-sans font-light text-md">
                   <FormattedRelativeTime value={log.readtime} unit="minute" />
                 </p>
                 <p className="inline xl:hidden font-code font-light text-md">
@@ -91,14 +91,16 @@ export default function LogLink({
               alt={log.author}
               height={250}
               width={250}
-              className={"absolute -bottom-[20%] -right-[5%] opacity-60 -z-10"}
+              className={
+                "absolute -bottom-[20%] -right-[20%] sm:-right-[5%] opacity-60 -z-10"
+              }
             />
             <div className="flex flex-col p-6 space-y-2">
               <div className="flex flex-col flex-1 items-start space-y-2">
                 <h1 className="font-display text-xl md:text-2xl grow">
                   {log.title}
                 </h1>
-                <p className="hidden xl:inline font-code font-light text-md">
+                <p className="hidden xl:inline font-sans font-light text-md">
                   <FormattedDate
                     value={log.date}
                     year="numeric"
@@ -122,7 +124,7 @@ export default function LogLink({
                     />
                   </svg>
 
-                  <p className="hidden xl:inline font-code font-light text-md">
+                  <p className="hidden xl:inline font-sans font-light text-md">
                     <FormattedRelativeTime value={log.readtime} unit="minute" />
                   </p>
                   <p className="inline xl:hidden font-code font-light text-md">
@@ -133,7 +135,7 @@ export default function LogLink({
                     />
                   </p>
                 </div>
-                <p className="inline xl:hidden font-code font-light text-md">
+                <p className="inline xl:hidden font-sans font-light text-md">
                   <FormattedDate
                     value={log.date}
                     year="numeric"

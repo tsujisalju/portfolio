@@ -7,7 +7,7 @@ readtime: 5
 
 Sometimes I really just don't know how things could ever work out.
 
-I'm on my second year of my degree in Software Engineering, and on the side I also freelancing as an illustrator. I enjoy both programming and doing art.
+I'm on my second year of my degree in Software Engineering, and on the side I also do freelancing as an illustrator. I enjoy both programming and doing art.
 
 As much as I try to convince myself that I can somehow blend the two together, in reality they're just oil and water.
 

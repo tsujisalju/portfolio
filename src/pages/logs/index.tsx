@@ -32,7 +32,7 @@ export default function Logs({ allLogsData }: { allLogsData: Log[] }) {
               BETA
             </div>
           </div>
-          <p className="font-sans text-lg">
+          <p className="font-sans">
             {intl.formatMessage({
               id: "Reports, recollections and reflections.",
             })}

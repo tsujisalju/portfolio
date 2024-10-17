@@ -88,7 +88,7 @@ export default function Log({ logData }: { logData: LogData }) {
             </svg>
           </Link>
           <h1 className="font-display text-3xl ">{logData.title}</h1>
-          <div className="font-code font-light font-lg">
+          <div className="font-sans font-light font-lg">
             <FormattedDate
               value={logData.date}
               day={"numeric"}
@@ -107,7 +107,7 @@ export default function Log({ logData }: { logData: LogData }) {
               height={120}
               width={120}
             />
-            <p className="font-code text-lg">{logData.author}</p>
+            <p className="font-sans text-lg">{logData.author}</p>
           </GeoDiv>
         </div>
         <div className="col-span-2 flex flex-col space-y-6 p-8 text-justify font-code text-md bg-black/10 rounded-lg shadow-inner min-h-[300px] lg:h-[600px] lg:overflow-y-auto">

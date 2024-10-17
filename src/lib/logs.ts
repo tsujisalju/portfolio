@@ -6,6 +6,17 @@ import { remark } from "remark";
 
 const logsDirectory = path.join(process.cwd(), "src/logs");
 
+export type Feelings =
+  | "joy"
+  | "content"
+  | "neutral"
+  | "serious"
+  | "reflecting"
+  | "frowning"
+  | "sad"
+  | "confused"
+  | "thinking";
+
 export type Log = {
   date: string;
   title: string;

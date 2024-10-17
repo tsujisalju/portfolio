@@ -23,7 +23,7 @@ export default function SelectLanguage() {
     <Menu as="div" className={"relative"}>
       <Menu.Button as="button">
         <GeoDiv
-          className="h-8 flex flex-row w-full justify-center items-center transition transition-75 bg-stone-50 dark:bg-stone-800 px-3 py-2 space-x-2 text-lg font-sans hover:bg-opacity-50 dark:hover:bg-opacity-50 shadow-md hover:shadow-lg"
+          className="h-8 flex flex-row w-full justify-center items-center transition transition-75 bg-stone-50 dark:bg-stone-800 px-3 py-2 space-x-2 font-sans hover:bg-opacity-50 dark:hover:bg-opacity-50 shadow-md hover:shadow-lg"
           border
         >
           <p>{getShortName(locale)}</p>
@@ -62,7 +62,7 @@ export default function SelectLanguage() {
                 {({ active }) => (
                   <div
                     className={
-                      "font-sans transition transition-75 text-lg p-2 pl-3 pr-4 text-left" +
+                      "font-sans transition transition-75 p-2 pl-3 pr-4 text-left" +
                       (active && " bg-stone-200 dark:bg-stone-700")
                     }
                     onClick={() => HandleSelectLanguage(lang)}

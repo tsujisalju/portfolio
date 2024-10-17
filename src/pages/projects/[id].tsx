@@ -172,7 +172,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
               </div>
               <hr className="text-black dark:text-white opacity-20" />
               <div
-                className="flex flex-col space-y-4 font-serif font-normal text-lg"
+                className="flex flex-col space-y-4 font-serif font-normal"
                 dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
               />
             </div>

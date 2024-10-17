@@ -56,7 +56,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
               {project.title}
             </h1>
 
-            <p className="font-sans font-lg font-light">
+            <p className="font-sans font-light text-sm">
               <FormattedDate
                 value={project.date}
                 day={"numeric"}
