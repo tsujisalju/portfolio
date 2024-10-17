@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Sinistre";
+    src: url("/fonts/Sinistre/Sinistre-Bold.otf");
+    format: "opentype";
+}
+
 @layer utilities {
     .parallax-parent {
         transform-style: preserve-3d;
