@@ -3,6 +3,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Log, getSortedLogsData } from "../lib/logs";
 import { Project, getSortedProjectsData } from "../lib/projects";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
+import BlueSkyIcon from "../lib/svg/BlueSkyIcon";
 import GeoDiv from "../components/GeoDiv";
 import Hero from "../components/Hero";
 import Image from "next/image";
@@ -11,7 +12,6 @@ import Link from "next/link";
 import LogLink from "../components/logs/LogLink";
 import React from "react";
 import { Socials } from "../lib/socials";
-import BlueSkyIcon from "../lib/svg/BlueSkyIcon";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const allProjectsData: Project[] = getSortedProjectsData(locale as string);
