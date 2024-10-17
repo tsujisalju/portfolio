@@ -15,7 +15,7 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-m-plus)", "sans-serif"],
         serif: ["var(--font-m-plus-code)", "serif"],
-        display: ["Sinistre", "var(--font-source-serif)", "serif"],
+        display: ["var(--font-sinistre)", "var(--font-source-serif)", "serif"],
         code: ["var(--font-m-plus-code)", "monospace"],
       },
     },

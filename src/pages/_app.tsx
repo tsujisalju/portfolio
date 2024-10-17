@@ -11,12 +11,14 @@ import { AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
 import EN_US_LOCALE_MODULE from "../lang/compiled/en-US.json";
 import { IntlProvider } from "react-intl";
+import LocalFont from "next/font/local";
 import { ParallaxProvider } from "react-scroll-parallax";
 import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "next-themes";
 import nookies from "nookies";
 import { useRouter } from "next/router";
+import localFont from "next/font/local";
 
 const m_plus = M_PLUS_1({
   subsets: ["latin"],
@@ -50,6 +52,11 @@ const source_code_pro = Source_Code_Pro({
   subsets: ["latin"],
   style: ["normal", "italic"],
   variable: "--font-source-code-pro",
+});
+
+const sinistre = localFont({
+  src: "./fonts/Sinistre/Sinistre-Bold.otf",
+  variable: "--font-sinistre",
 });
 
 type LocaleModule = Record<string, any>;
@@ -86,7 +93,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ParallaxProvider>
           <main
-            className={`${m_plus.variable} ${m_plus_code.variable} ${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${source_code_pro.variable}`}
+            className={`${sinistre.variable} ${m_plus.variable} ${m_plus_code.variable} ${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${source_code_pro.variable}`}
           >
             <AnimatePresence
               mode="wait"

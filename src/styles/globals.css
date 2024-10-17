@@ -1,26 +1,3 @@
-@font-face {
-    font-family: "Bluu Next";
-    src: url("/fonts/BluuNext/BluuNext-Bold.otf");
-}
-@font-face {
-    font-family: "Basteleur";
-    src: url("/fonts/Basteleur/Basteleur-Moonlight.otf");
-}
-@font-face {
-    font-family: "Taagra";
-    src: url("/fonts/Taagra/TaagraCalligraphy.otf");
-}
-
-@font-face {
-    font-family: "Sinistre";
-    src: url("/fonts/Sinistre/Sinistre-Bold.otf");
-}
-
-@font-face {
-    font-family: "Nyght";
-    src: url("/fonts/Nyght/NyghtSerif-BoldItalic.otf");
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
