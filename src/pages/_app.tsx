@@ -11,14 +11,13 @@ import { AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
 import EN_US_LOCALE_MODULE from "../lang/compiled/en-US.json";
 import { IntlProvider } from "react-intl";
-import LocalFont from "next/font/local";
+import localFont from "next/font/local";
 import { ParallaxProvider } from "react-scroll-parallax";
 import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "next-themes";
 import nookies from "nookies";
 import { useRouter } from "next/router";
-import localFont from "next/font/local";
 
 const m_plus = M_PLUS_1({
   subsets: ["latin"],
