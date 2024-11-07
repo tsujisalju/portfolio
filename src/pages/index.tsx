@@ -34,32 +34,40 @@ export default function Home({
   }, []);
   return (
     <Layout>
-      <div className="h-[90vh] w-full relative grid place-content-center">
+      <div className="min-h-[90vh] w-full relative grid gap-y-32 place-content-center overflow-hidden">
         <Image
-          className="object-cover object-top opacity-50 lg:opacity-80"
+          className="object-cover object-top opacity-50 lg:opacity-80 -z-10 transition duration-300"
           src="/img/favor.webp"
           alt="favor"
           fill
           priority
+          unoptimized
         />
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 lg:px-8">
-          <div className="max-w-5xl flex flex-1 flex-col space-y-4">
+          <div className="max-w-xl flex flex-1 flex-col space-y-4">
             <GeoDiv
-              className="flex flex-col lg:flex-row lg:items-center gap-8 px-12 lg:mb-64"
+              className="flex flex-col lg:items-start gap-8 p-12"
               borderx
               cornertr
               cornersize="large"
             >
               <Image
-                src="/img/avatars/mynx.png"
-                height={120}
-                width={120}
-                alt="purrnama avatar"
-                className="rounded-full bg-black/20"
+                className="dark:hidden"
+                src={"/img/logo-dark-v2.png"}
+                alt="purrnama logo dark"
+                height={48}
+                width={48}
+              />
+              <Image
+                className="hidden dark:inline"
+                src={"/img/logo-light-v2.png"}
+                alt="purrnama logo light"
+                height={48}
+                width={48}
               />
               <div className="flex flex-col space-y-4">
                 <div>
-                  <h1 className="font-display text-4xl">
+                  <h1 className="font-display text-4xl lg:text-5xl">
                     {intl.formatMessage({
                       id: "Be the change you want to be.",
                     })}
@@ -78,24 +86,6 @@ export default function Home({
                   </p>
                 </div>
                 <div className="flex flex-row pt-4 space-x-3 place-items-center">
-                  <Link
-                    href={Socials.X}
-                    target={"_blank"}
-                    className={
-                      "text-stone-700 hover:text-stone-800 dark:text-stone-300 hover:dark:text-stone-200 transition duration-200"
-                    }
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
-                      fill="currentColor"
-                      className="bi bi-twitter-x"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
-                    </svg>
-                  </Link>
                   <Link
                     href={Socials.Github}
                     target={"_blank"}
@@ -118,12 +108,28 @@ export default function Home({
                     href={Socials.Bluesky}
                     target={"_blank"}
                     className={
-                      "text-stone-700 hover:text-stone-800 dark:text-stone-300 hover:dark:text-stone-200 transition duration-200"
+                      "text-stone-700 hover:text-stone-800 dark:text-stone-300 hover:dark:text-stone-200 transition duration-100"
                     }
                   >
                     <BlueSkyIcon className="" />
                   </Link>
                 </div>
+              </div>
+            </GeoDiv>
+          </div>
+        </div>
+        <div className="container mx-auto lg:grid hidden grid-cols-2 mb-8">
+          <div></div>
+          <div className="backdrop-blur-sm">
+            <GeoDiv
+              className="flex flex-col gap-4 p-8"
+              border
+              cornertl
+              cornersize="normal"
+            >
+              <div className="max-w-xl w-full flex flex-1 flex-col space-y-2">
+                <h1 className="text-3xl font-display">VAN CARINA</h1>
+                <p className="font-sans">Turkish Van Cat</p>
               </div>
             </GeoDiv>
           </div>
