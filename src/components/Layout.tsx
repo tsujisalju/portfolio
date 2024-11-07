@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 import Footer from "./Footer";
 import Head from "next/head";
 import Header from "./Header";
@@ -12,8 +12,13 @@ export default function Layout({
   home?: boolean;
   disableMeta?: boolean;
 }) {
+  const [isAnimating, setIsAnimating] = useState<Boolean>(true);
   return (
-    <div className="flex flex-col min-h-screen">
+    <div
+      className={
+        "flex flex-col min-h-screen " + (isAnimating ? "overflow-x-hidden" : "")
+      }
+    >
       <Head>
         <title>purrnama | Freelance Developer & Designer</title>
         <meta
@@ -63,10 +68,12 @@ export default function Layout({
       <Header />
       <motion.div
         className="flex-1"
-        initial={{ x: 5, opacity: 0 }}
+        initial={{ x: 10, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        exit={{ x: -5, opacity: 0 }}
+        exit={{ x: -10, opacity: 0 }}
         transition={{ duration: 0.1 }}
+        onAnimationStart={() => setIsAnimating(true)}
+        onAnimationComplete={() => setIsAnimating(false)}
       >
         {children}
       </motion.div>

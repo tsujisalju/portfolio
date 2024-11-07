@@ -110,7 +110,10 @@ export default function Log({ logData }: { logData: LogData }) {
             <p className="font-sans text-lg">{logData.author}</p>
           </GeoDiv>
         </div>
-        <div className="col-span-2 flex flex-col space-y-6 p-8 text-justify font-code text-md bg-black/10 rounded-lg shadow-inner min-h-[300px] lg:h-[600px] lg:overflow-y-auto">
+        <div
+          className="col-span-2 flex flex-col space-y-6 p-8 text-justify font-code text-md bg-black/10 rounded-lg shadow-inner min-h-[300px] lg:h-[600px] lg:overflow-y-auto"
+          style={{ scrollbarWidth: "thin" }}
+        >
           <div className="mt-auto" />
           {typeParagraphs.map((p, i) => {
             if (i < currentParagraph) {

@@ -3,58 +3,58 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Sinistre";
-    src: url("/fonts/Sinistre/Sinistre-Bold.otf");
-    format: "opentype";
+  font-family: "Sinistre";
+  src: url("/fonts/Sinistre/Sinistre-Bold.otf");
+  format: "opentype";
 }
 
 @layer utilities {
-    .parallax-parent {
-        transform-style: preserve-3d;
-    }
-    .parallax-child {
-        transform: translateZ(50px);
-    }
+  .parallax-parent {
+    transform-style: preserve-3d;
+  }
+  .parallax-child {
+    transform: translateZ(50px);
+  }
 }
 
 #minswap-gallery {
-    animation-name: scroll;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  animation-name: scroll;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .light {
-    --bg: #f5f5f4;
-    --fg: #1c1917;
-    --p: #44403c;
+  --bg: #f5f5f4;
+  --fg: #1c1917;
+  --p: #44403c;
 }
 
 .dark {
-    --bg: #1c1917;
-    --fg: #f5f5f4;
-    --p: #d6d3d1;
+  --bg: #1c1917;
+  --fg: #f5f5f4;
+  --p: #d6d3d1;
 }
 
 body {
-    color: var(--fg);
-    background: var(--bg);
+  color: var(--fg);
+  background: var(--bg);
 }
 
 p {
-    color: var(--p);
+  color: var(--p);
 }
 
 ::selection {
-    color: var(--bg);
-    background: var(--fg);
+  color: var(--bg);
+  background: var(--fg);
 }
