@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import { useEffect } from "react";
 import { useIntl } from "react-intl";
+import GeoDiv from "../components/GeoDiv";
 
 export default function Uses() {
   const intl = useIntl();
@@ -12,7 +13,166 @@ export default function Uses() {
 
   return (
     <Layout>
-      <div className=" max-w-3xl mx-auto space-y-20 mt-16">
+      <div className="container mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 m-4">
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-2">
+          <div className="p-4 h-full">
+            <h1 className="text-xl font-display">
+              {intl.formatMessage({ id: "Hardware" })}
+            </h1>
+          </div>
+          <div className="flex flex-col space-y-2 col-span-2">
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Keyboard" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Nuphy Halo75 V2" })}
+                </h2>
+              </div>
+            </GeoDiv>
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Headphones" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Steelseries Arctis Nova 3" })}
+                </h2>
+              </div>
+            </GeoDiv>
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Mouse" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Razer Naga X" })}
+                </h2>
+              </div>
+            </GeoDiv>
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Drawing Tablet" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Huion Q11K V2" })}
+                </h2>
+              </div>
+            </GeoDiv>
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Microphone" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "AKG Ara" })}
+                </h2>
+              </div>
+            </GeoDiv>
+          </div>
+        </section>
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-2">
+          <div className="p-4 h-full">
+            <h1 className="text-xl font-display">
+              {intl.formatMessage({ id: "Development" })}
+            </h1>
+          </div>
+          <div className="flex flex-col space-y-2 col-span-2">
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Operating System" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Debian 12" })}
+                </h2>
+              </div>
+            </GeoDiv>
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Code Editor" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Zed" })}
+                </h2>
+              </div>
+            </GeoDiv>
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Javascript Framework" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Next.js" })}
+                </h2>
+              </div>
+            </GeoDiv>
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Deployment Infrastructure" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Vercel" })}
+                </h2>
+              </div>
+            </GeoDiv>
+          </div>
+        </section>
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-2">
+          <div className="p-4 h-full">
+            <h1 className="text-xl font-display">
+              {intl.formatMessage({ id: "Design" })}
+            </h1>
+          </div>
+          <div className="flex flex-col space-y-2 col-span-2">
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Illustration" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Krita" })}
+                </h2>
+              </div>
+            </GeoDiv>
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "UI Design" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Figma" })}
+                </h2>
+              </div>
+            </GeoDiv>
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Vector Graphics" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Inkscape" })}
+                </h2>
+              </div>
+            </GeoDiv>
+            <GeoDiv border cornertr>
+              <div className="p-4 flex flex-col space-y-2">
+                <small className="uppercase font-light">
+                  {intl.formatMessage({ id: "Motion Graphics" })}
+                </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Adobe After Effects" })}
+                </h2>
+              </div>
+            </GeoDiv>
+          </div>
+        </section>
+      </div>
+      {/*<div className=" max-w-3xl mx-auto space-y-20 mt-16">
         <section className="relative md:border-l md:border-black/20 dark:md:border-white/20 md:pl-6 md:overflow-hidden">
           <div className="hidden md:inline absolute h-4 w-4 -top-2 -left-2 bg-black/20 dark:bg-white/20 rotate-45" />
           <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8 px-8 lg:px-0">
@@ -53,7 +213,7 @@ export default function Uses() {
                 </li>
                 <li>
                   <h3 className="font-sans font-bold text-lg mb-2">
-                    {intl.formatMessage({ id: "Razer Kraken V3" })}
+                    {intl.formatMessage({ id: "Steelseries Arctis Nova 3" })}
                   </h3>
                   <p className="font-serif">
                     {intl.formatMessage({
@@ -150,7 +310,7 @@ export default function Uses() {
             </div>
           </div>
         </section>
-      </div>
+      </div>*/}
     </Layout>
   );
 }
