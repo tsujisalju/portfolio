@@ -1,4 +1,64 @@
 {
+  "AKG Ara": {
+    "string": "AKG Ara"
+  },
+  "Adobe After Effects": {
+    "string": "Adobe After Effects"
+  },
+  "Code Editor": {
+    "string": "Penyunting Kod"
+  },
+  "Deployment Infrastructure": {
+    "string": "Deployment Infrastructure"
+  },
+  "Drawing Tablet": {
+    "string": "Tablet Lukisan"
+  },
+  "Hardware": {
+    "string": "Perkakasan"
+  },
+  "Headphones": {
+    "string": "Fon Kepala"
+  },
+  "Huion Q11K V2": {
+    "string": "Huion Q11K V2"
+  },
+  "Illustration": {
+    "string": "Ilustrasi"
+  },
+  "Javascript Framework": {
+    "string": "Rangka Kerja Javascript"
+  },
+  "Keyboard": {
+    "string": "Papan Kekunci"
+  },
+  "Microphone": {
+    "string": "Microfon"
+  },
+  "Motion Graphics": {
+    "string": "Grafik Animasi"
+  },
+  "Mouse": {
+    "string": "Tetikus"
+  },
+  "Nuphy Halo75 V2": {
+    "string": "Nuphy Halo75 V2"
+  },
+  "Operating System": {
+    "string": "Sistem Operasi"
+  },
+  "Steelseries Arctis Nova 3": {
+    "string": "Steelseries Arctis Nova 3"
+  },
+  "UI Design": {
+    "string": "Design UI"
+  },
+  "Vector Graphics": {
+    "string": "Grafik Vektor"
+  },
+  "Vercel": {
+    "string": "Vercel"
+  },
   "Formerly using VS Code, I immediately fell in love by Zed's simpler and overall faster coding experience, realizing how cluttered everything was after going back. It's got some minor issues here and there, but the ecosystem is actively growing and getting better each passing day.": {
     "string": "Sebelum ini menggunakan VS Code, aku terus jatuh cinta dengan pengalaman pengaturcaraan yang lebih mudah dan tangkas, dan sedar betapa berterabur perkara selepas balik semula. Terdapat beberapa isu kecil sini dan sana, namun ekosistemnya terus berkembang aktif dan bertambahbaik saban hari."
   },

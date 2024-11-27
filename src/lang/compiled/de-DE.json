@@ -37,6 +37,18 @@
       "value": "Eine zuverlässige Maus mit 12 Tasten an der Seite. Ich spiele hin und wieder MMOs und meine kleinen Hände könnten nie die gesamte Tastatur erreichen, um alle Hotkeys zu drücken, also könnte ich es mit dieser RPG-Maus gar nicht anders haben."
     }
   ],
+  "AKG Ara": [
+    {
+      "type": 0,
+      "value": "AKG Ara"
+    }
+  ],
+  "Adobe After Effects": [
+    {
+      "type": 0,
+      "value": "Adobe After Effects"
+    }
+  ],
   "Artworks": [
     {
       "type": 0,
@@ -67,6 +79,12 @@
       "value": "Biographie"
     }
   ],
+  "Code Editor": [
+    {
+      "type": 0,
+      "value": "Code-Editor"
+    }
+  ],
   "Dark": [
     {
       "type": 0,
@@ -79,6 +97,12 @@
       "value": "Debian 12"
     }
   ],
+  "Deployment Infrastructure": [
+    {
+      "type": 0,
+      "value": "Einsatzinfrastruktur"
+    }
+  ],
   "Design": [
     {
       "type": 0,
@@ -89,6 +113,12 @@
     {
       "type": 0,
       "value": "Entwicklung"
+    }
+  ],
+  "Drawing Tablet": [
+    {
+      "type": 0,
+      "value": "Zeichentablett"
     }
   ],
   "Enter": [
@@ -127,6 +157,18 @@
       "value": "Graphische Gestaltung"
     }
   ],
+  "Hardware": [
+    {
+      "type": 0,
+      "value": "Hardware"
+    }
+  ],
+  "Headphones": [
+    {
+      "type": 0,
+      "value": "Kopfhörer"
+    }
+  ],
   "Hi! I'm Qayyum Yazid.": [
     {
       "type": 0,
@@ -143,6 +185,12 @@
     {
       "type": 0,
       "value": "Huion Inspiroy Q11K V2"
+    }
+  ],
+  "Huion Q11K V2": [
+    {
+      "type": 0,
+      "value": "Huion Q11K V2"
     }
   ],
   "I aspire to tell my own little story through my illustrations and creations. I am always passionate about creative story-telling and elegant use of technology. I prioritize on efficiency and making experiences effortless for anyone. In the end, I wish my creations bring benefit to all walks of life.": [
@@ -193,6 +241,12 @@
       "value": "Ich heiße Qayyum, ein freiberuflicher Entwickler und Designer aus Johore, Malaysia."
     }
   ],
+  "Illustration": [
+    {
+      "type": 0,
+      "value": "Abbildung"
+    }
+  ],
   "Inkscape": [
     {
       "type": 0,
@@ -203,6 +257,18 @@
     {
       "type": 0,
       "value": "It was once my dream to further my studies in Germany. I've always thought the place is akin to utopia, a land of knowledge and technological advancements. I laugh and cringe at how naive I was back then. But what I do know, is that when there is a will, there is definitely a way. I've received a sponsorship that brings me the opportunity to study there. I've completed a 6-month language course in Leipzig before starting my semester in a university in Deggendorf. I was quick to discover the harsh realities of life, like finding a place to stay, possibly making every mistake in the book. I was stuck in a state of survival, where would I be staying next every passing month. I realize that maybe I wasn't cut out for this, and I choose to call it quits. Nonetheless, I am determined to make amends and start anew in home soil, with newfound hope and empathy for others who are now facing what I once had. If I could achieve what I've dreamed before, I could achieve it again."
+    }
+  ],
+  "Javascript Framework": [
+    {
+      "type": 0,
+      "value": "Javascript Framework"
+    }
+  ],
+  "Keyboard": [
+    {
+      "type": 0,
+      "value": "Tastatur"
     }
   ],
   "Krita": [
@@ -253,6 +319,12 @@
       "value": "Handelswaren"
     }
   ],
+  "Microphone": [
+    {
+      "type": 0,
+      "value": "Microfon"
+    }
+  ],
   "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs.": [
     {
       "type": 0,
@@ -263,6 +335,18 @@
     {
       "type": 0,
       "value": "Mehr Infos"
+    }
+  ],
+  "Motion Graphics": [
+    {
+      "type": 0,
+      "value": "Animierte Grafiken"
+    }
+  ],
+  "Mouse": [
+    {
+      "type": 0,
+      "value": "Maus"
     }
   ],
   "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": [
@@ -281,6 +365,18 @@
     {
       "type": 0,
       "value": "Next.js"
+    }
+  ],
+  "Nuphy Halo75 V2": [
+    {
+      "type": 0,
+      "value": "Nuphy Halo75 V2"
+    }
+  ],
+  "Operating System": [
+    {
+      "type": 0,
+      "value": "Betriebssystem"
     }
   ],
   "Polarizing topic regarding the best code editor aside, no doubt anyone would find its versatility and extensiveness of VS Code appealing. Most of my web and game projects are written with VS Code.": [
@@ -325,6 +421,12 @@
       "value": "SteelSwap ist ein DEX-Aggregator auf der Cardano-Blockchain. Mit verschiedenen Illustrationen und Interfacedesigns in einer rostigen Cyberpunk-Ästhetik hebt SteelSwap sein Fundament auf neue Höhen."
     }
   ],
+  "Steelseries Arctis Nova 3": [
+    {
+      "type": 0,
+      "value": "Steelseries Arctis Nova 3"
+    }
+  ],
   "System Admin": [
     {
       "type": 0,
@@ -349,6 +451,12 @@
       "value": "This website serves as the main hub for showcasing all my artworks, as well as a creative outlet for all kinds of fun projects that combine programming and art! Soon you will find more ways to interact with me in interesting ways."
     }
   ],
+  "UI Design": [
+    {
+      "type": 0,
+      "value": "UI-Design"
+    }
+  ],
   "UI/UX Design": [
     {
       "type": 0,
@@ -359,6 +467,18 @@
     {
       "type": 0,
       "value": "Nutzt"
+    }
+  ],
+  "Vector Graphics": [
+    {
+      "type": 0,
+      "value": "Vectorgrafiken"
+    }
+  ],
+  "Vercel": [
+    {
+      "type": 0,
+      "value": "Vercel"
     }
   ],
   "Visit Website": [
