@@ -1,7 +1,7 @@
+import GeoDiv from "../components/GeoDiv";
 import Layout from "../components/Layout";
 import { useEffect } from "react";
 import { useIntl } from "react-intl";
-import GeoDiv from "../components/GeoDiv";
 
 export default function Uses() {
   const intl = useIntl();
