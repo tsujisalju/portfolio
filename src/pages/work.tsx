@@ -5,6 +5,7 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import MinswapLogo from "../components/svg/MinswapLogo";
 import MuwafaqahLogo from "../components/svg/MuwafaqahLogo";
+import PurritoGeneralLogo from "../components/svg/PurritoGeneralLogo";
 import React from "react";
 import SteelSwapLogo from "../components/svg/SteelSwapLogo";
 import Tag from "../components/Tag";
@@ -35,7 +36,97 @@ export default function Achernar() {
         {/*<GeoDiv className="px-8 py-4" bordery borderl cornerbl cornerbr>
           <h1 className="font-code uppercase text-xl">Past commercial works</h1>
         </GeoDiv>*/}
-
+        <GeoDiv
+          borderx
+          corner
+          cornersize="normal"
+          className="grid grid-cols-1 lg:grid-cols-3 p-4 lg:p-8 gap-12"
+        >
+          <div className="relative h-[300px]">
+            <Image
+              className="object-cover rounded-sm shadow-md"
+              src={"/img/purritogeneral/purrito-avatar.png"}
+              alt="purritogeneral avatar"
+              fill
+            />
+          </div>
+          <div className="lg:col-span-2 flex flex-1 flex-col gap-y-6 ">
+            <PurritoGeneralLogo className="text-[#2F272E] dark:text-[#ffeddc] h-16" />
+            <div className="flex flex-row gap-2 flex-wrap">
+              <Tag>
+                {intl.formatMessage({
+                  id: "Illustration",
+                })}
+              </Tag>
+              <Tag>
+                {intl.formatMessage({
+                  id: "Graphic Design",
+                })}
+              </Tag>
+              <Tag>
+                {intl.formatMessage({
+                  id: "Branding",
+                })}
+              </Tag>
+            </div>
+            <h2 className="font-sans font-light">
+              <FormattedDate
+                value={"2024-10"}
+                month={"long"}
+                year={"numeric"}
+              />
+              {" - "}
+              <FormattedDate
+                value={"2024-12"}
+                month={"long"}
+                year={"numeric"}
+              />
+            </h2>
+            <p className="font-sans">
+              {intl.formatMessage({
+                id: "A brand revamp for PurritoGeneral, Lead Growth at Minswap and Content Creator on X. Featuring a new mascot design and a slew of brand assets with a unique twist of cats, anime and military.",
+              })}
+            </p>
+            <div className="font-serif py-4 px-6 bg-stone-50 dark:bg-stone-950/20 max-w-fit rounded-md shadow-inner">
+              <p className="italic">
+                &quot;holy moply...this is so awesome. i cant wait to release
+                it. we are taking purrito to a whole new level!&quot;
+              </p>
+              <br />
+              <p className="font-sans">- PurritoGeneral</p>
+            </div>
+            <Button href="https://x.com/PurritoGeneral">
+              {intl.formatMessage({ id: "View on X" })}
+            </Button>
+          </div>
+          <div className="col-span-3 grid grid-cols-1 lg:grid-cols-5 gap-4">
+            <div className="relative h-[400px] lg:col-span-5">
+              <Image
+                className="object-cover rounded-sm shadow-md"
+                src={"/img/purritogeneral/purrito-header.png"}
+                alt="minswap graphics"
+                fill
+              />
+            </div>
+            <div className="relative h-[400px] lg:col-span-2">
+              <Image
+                className="object-cover rounded-sm shadow-md"
+                src={"/img/purritogeneral/purrita-busy-at-work.png"}
+                alt="purrita - busy at work"
+                fill
+              />
+            </div>
+            <div className="relative h-[400px] lg:col-span-3">
+              <Image
+                className="object-cover rounded-sm shadow-md"
+                src={"/img/purritogeneral/purrito-raining-coins.png"}
+                alt="purrito - raining coins"
+                fill
+              />
+            </div>
+          </div>
+        </GeoDiv>
+        <hr className="text-black dark:text-white opacity-20" />
         <GeoDiv
           borderx
           corner
@@ -94,13 +185,15 @@ export default function Achernar() {
               {intl.formatMessage({ id: "More info" })}
             </Button>
           </div>
+
+          <div className="col-span-3 grid grid-cols-1 lg:grid-cols-5 gap-4"></div>
         </GeoDiv>
         <hr className="text-black dark:text-white opacity-20" />
         <GeoDiv
           borderx
           corner
           cornersize="normal"
-          className="grid grid-cols-1 lg:grid-cols-3 p-4 lg:p-8  gap-12"
+          className="grid grid-cols-1 lg:grid-cols-3 p-4 lg:p-8 gap-12"
         >
           <div className="relative h-[300px]">
             <Image
@@ -147,6 +240,7 @@ export default function Achernar() {
                 &quot;0 regrets on this design purrnama. You are doing amazing
                 work.&quot;
               </p>
+              <br />
               <p className="font-sans">- ElderM, Founder of SteelSwap</p>
             </div>
             <Button href="https://steelswap.io">

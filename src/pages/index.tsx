@@ -36,7 +36,7 @@ export default function Home({
     <Layout>
       <div className="min-h-[90vh] w-full relative grid gap-y-32 place-content-center overflow-hidden">
         <Image
-          className="object-cover object-top opacity-50 lg:opacity-80 -z-10 transition duration-300"
+          className="object-cover object-top opacity-50 lg:opacity-90 -z-10 transition duration-300"
           src="/img/favor.webp"
           alt="favor"
           fill
@@ -122,7 +122,7 @@ export default function Home({
           <div></div>
           <div className="backdrop-blur-sm">
             <GeoDiv
-              className="flex flex-col gap-4 p-8"
+              className="flex flex-col gap-4 p-8 bg-white/20 dark:bg-black/20"
               border
               cornertl
               cornersize="normal"
@@ -186,7 +186,10 @@ export default function Home({
                   className="object-cover"
                   placeholder="blur"
                   blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                    shimmer(allProjectsData[0].width, allProjectsData[0].height)
+                    shimmer(
+                      allProjectsData[0].width,
+                      allProjectsData[0].height,
+                    ),
                   )}`}
                 />
                 <div className="absolute w-full top-0 p-4 border bg-white/50 dark:bg-black/50 border-black/20 dark:border-white/20">

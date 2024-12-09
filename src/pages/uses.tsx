@@ -23,7 +23,7 @@ export default function Uses() {
           <div className="flex flex-col space-y-2 col-span-2">
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Keyboard" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -33,7 +33,7 @@ export default function Uses() {
             </GeoDiv>
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Headphones" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -43,7 +43,7 @@ export default function Uses() {
             </GeoDiv>
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Mouse" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -53,7 +53,7 @@ export default function Uses() {
             </GeoDiv>
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Drawing Tablet" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -63,7 +63,7 @@ export default function Uses() {
             </GeoDiv>
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Microphone" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -82,7 +82,7 @@ export default function Uses() {
           <div className="flex flex-col space-y-2 col-span-2">
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Operating System" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -92,7 +92,7 @@ export default function Uses() {
             </GeoDiv>
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Code Editor" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -102,7 +102,7 @@ export default function Uses() {
             </GeoDiv>
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Javascript Framework" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -112,7 +112,7 @@ export default function Uses() {
             </GeoDiv>
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Deployment Infrastructure" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -131,7 +131,7 @@ export default function Uses() {
           <div className="flex flex-col space-y-2 col-span-2">
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Illustration" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -141,7 +141,7 @@ export default function Uses() {
             </GeoDiv>
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "UI Design" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -151,7 +151,7 @@ export default function Uses() {
             </GeoDiv>
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Vector Graphics" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
@@ -161,7 +161,7 @@ export default function Uses() {
             </GeoDiv>
             <GeoDiv border cornertr>
               <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-light">
+                <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Motion Graphics" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
