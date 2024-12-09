@@ -5,6 +5,12 @@
       "value": "Ich möchte einen Ort schaffen, an dem ich meine Daten und die Dinge, die mir wichtig sind, vertrauensvoll speichern kann, während ich gleichzeitig etwas über den Betrieb eines Servers im Allgemeinen lerne, von Hardwareüberlegungen über Netzwerke bis hin zu Sicherheitsmaßnahmen."
     }
   ],
+  "A brand revamp for PurritoGeneral, Lead Growth at Minswap and Content Creator on X. Featuring a new mascot design and a slew of brand assets with a unique twist of cats, anime and military.": [
+    {
+      "type": 0,
+      "value": "Ein Markenrelaunch für PurritoGeneral, Wachstumsführer bei Minswap und Content-Ersteller auf X. Mit einem neuen Maskottchen-Design und einer Reihe von Marken-Assets mit einem einzigartigen Twist aus Katzen, Anime und Militär."
+    }
+  ],
   "A pair of headphones I picked up at MediaMarkt when I was in Germany. I needed something reasonably priced with a built-in microphone because my earphones were so busted. This was it.": [
     {
       "type": 0,
@@ -77,6 +83,12 @@
     {
       "type": 0,
       "value": "Biographie"
+    }
+  ],
+  "Branding": [
+    {
+      "type": 0,
+      "value": "Markenbildung"
     }
   ],
   "Code Editor": [
@@ -262,7 +274,7 @@
   "Javascript Framework": [
     {
       "type": 0,
-      "value": "Javascript Framework"
+      "value": "Javascript-Framework"
     }
   ],
   "Keyboard": [
@@ -479,6 +491,12 @@
     {
       "type": 0,
       "value": "Vercel"
+    }
+  ],
+  "View on X": [
+    {
+      "type": 0,
+      "value": "Auf X ansehen"
     }
   ],
   "Visit Website": [

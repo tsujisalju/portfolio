@@ -2,6 +2,9 @@
   " Creating a place where I can fully trust to store my data and the things I care for, all while learning about running a server in general, from hardware considerations, networking and security measures.": {
     "string": " Creating a place where I can fully trust to store my data and the things I care for, all while learning about running a server in general, from hardware considerations, networking and security measures."
   },
+  "A brand revamp for PurritoGeneral, Lead Growth at Minswap and Content Creator on X. Featuring a new mascot design and a slew of brand assets with a unique twist of cats, anime and military.": {
+    "string": "A brand revamp for PurritoGeneral, Lead Growth at Minswap and Content Creator on X. Featuring a new mascot design and a slew of brand assets with a unique twist of cats, anime and military."
+  },
   "A personal DIY home server using Nextcloud, powered by a Raspberry Pi 5 running Ubuntu Server.": {
     "string": "A personal DIY home server using Nextcloud, powered by a Raspberry Pi 5 running Ubuntu Server."
   },
@@ -22,6 +25,9 @@
   },
   "Be the change you want to be.": {
     "string": "Be the change you want to be."
+  },
+  "Branding": {
+    "string": "Branding"
   },
   "Code Editor": {
     "string": "Code Editor"
@@ -193,6 +199,9 @@
   },
   "Vercel": {
     "string": "Vercel"
+  },
+  "View on X": {
+    "string": "View on X"
   },
   "Visit Website": {
     "string": "Visit Website"

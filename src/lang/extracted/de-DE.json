@@ -1,4 +1,13 @@
 {
+  "A brand revamp for PurritoGeneral, Lead Growth at Minswap and Content Creator on X. Featuring a new mascot design and a slew of brand assets with a unique twist of cats, anime and military.": {
+    "string": "Ein Markenrelaunch für PurritoGeneral, Wachstumsführer bei Minswap und Content-Ersteller auf X. Mit einem neuen Maskottchen-Design und einer Reihe von Marken-Assets mit einem einzigartigen Twist aus Katzen, Anime und Militär."
+  },
+  "Branding": {
+    "string": "Markenbildung"
+  },
+  "View on X": {
+    "string": "Auf X ansehen"
+  },
   "AKG Ara": {
     "string": "AKG Ara"
   },
@@ -27,7 +36,7 @@
     "string": "Abbildung"
   },
   "Javascript Framework": {
-    "string": "Javascript Framework"
+    "string": "Javascript-Framework"
   },
   "Keyboard": {
     "string": "Tastatur"
