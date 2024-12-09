@@ -101,8 +101,8 @@ export default function SteelSwapLogo({ className }: { className: string }) {
           y2="30.5833"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F48020" />
-          <stop offset="1" stop-color="#ED458E" />
+          <stop stopColor="#F48020" />
+          <stop offset="1" stopColor="#ED458E" />
         </linearGradient>
       </defs>
     </svg>

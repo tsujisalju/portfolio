@@ -49,6 +49,7 @@ export default function Header(Props: HeaderProp) {
                 width={50}
                 height={50}
                 placeholder="empty"
+                priority
               ></Image>
               <Image
                 className="flex lg:self-center dark:hidden pb-2 lg:pb-0"
@@ -57,6 +58,7 @@ export default function Header(Props: HeaderProp) {
                 width={50}
                 height={50}
                 placeholder="empty"
+                priority
               ></Image>
               <PurrnamaTypography className="hidden lg:inline h-[22px]" />
             </div>

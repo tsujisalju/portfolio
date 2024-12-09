@@ -182,6 +182,7 @@ export default function Home({
                 <Image
                   src={allProjectsData[0].img}
                   alt={allProjectsData[0].title}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
                   fill
                   className="object-cover"
                   placeholder="blur"

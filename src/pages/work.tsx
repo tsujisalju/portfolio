@@ -47,6 +47,7 @@ export default function Achernar() {
               className="object-cover rounded-sm shadow-md"
               src={"/img/purritogeneral/purrito-avatar.png"}
               alt="purritogeneral avatar"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               fill
             />
           </div>
@@ -104,8 +105,10 @@ export default function Achernar() {
               <Image
                 className="object-cover rounded-sm shadow-md"
                 src={"/img/purritogeneral/purrito-header.png"}
-                alt="minswap graphics"
+                alt="purrito header"
+                sizes="100vw"
                 fill
+                priority
               />
             </div>
             <div className="relative h-[400px] lg:col-span-2">
@@ -113,6 +116,7 @@ export default function Achernar() {
                 className="object-cover rounded-sm shadow-md"
                 src={"/img/purritogeneral/purrita-busy-at-work.png"}
                 alt="purrita - busy at work"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 fill
               />
             </div>
@@ -121,6 +125,7 @@ export default function Achernar() {
                 className="object-cover rounded-sm shadow-md"
                 src={"/img/purritogeneral/purrito-raining-coins.png"}
                 alt="purrito - raining coins"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
                 fill
               />
             </div>
@@ -138,6 +143,7 @@ export default function Achernar() {
               className="object-contain"
               src={"/img/muwafaqah/muwafaqah-lulu-full.png"}
               alt="lulu the cat"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               fill
             />
           </div>
@@ -200,6 +206,7 @@ export default function Achernar() {
               className="object-cover rounded-sm shadow-md"
               src={"/img/steelswap/steelswap-bg.png"}
               alt="steelswap cityscape"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               fill
             />
           </div>
@@ -253,6 +260,7 @@ export default function Achernar() {
                 className="object-cover rounded-md shadow-md"
                 src={"/img/steelswap/steelswap-bg2.png"}
                 alt="steelswap forge"
+                sizes="100vw"
                 fill
               />
             </div>
@@ -261,6 +269,7 @@ export default function Achernar() {
                 className="object-cover rounded-sm shadow-md"
                 src={"/img/steelswap/steelswap-ui-prototype.png"}
                 alt="steelswap design"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
                 fill
               />
             </div>
@@ -269,6 +278,7 @@ export default function Achernar() {
                 className="object-cover rounded-sm shadow-md"
                 src={"/img/steelswap/steelswap-graphics.png"}
                 alt="steelswap graphics"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 fill
               />
             </div>
@@ -286,12 +296,14 @@ export default function Achernar() {
               className="inline dark:hidden object-cover rounded-sm shadow-md"
               src={"/img/minswap/background2_light.png"}
               alt="minswap "
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               fill
             />
             <Image
               className="hidden dark:inline -ml-2 object-cover rounded-sm shadow-md"
               src={"/img/minswap/background2_dark.png"}
               alt="minswap "
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               fill
             />
           </div>
@@ -345,6 +357,7 @@ export default function Achernar() {
                 className="object-cover rounded-sm shadow-md"
                 src={"/img/minswap/minswap-graphics.png"}
                 alt="minswap graphics"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 fill
               />
             </div>
@@ -353,6 +366,7 @@ export default function Achernar() {
                 className="object-cover rounded-sm shadow-md"
                 src={"/img/minswap/minswap-governance.gif"}
                 alt="minswap governance"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 fill
                 unoptimized
               />
@@ -362,6 +376,7 @@ export default function Achernar() {
                 className="object-cover rounded-sm shadow-md"
                 src={"/img/minswap/minswap-ui.png"}
                 alt="minswap ui"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
                 fill
               />
             </div>

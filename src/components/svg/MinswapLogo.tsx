@@ -15,18 +15,18 @@ export default function MinswapLogo({ className }: { className: string }) {
       <path
         d="M14.6572 58.5837C15.2482 59.4241 19.8582 65.7866 27.6596 65.5465C35.1064 65.4264 39.4799 59.4241 40.0709 58.5837"
         stroke="#001947"
-        stroke-width="5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M59.9292 58.5837C60.5202 59.4241 65.1301 65.7866 72.9316 65.5465C80.3784 65.4264 84.7519 59.4241 85.3429 58.5837"
         stroke="#001947"
-        stroke-width="5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M42.5527 70.8286L49.1721 75.3904C49.6449 75.7505 50.3541 75.7505 50.7087 75.3904L57.3281 70.8286C58.1555 70.2284 57.6827 69.1479 56.5007 69.1479H43.2619C42.3163 69.1479 41.7253 70.2284 42.5527 70.8286Z"
