@@ -19,6 +19,11 @@ export default function LogLink({
         tiltReverse
         scale={1.03}
         tiltAxis={"y"}
+        glareEnable
+        glareMaxOpacity={0.1}
+        glareColor="#ffffff"
+        glarePosition="left"
+        glareReverse
         className="relative overflow-hidden border-solid border border-black/20 dark:border-white/20 bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
       >
         <div className="absolute h-8 w-8 -bottom-4 -right-4 rotate-45 bg-black/20 dark:bg-white/20"></div>
@@ -60,13 +65,13 @@ export default function LogLink({
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   className="h-4 w-4"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                   />
                 </svg>
@@ -113,13 +118,13 @@ export default function LogLink({
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     stroke="currentColor"
                     className="h-4 w-4"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                     />
                   </svg>
