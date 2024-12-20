@@ -18,24 +18,7 @@ export default function Achernar() {
   }, []);
   return (
     <Layout>
-      {/*
-      <div className="px-4 lg:px-0 max-w-7xl mx-auto flex flex-col space-y-6 mb-12">
-        <GeoDiv className="px-8 py-4" bordery borderl cornerbl cornerbr>
-          <h1 className="font-code uppercase text-xl">Skills</h1>
-        </GeoDiv>
-        <GeoDiv
-          borderx
-          corner
-          cornersize="normal"
-          className="grid grid-cols-1 lg:grid-cols-3 p-8 gap-12"
-        ></GeoDiv>
-      </div>
-       */}
-
       <div className="px-4 lg:px-0 max-w-7xl mx-auto flex flex-col space-y-6">
-        {/*<GeoDiv className="px-8 py-4" bordery borderl cornerbl cornerbr>
-          <h1 className="font-code uppercase text-xl">Past commercial works</h1>
-        </GeoDiv>*/}
         <GeoDiv
           borderx
           corner

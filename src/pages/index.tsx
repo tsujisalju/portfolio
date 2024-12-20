@@ -40,7 +40,9 @@ export default function Home({
           src="/img/favor.webp"
           alt="favor"
           fill
-          priority
+          sizes="(max-width: 1200px) 100vw"
+          unoptimized
+          placeholder="empty"
         />
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 lg:px-8">
           <div className="max-w-xl flex flex-1 flex-col space-y-4">
