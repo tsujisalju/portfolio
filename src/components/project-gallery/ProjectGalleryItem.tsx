@@ -28,14 +28,17 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
         tiltMaxAngleY={3}
         tiltReverse
         scale={1.03}
+        glareEnable
+        glareMaxOpacity={0.1}
+        glareColor="#ffffff"
+        glarePosition="bottom"
+        glareReverse
         className={"relative h-full w-full md:parallax-parent "}
       >
         <Image
           id={project.id}
           alt={project.id}
-          className={
-            "shadow-sm hover:shadow-xl rounded-md object-cover object-center"
-          }
+          className={"shadow-sm hover:shadow-xl object-cover object-center"}
           src={project.img}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -46,7 +49,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
         ></Image>
         <div
           className={
-            "absolute overflow-hidden border-solid border border-black/20 dark:border-white/20 w-full bottom-0 rounded-b-md md:rounded-none md:bottom-auto md:w-auto md:parallax-child bg-white/50 dark:bg-black/50 px-4 lg:px-5 py-3 md:backdrop-blur md:shadow-lg transition duration-300 " +
+            "absolute overflow-hidden border-solid border border-black/20 dark:border-white/20 w-full bottom-0 md:bottom-auto md:w-auto md:parallax-child bg-white/50 dark:bg-black/50 px-4 lg:px-5 py-3 md:backdrop-blur md:shadow-lg transition duration-300 " +
             (isShowing ? "md:opacity-100" : "md:opacity-0")
           }
         >

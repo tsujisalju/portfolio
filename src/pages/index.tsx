@@ -41,7 +41,6 @@ export default function Home({
           alt="favor"
           fill
           priority
-          unoptimized
         />
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 lg:px-8">
           <div className="max-w-xl flex flex-1 flex-col space-y-4">
