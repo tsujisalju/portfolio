@@ -1,17 +1,18 @@
-import { FormattedDate, useIntl } from "react-intl";
-import Button from "../components/Button";
+//import { FormattedDate, useIntl } from "react-intl";
+//import Button from "../components/Button";
 import GeoDiv from "../components/GeoDiv";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import MinswapLogo from "../components/svg/MinswapLogo";
-import MuwafaqahLogo from "../components/svg/MuwafaqahLogo";
+//import MuwafaqahLogo from "../components/svg/MuwafaqahLogo";
 import PurritoGeneralLogo from "../components/svg/PurritoGeneralLogo";
 import React from "react";
 import SteelSwapLogo from "../components/svg/SteelSwapLogo";
-import Tag from "../components/Tag";
+//import Tag from "../components/Tag";
+import Tilt from "react-parallax-tilt";
 
 export default function Achernar() {
-  const intl = useIntl();
+  //const intl = useIntl();
   React.useEffect(() => {
     document.body.style.backgroundImage = "";
     document.body.className = "";
@@ -19,6 +20,259 @@ export default function Achernar() {
   return (
     <Layout>
       <div className="px-4 lg:px-0 max-w-7xl mx-auto flex flex-col space-y-6">
+        <Tilt
+          tiltMaxAngleY={1}
+          tiltMaxAngleX={1}
+          tiltReverse
+          scale={1.02}
+          glareEnable
+          glareMaxOpacity={0.1}
+          glareColor="#ffffff"
+          glarePosition="left"
+          glareReverse
+          className="relative overflow-hidden bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
+        >
+          <GeoDiv borderx cornertl cornerbl>
+            <div className="w-full grid grid-cols-4">
+              <div className="grid w-full h-full place-items-center">
+                <PurritoGeneralLogo className="text-[#2F272E] dark:text-[#ffeddc] h-16" />
+              </div>
+              <div className="col-span-3">
+                <div className="max-w-full overflow-x-hidden whitespace-nowrap">
+                  <div
+                    id="scrolling-gallery"
+                    className="h-full min-w-max left-0 flex flex-row"
+                  >
+                    <Image
+                      src={"/img/purritogeneral/purrito-header-thumb.png"}
+                      alt="purrito header"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/purritogeneral/purrita-busy-at-work-thumb.png"}
+                      alt="purrita busy at work"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={
+                        "/img/purritogeneral/purrito-raining-coins-thumb.png"
+                      }
+                      alt="purrito raining coins"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/purritogeneral/purrito-storytime-thumb.png"}
+                      alt="purrito storytime"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/purritogeneral/purrito-header-thumb.png"}
+                      alt="purrito header"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/purritogeneral/purrita-busy-at-work-thumb.png"}
+                      alt="purrita busy at work"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={
+                        "/img/purritogeneral/purrito-raining-coins-thumb.png"
+                      }
+                      alt="purrito raining coins"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/purritogeneral/purrito-storytime-thumb.png"}
+                      alt="purrito storytime"
+                      height={240}
+                      width={350}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </GeoDiv>
+        </Tilt>
+
+        <Tilt
+          tiltMaxAngleY={1}
+          tiltMaxAngleX={1}
+          tiltReverse
+          scale={1.02}
+          glareEnable
+          glareMaxOpacity={0.1}
+          glareColor="#ffffff"
+          glarePosition="left"
+          glareReverse
+          className="relative overflow-hidden bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
+        >
+          <GeoDiv borderx cornertl cornerbl>
+            <div className="w-full grid grid-cols-4">
+              <div className="grid w-full h-full place-items-center">
+                <SteelSwapLogo className="text-[#2F272E] dark:text-[#ffeddc] h-16" />
+              </div>
+              <div className="col-span-3">
+                <div className="relative max-w-full overflow-x-hidden whitespace-nowrap h-[240px] clip">
+                  <div
+                    id="scrolling-gallery-reverse"
+                    className="absolute h-full min-w-max right-0 flex flex-row"
+                  >
+                    <Image
+                      src={"/img/steelswap/steelswap-ui-prototype-thumb.png"}
+                      alt="steelswap ui prototype"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/steelswap/steelswap-bg2-thumb.png"}
+                      alt="steelswap bg"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/steelswap/steelswap-graphics.png"}
+                      alt="steelswap graphics"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/steelswap/steelswap-bg-thumb.png"}
+                      alt="steelswap bg"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/steelswap/steelswap-ui-prototype-thumb.png"}
+                      alt="steelswap ui prototype"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/steelswap/steelswap-bg2-thumb.png"}
+                      alt="steelswap bg"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/steelswap/steelswap-graphics.png"}
+                      alt="steelswap graphics"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/steelswap/steelswap-bg-thumb.png"}
+                      alt="steelswap bg"
+                      height={240}
+                      width={350}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </GeoDiv>
+        </Tilt>
+
+        <Tilt
+          tiltMaxAngleY={1}
+          tiltMaxAngleX={1}
+          tiltReverse
+          scale={1.02}
+          glareEnable
+          glareMaxOpacity={0.1}
+          glareColor="#ffffff"
+          glarePosition="left"
+          glareReverse
+          className="relative overflow-hidden bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
+        >
+          <GeoDiv borderx cornertl cornerbl>
+            <div className="w-full grid grid-cols-4">
+              <div className="grid w-full h-full place-items-center">
+                <div className=" flex flex-row space-x-4 items-center">
+                  <MinswapLogo className="slate-950 dark:slate-50 w-[210px] h-16" />
+                  <p className="font-code">V1</p>
+                </div>
+              </div>
+              <div className="col-span-3">
+                <div className="max-w-full overflow-x-hidden whitespace-nowrap">
+                  <div
+                    id="scrolling-gallery"
+                    className="h-full min-w-max left-0 flex flex-row"
+                  >
+                    <Image
+                      src={"/img/minswap/minswap-ui-thumb.png"}
+                      alt="minswap ui"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/minswap/minswap-graphics-thumb.png"}
+                      alt="minswap graphics"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/minswap/minswap-governance.gif"}
+                      alt="minswap governance"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/minswap/minswap-volume.jpeg"}
+                      alt="minswap volume"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/minswap/minswap-orcfax.png"}
+                      alt="minswap orcfax"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/minswap/minswap-ui-thumb.png"}
+                      alt="minswap ui"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/minswap/minswap-graphics-thumb.png"}
+                      alt="minswap graphics"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/minswap/minswap-governance.gif"}
+                      alt="minswap governance"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/minswap/minswap-volume.jpeg"}
+                      alt="minswap volume"
+                      height={240}
+                      width={350}
+                    />
+                    <Image
+                      src={"/img/minswap/minswap-orcfax.jpeg"}
+                      alt="minswap orcfax"
+                      height={240}
+                      width={350}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </GeoDiv>
+        </Tilt>
+        {/*
         <GeoDiv
           borderx
           corner
@@ -365,6 +619,7 @@ export default function Achernar() {
             </div>
           </div>
         </GeoDiv>
+         */}
       </div>
     </Layout>
   );

@@ -16,7 +16,7 @@ const nextConfig = {
       },
       {
         source: "/nsfw",
-        destination: "https://www.youtube.com/watch?v=tLBL4M55tJU",
+        destination: "https://www.youtube.com/watch?v=LWAoYKIu7tg",
         permanent: true,
       },
     ];
