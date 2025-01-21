@@ -32,12 +32,12 @@ export default function Achernar() {
           glareReverse
           className="relative overflow-hidden bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
         >
-          <GeoDiv borderx cornertl cornerbl>
-            <div className="w-full grid grid-cols-4">
-              <div className="grid w-full h-full place-items-center">
+          <GeoDiv borderx corner>
+            <div className="w-full grid grid-cols-1 lg:grid-cols-4">
+              <div className="grid w-full h-full place-items-center py-8">
                 <PurritoGeneralLogo className="text-[#2F272E] dark:text-[#ffeddc] h-16" />
               </div>
-              <div className="col-span-3">
+              <div className="lg:col-span-3">
                 <div className="max-w-full overflow-x-hidden whitespace-nowrap">
                   <div
                     id="scrolling-gallery"
@@ -114,12 +114,12 @@ export default function Achernar() {
           glareReverse
           className="relative overflow-hidden bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
         >
-          <GeoDiv borderx cornertl cornerbl>
-            <div className="w-full grid grid-cols-4">
-              <div className="grid w-full h-full place-items-center">
+          <GeoDiv borderx corner>
+            <div className="w-full grid grid-cols-1 lg:grid-cols-4">
+              <div className="grid w-full h-full place-items-center py-8">
                 <SteelSwapLogo className="text-[#2F272E] dark:text-[#ffeddc] h-16" />
               </div>
-              <div className="col-span-3">
+              <div className="lg:col-span-3">
                 <div className="relative max-w-full overflow-x-hidden whitespace-nowrap h-[240px] clip">
                   <div
                     id="scrolling-gallery-reverse"
@@ -192,15 +192,15 @@ export default function Achernar() {
           glareReverse
           className="relative overflow-hidden bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
         >
-          <GeoDiv borderx cornertl cornerbl>
-            <div className="w-full grid grid-cols-4">
-              <div className="grid w-full h-full place-items-center">
+          <GeoDiv borderx corner>
+            <div className="w-full grid grid-cols-1 lg:grid-cols-4">
+              <div className="grid w-full h-full place-items-center py-8">
                 <div className=" flex flex-row space-x-4 items-center">
                   <MinswapLogo className="slate-950 dark:slate-50 w-[210px] h-16" />
                   <p className="font-code">V1</p>
                 </div>
               </div>
-              <div className="col-span-3">
+              <div className="lg:col-span-3">
                 <div className="max-w-full overflow-x-hidden whitespace-nowrap">
                   <div
                     id="scrolling-gallery"
