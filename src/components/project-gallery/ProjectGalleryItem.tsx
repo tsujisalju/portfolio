@@ -12,14 +12,6 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
     <Link
       scroll={false}
       href={"/projects/" + project.id}
-      className={
-        "min-h-80 hover:z-10 " +
-        (project.height < project.width
-          ? "sm:col-span-2"
-          : project.height > project.width
-            ? "row-span-2"
-            : "")
-      }
       onMouseEnter={() => setIsShowing(true)}
       onMouseLeave={() => setIsShowing(false)}
     >
