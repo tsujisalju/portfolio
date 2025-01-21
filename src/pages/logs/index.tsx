@@ -1,4 +1,5 @@
 import { Log, getSortedLogsData } from "../../lib/logs";
+import { circOut, motion } from "motion/react";
 import { GetStaticProps } from "next";
 import Layout from "../../components/Layout";
 import LogLink from "../../components/logs/LogLink";
@@ -12,6 +13,15 @@ export const getStaticProps: GetStaticProps = async () => {
       allLogsData,
     },
   };
+};
+const itemVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: (index: number) => ({
+    opacity: 1,
+    transition: { duration: 0.2, delay: index * 0.05, easing: circOut },
+  }),
 };
 
 export default function Logs({ allLogsData }: { allLogsData: Log[] }) {
@@ -39,8 +49,16 @@ export default function Logs({ allLogsData }: { allLogsData: Log[] }) {
           </p>
         </div>
         <div className="grid grid-cols-1 col-span-1 lg:col-span-2 gap-4 flex-1 px-2 md:px-6 py-8">
-          {allLogsData.map((log: Log) => (
-            <LogLink key={log.title} log={log} />
+          {allLogsData.map((log: Log, index) => (
+            <motion.div
+              key={log.title}
+              custom={index}
+              initial={"hidden"}
+              animate={"visible"}
+              variants={itemVariants}
+            >
+              <LogLink key={log.title} log={log} />
+            </motion.div>
           ))}
         </div>
       </div>
