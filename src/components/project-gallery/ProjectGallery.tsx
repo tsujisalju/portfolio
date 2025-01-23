@@ -5,9 +5,11 @@ import React from "react";
 
 const itemVariants = {
   hidden: {
+    rotateY: 30,
     opacity: 0,
   },
   visible: (index: number) => ({
+    rotateY: 0,
     opacity: 1,
     transition: { duration: 0.2, delay: index * 0.05, easing: circOut },
   }),
