@@ -10,6 +10,7 @@ import React from "react";
 import SteelSwapLogo from "../components/svg/SteelSwapLogo";
 //import Tag from "../components/Tag";
 import Tilt from "react-parallax-tilt";
+import Tag from "../components/Tag";
 
 export default function Achernar() {
   //const intl = useIntl();
@@ -34,8 +35,13 @@ export default function Achernar() {
         >
           <GeoDiv borderx corner>
             <div className="w-full grid grid-cols-1 lg:grid-cols-4">
-              <div className="grid w-full h-full place-items-center py-8">
+              <div className="grid w-full h-full place-items-center p-8">
                 <PurritoGeneralLogo className="text-[#2F272E] dark:text-[#ffeddc] h-16" />
+                <div className="flex flex-row gap-2 justify-center flex-wrap">
+                  <Tag>Illustration</Tag>
+                  <Tag>Graphic Design</Tag>
+                  <Tag>Branding</Tag>
+                </div>
               </div>
               <div className="lg:col-span-3">
                 <div className="max-w-full overflow-x-hidden whitespace-nowrap">
@@ -118,6 +124,10 @@ export default function Achernar() {
             <div className="w-full grid grid-cols-1 lg:grid-cols-4">
               <div className="grid w-full h-full place-items-center py-8">
                 <SteelSwapLogo className="text-[#2F272E] dark:text-[#ffeddc] h-16" />
+                <div className="flex flex-row gap-2 justify-center flex-wrap">
+                  <Tag>Graphic Design</Tag>
+                  <Tag>UI/UX Design</Tag>
+                </div>
               </div>
               <div className="lg:col-span-3">
                 <div className="relative max-w-full overflow-x-hidden whitespace-nowrap h-[240px] clip">
@@ -198,6 +208,11 @@ export default function Achernar() {
                 <div className=" flex flex-row space-x-4 items-center">
                   <MinswapLogo className="slate-950 dark:slate-50 w-[210px] h-16" />
                   <p className="font-code">V1</p>
+                </div>
+                <div className="flex flex-row gap-2 justify-center flex-wrap">
+                  <Tag>Graphic Design</Tag>
+                  <Tag>Front-end</Tag>
+                  <Tag>Merchandise</Tag>
                 </div>
               </div>
               <div className="lg:col-span-3">
