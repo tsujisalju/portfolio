@@ -1,16 +1,12 @@
-//import { FormattedDate, useIntl } from "react-intl";
-//import Button from "../components/Button";
 import GeoDiv from "../components/GeoDiv";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import MinswapLogo from "../components/svg/MinswapLogo";
-//import MuwafaqahLogo from "../components/svg/MuwafaqahLogo";
 import PurritoGeneralLogo from "../components/svg/PurritoGeneralLogo";
 import React from "react";
 import SteelSwapLogo from "../components/svg/SteelSwapLogo";
-//import Tag from "../components/Tag";
-import Tilt from "react-parallax-tilt";
 import Tag from "../components/Tag";
+import Tilt from "react-parallax-tilt";
 
 export default function Achernar() {
   //const intl = useIntl();
