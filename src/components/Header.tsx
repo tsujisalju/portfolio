@@ -66,10 +66,10 @@ export default function Header(Props: HeaderProp) {
         </div>
         <nav className="hidden lg:flex grow flex-row place-items-center justify-center space-x-6">
           <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
+          <NavLink href="/logs">{intl.formatMessage({ id: "Logs" })}</NavLink>
           <NavLink href="/artworks">
             {intl.formatMessage({ id: "Artworks" })}
           </NavLink>
-          <NavLink href="/logs">{intl.formatMessage({ id: "Logs" })}</NavLink>
           <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
           <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
         </nav>
