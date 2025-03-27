@@ -2,7 +2,7 @@
 title: "Struggling in Amateur Hell"
 date: "2025-01-09"
 author: "Cooper Baihaqi"
-readtime: 10
+readtime: 8
 ---
 
 What is it that frustrates me so much when I'm drawing and makes me feel like I am destined to forever be stuck in amateur hell? I attempt to find them.
