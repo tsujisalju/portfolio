@@ -2,6 +2,7 @@ import { FormattedDate, useIntl } from "react-intl";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Log, getSortedLogsData } from "../lib/logs";
 import { Project, getSortedProjectsData } from "../lib/projects";
+import React, { useState } from "react";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
 import BlueSkyIcon from "../lib/svg/BlueSkyIcon";
 import GeoDiv from "../components/GeoDiv";
@@ -9,8 +10,8 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import Link from "next/link";
 import LogLink from "../components/logs/LogLink";
-import React from "react";
 import { Socials } from "../lib/socials";
+import { liveBackgrounds } from "../lib/live";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const allProjectsData: Project[] = getSortedProjectsData(locale as string);
@@ -28,6 +29,7 @@ export default function Home({
   allLogsData,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const intl = useIntl();
+  const [liveBackground] = useState<number>(1);
   React.useEffect(() => {
     document.body.style.backgroundImage = "";
     document.body.className = "";
@@ -37,7 +39,7 @@ export default function Home({
       <div className="min-h-[90vh] w-full relative grid gap-y-32 place-content-center overflow-hidden">
         <Image
           className="object-cover object-top opacity-50 lg:opacity-90 -z-10 transition duration-300"
-          src="/img/favor.webp"
+          src={liveBackgrounds[1].src}
           alt="favor"
           fill
           sizes="(max-width: 1200px) 100vw"
@@ -45,7 +47,8 @@ export default function Home({
           placeholder="empty"
         />
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 lg:px-8">
-          <div className="max-w-xl flex flex-1 flex-col space-y-4">
+          {liveBackground == 1 && <div></div>}
+          <div className="max-w-xl flex flex-1 flex-col space-y-4 bg-white/20 dark:bg-black/20 backdrop-blur-sm">
             <GeoDiv
               className="flex flex-col lg:items-start gap-8 p-12"
               borderx
@@ -70,7 +73,7 @@ export default function Home({
                 <div>
                   <h1 className="font-display text-4xl lg:text-5xl">
                     {intl.formatMessage({
-                      id: "Be the change you want to be.",
+                      id: "Move forward with courage, because you are not alone.",
                     })}
                   </h1>
                 </div>
@@ -120,20 +123,20 @@ export default function Home({
           </div>
         </div>
         <div className="container mx-auto lg:grid hidden grid-cols-2 mb-8">
-          <div></div>
-          <div className="backdrop-blur-sm">
-            <GeoDiv
-              className="flex flex-col gap-4 p-8 bg-white/20 dark:bg-black/20"
-              border
-              cornertl
-              cornersize="normal"
-            >
-              <div className="max-w-xl w-full flex flex-1 flex-col space-y-2">
-                <h1 className="text-3xl font-display">VAN CARINA</h1>
-                <p className="font-sans">Turkish Van Cat</p>
-              </div>
-            </GeoDiv>
-          </div>
+          {liveBackground == 0 && <div></div>}
+          <GeoDiv
+            className="flex flex-col gap-4 p-8 bg-white/20 dark:bg-black/20 backdrop-blur-sm"
+            border
+            cornertl
+            cornersize="normal"
+          >
+            <div className="max-w-xl w-full flex flex-1 flex-col space-y-2">
+              <h1 className="text-3xl font-display">
+                {liveBackgrounds[1].name}
+              </h1>
+              <p className="font-sans">{liveBackgrounds[1].species}</p>
+            </div>
+          </GeoDiv>
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:px-4">

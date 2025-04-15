@@ -1,13 +1,4 @@
 {
-  " Creating a place where I can fully trust to store my data and the things I care for, all while learning about running a server in general, from hardware considerations, networking and security measures.": {
-    "string": " Creating a place where I can fully trust to store my data and the things I care for, all while learning about running a server in general, from hardware considerations, networking and security measures."
-  },
-  "A brand revamp for PurritoGeneral, Lead Growth at Minswap and Content Creator on X. Featuring a new mascot design and a slew of brand assets with a unique twist of cats, anime and military.": {
-    "string": "A brand revamp for PurritoGeneral, Lead Growth at Minswap and Content Creator on X. Featuring a new mascot design and a slew of brand assets with a unique twist of cats, anime and military."
-  },
-  "A personal DIY home server using Nextcloud, powered by a Raspberry Pi 5 running Ubuntu Server.": {
-    "string": "A personal DIY home server using Nextcloud, powered by a Raspberry Pi 5 running Ubuntu Server."
-  },
   "A picture paints a thousand words. Here, there are {value} words.": {
     "string": "A picture paints a thousand words. Here, there are {value} words."
   },
@@ -22,12 +13,6 @@
   },
   "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission.": {
     "string": "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission."
-  },
-  "Be the change you want to be.": {
-    "string": "Be the change you want to be."
-  },
-  "Branding": {
-    "string": "Branding"
   },
   "Code Editor": {
     "string": "Code Editor"
@@ -55,15 +40,6 @@
   },
   "Figma": {
     "string": "Figma"
-  },
-  "Forever (hopefully)": {
-    "string": "Forever (hopefully)"
-  },
-  "Front End": {
-    "string": "Front End"
-  },
-  "Graphic Design": {
-    "string": "Graphic Design"
   },
   "Hardware": {
     "string": "Hardware"
@@ -122,29 +98,20 @@
   "Light": {
     "string": "Light"
   },
-  "Linux": {
-    "string": "Linux"
-  },
   "Logs": {
     "string": "Logs"
   },
-  "Merchandise": {
-    "string": "Merchandise"
-  },
   "Microphone": {
     "string": "Microphone"
-  },
-  "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs.": {
-    "string": "Minswap is a decentralized exchange on the Cardano blockchain. I worked with a global team of agile individuals to provide promotional content, merchandise and interface designs."
-  },
-  "More info": {
-    "string": "More info"
   },
   "Motion Graphics": {
     "string": "Motion Graphics"
   },
   "Mouse": {
     "string": "Mouse"
+  },
+  "Move forward with courage, because you are not alone.": {
+    "string": "Move forward with courage, because you are not alone."
   },
   "My mother introduced me to programming and game making since I was 9 years old, because I was always on the computer and I ought to put my hobby to good use rather than just mindless flash gaming. And you know what I was pretty hooked by the idea. The fact that I could create something awesome with my own touch of flare is amazing, and the passion burns strong since. The time was convenient enough that my middle school was getting around into participating robotics and game jam competitions. My friends and I pioneered the Robotics Club and I handled the programming side of things. One of the best memories I had was creating a Lego EV3 Mindstorms claw robot for an intrastate competition, and making the design decision to control it with another EV3 brick via Bluetooth instead of a phone over Wifi, which worked in our favor during the run. Before I left the school, they were already setting up courses for game dev with Unity3D, which is so super cool to see.": {
     "string": "My mother introduced me to programming and game making since I was 9 years old, because I was always on the computer and I ought to put my hobby to good use rather than just mindless flash gaming. And you know what I was pretty hooked by the idea. The fact that I could create something awesome with my own touch of flare is amazing, and the passion burns strong since. The time was convenient enough that my middle school was getting around into participating robotics and game jam competitions. My friends and I pioneered the Robotics Club and I handled the programming side of things. One of the best memories I had was creating a Lego EV3 Mindstorms claw robot for an intrastate competition, and making the design decision to control it with another EV3 brick via Bluetooth instead of a phone over Wifi, which worked in our favor during the run. Before I left the school, they were already setting up courses for game dev with Unity3D, which is so super cool to see."
@@ -158,9 +125,6 @@
   "Operating System": {
     "string": "Operating System"
   },
-  "Raspberry Pi": {
-    "string": "Raspberry Pi"
-  },
   "Razer Naga X": {
     "string": "Razer Naga X"
   },
@@ -170,14 +134,8 @@
   "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia 🇲🇾": {
     "string": "Software Engineering Student, Freelance Developer and Designer | Based in Johore, Malaysia 🇲🇾"
   },
-  "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to new heights with various illustrations and interface designs with a rusty cyberpunk aesthetic.": {
-    "string": "SteelSwap is a DEX aggregator on the Cardano blockchain. Taking its foundation to new heights with various illustrations and interface designs with a rusty cyberpunk aesthetic."
-  },
   "Steelseries Arctis Nova 3": {
     "string": "Steelseries Arctis Nova 3"
-  },
-  "System Admin": {
-    "string": "System Admin"
   },
   "The world is ours to explore, design and nurture, for the betterment of all walks of life.": {
     "string": "The world is ours to explore, design and nurture, for the betterment of all walks of life."
@@ -188,9 +146,6 @@
   "UI Design": {
     "string": "UI Design"
   },
-  "UI/UX Design": {
-    "string": "UI/UX Design"
-  },
   "Uses": {
     "string": "Uses"
   },
@@ -199,12 +154,6 @@
   },
   "Vercel": {
     "string": "Vercel"
-  },
-  "View on X": {
-    "string": "View on X"
-  },
-  "Visit Website": {
-    "string": "Visit Website"
   },
   "Work": {
     "string": "Work"

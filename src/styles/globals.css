@@ -8,6 +8,12 @@
     format: "opentype";
 }
 
+@font-face {
+    font-family: "Mazius";
+    src: url("/fonts/Mazius/MaziusDisplay-Bold.otf");
+    format: "opentype";
+}
+
 @layer utilities {
     .parallax-parent {
         transform-style: preserve-3d;
