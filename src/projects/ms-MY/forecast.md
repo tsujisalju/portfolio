@@ -2,6 +2,7 @@
 title: "Ramalan"
 date: "2025-03-18"
 img: "/img/projects/forecast.jpg"
+vid: "/vid/forecast-timelapse.mp4"
 width: 3000
 height: 2000
 ---
