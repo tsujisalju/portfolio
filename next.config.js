@@ -2,7 +2,6 @@
 
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   i18n: {
     defaultLocale: "en-US",
     locales: ["en-US", "de-DE", "ms-MY"],
@@ -11,7 +10,7 @@ const nextConfig = {
     return [
       {
         source: "/projects",
-        destination: "/",
+        destination: "/artworks",
         permanent: true,
       },
       {
@@ -20,22 +19,6 @@ const nextConfig = {
         permanent: true,
       },
     ];
-  },
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "img2.finalfantasyxiv.com",
-      },
-      {
-        protocol: "https",
-        hostname: "img.finalfantasyxiv.com",
-      },
-      {
-        protocol: "https",
-        hostname: "lds-img.finalfantasyxiv.com",
-      },
-    ],
   },
 };
 
