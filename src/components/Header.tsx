@@ -30,10 +30,10 @@ export default function Header(Props: HeaderProp) {
   return (
     <header
       className={
-        "sticky top-0 z-20 lg:mb-4 backdrop-blur-md transition transition-100 " +
+        "sticky top-0 z-20 lg:mb-4 transition transition-100 " +
         (!disableOnTop
           ? !onTop
-            ? "bg-stone-100/60 dark:bg-stone-900/60"
+            ? "bg-stone-100/60 dark:bg-stone-900/60 backdrop-blur-md"
             : "bg-transparent"
           : "bg-stone-100/60 dark:bg-stone-900/60")
       }

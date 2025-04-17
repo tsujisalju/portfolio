@@ -3,6 +3,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Log, getSortedLogsData } from "../lib/logs";
 import { Project, getSortedProjectsData } from "../lib/projects";
 import React, { useState } from "react";
+import { circOut, motion } from "motion/react";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
 import BlueSkyIcon from "../lib/svg/BlueSkyIcon";
 import GeoDiv from "../components/GeoDiv";
@@ -29,28 +30,93 @@ export default function Home({
   allLogsData,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const intl = useIntl();
-  const [liveBackground] = useState<number>(1);
+  const [currentLive, setCurrentLive] = useState<number>(0);
+
+  const handleNextLive = () => {
+    if (currentLive == liveBackgrounds.length - 1) {
+      setCurrentLive(0);
+    } else {
+      setCurrentLive(currentLive + 1);
+    }
+  };
+  const handlePrevLive = () => {
+    if (currentLive == 0) {
+      setCurrentLive(liveBackgrounds.length - 1);
+    } else {
+      setCurrentLive(currentLive - 1);
+    }
+  };
+
   React.useEffect(() => {
     document.body.style.backgroundImage = "";
     document.body.className = "";
   }, []);
   return (
     <Layout>
-      <div className="min-h-[90vh] w-full relative grid gap-y-32 place-content-center overflow-hidden">
+      <div className="min-h-[90vh] -mt-18 w-full relative grid place-content-center overflow-hidden">
+        <div
+          onClick={handleNextLive}
+          className="absolute inset-y-0 right-0 h-full grid place-content-center px-2 opacity-50 hover:opacity-100 transition cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="size-6"
+          >
+            <path
+              fillRule="evenodd"
+              d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          onClick={handlePrevLive}
+          className="absolute inset-y-0 left-0 h-full grid place-content-center px-2 opacity-50 hover:opacity-100 transition cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="size-6"
+          >
+            <path
+              fillRule="evenodd"
+              d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
         <Image
-          className="object-cover object-top opacity-50 lg:opacity-90 -z-10 transition duration-300"
-          src={liveBackgrounds[1].src}
+          className="object-cover object-top opacity-50 lg:opacity-85 -z-10 transition duration-300"
+          src={liveBackgrounds[currentLive].src}
           alt="favor"
           fill
           sizes="(max-width: 1200px) 100vw"
           unoptimized
           placeholder="empty"
         />
-        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 lg:px-8">
-          {liveBackground == 1 && <div></div>}
-          <div className="max-w-xl flex flex-1 flex-col space-y-4 bg-white/20 dark:bg-black/20 backdrop-blur-sm">
+        <div
+          className={
+            "container lg:w-[70vw] flex flex-col lg:flex-row " +
+            (liveBackgrounds[currentLive].reverse
+              ? "justify-end"
+              : "justify-start")
+          }
+        >
+          <motion.div
+            layout
+            transition={{ layout: { duration: 0.4, ease: circOut } }}
+            className={
+              "max-w-xl flex flex-1 flex-col space-y-4 " +
+              (liveBackgrounds[currentLive].reverse
+                ? "items-start"
+                : "items-end")
+            }
+          >
             <GeoDiv
-              className="flex flex-col lg:items-start gap-8 p-12"
+              className="flex flex-col lg:items-start gap-8 p-12  bg-white/20 dark:bg-black/20 backdrop-blur-sm"
               borderx
               cornertr
               cornersize="large"
@@ -120,23 +186,35 @@ export default function Home({
                 </div>
               </div>
             </GeoDiv>
-          </div>
+            <GeoDiv
+              className="hidden lg:flex flex-col w-max gap-4 p-8 bg-white/20 dark:bg-black/20 backdrop-blur-sm"
+              border
+              cornertl
+              cornersize="normal"
+            >
+              <div className="max-w-xl w-full flex flex-1 flex-col space-y-2">
+                <h1 className="text-3xl font-display">
+                  {liveBackgrounds[currentLive].name}
+                </h1>
+                <p className="font-sans">
+                  {liveBackgrounds[currentLive].species}
+                </p>
+              </div>
+            </GeoDiv>
+          </motion.div>
         </div>
-        <div className="container mx-auto lg:grid hidden grid-cols-2 mb-8">
-          {liveBackground == 0 && <div></div>}
-          <GeoDiv
-            className="flex flex-col gap-4 p-8 bg-white/20 dark:bg-black/20 backdrop-blur-sm"
-            border
-            cornertl
-            cornersize="normal"
-          >
-            <div className="max-w-xl w-full flex flex-1 flex-col space-y-2">
-              <h1 className="text-3xl font-display">
-                {liveBackgrounds[1].name}
-              </h1>
-              <p className="font-sans">{liveBackgrounds[1].species}</p>
+        <div className="flex flex-row space-x-2 justify-center mt-16">
+          {liveBackgrounds.map((bg, i) => (
+            <div
+              key={i}
+              className={
+                "text-lg transition " +
+                (currentLive == i ? "opacity-50" : "opacity-10")
+              }
+            >
+              ◆
             </div>
-          </GeoDiv>
+          ))}
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:px-4">

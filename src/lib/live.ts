@@ -7,15 +7,15 @@ export interface LiveBackground {
 
 export const liveBackgrounds: LiveBackground[] = [
   {
-    src: "img/favor.webp",
-    name: "Van Carina",
-    species: "Turkish Van Cat",
-    reverse: false,
-  },
-  {
     src: "img/forecast.webp",
     name: "Tsubaki Nishimura",
     species: "Oni",
     reverse: true,
+  },
+  {
+    src: "img/favor.webp",
+    name: "Van Carina",
+    species: "Turkish Van Cat",
+    reverse: false,
   },
 ];
