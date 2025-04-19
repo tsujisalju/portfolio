@@ -1,9 +1,9 @@
+import { AnimatePresence, circOut, motion } from "motion/react";
 import { FormattedDate, useIntl } from "react-intl";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Log, getSortedLogsData } from "../lib/logs";
 import { Project, getSortedProjectsData } from "../lib/projects";
 import React, { useState } from "react";
-import { circOut, motion } from "motion/react";
 import { shimmer, toBase64 } from "../components/ImageSkeleton";
 import BlueSkyIcon from "../lib/svg/BlueSkyIcon";
 import GeoDiv from "../components/GeoDiv";
@@ -51,6 +51,7 @@ export default function Home({
     document.body.style.backgroundImage = "";
     document.body.className = "";
   }, []);
+
   return (
     <Layout>
       <div className="min-h-[90vh] -mt-18 w-full relative grid place-content-center overflow-hidden">
@@ -88,18 +89,28 @@ export default function Home({
             />
           </svg>
         </div>
-        <Image
-          className="object-cover object-top opacity-50 lg:opacity-85 -z-10 transition duration-300"
-          src={liveBackgrounds[currentLive].src}
-          alt="favor"
-          fill
-          sizes="(max-width: 1200px) 100vw"
-          unoptimized
-          placeholder="empty"
-        />
+        <AnimatePresence>
+          <motion.div
+            key={liveBackgrounds[currentLive].src}
+            className={"opacity-50 lg:opacity-85 -z-10 transition duration-400"}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <Image
+              className="object-cover object-top"
+              src={liveBackgrounds[currentLive].src}
+              alt="favor"
+              fill
+              sizes="(max-width: 1200px) 100vw"
+              unoptimized
+              placeholder="empty"
+            />
+          </motion.div>
+        </AnimatePresence>
         <div
           className={
-            "container lg:w-[70vw] flex flex-col lg:flex-row " +
+            "container lg:w-[50vw] flex flex-col lg:flex-row " +
             (liveBackgrounds[currentLive].reverse
               ? "justify-end"
               : "justify-start")
@@ -269,10 +280,7 @@ export default function Home({
                   className="object-cover"
                   placeholder="blur"
                   blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                    shimmer(
-                      allProjectsData[0].width,
-                      allProjectsData[0].height,
-                    ),
+                    shimmer(allProjectsData[0].width, allProjectsData[0].height)
                   )}`}
                 />
                 <div className="absolute w-full top-0 p-4 border bg-white/50 dark:bg-black/50 border-black/20 dark:border-white/20">
