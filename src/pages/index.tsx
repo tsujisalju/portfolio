@@ -110,7 +110,7 @@ export default function Home({
         </AnimatePresence>
         <div
           className={
-            "container lg:w-[50vw] flex flex-col lg:flex-row " +
+            "container lg:w-[90vw] xl:w-[70vw] flex flex-col lg:flex-row " +
             (liveBackgrounds[currentLive].reverse
               ? "justify-end"
               : "justify-start")
