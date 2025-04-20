@@ -91,16 +91,17 @@ export default function Home({
         </div>
         <AnimatePresence>
           <motion.div
-            key={liveBackgrounds[currentLive].src}
-            className={"opacity-50 lg:opacity-85 -z-10 transition duration-400"}
+            key={liveBackgrounds[currentLive].name}
+            className={"h-full -z-10"}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
             <Image
-              className="object-cover object-top"
+              key={liveBackgrounds[currentLive].src}
+              className={"object-cover object-top opacity-50 lg:opacity-85 "}
               src={liveBackgrounds[currentLive].src}
-              alt="favor"
+              alt={liveBackgrounds[currentLive].name}
               fill
               sizes="(max-width: 1200px) 100vw"
               unoptimized

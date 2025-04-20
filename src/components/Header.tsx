@@ -6,6 +6,7 @@ import PurrnamaTypography from "../lib/svg/PurrnamaTypography";
 import React from "react";
 import SelectLanguage from "./SelectLanguage";
 import SelectTheme from "./SelectTheme";
+import { navigation } from "../lib/navigation";
 import { useIntl } from "react-intl";
 
 interface HeaderProp {
@@ -65,13 +66,11 @@ export default function Header(Props: HeaderProp) {
           </Link>
         </div>
         <nav className="hidden lg:flex grow flex-row place-items-center justify-center space-x-6">
-          <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
-          <NavLink href="/logs">{intl.formatMessage({ id: "Logs" })}</NavLink>
-          <NavLink href="/artworks">
-            {intl.formatMessage({ id: "Artworks" })}
-          </NavLink>
-          <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
-          <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
+          {navigation.map((nav) => (
+            <NavLink key={nav.title} href={nav.href}>
+              {intl.formatMessage({ id: nav.title })}
+            </NavLink>
+          ))}
         </nav>
         <div className="hidden lg:flex flex-row flex-1 space-x-2 justify-end items-center p-4">
           <SelectLanguage />

@@ -3,6 +3,7 @@ import { Menu } from "@headlessui/react";
 import SelectLanguage from "./SelectLanguage";
 import SelectTheme from "./SelectTheme";
 import { Transition } from "@headlessui/react";
+import { navigation } from "../lib/navigation";
 import { useIntl } from "react-intl";
 import { useRouter } from "next/router";
 
@@ -44,71 +45,22 @@ export default function MobileNav() {
             "absolute flex flex-col flex-1 right-0 mt-2 p-4 w-[200px] space-y-3 bg-stone-100 dark:bg-stone-800 text-left shadow-lg"
           }
         >
-          <Menu.Item key={"home"}>
-            {({ active }) => (
-              <div
-                className={
-                  "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
-                  (active && " bg-stone-200 dark:bg-stone-700")
-                }
-                onClick={() => router.push("/")}
-              >
-                {intl.formatMessage({ id: "Home" })}
-              </div>
-            )}
-          </Menu.Item>
-          <Menu.Item key={"logs"}>
-            {({ active }) => (
-              <div
-                className={
-                  "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
-                  (active && " bg-stone-200 dark:bg-stone-700")
-                }
-                onClick={() => router.push("/logs")}
-              >
-                {intl.formatMessage({ id: "Logs" })}
-              </div>
-            )}
-          </Menu.Item>
-          <Menu.Item key={"artworks"}>
-            {({ active }) => (
-              <div
-                className={
-                  "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
-                  (active && " bg-stone-200 dark:bg-stone-700")
-                }
-                onClick={() => router.push("/artworks")}
-              >
-                {intl.formatMessage({ id: "Artworks" })}
-              </div>
-            )}
-          </Menu.Item>
-          <Menu.Item key={"work"}>
-            {({ active }) => (
-              <div
-                className={
-                  "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
-                  (active && " bg-stone-200 dark:bg-stone-700")
-                }
-                onClick={() => router.push("/work")}
-              >
-                {intl.formatMessage({ id: "Work" })}
-              </div>
-            )}
-          </Menu.Item>
-          <Menu.Item key={"uses"}>
-            {({ active }) => (
-              <div
-                className={
-                  "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
-                  (active && " bg-stone-200 dark:bg-stone-700")
-                }
-                onClick={() => router.push("/uses")}
-              >
-                {intl.formatMessage({ id: "Uses" })}
-              </div>
-            )}
-          </Menu.Item>
+          {navigation.map((nav) => (
+            <Menu.Item key={nav.title}>
+              {({ active }) => (
+                <div
+                  className={
+                    "font-sans transition transition-75 text-lg py-1 px-2 text-left rounded-md" +
+                    (active && " bg-stone-200 dark:bg-stone-700")
+                  }
+                  onClick={() => router.push(nav.href)}
+                >
+                  {intl.formatMessage({ id: nav.title })}
+                </div>
+              )}
+            </Menu.Item>
+          ))}
+
           <hr className="opacity-20" />
           <div className="flex flex-row space-x-2 flex-1">
             <SelectLanguage />
