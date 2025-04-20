@@ -1,12 +1,11 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
 import NavLink from "./NavLink";
 import PurrnamaTypography from "../lib/svg/PurrnamaTypography";
-import React from "react";
 import SelectLanguage from "./SelectLanguage";
 import SelectTheme from "./SelectTheme";
-import { navigation } from "../lib/navigation";
 import { useIntl } from "react-intl";
 
 interface HeaderProp {
@@ -15,14 +14,14 @@ interface HeaderProp {
 
 export default function Header(Props: HeaderProp) {
   const { disableOnTop = false } = Props;
-  const [onTop, setOnTop] = React.useState(true);
+  const [onTop, setOnTop] = useState(true);
   const intl = useIntl();
 
   function HandleOnTop(value: boolean) {
     setOnTop(value);
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.onscroll = () => {
       HandleOnTop(window.scrollY === 0);
     };
@@ -66,11 +65,13 @@ export default function Header(Props: HeaderProp) {
           </Link>
         </div>
         <nav className="hidden lg:flex grow flex-row place-items-center justify-center space-x-6">
-          {navigation.map((nav) => (
-            <NavLink key={nav.title} href={nav.href}>
-              {intl.formatMessage({ id: nav.title })}
-            </NavLink>
-          ))}
+          <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
+          <NavLink href="/logs">{intl.formatMessage({ id: "Logs" })}</NavLink>
+          <NavLink href="/artworks">
+            {intl.formatMessage({ id: "Artworks" })}
+          </NavLink>
+          <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
+          <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
         </nav>
         <div className="hidden lg:flex flex-row flex-1 space-x-2 justify-end items-center p-4">
           <SelectLanguage />

@@ -163,6 +163,12 @@
       "value": "Front End"
     }
   ],
+  "Front-End": [
+    {
+      "type": 0,
+      "value": "Front-End"
+    }
+  ],
   "Graphic Design": [
     {
       "type": 0,
@@ -364,7 +370,7 @@
   "Move forward with courage, because you are not alone.": [
     {
       "type": 0,
-      "value": "Gehen Sie gemeinsam und mutig voran."
+      "value": "Geh mutig voran, denn du bist nicht allein."
     }
   ],
   "My first laptop. It runs on a modest AMD Ryzen 5 4600H and Nvidia GTX 1650. It is sufficient for what I do. Before this I would use the family 2011 iMac computer, so this is a significant upgrade. Later down the road I upgraded the RAM to 16GB and added a second 1TB SSD.": [

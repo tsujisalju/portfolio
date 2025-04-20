@@ -37,6 +37,12 @@
       "value": "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission."
     }
   ],
+  "Branding": [
+    {
+      "type": 0,
+      "value": "Branding"
+    }
+  ],
   "Code Editor": [
     {
       "type": 0,
@@ -89,6 +95,18 @@
     {
       "type": 0,
       "value": "Figma"
+    }
+  ],
+  "Front-End": [
+    {
+      "type": 0,
+      "value": "Front-End"
+    }
+  ],
+  "Graphic Design": [
+    {
+      "type": 0,
+      "value": "Graphic Design"
     }
   ],
   "Hardware": [
@@ -211,6 +229,12 @@
       "value": "Logs"
     }
   ],
+  "Merchandise": [
+    {
+      "type": 0,
+      "value": "Merchandise"
+    }
+  ],
   "Microphone": [
     {
       "type": 0,
@@ -299,6 +323,12 @@
     {
       "type": 0,
       "value": "UI Design"
+    }
+  ],
+  "UI/UX Design": [
+    {
+      "type": 0,
+      "value": "UI/UX Design"
     }
   ],
   "Uses": [
