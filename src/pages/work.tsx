@@ -7,9 +7,10 @@ import React from "react";
 import SteelSwapLogo from "../components/svg/SteelSwapLogo";
 import Tag from "../components/Tag";
 import Tilt from "react-parallax-tilt";
+import { useIntl } from "react-intl";
 
 export default function Achernar() {
-  //const intl = useIntl();
+  const intl = useIntl();
   React.useEffect(() => {
     document.body.style.backgroundImage = "";
     document.body.className = "";
@@ -34,9 +35,9 @@ export default function Achernar() {
               <div className="grid w-full h-full place-items-center p-8">
                 <PurritoGeneralLogo className="text-[#2F272E] dark:text-[#ffeddc] h-16" />
                 <div className="flex flex-row gap-2 justify-center flex-wrap">
-                  <Tag>Illustration</Tag>
-                  <Tag>Graphic Design</Tag>
-                  <Tag>Branding</Tag>
+                  <Tag>{intl.formatMessage({ id: "Illustration" })}</Tag>
+                  <Tag>{intl.formatMessage({ id: "Graphic Design" })}</Tag>
+                  <Tag>{intl.formatMessage({ id: "Branding" })}</Tag>
                 </div>
               </div>
               <div className="lg:col-span-3">
@@ -121,8 +122,8 @@ export default function Achernar() {
               <div className="grid w-full h-full place-items-center py-8">
                 <SteelSwapLogo className="text-[#2F272E] dark:text-[#ffeddc] h-16" />
                 <div className="flex flex-row gap-2 justify-center flex-wrap">
-                  <Tag>Graphic Design</Tag>
-                  <Tag>UI/UX Design</Tag>
+                  <Tag>{intl.formatMessage({ id: "Graphic Design" })}</Tag>
+                  <Tag>{intl.formatMessage({ id: "UI/UX Design" })}</Tag>
                 </div>
               </div>
               <div className="lg:col-span-3">
@@ -206,9 +207,9 @@ export default function Achernar() {
                   <p className="font-code">V1</p>
                 </div>
                 <div className="flex flex-row gap-2 justify-center flex-wrap">
-                  <Tag>Graphic Design</Tag>
-                  <Tag>Front-end</Tag>
-                  <Tag>Merchandise</Tag>
+                  <Tag>{intl.formatMessage({ id: "Graphic Design" })}</Tag>
+                  <Tag>{intl.formatMessage({ id: "Front-End" })}</Tag>
+                  <Tag>{intl.formatMessage({ id: "Merchandise" })}</Tag>
                 </div>
               </div>
               <div className="lg:col-span-3">
