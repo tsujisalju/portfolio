@@ -33,11 +33,6 @@ export default function Achernar() {
                 tiltMaxAngleX={1}
                 tiltReverse
                 scale={1.02}
-                glareEnable
-                glareMaxOpacity={0.1}
-                glareColor="#ffffff"
-                glarePosition="left"
-                glareReverse
                 className="relative overflow-hidden hover:shadow-lg p-4 h-max"
               >
                 <Popover className={"relative"}>
