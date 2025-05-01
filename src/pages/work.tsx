@@ -2,14 +2,19 @@ import GeoDiv from "../components/GeoDiv";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import MinswapLogo from "../components/svg/MinswapLogo";
+import { Popover } from "@headlessui/react";
 import PurritoGeneralLogo from "../components/svg/PurritoGeneralLogo";
 import React from "react";
 import SteelSwapLogo from "../components/svg/SteelSwapLogo";
 import Tag from "../components/Tag";
 import Tilt from "react-parallax-tilt";
+import { skills } from "../lib/expertise";
 import { useIntl } from "react-intl";
+import { useRouter } from "next/router";
 
 export default function Achernar() {
+  const router = useRouter();
+  const { locale } = router;
   const intl = useIntl();
   React.useEffect(() => {
     document.body.style.backgroundImage = "";
@@ -17,7 +22,59 @@ export default function Achernar() {
   }, []);
   return (
     <Layout>
+      <div className="px-4 lg:px-0 max-w-7xl mx-auto flex flex-col space-y-6 mb-8 overflow-auto">
+        <h1 className="text-3xl font-display">Expertise</h1>
+        <GeoDiv borderx corner>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+            {skills.map((skill, index) => (
+              <Tilt
+                key={index}
+                tiltMaxAngleY={1}
+                tiltMaxAngleX={1}
+                tiltReverse
+                scale={1.02}
+                glareEnable
+                glareMaxOpacity={0.1}
+                glareColor="#ffffff"
+                glarePosition="left"
+                glareReverse
+                className="relative overflow-hidden hover:shadow-lg p-4 h-max"
+              >
+                <Popover className={"relative"}>
+                  <Popover.Button className="flex flex-col space-y-2 w-full">
+                    <h2 className="font-sans font-bold text-xl">
+                      {skill.title}
+                    </h2>
+                    <div className="w-full h-1 bg-stone-200 dark:bg-stone-800 relative">
+                      <div
+                        style={{ width: skill.percentage + "%" }}
+                        className="h-full bg-stone-500"
+                      ></div>
+                    </div>
+                  </Popover.Button>
+                  <Popover.Panel
+                    className={
+                      "mt-4 p-4 flex flex-col dark:bg-stone-800 bg-stone-200 backdrop-blur"
+                    }
+                  >
+                    <p className="font-sans">
+                      {locale == "en-US"
+                        ? skill.en
+                        : locale == "ms-MY"
+                        ? skill.ms
+                        : locale == "de-DE"
+                        ? skill.de
+                        : ""}
+                    </p>
+                  </Popover.Panel>
+                </Popover>
+              </Tilt>
+            ))}
+          </div>
+        </GeoDiv>
+      </div>
       <div className="px-4 lg:px-0 max-w-7xl mx-auto flex flex-col space-y-6">
+        <h1 className="text-3xl font-display">Commercial Works</h1>
         <Tilt
           tiltMaxAngleY={1}
           tiltMaxAngleX={1}

@@ -47,7 +47,7 @@ export default function Uses() {
                   {intl.formatMessage({ id: "Mouse" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
-                  {intl.formatMessage({ id: "Razer Naga X" })}
+                  {intl.formatMessage({ id: "Steelseries Rival 3" })}
                 </h2>
               </div>
             </GeoDiv>
