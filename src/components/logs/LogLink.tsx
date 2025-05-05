@@ -105,14 +105,20 @@ export default function LogLink({
                 <h1 className="font-display text-xl md:text-2xl grow">
                   {log.title}
                 </h1>
-                <p className="hidden xl:inline font-sans font-light text-md">
-                  <FormattedDate
-                    value={log.date}
-                    year="numeric"
-                    month="long"
-                    day="numeric"
-                  />
-                </p>
+                <div className="flex flex-row space-x-2">
+                  <p className="font-sans font-light text-md">{log.author}</p>
+                  <p className="hidden xl:inline font-sans font-light text-md">
+                    •
+                  </p>
+                  <p className="hidden xl:inline font-sans font-light text-md">
+                    <FormattedDate
+                      value={log.date}
+                      year="numeric"
+                      month="long"
+                      day="numeric"
+                    />
+                  </p>
+                </div>
                 <div className="flex flex-row items-center space-x-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
