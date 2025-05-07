@@ -1,4 +1,4 @@
-export default function SteelSwapLogo({ className }: { className: string }) {
+export default function SteelSwapLogo({ className }: { className?: string }) {
   return (
     <svg
       width="210"

@@ -1,7 +1,7 @@
 export default function PurritoGeneralLogo({
   className,
 }: {
-  className: string;
+  className?: string;
 }) {
   return (
     <svg
