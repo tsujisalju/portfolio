@@ -4,6 +4,14 @@ export type Skill = {
   en: string;
   ms: string;
   de: string;
+  showcase?: showcase[];
+};
+
+export type showcase = {
+  en: string;
+  ms: string;
+  de: string;
+  link: string;
 };
 
 export const skills: Skill[] = [

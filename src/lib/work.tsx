@@ -79,7 +79,12 @@ export const works: Work[] = [
     ],
   },
   {
-    logo: <MinswapLogo className="slate-950 dark:slate-50 w-[210px] h-16" />,
+    logo: (
+      <div className="flex flex-row space-x-4 items-center">
+        <MinswapLogo className="slate-950 dark:slate-50 w-[210px] h-16" />
+        <p className="font-code">V1</p>
+      </div>
+    ),
     tags: [
       { en: "Graphic Design", ms: "Pereka Grafik", de: "Grafische Gestaltung" },
       {

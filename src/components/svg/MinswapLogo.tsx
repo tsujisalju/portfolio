@@ -1,7 +1,7 @@
-export default function MinswapLogo({ className }: { className?: string }) {
+export default function MinswapLogo({ className }: { className: string }) {
   return (
     <svg
-      width="470"
+      width="210"
       height="100"
       viewBox="0 0 470 100"
       fill="none"
