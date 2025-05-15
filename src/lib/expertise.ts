@@ -51,6 +51,13 @@ export const skills: Skill[] = [
     de: "Erfahrung in C# zum Schreiben von .NET-Anwendungen und Spielen mit Unity.",
   },
   {
+    title: "Python",
+    percentage: 60,
+    en: "Experienced in Python for CLI applications. Built a CRUD program with CSV parsing for a PPE inventory management system.",
+    ms: "Berpengalaman dalam Python untuk menulis aplikasi alat baris arahan. Membina program CRUD dengan penghurai CSV untuk sistem pengurusan inventory PPE",
+    de: "Erfahren in Python für CLI-Anwendungen. Erstellung eines CRUD-Programms mit CSV-Parsing für ein PSA-Bestandsverwaltungssystem."
+  },
+  {
     title: "Linux",
     percentage: 75,
     en: "Highly familiar with Linux and general command line tools. Daily driving a custom Debian install and administering a Nextcloud server running Ubuntu Server.",
