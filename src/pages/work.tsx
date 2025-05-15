@@ -20,21 +20,21 @@ export default function Achernar() {
   }, []);
   return (
     <Layout>
-      <div className="px-4 max-w-7xl mx-auto flex flex-col space-y-6 mb-8 overflow-auto">
+      <div className="px-4 max-w-7xl mx-auto flex flex-col space-y-6 mb-8 overflow-visible">
         <h1 className="text-3xl font-display">
           {intl.formatMessage({ id: "Expertise" })}
         </h1>
-        <GeoDiv borderx corner>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-            {skills.map((skill, index) => (
-              <Tilt
-                key={index}
-                tiltMaxAngleY={1}
-                tiltMaxAngleX={1}
-                tiltReverse
-                scale={1.02}
-                className="relative overflow-hidden hover:shadow-lg p-4 h-max"
-              >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skills.map((skill, index) => (
+            <Tilt
+              key={index}
+              tiltMaxAngleY={1}
+              tiltMaxAngleX={1}
+              tiltReverse
+              scale={1.02}
+              className="relative overflow-hidden hover:shadow-lg h-max"
+            >
+              <GeoDiv border cornertr className="p-6">
                 <Popover className={"relative"}>
                   <Popover.Button className="flex flex-col space-y-2 w-full">
                     <h2 className="font-sans font-bold text-xl">
@@ -49,7 +49,7 @@ export default function Achernar() {
                   </Popover.Button>
                   <Popover.Panel
                     className={
-                      "mt-4 p-4 flex flex-col dark:bg-stone-800 bg-stone-200 backdrop-blur"
+                      "mt-4 p-4 flex flex-col border-solid border dark:border-white/20 border-black/20 backdrop-blur"
                     }
                   >
                     <p className="font-sans">
@@ -63,10 +63,10 @@ export default function Achernar() {
                     </p>
                   </Popover.Panel>
                 </Popover>
-              </Tilt>
-            ))}
-          </div>
-        </GeoDiv>
+              </GeoDiv>
+            </Tilt>
+          ))}
+        </div>
       </div>
       <div className="px-4 max-w-7xl mx-auto flex flex-col space-y-6">
         <h1 className="text-3xl font-display">

@@ -1,4 +1,5 @@
 import GeoDiv from "../components/GeoDiv";
+import Image from "next/image";
 import Layout from "../components/Layout";
 import { useEffect } from "react";
 import { useIntl } from "react-intl";
@@ -22,7 +23,14 @@ export default function Uses() {
           </div>
           <div className="flex flex-col space-y-2 col-span-2">
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col space-y-2 relative overflow-clip">
+                <Image
+                  src={"/img/uses/keyboard.png"}
+                  alt={"keyboard"}
+                  className={"absolute -top-12 -right-12 opacity-75 -z-10"}
+                  width={180}
+                  height={180}
+                />
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Keyboard" })}
                 </small>
@@ -32,7 +40,14 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col space-y-2 relative overflow-clip">
+                <Image
+                  src={"/img/uses/headphones.png"}
+                  alt={"headphones"}
+                  className={"absolute -top-12 -right-12 opacity-75 -z-10"}
+                  width={180}
+                  height={180}
+                />
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Headphones" })}
                 </small>
@@ -42,7 +57,14 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col space-y-2  relative overflow-clip">
+                <Image
+                  src={"/img/uses/mouse.png"}
+                  alt={"mouse"}
+                  className={"absolute -top-12 -right-12 opacity-75 -z-10"}
+                  width={180}
+                  height={180}
+                />
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Mouse" })}
                 </small>
@@ -52,22 +74,19 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col space-y-2 relative overflow-clip">
+                <Image
+                  src={"/img/uses/tablet.png"}
+                  alt={"mouse"}
+                  className={"absolute -top-12 -right-12 opacity-75 -z-10"}
+                  width={180}
+                  height={180}
+                />
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Drawing Tablet" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
                   {intl.formatMessage({ id: "Huion Q11K V2" })}
-                </h2>
-              </div>
-            </GeoDiv>
-            <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
-                <small className="uppercase font-sans font-light">
-                  {intl.formatMessage({ id: "Microphone" })}
-                </small>
-                <h2 className="text-xl font-sans font-bold">
-                  {intl.formatMessage({ id: "AKG Ara" })}
                 </h2>
               </div>
             </GeoDiv>
@@ -86,6 +105,9 @@ export default function Uses() {
                   {intl.formatMessage({ id: "Operating System" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Void Linux" })}
+                </h2>
+                <h2 className="text-xl font-sans font-bold">
                   {intl.formatMessage({ id: "Debian 12" })}
                 </h2>
               </div>
@@ -95,6 +117,9 @@ export default function Uses() {
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Code Editor" })}
                 </small>
+                <h2 className="text-xl font-sans font-bold">
+                  {intl.formatMessage({ id: "Neovim" })}
+                </h2>
                 <h2 className="text-xl font-sans font-bold">
                   {intl.formatMessage({ id: "Zed" })}
                 </h2>
