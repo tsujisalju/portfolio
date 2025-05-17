@@ -30,7 +30,7 @@ export default function Header(Props: HeaderProp) {
   return (
     <header
       className={
-        "sticky top-0 z-20 lg:mb-4 transition transition-100 " +
+        "sticky top-0 z-20 lg:mb-4 transition transition-100 lg:flex lg:flex-row lg:justify-center " +
         (!disableOnTop
           ? !onTop
             ? "bg-stone-100/60 dark:bg-stone-900/60 backdrop-blur-md"
@@ -38,7 +38,7 @@ export default function Header(Props: HeaderProp) {
           : "bg-stone-100/60 dark:bg-stone-900/60")
       }
     >
-      <div className="flex flex-row">
+      <div className="lg:container mx:auto flex flex-row">
         <div className="flex flex-row flex-1 p-3 lg:p-6 lg:space-x-12">
           <Link href={"/"}>
             <div className="flex flex-row justify-start items-center space-x-2 -ml-2 dark:ml-0">
@@ -46,8 +46,8 @@ export default function Header(Props: HeaderProp) {
                 className="lg:self-center hidden dark:flex pb-2 lg:pb-0"
                 alt="purrnama logo"
                 src="/img/logo-light-v2.png"
-                width={50}
-                height={50}
+                width={40}
+                height={40}
                 placeholder="empty"
                 priority
               ></Image>
@@ -55,8 +55,8 @@ export default function Header(Props: HeaderProp) {
                 className="flex lg:self-center dark:hidden pb-2 lg:pb-0"
                 alt="purrnama logo"
                 src="/img/logo-dark-v2.png"
-                width={50}
-                height={50}
+                width={40}
+                height={40}
                 placeholder="empty"
                 priority
               ></Image>

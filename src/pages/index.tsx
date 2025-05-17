@@ -55,6 +55,35 @@ export default function Home({
   return (
     <Layout>
       <div className="min-h-[90vh] -mt-18 w-full relative grid place-content-center overflow-hidden">
+        
+        <AnimatePresence>
+          <motion.div
+            key={liveBackgrounds[currentLive].name}
+            className={"h-full -z-10"}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <Image
+              key={liveBackgrounds[currentLive].src}
+              className={"object-cover object-top opacity-50 lg:opacity-85 "}
+              src={liveBackgrounds[currentLive].src}
+              alt={liveBackgrounds[currentLive].name}
+              fill
+              sizes="(max-width: 1200px) 100vw"
+              unoptimized
+              placeholder="empty"
+            />
+          </motion.div>
+        </AnimatePresence>
+        <div
+          className={
+            "relative container lg:w-[90vw] xl:w-[70vw] flex flex-col lg:flex-row " +
+            (liveBackgrounds[currentLive].reverse
+              ? "justify-end"
+              : "justify-start")
+          }
+        >
         <div
           onClick={handleNextLive}
           className="absolute inset-y-0 right-0 h-full grid place-content-center px-2 opacity-50 hover:opacity-100 transition cursor-pointer"
@@ -89,39 +118,11 @@ export default function Home({
             />
           </svg>
         </div>
-        <AnimatePresence>
-          <motion.div
-            key={liveBackgrounds[currentLive].name}
-            className={"h-full -z-10"}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <Image
-              key={liveBackgrounds[currentLive].src}
-              className={"object-cover object-top opacity-50 lg:opacity-85 "}
-              src={liveBackgrounds[currentLive].src}
-              alt={liveBackgrounds[currentLive].name}
-              fill
-              sizes="(max-width: 1200px) 100vw"
-              unoptimized
-              placeholder="empty"
-            />
-          </motion.div>
-        </AnimatePresence>
-        <div
-          className={
-            "container lg:w-[90vw] xl:w-[70vw] flex flex-col lg:flex-row " +
-            (liveBackgrounds[currentLive].reverse
-              ? "justify-end"
-              : "justify-start")
-          }
-        >
           <motion.div
             layout
             transition={{ layout: { duration: 0.4, ease: circOut } }}
             className={
-              "max-w-xl flex flex-1 flex-col space-y-4 " +
+              "max-w-xl flex flex-1 flex-col space-y-4 lg:mx-16 " +
               (liveBackgrounds[currentLive].reverse
                 ? "items-start"
                 : "items-end")
@@ -229,8 +230,8 @@ export default function Home({
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:px-4">
-        <div className="w-full lg:col-span-2">
+      <div className="lg:container mx-auto grid grid-cols-1 lg:grid-cols-2 lg:px-4">
+        <div className="w-full col-span-1">
           <div className="p-4">
             <GeoDiv
               className="text-center lg:text-left px-4 py-2 border-r-0"
@@ -253,7 +254,7 @@ export default function Home({
             ))}
           </div>
         </div>
-        <div className="w-full order-first lg:-order-none lg:col-span-3">
+        <div className="w-full order-first lg:-order-none col-span-1">
           <div className="p-4">
             <GeoDiv
               className="text-center lg:text-left px-4 py-2 border-l-0"
