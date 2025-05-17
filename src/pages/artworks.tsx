@@ -26,7 +26,7 @@ export default function Artworks({
 
   return (
     <Layout>
-      <div className="mx-auto text-center">
+      <div className="lg:container mx-auto text-center">
         <GeoDiv
           className="px-4 py-6 my-8 mx-4 md:mx-8 lg:mx-12 lg:mt-0"
           bordery
@@ -50,7 +50,9 @@ export default function Artworks({
           </p>
         </GeoDiv>
       </div>
-      <ProjectGallery projects={allProjectsData} />
+      <div className="lg:container mx-auto">
+        <ProjectGallery projects={allProjectsData} />
+      </div>
     </Layout>
   );
 }

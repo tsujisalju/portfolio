@@ -20,11 +20,11 @@ export default function Achernar() {
   }, []);
   return (
     <Layout>
-      <div className="px-4 max-w-7xl mx-auto flex flex-col space-y-6 mb-8 overflow-visible">
+      <div className="lg:container px-4 mx-auto flex flex-col space-y-6 mb-8 overflow-visible">
         <h1 className="text-3xl font-display">
           {intl.formatMessage({ id: "Expertise" })}
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {skills.map((skill, index) => (
             <Tilt
               key={index}
@@ -37,7 +37,7 @@ export default function Achernar() {
               <GeoDiv border cornertr className="p-6">
                 <Popover className={"relative"}>
                   <Popover.Button className="flex flex-col space-y-2 w-full">
-                    <h2 className="font-sans font-bold text-xl">
+                    <h2 className="font-sans font-bold text-xl flex-initial w-max">
                       {skill.title}
                     </h2>
                     <div className="w-full h-1 bg-stone-200 dark:bg-stone-800 relative">
@@ -68,7 +68,7 @@ export default function Achernar() {
           ))}
         </div>
       </div>
-      <div className="px-4 max-w-7xl mx-auto flex flex-col space-y-6">
+      <div className="lg:container px-4 mx-auto flex flex-col space-y-6">
         <h1 className="text-3xl font-display">
           {intl.formatMessage({ id: "Commercial Works" })}
         </h1>
@@ -87,7 +87,7 @@ export default function Achernar() {
             className="relative overflow-hidden bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
           >
             <GeoDiv borderx corner>
-              <div className="w-full grid grid-cols-1 lg:grid-cols-4">
+              <div className="w-full grid grid-cols-1 lg:grid-cols-3">
                 <div className="grid w-full h-full place-items-center p-8 gap-4">
                   {work.logo}
                   <div className="flex flex-row gap-2 justify-center flex-wrap">
@@ -104,7 +104,7 @@ export default function Achernar() {
                     ))}
                   </div>
                 </div>
-                <div className="lg:col-span-3">
+                <div className="lg:col-span-2">
                   <div className="max-w-full overflow-x-hidden whitespace-nowrap">
                     <div
                       id="scrolling-gallery"
