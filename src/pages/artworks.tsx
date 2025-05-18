@@ -28,7 +28,7 @@ export default function Artworks({
     <Layout>
       <div className="lg:container mx-auto text-center">
         <GeoDiv
-          className="px-4 py-6 my-8 mx-4 md:mx-8 lg:mx-12 lg:mt-0"
+          className="px-4 py-6 my-8 mx-4 md:mx-8 lg:mt-0"
           bordery
           corner
           cornersize="large"

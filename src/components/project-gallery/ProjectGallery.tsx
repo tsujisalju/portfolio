@@ -17,7 +17,7 @@ const itemVariants = {
 
 export default function ProjectGallery({ projects }: { projects: Project[] }) {
   return (
-    <section className="px-4">
+    <section className="px-4 lg:px-0">
       <div className="md:px-8 mx-auto grid gap-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-flow-dense auto-rows-fr">
         {projects.map((project: Project, index) => (
           <motion.div

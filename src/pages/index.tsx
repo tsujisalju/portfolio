@@ -78,7 +78,7 @@ export default function Home({
         </AnimatePresence>
         <div
           className={
-            "relative container lg:w-[90vw] xl:w-[70vw] flex flex-col lg:flex-row " +
+            "relative container lg:w-screen flex flex-col lg:flex-row " +
             (liveBackgrounds[currentLive].reverse
               ? "justify-end"
               : "justify-start")
@@ -122,7 +122,7 @@ export default function Home({
             layout
             transition={{ layout: { duration: 0.4, ease: circOut } }}
             className={
-              "max-w-xl flex flex-1 flex-col space-y-4 lg:mx-16 " +
+              "max-w-xl flex flex-1 flex-col space-y-4 mx-16 " +
               (liveBackgrounds[currentLive].reverse
                 ? "items-start"
                 : "items-end")
