@@ -16,8 +16,8 @@ module.exports = {
         sans: ["var(--font-m-plus)", "sans-serif"],
         serif: ["var(--font-m-plus-code)", "serif"],
         display: [
-          "var(--font-mazius)",
-          "Mazius",
+          "var(--font-syne)",
+          "Syne",
           "var(--font-source-serif)",
           "serif",
         ],

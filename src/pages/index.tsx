@@ -260,7 +260,7 @@ export default function Home({
               </Link>
             </GeoDiv>
           </div>
-          <div className="p-4 mx-4 bg-black/10 shadow-inner h-[600px]">
+          <div className="p-4 mx-4 bg-black/10 shadow-inner h-[600px] rounded-lg">
             <Link scroll={false} href={"/projects/" + allProjectsData[0].id}>
               <div className="relative w-full h-full">
                 <Image

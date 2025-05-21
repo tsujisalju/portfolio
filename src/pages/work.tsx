@@ -40,10 +40,10 @@ export default function Achernar() {
                     <h2 className="font-sans font-bold text-xl flex-initial w-max">
                       {skill.title}
                     </h2>
-                    <div className="w-full h-1 bg-stone-200 dark:bg-stone-800 relative">
+                    <div className="w-full h-1 bg-zinc-200 dark:bg-zinc-800 relative">
                       <div
                         style={{ width: skill.percentage + "%" }}
-                        className="h-full bg-stone-500"
+                        className="h-full bg-zinc-500"
                       ></div>
                     </div>
                   </Popover.Button>
@@ -84,7 +84,7 @@ export default function Achernar() {
             glareColor="#ffffff"
             glarePosition="left"
             glareReverse
-            className="relative overflow-hidden bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
+            className="relative overflow-hidden bg-zinc-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
           >
             <GeoDiv borderx corner>
               <div className="w-full grid grid-cols-1 lg:grid-cols-3">

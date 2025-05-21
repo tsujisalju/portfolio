@@ -33,9 +33,9 @@ export default function Header(Props: HeaderProp) {
         "sticky top-0 z-20 lg:mb-4 transition transition-100 lg:flex lg:flex-row lg:justify-center " +
         (!disableOnTop
           ? !onTop
-            ? "bg-stone-100/60 dark:bg-stone-900/60 backdrop-blur-md"
+            ? "bg-zinc-100/60 dark:bg-zinc-900/60 backdrop-blur-md"
             : "bg-transparent"
-          : "bg-stone-100/60 dark:bg-stone-900/60")
+          : "bg-zinc-100/60 dark:bg-zinc-900/60")
       }
     >
       <div className="lg:container mx:auto flex flex-row">

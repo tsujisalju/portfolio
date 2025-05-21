@@ -23,7 +23,7 @@ export default function SelectLanguage() {
     <Menu as="div" className={"relative"}>
       <Menu.Button as="button" aria-label="Select language">
         <GeoDiv
-          className="h-8 flex flex-row w-full justify-center items-center transition transition-75 bg-stone-50 dark:bg-stone-800 px-3 py-2 space-x-2 font-sans hover:bg-opacity-50 dark:hover:bg-opacity-50 shadow-md hover:shadow-lg"
+          className="h-8 flex flex-row w-full justify-center items-center transition transition-75 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 space-x-2 font-sans hover:bg-opacity-50 dark:hover:bg-opacity-50 shadow-md hover:shadow-lg"
           border
         >
           <p>{getShortName(locale)}</p>
@@ -54,7 +54,7 @@ export default function SelectLanguage() {
       >
         <Menu.Items className={"absolute right-0 mt-2"}>
           <GeoDiv
-            className="w-max bg-stone-100 dark:bg-stone-800 text-left shadow-lg"
+            className="w-max bg-zinc-100 dark:bg-zinc-800 text-left shadow-lg"
             border
           >
             {SUPPORTED_LOCALES.map((lang) => (
@@ -63,7 +63,7 @@ export default function SelectLanguage() {
                   <div
                     className={
                       "font-sans transition transition-75 p-2 pl-3 pr-4 text-left" +
-                      (active && " bg-stone-200 dark:bg-stone-700")
+                      (active && " bg-zinc-200 dark:bg-zinc-700")
                     }
                     onClick={() => HandleSelectLanguage(lang)}
                   >

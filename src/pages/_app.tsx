@@ -63,6 +63,11 @@ const mazius = localFont({
   variable: "--font-mazius",
 });
 
+const syne = localFont({
+  src: "./fonts/Syne/Syne-Bold.otf",
+  variable: "--font-syne",
+});
+
 type LocaleModule = Record<string, any>;
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -97,7 +102,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ParallaxProvider>
           <main
-            className={`${sinistre.variable} ${mazius.variable}  ${m_plus.variable} ${m_plus_code.variable} ${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${source_code_pro.variable}`}
+            className={`${syne.variable} ${sinistre.variable} ${mazius.variable}  ${m_plus.variable} ${m_plus_code.variable} ${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${source_code_pro.variable}`}
           >
             <AnimatePresence
               mode="wait"
