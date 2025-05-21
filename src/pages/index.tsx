@@ -78,7 +78,7 @@ export default function Home({
         </AnimatePresence>
         <div
           className={
-            "relative container lg:w-screen flex flex-col lg:flex-row " +
+            "relative lg:container lg:w-screen flex flex-col lg:flex-row " +
             (liveBackgrounds[currentLive].reverse
               ? "justify-end"
               : "justify-start")
@@ -129,7 +129,7 @@ export default function Home({
             }
           >
             <GeoDiv
-              className="flex flex-col lg:items-start gap-8 p-12  bg-white/20 dark:bg-black/20 backdrop-blur-sm"
+              className="flex flex-col items-start gap-8 p-12  bg-white/20 dark:bg-black/20 backdrop-blur-sm"
               borderx
               cornertr
               cornersize="large"
