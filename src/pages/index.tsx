@@ -55,7 +55,6 @@ export default function Home({
   return (
     <Layout>
       <div className="min-h-[90vh] -mt-18 w-full relative grid place-content-center overflow-hidden">
-        
         <AnimatePresence>
           <motion.div
             key={liveBackgrounds[currentLive].name}
@@ -84,40 +83,40 @@ export default function Home({
               : "justify-start")
           }
         >
-        <div
-          onClick={handleNextLive}
-          className="absolute inset-y-0 right-0 h-full grid place-content-center px-2 opacity-50 hover:opacity-100 transition cursor-pointer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="size-6"
+          <div
+            onClick={handleNextLive}
+            className="absolute inset-y-0 right-0 h-full grid place-content-center px-2 opacity-50 hover:opacity-100 transition cursor-pointer"
           >
-            <path
-              fillRule="evenodd"
-              d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </div>
-        <div
-          onClick={handlePrevLive}
-          className="absolute inset-y-0 left-0 h-full grid place-content-center px-2 opacity-50 hover:opacity-100 transition cursor-pointer"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="size-6"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="size-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            onClick={handlePrevLive}
+            className="absolute inset-y-0 left-0 h-full grid place-content-center px-2 opacity-50 hover:opacity-100 transition cursor-pointer"
           >
-            <path
-              fillRule="evenodd"
-              d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="size-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
           <motion.div
             layout
             transition={{ layout: { duration: 0.4, ease: circOut } }}
@@ -171,6 +170,7 @@ export default function Home({
                 <div className="flex flex-row pt-4 space-x-3 place-items-center">
                   <Link
                     href={Socials.Github}
+                    aria-label="Visit Github profile"
                     target={"_blank"}
                     className={
                       "text-stone-700 hover:text-stone-800 dark:text-stone-300 hover:dark:text-stone-200 transition duration-200"
@@ -189,6 +189,7 @@ export default function Home({
                   </Link>
                   <Link
                     href={Socials.Bluesky}
+                    aria-label="Visit Bluesky profile"
                     target={"_blank"}
                     className={
                       "text-stone-700 hover:text-stone-800 dark:text-stone-300 hover:dark:text-stone-200 transition duration-100"

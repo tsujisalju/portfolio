@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
 import NavLink from "./NavLink";
-import PurrnamaTypography from "../lib/svg/PurrnamaTypography";
+import PurrnamaLogo from "./svg/PurrnamaLogo";
+import PurrnamaText from "./svg/PurrnamaText";
 import SelectLanguage from "./SelectLanguage";
 import SelectTheme from "./SelectTheme";
 import { useIntl } from "react-intl";
@@ -39,28 +39,11 @@ export default function Header(Props: HeaderProp) {
       }
     >
       <div className="lg:container mx:auto flex flex-row">
-        <div className="flex flex-row flex-1 p-3 lg:p-6 lg:space-x-12">
-          <Link href={"/"}>
-            <div className="flex flex-row justify-start items-center space-x-2 -ml-2 dark:ml-0">
-              <Image
-                className="lg:self-center hidden dark:flex pb-2 lg:pb-0"
-                alt="purrnama logo"
-                src="/img/logo-light-v2.png"
-                width={40}
-                height={40}
-                placeholder="empty"
-                priority
-              ></Image>
-              <Image
-                className="flex lg:self-center dark:hidden pb-2 lg:pb-0"
-                alt="purrnama logo"
-                src="/img/logo-dark-v2.png"
-                width={40}
-                height={40}
-                placeholder="empty"
-                priority
-              ></Image>
-              <PurrnamaTypography className="hidden lg:inline h-[22px]" />
+        <div className="flex flex-row items-center flex-1 p-3 lg:p-6 lg:space-x-12">
+          <Link href={"/"} aria-label="purrnama logo. return to home page">
+            <div className="flex flex-row justify-start space-x-4 items-center">
+              <PurrnamaLogo className="h-6 w-auto" />
+              <PurrnamaText className="h-4 w-auto" />
             </div>
           </Link>
         </div>

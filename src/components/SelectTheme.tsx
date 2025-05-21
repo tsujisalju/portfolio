@@ -26,7 +26,7 @@ export default function SelectTheme() {
 
   return (
     <Menu as="div" className={"relative"}>
-      <Menu.Button as="button">
+      <Menu.Button as="button" aria-label="Select color theme">
         <GeoDiv
           className="h-8 flex flex-row w-full justify-center items-center transition transition-75 bg-stone-50 dark:bg-stone-800 px-3 py-2 space-x-2 font-sans hover:bg-opacity-50 dark:hover:bg-opacity-50 shadow-md hover:shadow-lg"
           border
