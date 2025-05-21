@@ -1,4 +1,19 @@
 {
+  "Commercial Works": {
+    "string": "Kerja Komersial"
+  },
+  "Expertise": {
+    "string": "Kepakaran"
+  },
+  "Neovim": {
+    "string": "Neovim"
+  },
+  "Steelseries Rival 3": {
+    "string": "Steelseries Rival 3"
+  },
+  "Void Linux": {
+    "string": "Void Linux"
+  },
   "Front-End": {
     "string": "Front-End"
   },

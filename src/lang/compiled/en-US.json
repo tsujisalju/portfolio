@@ -13,12 +13,6 @@
       "value": " words."
     }
   ],
-  "AKG Ara": [
-    {
-      "type": 0,
-      "value": "AKG Ara"
-    }
-  ],
   "Adobe After Effects": [
     {
       "type": 0,
@@ -37,16 +31,16 @@
       "value": "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission."
     }
   ],
-  "Branding": [
-    {
-      "type": 0,
-      "value": "Branding"
-    }
-  ],
   "Code Editor": [
     {
       "type": 0,
       "value": "Code Editor"
+    }
+  ],
+  "Commercial Works": [
+    {
+      "type": 0,
+      "value": "Commercial Works"
     }
   ],
   "Dark": [
@@ -91,22 +85,16 @@
       "value": "Enter"
     }
   ],
+  "Expertise": [
+    {
+      "type": 0,
+      "value": "Expertise"
+    }
+  ],
   "Figma": [
     {
       "type": 0,
       "value": "Figma"
-    }
-  ],
-  "Front-End": [
-    {
-      "type": 0,
-      "value": "Front-End"
-    }
-  ],
-  "Graphic Design": [
-    {
-      "type": 0,
-      "value": "Graphic Design"
     }
   ],
   "Hardware": [
@@ -229,18 +217,6 @@
       "value": "Logs"
     }
   ],
-  "Merchandise": [
-    {
-      "type": 0,
-      "value": "Merchandise"
-    }
-  ],
-  "Microphone": [
-    {
-      "type": 0,
-      "value": "Microphone"
-    }
-  ],
   "Motion Graphics": [
     {
       "type": 0,
@@ -265,6 +241,12 @@
       "value": "My mother introduced me to programming and game making since I was 9 years old, because I was always on the computer and I ought to put my hobby to good use rather than just mindless flash gaming. And you know what I was pretty hooked by the idea. The fact that I could create something awesome with my own touch of flare is amazing, and the passion burns strong since. The time was convenient enough that my middle school was getting around into participating robotics and game jam competitions. My friends and I pioneered the Robotics Club and I handled the programming side of things. One of the best memories I had was creating a Lego EV3 Mindstorms claw robot for an intrastate competition, and making the design decision to control it with another EV3 brick via Bluetooth instead of a phone over Wifi, which worked in our favor during the run. Before I left the school, they were already setting up courses for game dev with Unity3D, which is so super cool to see."
     }
   ],
+  "Neovim": [
+    {
+      "type": 0,
+      "value": "Neovim"
+    }
+  ],
   "Next.js": [
     {
       "type": 0,
@@ -281,12 +263,6 @@
     {
       "type": 0,
       "value": "Operating System"
-    }
-  ],
-  "Razer Naga X": [
-    {
-      "type": 0,
-      "value": "Razer Naga X"
     }
   ],
   "Reports, recollections and reflections.": [
@@ -307,6 +283,12 @@
       "value": "Steelseries Arctis Nova 3"
     }
   ],
+  "Steelseries Rival 3": [
+    {
+      "type": 0,
+      "value": "Steelseries Rival 3"
+    }
+  ],
   "The world is ours to explore, design and nurture, for the betterment of all walks of life.": [
     {
       "type": 0,
@@ -325,12 +307,6 @@
       "value": "UI Design"
     }
   ],
-  "UI/UX Design": [
-    {
-      "type": 0,
-      "value": "UI/UX Design"
-    }
-  ],
   "Uses": [
     {
       "type": 0,
@@ -347,6 +323,12 @@
     {
       "type": 0,
       "value": "Vercel"
+    }
+  ],
+  "Void Linux": [
+    {
+      "type": 0,
+      "value": "Void Linux"
     }
   ],
   "Work": [
