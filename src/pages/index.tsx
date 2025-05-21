@@ -13,6 +13,7 @@ import Link from "next/link";
 import LogLink from "../components/logs/LogLink";
 import { Socials } from "../lib/socials";
 import { liveBackgrounds } from "../lib/live";
+import PurrnamaLogo from "../components/svg/PurrnamaLogo";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const allProjectsData: Project[] = getSortedProjectsData(locale as string);
@@ -133,20 +134,7 @@ export default function Home({
               cornertr
               cornersize="large"
             >
-              <Image
-                className="dark:hidden"
-                src={"/img/logo-dark-v2.png"}
-                alt="purrnama logo dark"
-                height={48}
-                width={48}
-              />
-              <Image
-                className="hidden dark:inline"
-                src={"/img/logo-light-v2.png"}
-                alt="purrnama logo light"
-                height={48}
-                width={48}
-              />
+              <PurrnamaLogo className="h-8 w-auto" />
               <div className="flex flex-col space-y-4">
                 <div>
                   <h1 className="font-display text-4xl lg:text-5xl">
