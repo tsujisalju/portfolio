@@ -11,9 +11,9 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import Link from "next/link";
 import LogLink from "../components/logs/LogLink";
+import PurrnamaLogo from "../components/svg/PurrnamaLogo";
 import { Socials } from "../lib/socials";
 import { liveBackgrounds } from "../lib/live";
-import PurrnamaLogo from "../components/svg/PurrnamaLogo";
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const allProjectsData: Project[] = getSortedProjectsData(locale as string);
