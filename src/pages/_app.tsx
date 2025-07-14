@@ -1,10 +1,8 @@
 import "../styles/globals.css";
 import {
-  DM_Serif_Display,
-  Karla,
   M_PLUS_1,
   M_PLUS_1_Code,
-  Source_Code_Pro,
+  Ovo,
   Source_Serif_4,
 } from "next/font/google";
 import { AnimatePresence } from "framer-motion";
@@ -19,6 +17,13 @@ import localFont from "next/font/local";
 import nookies from "nookies";
 import { useRouter } from "next/router";
 
+const ovo = Ovo({
+  weight: ["400"],
+  subsets: ["latin"],
+  style: ["normal"],
+  variable: "--font-ovo"
+})
+
 const m_plus = M_PLUS_1({
   subsets: ["latin"],
   style: ["normal"],
@@ -31,26 +36,10 @@ const m_plus_code = M_PLUS_1_Code({
   variable: "--font-m-plus-code",
 });
 
-const karla = Karla({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  variable: "--font-karla",
-});
 const source_serif = Source_Serif_4({
   subsets: ["latin"],
   style: ["normal", "italic"],
   variable: "--font-source-serif",
-});
-const dm_serif_display = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal"],
-  variable: "--font-dm-serif-display",
-});
-const source_code_pro = Source_Code_Pro({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  variable: "--font-source-code-pro",
 });
 
 const sinistre = localFont({
@@ -102,7 +91,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ParallaxProvider>
           <main
-            className={`${syne.variable} ${sinistre.variable} ${mazius.variable}  ${m_plus.variable} ${m_plus_code.variable} ${karla.variable} ${source_serif.variable} ${dm_serif_display.variable} ${source_code_pro.variable}`}
+            className={`${ovo.variable} ${syne.variable} ${sinistre.variable} ${mazius.variable}  ${m_plus.variable} ${m_plus_code.variable} ${source_serif.variable}`}
           >
             <AnimatePresence
               mode="wait"

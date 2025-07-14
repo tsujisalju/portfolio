@@ -20,7 +20,7 @@ export default function Achernar() {
   }, []);
   return (
     <Layout>
-      <div className="lg:container px-4 mx-auto flex flex-col space-y-6 mb-8 overflow-visible">
+      <div className="lg:container px-4 mx-auto flex flex-col gap-6 mb-8 overflow-visible">
         <h1 className="text-3xl font-display">
           {intl.formatMessage({ id: "Expertise" })}
         </h1>
@@ -36,7 +36,7 @@ export default function Achernar() {
             >
               <GeoDiv border cornertr className="p-6">
                 <Popover className={"relative"}>
-                  <Popover.Button className="flex flex-col space-y-2 w-full">
+                  <Popover.Button className="flex flex-col gap-2 w-full">
                     <h2 className="font-sans font-bold text-xl flex-initial w-max">
                       {skill.title}
                     </h2>
@@ -56,10 +56,10 @@ export default function Achernar() {
                       {locale == "en-US"
                         ? skill.en
                         : locale == "ms-MY"
-                        ? skill.ms
-                        : locale == "de-DE"
-                        ? skill.de
-                        : ""}
+                          ? skill.ms
+                          : locale == "de-DE"
+                            ? skill.de
+                            : ""}
                     </p>
                   </Popover.Panel>
                 </Popover>
@@ -68,7 +68,7 @@ export default function Achernar() {
           ))}
         </div>
       </div>
-      <div className="lg:container px-4 mx-auto flex flex-col space-y-6">
+      <div className="lg:container px-4 mx-auto flex flex-col gap-6">
         <h1 className="text-3xl font-display">
           {intl.formatMessage({ id: "Commercial Works" })}
         </h1>
@@ -84,7 +84,7 @@ export default function Achernar() {
             glareColor="#ffffff"
             glarePosition="left"
             glareReverse
-            className="relative overflow-hidden bg-zinc-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
+            className="relative overflow-hidden bg-zinc-50 dark:bg-white/5 shadow-xs hover:shadow-lg"
           >
             <GeoDiv borderx corner>
               <div className="w-full grid grid-cols-1 lg:grid-cols-3">
@@ -96,10 +96,10 @@ export default function Achernar() {
                         {locale == "en-US"
                           ? tag.en
                           : locale == "ms-MY"
-                          ? tag.ms
-                          : locale == "de-DE"
-                          ? tag.de
-                          : ""}
+                            ? tag.ms
+                            : locale == "de-DE"
+                              ? tag.de
+                              : ""}
                       </Tag>
                     ))}
                   </div>

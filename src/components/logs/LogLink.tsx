@@ -24,11 +24,11 @@ export default function LogLink({
         glareColor="#ffffff"
         glarePosition="left"
         glareReverse
-        className="relative overflow-hidden border-solid border border-black/20 dark:border-white/20 bg-stone-50 dark:bg-white/5 shadow-sm hover:shadow-lg"
+        className="relative overflow-hidden border-solid border border-black/20 dark:border-white/20 bg-stone-50 dark:bg-white/5 shadow-xs hover:shadow-lg"
       >
         <div className="absolute h-8 w-8 -bottom-4 -right-4 rotate-45 bg-black/20 dark:bg-white/20"></div>
         {simple ? (
-          <div className="flex flex-col p-4 space-y-2">
+          <div className="flex flex-col p-4 gap-2">
             <div className="flex flex-row flex-1 items-start">
               <h1 className="font-display text-xl md:text-2xl grow">
                 {log.title}
@@ -51,7 +51,7 @@ export default function LogLink({
               </p>
             </div>
             <div className="flex flex-row">
-              <div className="flex flex-row grow space-x-3 items-center">
+              <div className="flex flex-row grow gap-3 items-center">
                 <LogAuthorAvatar
                   className="w-6 h-6 rounded-full"
                   author={log.author}
@@ -60,7 +60,7 @@ export default function LogLink({
                 ></LogAuthorAvatar>
                 <p className="font-sans font-light text-md">{log.author}</p>
               </div>
-              <div className="flex flex-row items-center space-x-3">
+              <div className="flex flex-row items-center gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -100,12 +100,12 @@ export default function LogLink({
                 "absolute -bottom-[20%] -right-[20%] sm:-right-[5%] opacity-60 -z-10"
               }
             />
-            <div className="flex flex-col p-6 space-y-2">
-              <div className="flex flex-col flex-1 items-start space-y-2">
+            <div className="flex flex-col p-6 gap-2">
+              <div className="flex flex-col flex-1 items-start gap-2">
                 <h1 className="font-display text-xl md:text-2xl grow">
                   {log.title}
                 </h1>
-                <div className="flex flex-row space-x-2">
+                <div className="flex flex-row gap-2">
                   <p className="font-sans font-light text-md">{log.author}</p>
                   <p className="hidden xl:inline font-sans font-light text-md">
                     •
@@ -119,7 +119,7 @@ export default function LogLink({
                     />
                   </p>
                 </div>
-                <div className="flex flex-row items-center space-x-3">
+                <div className="flex flex-row items-center gap-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

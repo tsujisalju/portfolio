@@ -72,7 +72,7 @@ export default function Log({ logData }: { logData: LogData }) {
   return (
     <Layout>
       <div className="max-w-7xl mx-auto grid grid-cols-1 px-4 md:px-8 lg:grid-cols-3 my-8 gap-6">
-        <div className="flex flex-col space-y-6 mb-4 py-2">
+        <div className="flex flex-col gap-6 mb-4 py-2">
           <Link href={"/logs" + "#" + logData.id}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ export default function Log({ logData }: { logData: LogData }) {
             />
           </div>
           <GeoDiv
-            className="p-4 flex flex-row items-center space-x-4"
+            className="p-4 flex flex-row items-center gap-4"
             border
             cornertr
           >
@@ -111,7 +111,7 @@ export default function Log({ logData }: { logData: LogData }) {
           </GeoDiv>
         </div>
         <div
-          className="col-span-2 flex flex-col space-y-6 p-8 text-justify font-code text-md bg-black/10 rounded-lg shadow-inner min-h-[300px] lg:h-[600px] lg:overflow-y-auto"
+          className="col-span-2 flex flex-col gap-6 p-8 text-justify font-code text-md bg-black/10 rounded-lg shadow-inner min-h-[300px] lg:h-[600px] lg:overflow-y-auto"
           style={{ scrollbarWidth: "thin" }}
         >
           <div className="mt-auto" />

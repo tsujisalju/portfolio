@@ -28,7 +28,7 @@ export default function SelectTheme() {
     <Menu as="div" className={"relative"}>
       <Menu.Button as="button" aria-label="Select color theme">
         <GeoDiv
-          className="h-8 flex flex-row w-full justify-center items-center transition transition-75 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 space-x-2 font-sans hover:bg-opacity-50 dark:hover:bg-opacity-50 shadow-md hover:shadow-lg"
+          className="h-8 flex flex-row w-full justify-center items-center transition transition-75 bg-zinc-50 dark:bg-zinc-800 px-3 py-2 gap-2 font-sans hover:bg-zinc-50/50 dark:hover:bg-zinc-800/50 shadow-md hover:shadow-lg"
           border
         >
           {theme === "light" ? (
@@ -75,7 +75,7 @@ export default function SelectTheme() {
               {({ active }) => (
                 <div
                   className={
-                    "font-sans flex flex-row transition transition-75 justify-start items-center text-left space-x-3 p-2 pl-3 pr-4 " +
+                    "font-sans flex flex-row transition transition-75 justify-start items-center text-left gap-3 p-2 pl-3 pr-4 " +
                     (active && "bg-zinc-200 dark:bg-zinc-700")
                   }
                   onClick={() => HandleToggleChange("light")}
@@ -96,7 +96,7 @@ export default function SelectTheme() {
               {({ active }) => (
                 <div
                   className={
-                    "font-sans flex flex-row transition transition-75 justify-start items-center text-left space-x-3 p-2 pl-3 pr-4 " +
+                    "font-sans flex flex-row transition transition-75 justify-start items-center text-left gap-3 p-2 pl-3 pr-4 " +
                     (active && "bg-zinc-200 dark:bg-zinc-700")
                   }
                   onClick={() => HandleToggleChange("dark")}

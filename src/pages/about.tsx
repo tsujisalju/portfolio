@@ -23,7 +23,7 @@ export default function About() {
             className="rounded-full"
           />
         </div>
-        <div className="md:col-span-2 flex flex-col space-y-8 py-2 md:py-4 md:px-8 lg:px-16">
+        <div className="md:col-span-2 flex flex-col gap-8 py-2 md:py-4 md:px-8 lg:px-16">
           <h1 className="font-display text-4xl text-center">
             {intl.formatMessage({ id: "Hi! I'm Qayyum Yazid." })}
           </h1>

@@ -13,7 +13,7 @@ export default function MobileNav() {
     <Menu as="div" className={"lg:hidden relative"}>
       <Menu.Button
         as="button"
-        className="h-8 flex flex-row w-full justify-center items-center transition transition-75 px-2 py-1 space-x-2 text-lg font-sans border-solid border-black/20 dark:border-white/20"
+        className="h-8 flex flex-row w-full justify-center items-center transition transition-75 px-2 py-1 gap-2 text-lg font-sans border-solid border-black/20 dark:border-white/20"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export default function MobileNav() {
       >
         <Menu.Items
           className={
-            "absolute flex flex-col flex-1 right-0 mt-2 p-4 w-[200px] space-y-3 bg-stone-100 dark:bg-stone-800 text-left shadow-lg"
+            "absolute flex flex-col flex-1 right-0 mt-2 p-4 w-[200px] gap-3 bg-stone-100 dark:bg-stone-800 text-left shadow-lg"
           }
         >
           <Menu.Item key={"home"}>
@@ -111,7 +111,7 @@ export default function MobileNav() {
           </Menu.Item>
 
           <hr className="opacity-20" />
-          <div className="flex flex-row space-x-2 flex-1">
+          <div className="flex flex-row gap-2 flex-1">
             <SelectLanguage />
             <SelectTheme />
           </div>

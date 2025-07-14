@@ -33,8 +33,8 @@ export default function Logs({ allLogsData }: { allLogsData: Log[] }) {
   return (
     <Layout>
       <div className="mx-auto max-w-7xl grid grid-cols-1 px-4 md:px-8 lg:grid-cols-3 my-8 gap-8 h-full">
-        <div className="flex flex-col space-y-4 py-8">
-          <div className="flex flex-row items-start space-x-2">
+        <div className="flex flex-col gap-4 py-8">
+          <div className="flex flex-row items-start gap-2">
             <h1 className="font-display text-4xl">
               {intl.formatMessage({ id: "Logs" })}
             </h1>

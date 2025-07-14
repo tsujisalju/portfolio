@@ -14,7 +14,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-m-plus)", "sans-serif"],
-        serif: ["var(--font-m-plus-code)", "serif"],
+        serif: ["var(--font-ovo)", "serif"],
         display: [
           "var(--font-syne)",
           "Syne",

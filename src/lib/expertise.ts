@@ -30,6 +30,13 @@ export const skills: Skill[] = [
     de: "Vertraut mit Next.js als bevorzugtem Framework für die Erstellung von Websites. Festes Verständnis für App-Router und React-Server-Komponenten. Diese Website wurde mit Stolz mit Next.js erstellt.",
   },
   {
+    title: "Angular",
+    percentage: 60,
+    en: "Self-taught Angular and working with production code as part of internship programme. Additionally working with PrimeNG UI components and Primeflex utility classes. Experienced migrating codebase from v18 to v20.",
+    ms: "Belajar Angular secara kendiri dan bekerja dalam kod produksi dalam program amali. Tambahan pula bekerja dengan komponen UI PrimeNG dan kelas utility Primeflex. Berpengalaman menghijrah asas kod dari v18 ke v20.",
+    de: "Autodidaktisches Erlernen von Angular und Arbeit mit Produktionscode im Rahmen eines Praktikantenprogramms. Zusätzlich Arbeit mit PrimeNG UI Komponenten und Primeflex Utility Klassen. Erfahrung in der Migration von Codebase von v18 auf v20.",
+  },
+  {
     title: "C++",
     percentage: 60,
     en: "Solid understanding of C++. Built a CLI application that utilizes various data structures, memory management and performance profiling.",
@@ -55,7 +62,7 @@ export const skills: Skill[] = [
     percentage: 60,
     en: "Experienced in Python for CLI applications. Built a CRUD program with CSV parsing for a PPE inventory management system.",
     ms: "Berpengalaman dalam Python untuk menulis aplikasi alat baris arahan. Membina program CRUD dengan penghurai CSV untuk sistem pengurusan inventory PPE",
-    de: "Erfahren in Python für CLI-Anwendungen. Erstellung eines CRUD-Programms mit CSV-Parsing für ein PSA-Bestandsverwaltungssystem."
+    de: "Erfahren in Python für CLI-Anwendungen. Erstellung eines CRUD-Programms mit CSV-Parsing für ein PSA-Bestandsverwaltungssystem.",
   },
   {
     title: "Linux",

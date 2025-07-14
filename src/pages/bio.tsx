@@ -14,8 +14,8 @@ export default function About() {
   return (
     <Layout>
       <div className="md:container md:mx-auto lg:max-w-4xl px-4">
-        <div className="flex flex-col-reverse lg:flex-row justify-center space-x-4">
-          <div className="flex flex-col space-y-4 font-serif text-md text-justify">
+        <div className="flex flex-col-reverse lg:flex-row justify-center gap-4">
+          <div className="flex flex-col gap-4 font-serif text-md text-justify">
             <div className="container mx-auto grid place-items-center">
               <Image
                 alt="Young Van Carina among some sunflowers"

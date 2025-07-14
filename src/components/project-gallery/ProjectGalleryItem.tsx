@@ -30,7 +30,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
         <Image
           id={project.id}
           alt={project.id}
-          className={"shadow-sm hover:shadow-xl object-cover object-center"}
+          className={"shadow-xs hover:shadow-xl object-cover object-center"}
           src={project.img}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -45,7 +45,7 @@ export default function ProjectGalleryItem({ project }: { project: Project }) {
             (isShowing ? "md:opacity-100" : "md:opacity-0")
           }
         >
-          <div className="flex flex-row space-x-2 md:space-x-0 md:flex-col content-center">
+          <div className="flex flex-row gap-2 md:gap-0 md:flex-col content-center">
             <div className="hidden md:inline absolute h-8 w-8 -bottom-4 -right-4 rotate-45 bg-black dark:bg-white opacity-20"></div>
             <h1 className="font-display md:text-2xl text-xl">
               {project.title}

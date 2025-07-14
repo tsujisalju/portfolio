@@ -56,7 +56,7 @@ export default function Home({
 
   return (
     <Layout>
-      <div className="min-h-[90vh] -mt-18 w-full relative grid place-content-center overflow-hidden">
+      <div className="min-h-screen -mt-18 w-full relative grid place-content-center overflow-hidden">
         <AnimatePresence>
           <motion.div
             key={liveBackgrounds[currentLive].name}
@@ -130,20 +130,20 @@ export default function Home({
               tiltReverse
               scale={1.02}
               className={
-                "relative flex flex-1 flex-col space-y-4 " +
+                "relative flex flex-1 flex-col gap-4 " +
                 (liveBackgrounds[currentLive].reverse
                   ? "items-start"
                   : "items-end")
               }
             >
               <GeoDiv
-                className="flex flex-col items-start gap-8 p-12  bg-white/20 dark:bg-black/20 backdrop-blur-sm"
+                className="flex flex-col items-start gap-8 p-12  bg-white/20 dark:bg-black/20 backdrop-blur-xs"
                 borderx
                 cornertr
                 cornersize="large"
               >
                 <PurrnamaLogo className="h-8 w-auto" />
-                <div className="flex flex-col space-y-4">
+                <div className="flex flex-col gap-4">
                   <div>
                     <h1 className="font-display text-4xl lg:text-5xl">
                       {intl.formatMessage({
@@ -163,7 +163,7 @@ export default function Home({
                       })}
                     </p>
                   </div>
-                  <div className="flex flex-row pt-4 space-x-3 place-items-center">
+                  <div className="flex flex-row pt-4 gap-3 place-items-center">
                     <Link
                       href={Socials.Github}
                       aria-label="Visit Github profile"
@@ -197,12 +197,12 @@ export default function Home({
                 </div>
               </GeoDiv>
               <GeoDiv
-                className="hidden lg:flex flex-col w-max gap-4 p-8 bg-white/20 dark:bg-black/20 backdrop-blur-sm"
+                className="hidden lg:flex flex-col w-max gap-4 p-8 bg-white/20 dark:bg-black/20 backdrop-blur-xs"
                 border
                 cornertl
                 cornersize="normal"
               >
-                <div className="max-w-xl w-full flex flex-1 flex-col space-y-2">
+                <div className="max-w-xl w-full flex flex-1 flex-col gap-2">
                   <h1 className="text-3xl font-display">
                     {liveBackgrounds[currentLive].name}
                   </h1>
@@ -214,7 +214,7 @@ export default function Home({
             </Tilt>
           </motion.div>
         </div>
-        <div className="flex flex-row space-x-2 justify-center mt-16">
+        <div className="flex flex-row gap-2 justify-center mt-16">
           {liveBackgrounds.map((bg, i) => (
             <div
               key={i}
@@ -246,7 +246,7 @@ export default function Home({
               </Link>
             </GeoDiv>
           </div>
-          <div className="flex flex-col col-span-2 flex-1 space-y-2 mx-4 p-4 rounded-lg bg-black/10 shadow-inner h-[600px] overflow-y-auto">
+          <div className="flex flex-col col-span-2 flex-1 gap-2 mx-4 p-4 rounded-lg bg-black/10 shadow-inner h-[600px] overflow-y-auto">
             {allLogsData.slice(0, 5).map((log: Log) => (
               <LogLink key={log.title} log={log} simple />
             ))}
@@ -288,7 +288,7 @@ export default function Home({
                   )}`}
                 />
                 <div className="absolute w-full top-0 p-4 border bg-white/50 dark:bg-black/50 border-black/20 dark:border-white/20">
-                  <div className="flex flex-row space-x-4 content-center">
+                  <div className="flex flex-row gap-4 content-center">
                     <h1 className="font-display md:text-2xl text-xl">
                       {allProjectsData[0].title}
                     </h1>

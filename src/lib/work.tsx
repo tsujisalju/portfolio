@@ -80,7 +80,7 @@ export const works: Work[] = [
   },
   {
     logo: (
-      <div className="flex flex-row space-x-4 items-center">
+      <div className="flex flex-row gap-4 items-center">
         <MinswapLogo className="slate-950 dark:slate-50 w-[210px] h-16" />
         <p className="font-code">V1</p>
       </div>

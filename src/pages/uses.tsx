@@ -21,9 +21,9 @@ export default function Uses() {
               {intl.formatMessage({ id: "Hardware" })}
             </h1>
           </div>
-          <div className="flex flex-col space-y-2 col-span-2">
+          <div className="flex flex-col gap-2 col-span-2">
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2 relative overflow-clip">
+              <div className="p-4 flex flex-col gap-2 relative overflow-clip">
                 <Image
                   src={"/img/uses/keyboard.png"}
                   alt={"keyboard"}
@@ -40,7 +40,7 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2 relative overflow-clip">
+              <div className="p-4 flex flex-col gap-2 relative overflow-clip">
                 <Image
                   src={"/img/uses/headphones.png"}
                   alt={"headphones"}
@@ -57,7 +57,7 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2  relative overflow-clip">
+              <div className="p-4 flex flex-col gap-2  relative overflow-clip">
                 <Image
                   src={"/img/uses/mouse.png"}
                   alt={"mouse"}
@@ -74,7 +74,7 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2 relative overflow-clip">
+              <div className="p-4 flex flex-col gap-2 relative overflow-clip">
                 <Image
                   src={"/img/uses/tablet.png"}
                   alt={"mouse"}
@@ -98,9 +98,9 @@ export default function Uses() {
               {intl.formatMessage({ id: "Development" })}
             </h1>
           </div>
-          <div className="flex flex-col space-y-2 col-span-2">
+          <div className="flex flex-col gap-2 col-span-2">
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col gap-2">
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Operating System" })}
                 </small>
@@ -113,7 +113,7 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col gap-2">
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Code Editor" })}
                 </small>
@@ -126,7 +126,7 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col gap-2">
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Javascript Framework" })}
                 </small>
@@ -136,7 +136,7 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col gap-2">
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Deployment Infrastructure" })}
                 </small>
@@ -153,9 +153,9 @@ export default function Uses() {
               {intl.formatMessage({ id: "Design" })}
             </h1>
           </div>
-          <div className="flex flex-col space-y-2 col-span-2">
+          <div className="flex flex-col gap-2 col-span-2">
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col gap-2">
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Illustration" })}
                 </small>
@@ -165,7 +165,7 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col gap-2">
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "UI Design" })}
                 </small>
@@ -175,7 +175,7 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col gap-2">
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Vector Graphics" })}
                 </small>
@@ -185,7 +185,7 @@ export default function Uses() {
               </div>
             </GeoDiv>
             <GeoDiv border cornertr>
-              <div className="p-4 flex flex-col space-y-2">
+              <div className="p-4 flex flex-col gap-2">
                 <small className="uppercase font-sans font-light">
                   {intl.formatMessage({ id: "Motion Graphics" })}
                 </small>
@@ -197,7 +197,7 @@ export default function Uses() {
           </div>
         </section>
       </div>
-      {/*<div className=" max-w-3xl mx-auto space-y-20 mt-16">
+      {/*<div className=" max-w-3xl mx-auto gap-20 mt-16">
         <section className="relative md:border-l md:border-black/20 dark:md:border-white/20 md:pl-6 md:overflow-hidden">
           <div className="hidden md:inline absolute h-4 w-4 -top-2 -left-2 bg-black/20 dark:bg-white/20 rotate-45" />
           <div className="grid grid-cols-1 md:grid-cols-4 gap-y-8 px-8 lg:px-0">
@@ -205,7 +205,7 @@ export default function Uses() {
               {intl.formatMessage({ id: "Workstation" })}
             </h2>
             <div className="md:col-span-3">
-              <ul className="space-y-16">
+              <ul className="gap-16">
                 <li>
                   <h3 className="font-sans font-bold text-lg mb-2">
                     {intl.formatMessage({ id: "Lenovo Legion 5 15ARH05" })}
@@ -268,7 +268,7 @@ export default function Uses() {
               {intl.formatMessage({ id: "Development" })}
             </h2>
             <div className="md:col-span-3">
-              <ul className="space-y-16">
+              <ul className="gap-16">
                 <li>
                   <h3 className="font-sans font-bold text-lg mb-2">
                     {intl.formatMessage({ id: "Zed" })}
@@ -300,7 +300,7 @@ export default function Uses() {
               {intl.formatMessage({ id: "Design" })}
             </h2>
             <div className="md:col-span-3">
-              <ul className="space-y-16">
+              <ul className="gap-16">
                 <li>
                   <h3 className="font-sans font-bold text-lg mb-2">
                     {intl.formatMessage({ id: "Krita" })}

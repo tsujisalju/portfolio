@@ -39,15 +39,15 @@ export default function Header(Props: HeaderProp) {
       }
     >
       <div className="lg:container mx:auto flex flex-row">
-        <div className="flex flex-row items-center flex-1 p-3 lg:p-6 lg:space-x-12">
+        <div className="flex flex-row items-center flex-1 p-3 lg:p-6 gap-12">
           <Link href={"/"} aria-label="purrnama logo. return to home page">
-            <div className="flex flex-row justify-start space-x-4 items-center">
+            <div className="flex flex-row justify-start gap-4 items-center">
               <PurrnamaLogo className="h-6 w-auto" />
               <PurrnamaText className="h-4 w-auto" />
             </div>
           </Link>
         </div>
-        <nav className="hidden lg:flex grow flex-row place-items-center justify-center space-x-6">
+        <nav className="hidden lg:flex grow flex-row place-items-center justify-center gap-6">
           <NavLink href="/">{intl.formatMessage({ id: "Home" })}</NavLink>
           <NavLink href="/logs">{intl.formatMessage({ id: "Logs" })}</NavLink>
           <NavLink href="/artworks">
@@ -56,7 +56,7 @@ export default function Header(Props: HeaderProp) {
           <NavLink href="/work">{intl.formatMessage({ id: "Work" })}</NavLink>
           <NavLink href="/uses">{intl.formatMessage({ id: "Uses" })}</NavLink>
         </nav>
-        <div className="hidden lg:flex flex-row flex-1 space-x-2 justify-end items-center p-4">
+        <div className="hidden lg:flex flex-row flex-1 gap-2 justify-end items-center p-4">
           <SelectLanguage />
           <SelectTheme />
         </div>

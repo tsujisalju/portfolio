@@ -156,8 +156,8 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
             />
           </div>
           <GeoDiv className="lg:col-span-2 h-max" border corner>
-            <div className={"flex flex-col p-8 space-y-4 "}>
-              <div className="flex flex-col space-y-2 mb-4">
+            <div className={"flex flex-col p-8 gap-4 "}>
+              <div className="flex flex-col gap-2 mb-4">
                 <h1 className="font-display text-5xl lg:text-6xl ">
                   {projectData.title}
                 </h1>
@@ -172,7 +172,7 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
               </div>
               <hr className="text-black dark:text-white opacity-20" />
               <div
-                className="flex flex-col space-y-4 font-serif font-normal"
+                className="flex flex-col gap-4 font-serif font-normal text-lg"
                 dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
               />
             </div>

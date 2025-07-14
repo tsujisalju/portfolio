@@ -6,7 +6,7 @@ export default function SkillBar({
   width: string;
 }) {
   return (
-    <div className="flex flex-col md:flex-row flex-1 space-y-2 md:space-x-2">
+    <div className="flex flex-col md:flex-row flex-1 gap-2 md:gap-2">
       <div className="md:w-1/5">
         <p>{title}</p>
       </div>
