@@ -147,7 +147,7 @@ export default function Home({
                   <div>
                     <h1 className="font-display text-4xl lg:text-5xl">
                       {intl.formatMessage({
-                        id: "Move forward with courage, because you are not alone.",
+                        id: "Have faith in the Creator and our ability to create.",
                       })}
                     </h1>
                   </div>
