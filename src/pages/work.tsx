@@ -126,7 +126,10 @@ export default function Achernar() {
                       className="h-full min-w-max left-0 flex flex-row"
                     >
                       {work.imgs?.map((img, index) => (
-                        <div className="h-full aspect-[calc(35/24)] relative">
+                        <div
+                          key={index}
+                          className="h-full aspect-[calc(35/24)] relative"
+                        >
                           <Image
                             className="object-cover"
                             src={img.src}
@@ -136,7 +139,10 @@ export default function Achernar() {
                         </div>
                       ))}
                       {work.imgs?.map((img, index) => (
-                        <div className="h-full aspect-[calc(35/24)] relative">
+                        <div
+                          key={index + "2"}
+                          className="h-full aspect-[calc(35/24)] relative"
+                        >
                           <Image
                             className="object-cover"
                             src={img.src}

@@ -5,7 +5,6 @@ import SelectTheme from "./SelectTheme";
 import { Transition } from "@headlessui/react";
 import { useIntl } from "react-intl";
 import { useRouter } from "next/router";
-import GeoDiv from "./GeoDiv";
 
 export default function MobileNav() {
   const intl = useIntl();
