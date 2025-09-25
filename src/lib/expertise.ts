@@ -31,7 +31,7 @@ export const skills: Skill[] = [
   },
   {
     title: "Angular",
-    percentage: 60,
+    percentage: 75,
     en: "Self-taught Angular and working with production code as part of internship programme. Additionally working with PrimeNG UI components and Primeflex utility classes. Experienced migrating codebase from v18 to v20.",
     ms: "Belajar Angular secara kendiri dan bekerja dalam kod produksi dalam program amali. Tambahan pula bekerja dengan komponen UI PrimeNG dan kelas utility Primeflex. Berpengalaman menghijrah asas kod dari v18 ke v20.",
     de: "Autodidaktisches Erlernen von Angular und Arbeit mit Produktionscode im Rahmen eines Praktikantenprogramms. Zusätzlich Arbeit mit PrimeNG UI Komponenten und Primeflex Utility Klassen. Erfahrung in der Migration von Codebase von v18 auf v20.",

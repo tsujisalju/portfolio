@@ -14,10 +14,12 @@ export default function Achernar() {
   const intl = useIntl();
   const router = useRouter();
   const { locale } = router;
+
   React.useEffect(() => {
     document.body.style.backgroundImage = "";
     document.body.className = "";
   }, []);
+
   return (
     <Layout>
       <div className="lg:container px-4 mx-auto flex flex-col gap-6 mb-8 overflow-visible">
@@ -34,9 +36,9 @@ export default function Achernar() {
               scale={1.02}
               className="relative overflow-hidden hover:shadow-lg h-max"
             >
-              <GeoDiv border cornertr className="p-6">
+              <GeoDiv border cornertr>
                 <Popover className={"relative"}>
-                  <Popover.Button className="flex flex-col gap-2 w-full">
+                  <Popover.Button className="flex flex-col gap-2 w-full p-6">
                     <h2 className="font-sans font-bold text-xl flex-initial w-max">
                       {skill.title}
                     </h2>
@@ -49,7 +51,7 @@ export default function Achernar() {
                   </Popover.Button>
                   <Popover.Panel
                     className={
-                      "mt-4 p-4 flex flex-col border-solid border dark:border-white/20 border-black/20 backdrop-blur"
+                      "mt-4 p-4 m-6 flex flex-col border-solid border dark:border-white/20 border-black/20 backdrop-blur"
                     }
                   >
                     <p className="font-sans">
@@ -103,30 +105,45 @@ export default function Achernar() {
                       </Tag>
                     ))}
                   </div>
+                  {work.desc && (
+                    <div className="p-4 text-sm">
+                      <p className="font-sans">
+                        {locale == "en-US"
+                          ? work.desc.en
+                          : locale == "ms-MY"
+                            ? work.desc.ms
+                            : locale == "de-DE"
+                              ? work.desc.de
+                              : ""}
+                      </p>
+                    </div>
+                  )}
                 </div>
-                <div className="lg:col-span-2">
-                  <div className="max-w-full overflow-x-hidden whitespace-nowrap">
+                <div className="col-span-1 lg:col-span-2">
+                  <div className="h-[180px] lg:h-full max-w-full overflow-x-hidden whitespace-nowrap">
                     <div
                       id="scrolling-gallery"
                       className="h-full min-w-max left-0 flex flex-row"
                     >
                       {work.imgs?.map((img, index) => (
-                        <Image
-                          key={index}
-                          src={img.src}
-                          alt={img.alt}
-                          height={240}
-                          width={350}
-                        />
+                        <div className="h-full aspect-[calc(35/24)] relative">
+                          <Image
+                            className="object-cover"
+                            src={img.src}
+                            alt={img.alt}
+                            fill
+                          />
+                        </div>
                       ))}
                       {work.imgs?.map((img, index) => (
-                        <Image
-                          key={index}
-                          src={img.src}
-                          alt={img.alt}
-                          height={240}
-                          width={350}
-                        />
+                        <div className="h-full aspect-[calc(35/24)] relative">
+                          <Image
+                            className="object-cover"
+                            src={img.src}
+                            alt={img.alt}
+                            fill
+                          />
+                        </div>
                       ))}
                     </div>
                   </div>

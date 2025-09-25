@@ -145,7 +145,7 @@ export default function Home({
                 <PurrnamaLogo className="h-8 w-auto" />
                 <div className="flex flex-col gap-4">
                   <div>
-                    <h1 className="font-display text-4xl lg:text-5xl">
+                    <h1 className="font-display text-3xl lg:text-5xl">
                       {intl.formatMessage({
                         id: "Have faith in the Creator and our ability to create.",
                       })}

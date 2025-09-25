@@ -30,9 +30,7 @@ export default function LogLink({
         {simple ? (
           <div className="flex flex-col p-4 gap-2">
             <div className="flex flex-row flex-1 items-start">
-              <h1 className="font-display text-xl md:text-2xl grow">
-                {log.title}
-              </h1>
+              <h1 className="font-display text-xl grow">{log.title}</h1>
               <p className="hidden xl:inline font-sans font-light text-md">
                 <FormattedDate
                   value={log.date}

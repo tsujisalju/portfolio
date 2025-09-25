@@ -5,6 +5,7 @@ import SelectTheme from "./SelectTheme";
 import { Transition } from "@headlessui/react";
 import { useIntl } from "react-intl";
 import { useRouter } from "next/router";
+import GeoDiv from "./GeoDiv";
 
 export default function MobileNav() {
   const intl = useIntl();
@@ -41,7 +42,7 @@ export default function MobileNav() {
       >
         <Menu.Items
           className={
-            "absolute flex flex-col flex-1 right-0 mt-2 p-4 w-[200px] gap-3 bg-stone-100 dark:bg-stone-800 text-left shadow-lg"
+            "absolute right-0 flex flex-col flex-1 mt-2 p-4 w-[200px] gap-3 w-max bg-zinc-100 dark:bg-zinc-800 text-left shadow-lg border border-solid border-black/20 dark:border-white/20"
           }
         >
           <Menu.Item key={"home"}>

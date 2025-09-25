@@ -105,9 +105,6 @@ export default function Uses() {
                   {intl.formatMessage({ id: "Operating System" })}
                 </small>
                 <h2 className="text-xl font-sans font-bold">
-                  {intl.formatMessage({ id: "Void Linux" })}
-                </h2>
-                <h2 className="text-xl font-sans font-bold">
                   {intl.formatMessage({ id: "Debian 12" })}
                 </h2>
               </div>
