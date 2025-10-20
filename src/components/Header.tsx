@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
 import NavLink from "./NavLink";
-import PurrnamaLogo from "./svg/PurrnamaLogo";
-import PurrnamaText from "./svg/PurrnamaText";
 import SelectLanguage from "./SelectLanguage";
 import SelectTheme from "./SelectTheme";
+import TsujisaljuTextLogoHologram from "../lib/svg/TsujisaljuTextLogoHologram";
+import TsujisaljuTextPlain from "../lib/svg/TsujisaljuTextLogoPlain";
 import { useIntl } from "react-intl";
 
 interface HeaderProp {
@@ -41,10 +41,8 @@ export default function Header(Props: HeaderProp) {
       <div className="lg:container mx:auto flex flex-row">
         <div className="flex flex-row items-center flex-1 p-3 lg:p-6 gap-12">
           <Link href={"/"} aria-label="purrnama logo. return to home page">
-            <div className="flex flex-row justify-start gap-4 items-center">
-              <PurrnamaLogo className="h-6 w-auto" />
-              <PurrnamaText className="h-4 w-auto" />
-            </div>
+            <TsujisaljuTextLogoHologram className="h-12 hidden dark:inline" />
+            <TsujisaljuTextPlain className="h-12 inline dark:hidden" />
           </Link>
         </div>
         <nav className="hidden lg:flex grow flex-row place-items-center justify-center gap-6">

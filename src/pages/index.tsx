@@ -193,6 +193,48 @@ export default function Home({
                     >
                       <BlueSkyIcon className="" />
                     </Link>
+                    <Link
+                      href={Socials.X}
+                      aria-label="Visit X profile"
+                      target={"_blank"}
+                      className={
+                        "text-stone-700 hover:text-stone-800 dark:text-stone-300 hover:dark:text-stone-200 transition duration-100"
+                      }
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                        height="18"
+                        fill="none"
+                        viewBox="0 0 1200 1227"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284zM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854z"
+                        ></path>
+                      </svg>
+                    </Link>
+                    <Link
+                      href={Socials.YouTube}
+                      aria-label="Visit YouTube channel"
+                      target={"_blank"}
+                      className={
+                        "text-stone-700 hover:text-stone-800 dark:text-stone-300 hover:dark:text-stone-200 transition duration-100"
+                      }
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlSpace="preserve"
+                        id="Layer_1"
+                        width="18"
+                        height="18"
+                        fill="currentColor"
+                        version="1.1"
+                        viewBox="0 0 260 180"
+                      >
+                        <path d="M220 2H40C19.01 2 2 19.01 2 40v100c0 20.99 17.01 38 38 38h180c20.99 0 38-17.01 38-38V40c0-20.99-17.01-38-38-38M102 130V50l68 40z"></path>
+                      </svg>
+                    </Link>
                   </div>
                 </div>
               </GeoDiv>

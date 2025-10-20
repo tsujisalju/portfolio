@@ -1,5 +1,6 @@
 export const Socials = {
-  X: "https://x.com/purrnama_dev",
-  Github: "https://github.com/purrnama",
-  Bluesky: "https://bsky.app/profile/purrnama.dev",
+  X: "https://x.com/tsujisalju",
+  Github: "https://github.com/tsujisalju",
+  Bluesky: "https://bsky.app/profile/tsujisalju.dev",
+  YouTube: "https://www.youtube.com/channel/UCqJO2nM1vnzn8PY-2PLDZAA",
 } as const;

@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import {
+  Gasoek_One,
   M_PLUS_1,
   M_PLUS_1_Code,
   Ovo,
@@ -21,8 +22,8 @@ const ovo = Ovo({
   weight: ["400"],
   subsets: ["latin"],
   style: ["normal"],
-  variable: "--font-ovo"
-})
+  variable: "--font-ovo",
+});
 
 const m_plus = M_PLUS_1({
   subsets: ["latin"],
@@ -40,6 +41,13 @@ const source_serif = Source_Serif_4({
   subsets: ["latin"],
   style: ["normal", "italic"],
   variable: "--font-source-serif",
+});
+
+const gasoek_one = Gasoek_One({
+  subsets: ["latin"],
+  style: ["normal"],
+  weight: ["400"],
+  variable: "--font-gasoek-one",
 });
 
 const sinistre = localFont({
@@ -91,7 +99,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ParallaxProvider>
           <main
-            className={`${ovo.variable} ${syne.variable} ${sinistre.variable} ${mazius.variable}  ${m_plus.variable} ${m_plus_code.variable} ${source_serif.variable}`}
+            className={`${gasoek_one.variable} ${ovo.variable} ${syne.variable} ${sinistre.variable} ${mazius.variable}  ${m_plus.variable} ${m_plus_code.variable} ${source_serif.variable}`}
           >
             <AnimatePresence
               mode="wait"

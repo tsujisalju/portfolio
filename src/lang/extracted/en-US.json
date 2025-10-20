@@ -8,8 +8,8 @@
   "Artworks": {
     "string": "Artworks"
   },
-  "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission.": {
-    "string": "Artworks © Qayyum Yazid (A.K.A. purrnama). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission."
+  "Artworks © Qayyum Yazid (A.K.A. tsujisalju). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission.": {
+    "string": "Artworks © Qayyum Yazid (A.K.A. tsujisalju). All non-original characters are copyright of their respective owners. Do not use any images commercially without my permission."
   },
   "Code Editor": {
     "string": "Code Editor"
@@ -157,9 +157,6 @@
   },
   "Vercel": {
     "string": "Vercel"
-  },
-  "Void Linux": {
-    "string": "Void Linux"
   },
   "Work": {
     "string": "Work"

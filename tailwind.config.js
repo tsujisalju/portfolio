@@ -22,6 +22,7 @@ module.exports = {
           "serif",
         ],
         code: ["var(--font-m-plus-code)", "monospace"],
+        hyper: ["var(--font-gasoek-one)", "sans-serif"],
       },
     },
   },
