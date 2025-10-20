@@ -82,13 +82,13 @@ export default function Project({ projectData }: { projectData: ProjectData }) {
         <meta name="twitter:description" content={excerpt} />
         <meta
           name="twitter:image"
-          content={"https://portfolio-purrnama.vercel.app" + projectData.img}
+          content={"https://tsujisalju.dev" + projectData.img}
         />
         <meta property="og:title" content={projectData.title} />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content={"https://portfolio-purrnama.vercel.app" + projectData.img}
+          content={"https://tsujisalju.dev" + projectData.img}
         />
         <meta property="og:description" content={excerpt} />
       </Head>

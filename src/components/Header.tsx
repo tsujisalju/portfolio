@@ -40,7 +40,7 @@ export default function Header(Props: HeaderProp) {
     >
       <div className="lg:container mx:auto flex flex-row">
         <div className="flex flex-row items-center flex-1 p-3 lg:p-6 gap-12">
-          <Link href={"/"} aria-label="purrnama logo. return to home page">
+          <Link href={"/"} aria-label="tsujisalju logo. return to home page">
             <TsujisaljuTextLogoHologram className="h-12 hidden dark:inline" />
             <TsujisaljuTextPlain className="h-12 inline dark:hidden" />
           </Link>

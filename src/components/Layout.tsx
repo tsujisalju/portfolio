@@ -20,44 +20,44 @@ export default function Layout({
       }
     >
       <Head>
-        <title>purrnama | Freelance Developer & Designer</title>
+        <title>tsujisalju | Freelance Developer & Designer</title>
         <meta
           name="title"
-          content="purrnama - Freelance Developer and Designer"
+          content="tsujisalju - Freelance Developer and Designer"
         />
         <meta
           name="description"
-          content="purrnama is a software engineering student, freelance developer and designer based in Malaysia."
+          content="tsujisalju is a software engineering student, freelance developer and designer based in Malaysia."
         />
         {!disableMeta && (
           <>
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="purrnama.dev" />
+            <meta property="og:url" content="tsujisalju.dev" />
             <meta
               property="og:title"
-              content="purrnama - Freelance Developer and Designer"
+              content="tsujisalju - Freelance Developer and Designer"
             />
             <meta
               property="og:description"
-              content="purrnama is a software engineering student, freelance developer and designer based in Malaysia."
+              content="tsujisalju is a software engineering student, freelance developer and designer based in Malaysia."
             />
             <meta
               property="og:image"
-              content="https://portfolio-purrnama.vercel.app/img/meta-img.png"
+              content="https://tsujisalju.dev/img/meta-img.png"
             />
             <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:url" content="purrnama.dev" />
+            <meta property="twitter:url" content="tsujisalju.dev" />
             <meta
               property="twitter:title"
-              content="purrnama - Freelance Developer and Designer"
+              content="tsujisalju - Freelance Developer and Designer"
             />
             <meta
               property="twitter:description"
-              content="purrnama is a software engineering student, freelance developer and designer based in Malaysia."
+              content="tsujisalju is a software engineering student, freelance developer and designer based in Malaysia."
             />
             <meta
               property="twitter:image"
-              content="https://portfolio-purrnama.vercel.app/img/meta-img.png"
+              content="https://tsujisalju.dev/img/meta-img.png"
             />
           </>
         )}

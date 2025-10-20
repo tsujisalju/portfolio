@@ -1,4 +1,4 @@
-## purrnama's portfolio source code
+## tsujisalju's portfolio source code
 
 Welcome! This is the source code for my portfolio website. It serves as a showcase for my artworks and projects, as well as an ongoing exercise to learn how to use Nextjs, Tailwindcss and write Typescript. I intentionally make it open source so I could share my cool findings with you.
 
