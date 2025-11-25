@@ -320,7 +320,7 @@ export default function Home({
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
                   fill
                   className="object-cover"
-                  style={{ objectPosition: "50% 30%" }}
+                  style={{ objectPosition: "50% 10%" }}
                   placeholder="blur"
                   blurDataURL={`data:image/svg+xml;base64,${toBase64(
                     shimmer(
